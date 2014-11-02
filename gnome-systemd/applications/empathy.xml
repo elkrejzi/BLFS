@@ -5,9 +5,9 @@
   %general-entities;
 
   <!ENTITY empathy-download-http
-           "&gnome-download-http;/empathy/&gnome-minor;/empathy-&empathy-version;.tar.xz">
+           "&gnome-download-http;/empathy/&gnome-minor12;/empathy-&empathy-version;.tar.xz">
   <!ENTITY empathy-download-ftp
-           "&gnome-download-ftp;/empathy/&gnome-minor;/empathy-&empathy-version;.tar.xz">
+           "&gnome-download-ftp;/empathy/&gnome-minor12;/empathy-&empathy-version;.tar.xz">
   <!ENTITY empathy-md5sum        "b86c915c2465203e0ff1443c5987560a">
   <!ENTITY empathy-size          "4.9 MB">
   <!ENTITY empathy-buildsize     "126 MB">

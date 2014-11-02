@@ -4,8 +4,8 @@
   <!ENTITY % general-entities SYSTEM "../../general.ent">
   %general-entities;
 
-  <!ENTITY evolution-download-http "&gnome-download-http;/evolution/&gnome-minor;/evolution-&evolution-version;.tar.xz">
-  <!ENTITY evolution-download-ftp  "&gnome-download-ftp;/evolution/&gnome-minor;/evolution-&evolution-version;.tar.xz">
+  <!ENTITY evolution-download-http "&gnome-download-http;/evolution/&gnome-minor12;/evolution-&evolution-version;.tar.xz">
+  <!ENTITY evolution-download-ftp  "&gnome-download-ftp;/evolution/&gnome-minor12;/evolution-&evolution-version;.tar.xz">
   <!ENTITY evolution-md5sum        "afae5a7d801e37480ab0e5bd5a074e29">
   <!ENTITY evolution-size          "11 MB">
   <!ENTITY evolution-buildsize     "525 MB">
@@ -196,7 +196,7 @@ make</userinput></screen>
           None
         </seg>
         <seg>
-          /usr/include/evolution-&gnome-minor;,
+          /usr/include/evolution-&gnome-minor12;,
           /usr/lib/evolution,
           /usr/libexec/evolution,
           /usr/share/evolution,
