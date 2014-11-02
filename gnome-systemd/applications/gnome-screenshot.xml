@@ -5,12 +5,12 @@
   %general-entities;
 
   <!ENTITY gnome-screenshot-download-http
-           "&gnome-download-http;/gnome-screenshot/&gnome-minor;/gnome-screenshot-&gnome-screenshot-version;.tar.xz">
+           "&gnome-download-http;/gnome-screenshot/&gnome-minor14;/gnome-screenshot-&gnome-screenshot-version;.tar.xz">
   <!ENTITY gnome-screenshot-download-ftp
-           "&gnome-download-ftp;/gnome-screenshot/&gnome-minor;/gnome-screenshot-&gnome-screenshot-version;.tar.xz">
-  <!ENTITY gnome-screenshot-md5sum        "d3467ad5bf6a84715a88f5bbc7ef596a">
+           "&gnome-download-ftp;/gnome-screenshot/&gnome-minor14;/gnome-screenshot-&gnome-screenshot-version;.tar.xz">
+  <!ENTITY gnome-screenshot-md5sum        "d0476a3c765625f4fbe193678ae23ecd">
   <!ENTITY gnome-screenshot-size          "256 KB">
-  <!ENTITY gnome-screenshot-buildsize     "6.4 MB">
+  <!ENTITY gnome-screenshot-buildsize     "6.7 MB">
   <!ENTITY gnome-screenshot-time          "less than 0.1 SBU">
 ]>
 
@@ -78,7 +78,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/> and
-      <xref linkend="libcanberra"/> (Compiled with GTK+3 support).
+      <xref linkend="libcanberra"/>
     </para>
 
     <para condition="html" role="usernotes">
