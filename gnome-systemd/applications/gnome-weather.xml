@@ -5,13 +5,13 @@
   %general-entities;
 
   <!ENTITY gnome-weather-download-http
-           "&gnome-download-http;/gnome-weather/&gnome-minor;/gnome-weather-&gnome-weather-version;.tar.xz">
+           "&gnome-download-http;/gnome-weather/&gnome-minor14;/gnome-weather-&gnome-weather-version;.tar.xz">
   <!ENTITY gnome-weather-download-ftp
-           "&gnome-download-ftp;/gnome-weather/&gnome-minor;/gnome-weather-&gnome-weather-version;.tar.xz">
-  <!ENTITY gnome-weather-md5sum        "e413c479c11c5a3b6b8faf2e5b775928">
+           "&gnome-download-ftp;/gnome-weather/&gnome-minor14;/gnome-weather-&gnome-weather-version;.tar.xz">
+  <!ENTITY gnome-weather-md5sum        "02b330952283ca90494813b0253d2428">
   <!ENTITY gnome-weather-size          "11 MB">
-  <!ENTITY gnome-weather-buildsize     "36 MB">
-  <!ENTITY gnome-weather-time          "0.1 SBU">
+  <!ENTITY gnome-weather-buildsize     "35 MB">
+  <!ENTITY gnome-weather-time          "less than 0.1 SBU">
 ]>
 
 <sect1 id="gnome-weather" xreflabel="gnome-weather-&gnome-weather-version;">
@@ -82,6 +82,11 @@
       <xref linkend="libgweather"/>
     </para>
 
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="appdata-tools"/>
+    </para>
+
     <para condition="html" role="usernotes">User Notes:
       <ulink url="&blfs-wiki;/gnome-weather"/>
     </para>
@@ -126,7 +131,6 @@ make</userinput></screen>
           None
         </seg>
         <seg>
-          /usr/lib/org.gnome.Weather.Application and
           /usr/share/org.gnome.Weather.Application
         </seg>
       </seglistitem>
