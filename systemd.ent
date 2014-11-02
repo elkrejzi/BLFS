@@ -33,3 +33,6 @@
 <!ENTITY MarkupSafe-version           "0.23">
 <!ENTITY setuptools-version           "7.0">
 <!ENTITY PyYAML-version               "3.11">
+
+<!ENTITY % kde5-package-entities SYSTEM      "kde5/kde5.ent">
+%kde5-package-entities;
