@@ -5,13 +5,13 @@
   %general-entities;
 
   <!ENTITY gnome-dictionary-download-http
-           "&gnome-download-http;/gnome-dictionary/3.10/gnome-dictionary-&gnome-dictionary-version;.tar.xz">
+           "&gnome-download-http;/gnome-dictionary/&gnome-minor14;/gnome-dictionary-&gnome-dictionary-version;.tar.xz">
   <!ENTITY gnome-dictionary-download-ftp
-           "&gnome-download-ftp;/gnome-dictionary/3.10/gnome-dictionary-&gnome-dictionary-version;.tar.xz">
-  <!ENTITY gnome-dictionary-md5sum        "99ee031b6abfaddc42c195a7a4041e6e">
-  <!ENTITY gnome-dictionary-size          "2.1 MB">
-  <!ENTITY gnome-dictionary-buildsize     "23 MB">
-  <!ENTITY gnome-dictionary-time          "0.3 SBU">
+           "&gnome-download-ftp;/gnome-dictionary/&gnome-minor14;/gnome-dictionary-&gnome-dictionary-version;.tar.xz">
+  <!ENTITY gnome-dictionary-md5sum        "8c381246e832701c3b5168a6e5b79406">
+  <!ENTITY gnome-dictionary-size          "808 KB">
+  <!ENTITY gnome-dictionary-buildsize     "24 MB">
+  <!ENTITY gnome-dictionary-time          "0.2 SBU">
 ]>
 
 <sect1 id="gnome-dictionary" xreflabel="gnome-dictionary-&gnome-dictionary-version;">
@@ -77,7 +77,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/> and
-      <xref linkend="yelp-xsl"/>
+      <xref linkend="itstool"/>
     </para>
 
     <bridgehead renderas="sect4">Optional</bridgehead>
