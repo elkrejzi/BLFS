@@ -44,11 +44,17 @@
 
 -->
     <listitem>
-      <para>November 1st, 2014</para>
+      <para>November 2nd, 2014</para>
       <itemizedlist>
         <listitem>
           <para>[krejzi] - .</para>
         </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>November 1st, 2014</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Updated to seahorse-3.14.0 and totem-3.14.0.</para>
         </listitem>
