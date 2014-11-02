@@ -5,12 +5,12 @@
   %general-entities;
 
   <!ENTITY gnome-clocks-download-http
-           "&gnome-download-http;/gnome-clocks/&gnome-minor;/gnome-clocks-&gnome-clocks-version;.tar.xz">
+           "&gnome-download-http;/gnome-clocks/&gnome-minor14;/gnome-clocks-&gnome-clocks-version;.tar.xz">
   <!ENTITY gnome-clocks-download-ftp
-           "&gnome-download-ftp;/gnome-clocks/&gnome-minor;/gnome-clocks-&gnome-clocks-version;.tar.xz">
-  <!ENTITY gnome-clocks-md5sum        "7d6354501773c034e49c912169abfd6c">
-  <!ENTITY gnome-clocks-size          "824 KB">
-  <!ENTITY gnome-clocks-buildsize     "11 MB">
+           "&gnome-download-ftp;/gnome-clocks/&gnome-minor14;/gnome-clocks-&gnome-clocks-version;.tar.xz">
+  <!ENTITY gnome-clocks-md5sum        "1952e7889d979f1221669d451a0971cc">
+  <!ENTITY gnome-clocks-size          "852 KB">
+  <!ENTITY gnome-clocks-buildsize     "16 MB">
   <!ENTITY gnome-clocks-time          "0.2 SBU">
 ]>
 
