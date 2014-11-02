@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+  <!ENTITY changelogs  "http://www.linuxfromscratch.org/blfs">
+  <!ENTITY % general-entities SYSTEM "../../general.ent">
+  %general-entities;
+]>
+
+<!-- vim: set expandtab: -->
+
+<sect1 id="changelog" xreflabel="Change Log">
+  <?dbhtml filename="changelog.html"?>
+
+  <sect1info>
+    <othername>$LastChangedBy: krejzi $</othername>
+    <date>$Date: 2014-11-01 18:58:41 +0100 (Sat, 01 Nov 2014) $</date>
+  </sect1info>
+
+  <title>Change Log</title>
+
+  <!-- <para>Please note that the Change Log only lists which editor was
+  responsible for putting the changes into SVN; please read the
+  <xref linkend="credits"/> page in Chapter 1 for details on
+  who wrote what.</para> -->
+
+  <para>Current release: &version; &ndash; &releasedate;</para>
+
+  <itemizedlist>
+    <title>Changelog Entries:</title>
+
+<!-- Changelog template
+
+    <listitem>
+      <para>MMMM DD{nd,st,th}, YYYY</para>
+      <itemizedlist>
+        <listitem>
+          <para>[name] - Changelog entry.</para>
+        </listitem>
+        <listitem>
+          <para>[name] - Another changelog entry.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+-->
+    <listitem>
+      <para>November 1st, 2014</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - .</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to seahorse-3.14.0 and totem-3.14.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to gnome-terminal-3.14.1, gucharmap-3.14.1 and notification-daemon--3.14.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to evolution-3.12.7, file-roller-3.14.1, gedit-3.14.0 and gnome-calculator-3.14.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to brasero-3.11.4, cheese-3.14.1, eog-3.14.1, epiphany-3.14.1 and evince-3.14.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged sbc-1.3 update from trunk. Thanks to Bruce for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged sudo-1.8.11p2 and menu-cache-1.0.0 updates from trunk. Thanks to Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to adwaita-icon-theme-3.14.1, gnome-session-3.14.0, gdm-3.14.1, gnome-user-docs-3.14.1 and yelp-3.14.1.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>October 31st, 2014</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - Merged gdb-7.8.1, git-2.1.3 and sqlite-3.8.7.1 updates from trunk. Thanks to Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Removed Build Order page from GNOME section as the desktop packages are already sorted in the recommended build order.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>October 30th, 2014</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - Updated to mutter-3.14.1.5, gnome-shell-3.14.1.5 and gnome-shell-extensions-3.14.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libreoffice-4.3.3.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to gnome-settings-daemon-3.14.0 and gnome-control-center-3.14.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to gnome-bluetooth-3.14.0 and gnome-keyring-3.14.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to gnome-themes-standard-3.14.0, gvfs-1.22.1, nautilus-3.14.0 and zenity-3.14.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to caribou-0.4.15, dconf-0.22.0 and gnome-backgrounds-3.14.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged ruby-2.1.4, dhcpcd-6.6.0 and wget-1.16 updates from trunk. Thanks to Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged liblinear-1.95 and pinentry-0.9.0 updates from trunk. Thanks to Fernando for doing all the work.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>October 29th, 2014</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - Updated to gnome-online-miners-3.14.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to evolution-data-server-3.12.7.1 and folks-0.10.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to gnome-online-accounts-3.14.1 and libgdata-0.16.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libpeas-1.12.1, librest-0.7.92 and libwnck-3.4.9.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libchamplain-0.12.9, libgee-0.16.1 and libgweather-3.14.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to gnome-menus-3.13.3, gtkhtml-4.8.5 and gtksourceview-3.14.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to gcr-3.14.0, geocode-glib-3.14.0, gjs-1.42.0 and gnome-desktop-3.14.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to totem-pl-parser-3.10.3, tracker-1.2.3, vte-0.38.1 and yelp-xsl-3.14.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to accountsservice-0.6.39 and gsettings-desktop-schemas-3.14.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Changed CUPS, CUPS-Filters and Gutenprint instructions to work on systemd setups.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Changed ALSA-Utils instructions to work on systemd setups.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Changed Transmission instructions to use rewritten Qt instructions.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Added adwaita-icon-theme-3.14.0, farstream-0.2.6 and sound-theme-freedesktop-0.8.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Imported GNOME 3.12 from systemd branch revision 14805.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to firefox-33.0.2.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>October 28th, 2014</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - Changed LXDE-Common instructions to work on systemd setups.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Temporarily removed LXDM.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Changed Xfce4-Session instructions to work on systemd setups.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Changed KDE-Workspace and "Starting KDE" instructions to work on systemd setups.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Internal refactoring of the WebKitGTK+-2.6.2 instructions.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>October 27th, 2014</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - Simplified WebKitGTK-2.4.7 instructions.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Rewrote Qt4 and Qt5 instructions to use qtchooser.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Added colord-gtk-0.2.25 and gtk-vnc-0.5.3.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Changed Cairo, Cogl, Clutter and GTK+ 3 instructions to work on Wayland setups.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>October 26th, 2014</para>
+      <itemizedlist>
+        <listitem>
+          <para>[krejzi] - Changed MesaLib, XKeyboard-Config, Xorg-Server, Xorg Wacom Driver and Xorg VMWare Driver instructions to work on systemd setups.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Added libva-vdpau-driver-0.7.4.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Moved libva, libva-intel-driver, libvdpau and libvdpau-va-gl to Multimedia section.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Changed Apache, Bind9, ProFTPD, vsFTPD, OpenLDAP, Unbound and Xinetd instructions to work on systemd setups.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Changed MariaDB, PostgreSQL, Dovecot, Exim, Postfix and Sendmail instructions to work on systemd setups.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Fixed w3m linking with an image library.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Changed and simplified Wireshark instructions so they use qtchooser in case of two Qt installations.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Changed Avahi, NetworkManager and Wicd instructions to work on systemd setups.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Removed netfs instructions.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Changed CIFS-Utils, NFS-Utils, NTP, rpcbind. RSync, Samba and WPA_Supplicant instructions to work on systemd setups.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Added geoclue-2.1.10, libnice-0.1.8 and uhttpmock-0.3.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Removed initd-tools.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Changed Acpid, At, AutoFS, BlueZ, Colord, FCron, GPM, Sysstat, UDisks and UDisks2 instructions to work on systemd setups.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Added cups-pk-helper-0.2.5, ModemManager-1.4.0 and weston-1.6.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to upower-0.99.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Improved and simplified Subversion instructions.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Changed PHP and SVN Server instructions to work on systemd setups.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Added Jinja2-2.7.3, MarkupSafe-0.23, pyatspi-2.14.0, setuptools-7.0 and PyYAML-3.11 - Python Modules.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Changed and simplified CMake and Poppler instructions so they use qtchooser in case of two Qt installations.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Improved and expanded libwebp instructions.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Added libmediaart-0.7.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Added bogofilter-1.2.4, highlight-3.19, ibus-1.5.9 and qtchooser-39.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to appstream-glib-0.3.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Moved appstream-glib to General Libraries section.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Added libinput-0.6.0, libmbim-1.10.0, liboauth-1.0.3, libpwquality-1.2.4, libqmi-1.10.4, libxbkcommon-0.5.0, wayland-1.6.0 and yaml-0.1.6.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Moved libevdev to General Libraries section.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to xapian-core-1.2.19.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Changed libgcrypt and libgpg-error instructions so systemd can safely be linked against them.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Changed Cyrus-SASL, Firewalling, Haveged, Iptables, MIT Kerberos V5, OpenSSH and Stunnel instructions to work on systemd setups.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Changed Polkit instructions to use systemd-logind.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Removed ConsoleKit and Udev-Extras pages.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Imported systemd specific D-Bus and post LFS systemd instructions.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Improved and simplified the GnuPG instructions.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Rewrote libcap instructions to only install the PAM module.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Changed ISC DHCP and DHCPCD instructions to work on systemd setups.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Adjusted Qemu instructions to use the "Advanced Network Configuration" instead of bridge-utils.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Stripped configuration paragraph from bridge-utils instructions in favor of systemd-networkd ones.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Imported "Advanced Network Configuration" instructions for configuring the Network Bridge with systemd-networkd.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Removed random instructions.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Adjusted Postlfs Configuration for use with LFS systemd.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Imported systemd-units from main systemd branch.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Rebranded the book into systemd-ng book.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Imported BLFS revision 14732.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+  </itemizedlist>
+
+</sect1>

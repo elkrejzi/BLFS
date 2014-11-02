@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE note PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+  "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
+
+    <!-- $LastChangedBy: randy $
+         $Date: 2010-03-23 17:15:36 +0100 (Tue, 23 Mar 2010) $ -->
+
+    <para><option>--enable-gtk-doc</option>: Use this parameter if
+    <application>GTK-Doc</application> is installed and you wish to rebuild
+    and install the API documentation.</para>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE note PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+  "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
+
+<!-- $LastChangedBy: krejzi $
+     $Date: 2012-05-01 14:35:38 +0200 (Tue, 01 May 2012) $ -->
+
+    <para>
+      <option>--disable-scrollkeeper</option>: Use this parameter if you
+      have installed <application>Rarian</application> but wish to disable the
+      updates to the Scrollkeeper database.
+   </para>
