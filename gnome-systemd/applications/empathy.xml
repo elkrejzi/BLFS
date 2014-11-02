@@ -8,10 +8,10 @@
            "&gnome-download-http;/empathy/&gnome-minor;/empathy-&empathy-version;.tar.xz">
   <!ENTITY empathy-download-ftp
            "&gnome-download-ftp;/empathy/&gnome-minor;/empathy-&empathy-version;.tar.xz">
-  <!ENTITY empathy-md5sum        "0afba6a9f43424585b50b332ed3b42b4">
+  <!ENTITY empathy-md5sum        "b86c915c2465203e0ff1443c5987560a">
   <!ENTITY empathy-size          "4.9 MB">
   <!ENTITY empathy-buildsize     "126 MB">
-  <!ENTITY empathy-time          "1.8 SBU">
+  <!ENTITY empathy-time          "1.4 SBU">
 ]>
 
 <sect1 id="empathy" xreflabel="Empathy-&empathy-version;">
@@ -81,9 +81,9 @@
       <xref linkend="clutter-gtk"/>,
       <xref linkend="folks"/>,
       <xref linkend="gcr"/>,
+      <xref linkend="itstool"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="libnotify"/>,
-      <xref linkend="libsecret"/>,
       <xref linkend="pulseaudio"/>,
       <xref linkend="telepathy-farstream"/>,
       <xref linkend="telepathy-logger"/>, and
