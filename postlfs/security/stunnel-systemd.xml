@@ -6,8 +6,8 @@
 
   <!ENTITY stunnel-download-http "http://mirrors.zerg.biz/stunnel/stunnel-&stunnel-version;.tar.gz">
   <!ENTITY stunnel-download-ftp  "ftp://ftp.stunnel.org/stunnel/stunnel-&stunnel-version;.tar.gz">
-  <!ENTITY stunnel-md5sum        "827901cd4690796eadf17f792b658573">
-  <!ENTITY stunnel-size          "584 KB">
+  <!ENTITY stunnel-md5sum        "c10edd84ecbc676a5a48c7e34ab3d1c5">
+  <!ENTITY stunnel-size          "588 KB">
   <!ENTITY stunnel-buildsize     "5.7 MB">
   <!ENTITY stunnel-time          "0.1 SBU">
 ]>
