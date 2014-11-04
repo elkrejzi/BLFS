@@ -427,13 +427,13 @@
 <!ENTITY phonon-backend-gstreamer5-buildsize     "4.4 MB">
 <!ENTITY phonon-backend-gstreamer5-time          "0.3 SBU">
 
-<!ENTITY phonon-backend-vlc5-version       "0.8.0">
+<!ENTITY phonon-backend-vlc5-version       "0.8.1">
 <!ENTITY phonon-backend-vlc5-download-http "http://download.kde.org/stable/phonon/phonon-backend-vlc/&phonon-backend-vlc5-version;/phonon-backend-vlc-&phonon-backend-vlc5-version;.tar.xz">
 <!ENTITY phonon-backend-vlc5-download-ftp  "ftp://ftp.kde.org/pub/kde/stable/phonon/phonon-backend-vlc/&phonon-backend-vlc5-version;/phonon-backend-vlc-&phonon-backend-vlc5-version;.tar.xz">
-<!ENTITY phonon-backend-vlc5-md5sum        "f4c1f5c75d15931f02508cccef107e3d">
+<!ENTITY phonon-backend-vlc5-md5sum        "5276dcf1baf1dece1cc78d8b4088771a">
 <!ENTITY phonon-backend-vlc5-size          "60 KB">
 <!ENTITY phonon-backend-vlc5-buildsize     "3.0 MB">
-<!ENTITY phonon-backend-vlc5-time          "0.3 SBU">
+<!ENTITY phonon-backend-vlc5-time          "0.2 SBU">
 
 <!ENTITY plasma-framework-download-http "&kf5-download-http;/plasma-framework-&kf5-version;.tar.xz">
 <!ENTITY plasma-framework-download-ftp  "&kf5-download-ftp;/plasma-framework-&kf5-version;.tar.xz">
