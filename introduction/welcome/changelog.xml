@@ -49,6 +49,9 @@
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+        <listitem>
+          <para>[krejzi] - Merged ffmpeg-2.4.3 updates from trunk. Thanks to Fernando for doing all the work.</para>
+        </listitem>
       </itemizedlist>
     </listitem>
 
