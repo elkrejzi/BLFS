@@ -53,7 +53,10 @@
           <para>[krejzi] - Removed instructions about creating /etc/shells since it has been moved to LFS.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged sawfish-1.11 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged gcc-4.9.2 update from trunk. Thanks to Pierre for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged sawfish-1.11 update from trunk. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
           <para>[krejzi] - Merged ffmpeg-2.4.3 and raptor2-2.0.14 updates from trunk. Thanks to Fernando for doing all the work.</para>
