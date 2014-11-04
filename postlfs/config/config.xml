@@ -38,8 +38,7 @@ $Date: 2014-10-26 14:21:04 +0100 (Sun, 26 Oct 2014) $
   topics&mdash;<xref linkend="postlfs-config-profile"/> and
   <xref linkend="postlfs-config-vimrc"/>.</para>
 
-  <para> The remaining topics, <xref linkend="postlfs-config-logon"/>,
-  <xref linkend="postlfs-config-shells"/>, and
+  <para>The remaining topics, <xref linkend="postlfs-config-logon"/> and
   <xref linkend="autofs"/>
   are then addressed, in that order. They
   don't have much interaction with the other topics in this chapter.</para>
