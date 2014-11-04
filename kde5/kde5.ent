@@ -411,13 +411,13 @@
 <!ENTITY libdbusmenu-qt5-buildsize     "4.1 MB">
 <!ENTITY libdbusmenu-qt5-time          "0.2 SBU">
 
-<!ENTITY phonon5-version       "4.8.0">
+<!ENTITY phonon5-version       "4.8.2">
 <!ENTITY phonon5-download-http "http://download.kde.org/stable/phonon/&phonon5-version;/phonon-&phonon5-version;.tar.xz">
 <!ENTITY phonon5-download-ftp  "ftp://ftp.kde.org/pub/kde/stable/phonon/&phonon5-version;/phonon-&phonon5-version;.tar.xz">
-<!ENTITY phonon5-md5sum        "30af25af0bf28f3ce462f39b0a6e4081">
+<!ENTITY phonon5-md5sum        "f8893c0f8a7ee449492262a05e7fca89">
 <!ENTITY phonon5-size          "316 KB">
 <!ENTITY phonon5-buildsize     "11 MB">
-<!ENTITY phonon5-time          "0.8 SBU">
+<!ENTITY phonon5-time          "0.6 SBU">
 
 <!ENTITY phonon-backend-gstreamer5-version       "4.8.0">
 <!ENTITY phonon-backend-gstreamer5-download-http "http://download.kde.org/stable/phonon/phonon-backend-gstreamer/&phonon-backend-gstreamer5-version;/phonon-backend-gstreamer-&phonon-backend-gstreamer5-version;.tar.xz">
