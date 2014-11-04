@@ -50,6 +50,9 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Updated to uhttpmock-0.3.3.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Removed instructions about creating /etc/shells since it has been moved to LFS.</para>
         </listitem>
         <listitem>
