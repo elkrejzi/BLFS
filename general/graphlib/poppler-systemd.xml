@@ -7,10 +7,10 @@
   <!ENTITY poppler-download-http
            "http://poppler.freedesktop.org/poppler-&poppler-version;.tar.xz">
   <!ENTITY poppler-download-ftp       " ">
-  <!ENTITY poppler-md5sum             "786c943eee550e3a977c181e7778b1c8">
+  <!ENTITY poppler-md5sum             "28de4b9f698296e11dff45a5cce1aa93">
   <!ENTITY poppler-size               "1.6 MB">
-  <!ENTITY poppler-buildsize          "145 MB">
-  <!ENTITY poppler-time               "2.1 SBU">
+  <!ENTITY poppler-buildsize          "210 MB">
+  <!ENTITY poppler-time               "1.9 SBU">
 
   <!ENTITY poppler-data-version       "0.4.7">
 
@@ -145,14 +145,6 @@
     <title>Installation of Poppler</title>
 
     <para>
-      In order to optionally run the test suite, additional download of about
-      9 MB, using <xref linkend="git"/>, is necessary. Make sure that you do
-      not have the directory ../test.
-    </para>
-
-<screen><userinput>git clone git://git.freedesktop.org/git/poppler/test ../test</userinput></screen>
-
-    <para>
       Install <application>Poppler</application> by running the following
       commands:
     </para>
@@ -165,7 +157,7 @@
 make</userinput></screen>
 
     <para>
-      To test the results, issue: <command>make check</command>.
+      This package does not have a working testsuite.
     </para>
 
     <para>
@@ -178,7 +170,7 @@ make</userinput></screen>
       The documents are installed using the following commands:
     </para>
 
-<screen role="root"><userinput>install -v -m755 -d      /usr/share/doc/poppler-&poppler-version; &amp;&amp;
+<screen role="root"><userinput>install -v -dm755        /usr/share/doc/poppler-&poppler-version; &amp;&amp;
 install -v -m644 README* /usr/share/doc/poppler-&poppler-version;</userinput></screen>
 
     <para>
