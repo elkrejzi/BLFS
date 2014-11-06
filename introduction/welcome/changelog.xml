@@ -50,7 +50,7 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
-          <para>[krejzi] - Updated to poppler-0.28.1 and xf86-input-wacom-0.27.0.</para>
+          <para>[krejzi] - Updated to libwacom-0.11, poppler-0.28.1 and xf86-input-wacom-0.27.0.</para>
         </listitem>
         <listitem>
           <para>[krejzi] - Merged boost-1.57.0 and unrar-5.2.2 updates from trunk. Thanks to Fernando for doing all the work.</para>
