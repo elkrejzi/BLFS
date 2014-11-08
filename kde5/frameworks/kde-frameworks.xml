@@ -332,11 +332,11 @@ done</userinput></screen>
           libKF5KIOWidgets.so, libKF5KrossCore.so, libKF5KrossUi.so, libKF5MediaPlayer.so,
           libKF5NewStuff.so, libKF5Notifications.so, libKF5NotifyConfig.so, libKF5Parts.so,
           libKF5PlasmaQuick.so, libKF5Plasma.so, libKF5Plotting.so, libKF5Pty.so,
-          libKF5Runner.so, libKF5Service.so, libKF5Solid.so, libKF5SonnetCore.so,
-          libKF5SonnetUi.so, libKF5Style.so, libKF5Su.so, libKF5TextEditor.so,
-          libKF5TextWidgets.so, libKF5ThreadWeaver.so, libKF5UnitConversion.so,
-          libKF5Wallet.so, libKF5WebKit.so, libKF5WidgetsAddons.so, libKF5WindowSystem.so,
-          libKF5XmlGui.so, libKF5XsltKde.a and libkwalletbackend5.so
+          libKF5QuickAddons.so, libKF5Runner.so, libKF5Service.so, libKF5Solid.so,
+          libKF5SonnetCore.so, libKF5SonnetUi.so, libKF5Style.so, libKF5Su.so,
+          libKF5TextEditor.so, libKF5TextWidgets.so, libKF5ThreadWeaver.so,
+          libKF5UnitConversion.so, libKF5Wallet.so, libKF5WebKit.so, libKF5WidgetsAddons.so,
+          libKF5WindowSystem.so, libKF5XmlGui.so, libKF5XsltKde.a and libkwalletbackend5.so
         </seg>
         <seg>
           $KF5_PREFIX/include/KF5/{Attica,KActivities,KArchive,KAuth,KBookmarks},

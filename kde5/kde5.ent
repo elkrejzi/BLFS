@@ -1,7 +1,7 @@
 <!-- General entities -->
-<!ENTITY kf5-version                  "5.3.0">
-<!ENTITY kf5-download-http            "http://download.kde.org/stable/frameworks/&kf5-version;">
-<!ENTITY kf5-download-ftp             "ftp://ftp.kde.org/pub/kde/stable/frameworks/&kf5-version;">
+<!ENTITY kf5-version                  "5.4.0">
+<!ENTITY kf5-download-http            "http://download.kde.org/stable/frameworks/5.4"> <!-- &kf5-version;"> -->
+<!ENTITY kf5-download-ftp             "ftp://ftp.kde.org/pub/kde/stable/frameworks/5.4"> <!-- &kf5-version;"> -->
 <!ENTITY plasma-version               "5.1.0.1">
 <!ENTITY plasma-download-http         "http://download.kde.org/stable/plasma/5.1.0"> <!-- &plasma-version;"> -->
 <!ENTITY plasma-download-ftp          "ftp://ftp.kde.org/pub/kde/stable/plasma/5.1.0"> <!-- &plasma-version;"> -->
@@ -12,396 +12,396 @@
 <!-- KDE Frameworks 5 -->
 <!ENTITY attica5-download-http "&kf5-download-http;/attica-&kf5-version;.tar.xz">
 <!ENTITY attica5-download-ftp  "&kf5-download-ftp;/attica-&kf5-version;.tar.xz">
-<!ENTITY attica5-md5sum        "194b9a2141a2a4e23f2bc6dde92178f5">
+<!ENTITY attica5-md5sum        "493c08ce82d5ab34bf2efeb1a01349ab">
 <!ENTITY attica5-size          "60 KB">
 <!ENTITY attica5-buildsize     "6.7 MB">
-<!ENTITY attica5-time          "1.1 SBU">
+<!ENTITY attica5-time          "0.9 SBU">
 
-<!ENTITY extra-cmake-modules-version       "1.3.0">
+<!ENTITY extra-cmake-modules-version       "1.4.0">
 <!ENTITY extra-cmake-modules-download-http "&kf5-download-http;/extra-cmake-modules-&extra-cmake-modules-version;.tar.xz">
 <!ENTITY extra-cmake-modules-download-ftp  "&kf5-download-ftp;/extra-cmake-modules-&extra-cmake-modules-version;.tar.xz">
-<!ENTITY extra-cmake-modules-md5sum        "a0b95a4e5ffb8bde51a95584292b03ed">
+<!ENTITY extra-cmake-modules-md5sum        "a8a8278f5448a584cffec07692ed9f19">
 <!ENTITY extra-cmake-modules-size          "120 KB">
 <!ENTITY extra-cmake-modules-buildsize     "5.5 MB">
 <!ENTITY extra-cmake-modules-time          "less than 0.1 SBU">
 
 <!ENTITY frameworkintegration-download-http "&kf5-download-http;/frameworkintegration-&kf5-version;.tar.xz">
 <!ENTITY frameworkintegration-download-ftp  "&kf5-download-ftp;/frameworkintegration-&kf5-version;.tar.xz">
-<!ENTITY frameworkintegration-md5sum        "5b79feb231745b7b8c4199f427ba721f">
+<!ENTITY frameworkintegration-md5sum        "2ac10b279a05fb5eac587dcde5b122ec">
 <!ENTITY frameworkintegration-size          "1.7 MB">
 <!ENTITY frameworkintegration-buildsize     "8.9 MB">
 <!ENTITY frameworkintegration-time          "0.3 SBU">
 
 <!ENTITY kactivities5-download-http "&kf5-download-http;/kactivities-&kf5-version;.tar.xz">
 <!ENTITY kactivities5-download-ftp  "&kf5-download-ftp;/kactivities-&kf5-version;.tar.xz">
-<!ENTITY kactivities5-md5sum        "a7651bc32b55c84df5a61087291eae0c">
-<!ENTITY kactivities5-size          "112 KB">
+<!ENTITY kactivities5-md5sum        "b2f1c2952a94a5fe2dfd27e93dcf725c">
+<!ENTITY kactivities5-size          "108 KB">
 <!ENTITY kactivities5-buildsize     "17 MB">
-<!ENTITY kactivities5-time          "1.2 SBU">
+<!ENTITY kactivities5-time          "1.6 SBU">
 
 <!ENTITY kapidox-download-http "&kf5-download-http;/kapidox-&kf5-version;.tar.xz">
 <!ENTITY kapidox-download-ftp  "&kf5-download-ftp;/kapidox-&kf5-version;.tar.xz">
-<!ENTITY kapidox-md5sum        "e6e5459d72519a394467f76ceed45a26">
+<!ENTITY kapidox-md5sum        "f56e72770ee8d39d119cf71f71153a9b">
 <!ENTITY kapidox-size          "128 KB">
-<!ENTITY kapidox-buildsize     "1.9 MB">
+<!ENTITY kapidox-buildsize     "1.6 MB">
 <!ENTITY kapidox-time          "less than 0.1 SBU">
 
 <!ENTITY karchive-download-http "&kf5-download-http;/karchive-&kf5-version;.tar.xz">
 <!ENTITY karchive-download-ftp  "&kf5-download-ftp;/karchive-&kf5-version;.tar.xz">
-<!ENTITY karchive-md5sum        "0e930e5528bff5d7d8b84b14ab354ac1">
-<!ENTITY karchive-size          "104 KB">
-<!ENTITY karchive-buildsize     "3.0 MB">
+<!ENTITY karchive-md5sum        "e262c00b2df60c8e8cc78167c4581341">
+<!ENTITY karchive-size          "108 KB">
+<!ENTITY karchive-buildsize     "3.1 MB">
 <!ENTITY karchive-time          "0.2 SBU">
 
 <!ENTITY kauth-download-http "&kf5-download-http;/kauth-&kf5-version;.tar.xz">
 <!ENTITY kauth-download-ftp  "&kf5-download-ftp;/kauth-&kf5-version;.tar.xz">
-<!ENTITY kauth-md5sum        "17a3ee85539eeadbf917909fd6780eba">
+<!ENTITY kauth-md5sum        "b6d6f9a7f6d01758d7a2b543dface3f7">
 <!ENTITY kauth-size          "80 KB">
 <!ENTITY kauth-buildsize     "9.5 MB">
 <!ENTITY kauth-time          "0.4 SBU">
 
 <!ENTITY kbookmarks-download-http "&kf5-download-http;/kbookmarks-&kf5-version;.tar.xz">
 <!ENTITY kbookmarks-download-ftp  "&kf5-download-ftp;/kbookmarks-&kf5-version;.tar.xz">
-<!ENTITY kbookmarks-md5sum        "9dc018fc0f74dc85f93da13117d7e5d1">
+<!ENTITY kbookmarks-md5sum        "61c20915725a204ed8f5357601c9a2ea">
 <!ENTITY kbookmarks-size          "112 KB">
 <!ENTITY kbookmarks-buildsize     "11 MB">
 <!ENTITY kbookmarks-time          "0.4 SBU">
 
 <!ENTITY kcmutils-download-http "&kf5-download-http;/kcmutils-&kf5-version;.tar.xz">
 <!ENTITY kcmutils-download-ftp  "&kf5-download-ftp;/kcmutils-&kf5-version;.tar.xz">
-<!ENTITY kcmutils-md5sum        "8edecde3d689add852b8cdf72dbf46b2">
+<!ENTITY kcmutils-md5sum        "b4d45c6e33a339e8304ef664cb2bd538">
 <!ENTITY kcmutils-size          "228 KB">
 <!ENTITY kcmutils-buildsize     "11 MB">
-<!ENTITY kcmutils-time          "0.2 SBU">
+<!ENTITY kcmutils-time          "0.4 SBU">
 
 <!ENTITY kcodecs-download-http "&kf5-download-http;/kcodecs-&kf5-version;.tar.xz">
 <!ENTITY kcodecs-download-ftp  "&kf5-download-ftp;/kcodecs-&kf5-version;.tar.xz">
-<!ENTITY kcodecs-md5sum        "9d0fd6c580c570254d3474858350038c">
+<!ENTITY kcodecs-md5sum        "0ca7e54af0fbd7be443ba95e501143c5">
 <!ENTITY kcodecs-size          "172 KB">
 <!ENTITY kcodecs-buildsize     "11 MB">
 <!ENTITY kcodecs-time          "0.4 SBU">
 
 <!ENTITY kcompletion-download-http "&kf5-download-http;/kcompletion-&kf5-version;.tar.xz">
 <!ENTITY kcompletion-download-ftp  "&kf5-download-ftp;/kcompletion-&kf5-version;.tar.xz">
-<!ENTITY kcompletion-md5sum        "a654a9735b15f6d99be04e2d0aa2d8b2">
+<!ENTITY kcompletion-md5sum        "816227f5a9e2f06792cce31d544e877f">
 <!ENTITY kcompletion-size          "116 KB">
 <!ENTITY kcompletion-buildsize     "9.5 MB">
 <!ENTITY kcompletion-time          "0.3 SBU">
 
 <!ENTITY kconfig-download-http "&kf5-download-http;/kconfig-&kf5-version;.tar.xz">
 <!ENTITY kconfig-download-ftp  "&kf5-download-ftp;/kconfig-&kf5-version;.tar.xz">
-<!ENTITY kconfig-md5sum        "ca8602ef35b7a884f190be38a335e59d">
-<!ENTITY kconfig-size          "204 KB">
+<!ENTITY kconfig-md5sum        "2fcd2787e5c3c2df7265fc9f6ec8af10">
+<!ENTITY kconfig-size          "208 KB">
 <!ENTITY kconfig-buildsize     "18 MB">
-<!ENTITY kconfig-time          "0.2 SBU">
+<!ENTITY kconfig-time          "0.5 SBU">
 
 <!ENTITY kconfigwidgets-download-http "&kf5-download-http;/kconfigwidgets-&kf5-version;.tar.xz">
 <!ENTITY kconfigwidgets-download-ftp  "&kf5-download-ftp;/kconfigwidgets-&kf5-version;.tar.xz">
-<!ENTITY kconfigwidgets-md5sum        "db5d254b175100f4a0ff364f42c325d1">
+<!ENTITY kconfigwidgets-md5sum        "5013c8432edb49efadc5292919530d4b">
 <!ENTITY kconfigwidgets-size          "344 KB">
 <!ENTITY kconfigwidgets-buildsize     "12 MB">
 <!ENTITY kconfigwidgets-time          "0.3 SBU">
 
 <!ENTITY kcoreaddons-download-http "&kf5-download-http;/kcoreaddons-&kf5-version;.tar.xz">
 <!ENTITY kcoreaddons-download-ftp  "&kf5-download-ftp;/kcoreaddons-&kf5-version;.tar.xz">
-<!ENTITY kcoreaddons-md5sum        "6123b972897aa5369bd2368c94b5ec95">
+<!ENTITY kcoreaddons-md5sum        "4946f5145126de7bf293c3140194e966">
 <!ENTITY kcoreaddons-size          "280 KB">
-<!ENTITY kcoreaddons-buildsize     "19 MB">
+<!ENTITY kcoreaddons-buildsize     "20 MB">
 <!ENTITY kcoreaddons-time          "0.6 SBU">
 
 <!ENTITY kcrash-download-http "&kf5-download-http;/kcrash-&kf5-version;.tar.xz">
 <!ENTITY kcrash-download-ftp  "&kf5-download-ftp;/kcrash-&kf5-version;.tar.xz">
-<!ENTITY kcrash-md5sum        "33ceec130a161dfe2fe79cd2381d1e5d">
+<!ENTITY kcrash-md5sum        "971649d12a57cf1c05c77fb3c4370aea">
 <!ENTITY kcrash-size          "20 KB">
-<!ENTITY kcrash-buildsize     "936 KB">
+<!ENTITY kcrash-buildsize     "928 KB">
 <!ENTITY kcrash-time          "less than 0.1 SBU">
 
 <!ENTITY kdbusaddons-download-http "&kf5-download-http;/kdbusaddons-&kf5-version;.tar.xz">
 <!ENTITY kdbusaddons-download-ftp  "&kf5-download-ftp;/kdbusaddons-&kf5-version;.tar.xz">
-<!ENTITY kdbusaddons-md5sum        "705495238601ca2c3548815e2e3efae7">
+<!ENTITY kdbusaddons-md5sum        "33f64aeabee19b22a3d8cc3411342eca">
 <!ENTITY kdbusaddons-size          "32 KB">
 <!ENTITY kdbusaddons-buildsize     "4.2 MB">
 <!ENTITY kdbusaddons-time          "0.2 SBU">
 
 <!ENTITY kdeclarative-download-http "&kf5-download-http;/kdeclarative-&kf5-version;.tar.xz">
 <!ENTITY kdeclarative-download-ftp  "&kf5-download-ftp;/kdeclarative-&kf5-version;.tar.xz">
-<!ENTITY kdeclarative-md5sum        "9e8a8260cce6e1a001a36846a16db98c">
+<!ENTITY kdeclarative-md5sum        "2478ce5757782a8e8f3b06512aa3d65a">
 <!ENTITY kdeclarative-size          "100 KB">
 <!ENTITY kdeclarative-buildsize     "12 MB">
-<!ENTITY kdeclarative-time          "0.5 SBU">
+<!ENTITY kdeclarative-time          "0.6 SBU">
 
 <!ENTITY kded-download-http "&kf5-download-http;/kded-&kf5-version;.tar.xz">
 <!ENTITY kded-download-ftp  "&kf5-download-ftp;/kded-&kf5-version;.tar.xz">
-<!ENTITY kded-md5sum        "1802bd98cfc1eba48b48cec8656e8a60">
-<!ENTITY kded-size          "24 KB">
-<!ENTITY kded-buildsize     "1.3 MB">
+<!ENTITY kded-md5sum        "3663a438466a8e2431500f352a4cf5bf">
+<!ENTITY kded-size          "32 KB">
+<!ENTITY kded-buildsize     "1.8 MB">
 <!ENTITY kded-time          "0.1 SBU">
 
 <!ENTITY kdelibs4support-download-http "&kf5-download-http;/portingAids/kdelibs4support-&kf5-version;.tar.xz">
 <!ENTITY kdelibs4support-download-ftp  "&kf5-download-ftp;/portingAids/kdelibs4support-&kf5-version;.tar.xz">
-<!ENTITY kdelibs4support-md5sum        "20f4c4939e6db7c3a1a545356fb95884">
+<!ENTITY kdelibs4support-md5sum        "68881fc0f1e6ae83cb1a1a5f183de12b">
 <!ENTITY kdelibs4support-size          "3.1 MB">
-<!ENTITY kdelibs4support-buildsize     "99 MB">
-<!ENTITY kdelibs4support-time          "3.2 SBU">
+<!ENTITY kdelibs4support-buildsize     "100 MB">
+<!ENTITY kdelibs4support-time          "3.0 SBU">
 
 <!ENTITY kdesignerplugin-download-http "&kf5-download-http;/kdesignerplugin-&kf5-version;.tar.xz">
 <!ENTITY kdesignerplugin-download-ftp  "&kf5-download-ftp;/kdesignerplugin-&kf5-version;.tar.xz">
-<!ENTITY kdesignerplugin-md5sum        "0ba35d4193ab170be34b1333ef52ce3a">
-<!ENTITY kdesignerplugin-size          "72 KB">
-<!ENTITY kdesignerplugin-buildsize     "9.9 MB">
-<!ENTITY kdesignerplugin-time          "0.3 SBU">
+<!ENTITY kdesignerplugin-md5sum        "812d1c461cec6880f06c8633ee66a0fb">
+<!ENTITY kdesignerplugin-size          "84 KB">
+<!ENTITY kdesignerplugin-buildsize     "11 MB">
+<!ENTITY kdesignerplugin-time          "0.2 SBU">
 
 <!ENTITY kdesu-download-http "&kf5-download-http;/kdesu-&kf5-version;.tar.xz">
 <!ENTITY kdesu-download-ftp  "&kf5-download-ftp;/kdesu-&kf5-version;.tar.xz">
-<!ENTITY kdesu-md5sum        "41c064125dea34d5d278b3fb344777bb">
+<!ENTITY kdesu-md5sum        "31cb272872efdc276e2bd751446ad0e0">
 <!ENTITY kdesu-size          "44 KB">
 <!ENTITY kdesu-buildsize     "4.1 MB">
 <!ENTITY kdesu-time          "0.2 SBU">
 
 <!ENTITY kdewebkit-download-http "&kf5-download-http;/kdewebkit-&kf5-version;.tar.xz">
 <!ENTITY kdewebkit-download-ftp  "&kf5-download-ftp;/kdewebkit-&kf5-version;.tar.xz">
-<!ENTITY kdewebkit-md5sum        "99a174cd395dd1b875f38f81783469c7">
+<!ENTITY kdewebkit-md5sum        "32e88042d6b7430c3460e0634b11d54f">
 <!ENTITY kdewebkit-size          "32 KB">
 <!ENTITY kdewebkit-buildsize     "1.7 MB">
 <!ENTITY kdewebkit-time          "0.1 SBU">
 
 <!ENTITY kdnssd-download-http "&kf5-download-http;/kdnssd-&kf5-version;.tar.xz">
 <!ENTITY kdnssd-download-ftp  "&kf5-download-ftp;/kdnssd-&kf5-version;.tar.xz">
-<!ENTITY kdnssd-md5sum        "b90e8ff9c8a3c48424fcb139ca8a41ad">
+<!ENTITY kdnssd-md5sum        "67a3a3f0653e3bd1b152af230fcc1f5c">
 <!ENTITY kdnssd-size          "56 KB">
 <!ENTITY kdnssd-buildsize     "8.8 MB">
-<!ENTITY kdnssd-time          "0.4 SBU">
+<!ENTITY kdnssd-time          "0.3 SBU">
 
 <!ENTITY kdoctools-download-http "&kf5-download-http;/kdoctools-&kf5-version;.tar.xz">
 <!ENTITY kdoctools-download-ftp  "&kf5-download-ftp;/kdoctools-&kf5-version;.tar.xz">
-<!ENTITY kdoctools-md5sum        "905660afc7ef3526fe91a97db4e9d876">
-<!ENTITY kdoctools-size          "368 KB">
-<!ENTITY kdoctools-buildsize     "22 MB">
-<!ENTITY kdoctools-time          "0.2 SBU">
+<!ENTITY kdoctools-md5sum        "a9b6de67f41ac6c988506b79dcaa7097">
+<!ENTITY kdoctools-size          "384 KB">
+<!ENTITY kdoctools-buildsize     "24 MB">
+<!ENTITY kdoctools-time          "0.3 SBU">
 
 <!ENTITY kemoticons-download-http "&kf5-download-http;/kemoticons-&kf5-version;.tar.xz">
 <!ENTITY kemoticons-download-ftp  "&kf5-download-ftp;/kemoticons-&kf5-version;.tar.xz">
-<!ENTITY kemoticons-md5sum        "6abfc1da1be32e142df3c63f75e11808">
+<!ENTITY kemoticons-md5sum        "e60297bc97347d794b65624bfc4b2c05">
 <!ENTITY kemoticons-size          "72 KB">
 <!ENTITY kemoticons-buildsize     "3.6 MB">
 <!ENTITY kemoticons-time          "0.2 SBU">
 
 <!ENTITY kglobalaccel-download-http "&kf5-download-http;/kglobalaccel-&kf5-version;.tar.xz">
 <!ENTITY kglobalaccel-download-ftp  "&kf5-download-ftp;/kglobalaccel-&kf5-version;.tar.xz">
-<!ENTITY kglobalaccel-md5sum        "d2c0e3874d2f2cc55d9012836a115614">
+<!ENTITY kglobalaccel-md5sum        "a37e10b71075bd4308249b443acbd1c7">
 <!ENTITY kglobalaccel-size          "60 KB">
-<!ENTITY kglobalaccel-buildsize     "8.3 MB">
-<!ENTITY kglobalaccel-time          "0.3 SBU">
+<!ENTITY kglobalaccel-buildsize     "8.2 MB">
+<!ENTITY kglobalaccel-time          "0.2 SBU">
 
 <!ENTITY kguiaddons-download-http "&kf5-download-http;/kguiaddons-&kf5-version;.tar.xz">
 <!ENTITY kguiaddons-download-ftp  "&kf5-download-ftp;/kguiaddons-&kf5-version;.tar.xz">
-<!ENTITY kguiaddons-md5sum        "9fe384bb0bfbbc392e5c660ec0630245">
+<!ENTITY kguiaddons-md5sum        "c85d9598ccf753432492d4301f77bf0b">
 <!ENTITY kguiaddons-size          "40 KB">
 <!ENTITY kguiaddons-buildsize     "2.2 MB">
 <!ENTITY kguiaddons-time          "0.2 SBU">
 
 <!ENTITY khtml-download-http "&kf5-download-http;/portingAids/khtml-&kf5-version;.tar.xz">
 <!ENTITY khtml-download-ftp  "&kf5-download-ftp;/portingAids/khtml-&kf5-version;.tar.xz">
-<!ENTITY khtml-md5sum        "fa83b2d470a430535f1bffda14aaac99">
+<!ENTITY khtml-md5sum        "65f90421ff7c061b025251ad07373d18">
 <!ENTITY khtml-size          "2.0 MB">
 <!ENTITY khtml-buildsize     "88 MB">
-<!ENTITY khtml-time          "8.2 SBU">
+<!ENTITY khtml-time          "7.4 SBU">
 
 <!ENTITY ki18n-download-http "&kf5-download-http;/ki18n-&kf5-version;.tar.xz">
 <!ENTITY ki18n-download-ftp  "&kf5-download-ftp;/ki18n-&kf5-version;.tar.xz">
-<!ENTITY ki18n-md5sum        "d01815a8c04baa90b81e3350805b4c5d">
-<!ENTITY ki18n-size          "530 KB">
+<!ENTITY ki18n-md5sum        "b340728a206fc4529f93ff73d2168b41">
+<!ENTITY ki18n-size          "568 KB">
 <!ENTITY ki18n-buildsize     "40 MB">
-<!ENTITY ki18n-time          "0.2 SBU">
+<!ENTITY ki18n-time          "0.3 SBU">
 
 <!ENTITY kiconthemes-download-http "&kf5-download-http;/kiconthemes-&kf5-version;.tar.xz">
 <!ENTITY kiconthemes-download-ftp  "&kf5-download-ftp;/kiconthemes-&kf5-version;.tar.xz">
-<!ENTITY kiconthemes-md5sum        "ceba533af5bfd92aa86419d6cb75bfc8">
+<!ENTITY kiconthemes-md5sum        "431d0485dbd53453269f1fe0fdda7feb">
 <!ENTITY kiconthemes-size          "192 KB">
 <!ENTITY kiconthemes-buildsize     "7.4 MB">
 <!ENTITY kiconthemes-time          "0.2 SBU">
 
 <!ENTITY kidletime-download-http "&kf5-download-http;/kidletime-&kf5-version;.tar.xz">
 <!ENTITY kidletime-download-ftp  "&kf5-download-ftp;/kidletime-&kf5-version;.tar.xz">
-<!ENTITY kidletime-md5sum        "f6bd02d851313f4b136b80c105703003">
+<!ENTITY kidletime-md5sum        "f44e4f4d55d5916727d2bbfbfae6c5bc">
 <!ENTITY kidletime-size          "24 KB">
 <!ENTITY kidletime-buildsize     "1.5 MB">
 <!ENTITY kidletime-time          "0.2 SBU">
 
 <!ENTITY kimageformats-download-http "&kf5-download-http;/kimageformats-&kf5-version;.tar.xz">
 <!ENTITY kimageformats-download-ftp  "&kf5-download-ftp;/kimageformats-&kf5-version;.tar.xz">
-<!ENTITY kimageformats-md5sum        "8aec8779d05c83e31cb379efd5aca8c7">
+<!ENTITY kimageformats-md5sum        "52d22faea44f3d8f008064f35bad1351">
 <!ENTITY kimageformats-size          "92 KB">
 <!ENTITY kimageformats-buildsize     "3.8 MB">
 <!ENTITY kimageformats-time          "0.3 SBU">
 
 <!ENTITY kinit5-download-http "&kf5-download-http;/kinit-&kf5-version;.tar.xz">
 <!ENTITY kinit5-download-ftp  "&kf5-download-ftp;/kinit-&kf5-version;.tar.xz">
-<!ENTITY kinit5-md5sum        "fc24d429c3e53b4e40285eedad64750c">
-<!ENTITY kinit5-size          "108 KB">
-<!ENTITY kinit5-buildsize     "9.0 MB">
-<!ENTITY kinit5-time          "0.2 SBU">
+<!ENTITY kinit5-md5sum        "fb7ace9196147831921eacb682074b40">
+<!ENTITY kinit5-size          "112 KB">
+<!ENTITY kinit5-buildsize     "9.5 MB">
+<!ENTITY kinit5-time          "0.3 SBU">
 
 <!ENTITY kio-download-http "&kf5-download-http;/kio-&kf5-version;.tar.xz">
 <!ENTITY kio-download-ftp  "&kf5-download-ftp;/kio-&kf5-version;.tar.xz">
-<!ENTITY kio-md5sum        "742f166ba6b003457848388801f976b6">
+<!ENTITY kio-md5sum        "8966a0ec972104dbbfd4b86ea5425ad6">
 <!ENTITY kio-size          "2.3 MB">
-<!ENTITY kio-buildsize     "89 MB">
-<!ENTITY kio-time          "3.2 SBU">
+<!ENTITY kio-buildsize     "90 MB">
+<!ENTITY kio-time          "4.1 SBU">
 
 <!ENTITY kitemmodels-download-http "&kf5-download-http;/kitemmodels-&kf5-version;.tar.xz">
 <!ENTITY kitemmodels-download-ftp  "&kf5-download-ftp;/kitemmodels-&kf5-version;.tar.xz">
-<!ENTITY kitemmodels-md5sum        "407c95ceb7da6d64646d14a92b2ae42a">
+<!ENTITY kitemmodels-md5sum        "2dc52012a41d75a8006fdccefdb95ff3">
 <!ENTITY kitemmodels-size          "364 KB">
 <!ENTITY kitemmodels-buildsize     "2.9 MB">
 <!ENTITY kitemmodels-time          "0.2 SBU">
 
 <!ENTITY kitemviews-download-http "&kf5-download-http;/kitemviews-&kf5-version;.tar.xz">
 <!ENTITY kitemviews-download-ftp  "&kf5-download-ftp;/kitemviews-&kf5-version;.tar.xz">
-<!ENTITY kitemviews-md5sum        "f4de0bc104680efbec801f44872113d0">
+<!ENTITY kitemviews-md5sum        "a8d56054247537517acb5c3132435481">
 <!ENTITY kitemviews-size          "72 KB">
 <!ENTITY kitemviews-buildsize     "8.8 MB">
-<!ENTITY kitemviews-time          "0.2 SBU">
+<!ENTITY kitemviews-time          "0.3 SBU">
 
 <!ENTITY kjobwidgets-download-http "&kf5-download-http;/kjobwidgets-&kf5-version;.tar.xz">
 <!ENTITY kjobwidgets-download-ftp  "&kf5-download-ftp;/kjobwidgets-&kf5-version;.tar.xz">
-<!ENTITY kjobwidgets-md5sum        "ffa2e7d6fa6046f3ceb6608fee32d029">
+<!ENTITY kjobwidgets-md5sum        "a11fe576211624c6c2d79927b8b80751">
 <!ENTITY kjobwidgets-size          "88 KB">
 <!ENTITY kjobwidgets-buildsize     "11 MB">
 <!ENTITY kjobwidgets-time          "0.3 SBU">
 
 <!ENTITY kjs5-download-http "&kf5-download-http;/portingAids/kjs-&kf5-version;.tar.xz">
 <!ENTITY kjs5-download-ftp  "&kf5-download-ftp;/portingAids/kjs-&kf5-version;.tar.xz">
-<!ENTITY kjs5-md5sum        "99e1ab046a2a4d0ecfc5ad3c74dbd321">
+<!ENTITY kjs5-md5sum        "c8066f2d86bb1230b676582198a923ea">
 <!ENTITY kjs5-size          "284 KB">
 <!ENTITY kjs5-buildsize     "11 MB">
-<!ENTITY kjs5-time          "0.8 SBU">
+<!ENTITY kjs5-time          "0.7 SBU">
 
 <!ENTITY kjsembed-download-http "&kf5-download-http;/portingAids/kjsembed-&kf5-version;.tar.xz">
 <!ENTITY kjsembed-download-ftp  "&kf5-download-ftp;/portingAids/kjsembed-&kf5-version;.tar.xz">
-<!ENTITY kjsembed-md5sum        "e920fee2f1eb9efd875575cef3abb7ca">
+<!ENTITY kjsembed-md5sum        "36f0f194f284e8be546f4713a46a4176">
 <!ENTITY kjsembed-size          "164 KB">
 <!ENTITY kjsembed-buildsize     "16 MB">
-<!ENTITY kjsembed-time          "0.8 SBU">
+<!ENTITY kjsembed-time          "0.7 SBU">
 
 <!ENTITY kmediaplayer-download-http "&kf5-download-http;/portingAids/kmediaplayer-&kf5-version;.tar.xz">
 <!ENTITY kmediaplayer-download-ftp  "&kf5-download-ftp;/portingAids/kmediaplayer-&kf5-version;.tar.xz">
-<!ENTITY kmediaplayer-md5sum        "e79030996266d13cedcddb4c6afa2481">
+<!ENTITY kmediaplayer-md5sum        "c2edc0de3b4de154babfe884c180ee1f">
 <!ENTITY kmediaplayer-size          "12 KB">
 <!ENTITY kmediaplayer-buildsize     "1.2 MB">
 <!ENTITY kmediaplayer-time          "0.1 SBU">
 
 <!ENTITY knewstuff-download-http "&kf5-download-http;/knewstuff-&kf5-version;.tar.xz">
 <!ENTITY knewstuff-download-ftp  "&kf5-download-ftp;/knewstuff-&kf5-version;.tar.xz">
-<!ENTITY knewstuff-md5sum        "5daaba05f52a715a689c1dc4c29161fe">
-<!ENTITY knewstuff-size          "412 KB">
+<!ENTITY knewstuff-md5sum        "2b3a639b4ca818f98a121555e7a852be">
+<!ENTITY knewstuff-size          "404 KB">
 <!ENTITY knewstuff-buildsize     "14 MB">
-<!ENTITY knewstuff-time          "0.7 SBU">
+<!ENTITY knewstuff-time          "0.6 SBU">
 
 <!ENTITY knotifications-download-http "&kf5-download-http;/knotifications-&kf5-version;.tar.xz">
 <!ENTITY knotifications-download-ftp  "&kf5-download-ftp;/knotifications-&kf5-version;.tar.xz">
-<!ENTITY knotifications-md5sum        "c27d1bcef5d4ec5ac5b848c68a33f67e">
+<!ENTITY knotifications-md5sum        "26759f849e6e9bcfa8fe33593c622741">
 <!ENTITY knotifications-size          "92 KB">
 <!ENTITY knotifications-buildsize     "9.8 MB">
-<!ENTITY knotifications-time          "0.5 SBU">
+<!ENTITY knotifications-time          "0.4 SBU">
 
 <!ENTITY knotifyconfig-download-http "&kf5-download-http;/knotifyconfig-&kf5-version;.tar.xz">
 <!ENTITY knotifyconfig-download-ftp  "&kf5-download-ftp;/knotifyconfig-&kf5-version;.tar.xz">
-<!ENTITY knotifyconfig-md5sum        "251531100fa313155401c0c3dcd369db">
+<!ENTITY knotifyconfig-md5sum        "196eb36820d4160025360195f4b4ef20">
 <!ENTITY knotifyconfig-size          "80 KB">
 <!ENTITY knotifyconfig-buildsize     "6.9 MB">
 <!ENTITY knotifyconfig-time          "0.1 SBU">
 
 <!ENTITY kparts-download-http "&kf5-download-http;/kparts-&kf5-version;.tar.xz">
 <!ENTITY kparts-download-ftp  "&kf5-download-ftp;/kparts-&kf5-version;.tar.xz">
-<!ENTITY kparts-md5sum        "7cba4db3eed1e29cb35f72d1b20db382">
+<!ENTITY kparts-md5sum        "138eb754aa6573dc22a3b8fb1967e19c">
 <!ENTITY kparts-size          "152 KB">
 <!ENTITY kparts-buildsize     "9.9 MB">
 <!ENTITY kparts-time          "0.5 SBU">
 
 <!ENTITY kplotting-download-http "&kf5-download-http;/kplotting-&kf5-version;.tar.xz">
 <!ENTITY kplotting-download-ftp  "&kf5-download-ftp;/kplotting-&kf5-version;.tar.xz">
-<!ENTITY kplotting-md5sum        "f79464cd8bd1e2c6976bf7af09a09d15">
+<!ENTITY kplotting-md5sum        "d965e252d66aafedeccb9e0caaf4c0e2">
 <!ENTITY kplotting-size          "32 KB">
 <!ENTITY kplotting-buildsize     "1.8 MB">
-<!ENTITY kplotting-time          "0.2 SBU">
+<!ENTITY kplotting-time          "0.1 SBU">
 
 <!ENTITY kpty-download-http "&kf5-download-http;/kpty-&kf5-version;.tar.xz">
 <!ENTITY kpty-download-ftp  "&kf5-download-ftp;/kpty-&kf5-version;.tar.xz">
-<!ENTITY kpty-md5sum        "4bfd4b92220c02f4d23d33ecc5c6031a">
+<!ENTITY kpty-md5sum        "2de8c2ba7ae950995c6a842176e8f7a1">
 <!ENTITY kpty-size          "56 KB">
 <!ENTITY kpty-buildsize     "6.4 MB">
 <!ENTITY kpty-time          "0.1 SBU">
 
 <!ENTITY kross5-download-http "&kf5-download-http;/portingAids/kross-&kf5-version;.tar.xz">
 <!ENTITY kross5-download-ftp  "&kf5-download-ftp;/portingAids/kross-&kf5-version;.tar.xz">
-<!ENTITY kross5-md5sum        "4f502195e69db6242c6f6b2d7c50a1d2">
+<!ENTITY kross5-md5sum        "132327a10b0c3f3ec023f1564fb51352">
 <!ENTITY kross5-size          "132 KB">
 <!ENTITY kross5-buildsize     "14 MB">
-<!ENTITY kross5-time          "0.6 SBU">
+<!ENTITY kross5-time          "0.5 SBU">
 
 <!ENTITY krunner-download-http "&kf5-download-http;/portingAids/krunner-&kf5-version;.tar.xz">
 <!ENTITY krunner-download-ftp  "&kf5-download-ftp;/portingAids/krunner-&kf5-version;.tar.xz">
-<!ENTITY krunner-md5sum        "09d4dac07856b1b01f70f9300aaaad38">
+<!ENTITY krunner-md5sum        "3f40728d68971e8c4436e5b4bd418210">
 <!ENTITY krunner-size          "40 KB">
 <!ENTITY krunner-buildsize     "2.9 MB">
 <!ENTITY krunner-time          "0.2 SBU">
 
 <!ENTITY kservice-download-http "&kf5-download-http;/kservice-&kf5-version;.tar.xz">
 <!ENTITY kservice-download-ftp  "&kf5-download-ftp;/kservice-&kf5-version;.tar.xz">
-<!ENTITY kservice-md5sum        "666e5acb77d3e016f4eff4f112f5d858">
-<!ENTITY kservice-size          "284 KB">
+<!ENTITY kservice-md5sum        "a75aecd21bb84616a6cc91ffa71e37d6">
+<!ENTITY kservice-size          "252 KB">
 <!ENTITY kservice-buildsize     "13 MB">
-<!ENTITY kservice-time          "0.8 SBU">
+<!ENTITY kservice-time          "0.7 SBU">
 
 <!ENTITY ktexteditor-download-http "&kf5-download-http;/ktexteditor-&kf5-version;.tar.xz">
 <!ENTITY ktexteditor-download-ftp  "&kf5-download-ftp;/ktexteditor-&kf5-version;.tar.xz">
-<!ENTITY ktexteditor-md5sum        "00634675919e1f5a74e667de7c4c9862">
+<!ENTITY ktexteditor-md5sum        "7237f56db8b953f456ef0a208ef2792a">
 <!ENTITY ktexteditor-size          "2.7 MB">
 <!ENTITY ktexteditor-buildsize     "93 MB">
-<!ENTITY ktexteditor-time          "3.0 SBU">
+<!ENTITY ktexteditor-time          "3.2 SBU">
 
 <!ENTITY ktextwidgets-download-http "&kf5-download-http;/ktextwidgets-&kf5-version;.tar.xz">
 <!ENTITY ktextwidgets-download-ftp  "&kf5-download-ftp;/ktextwidgets-&kf5-version;.tar.xz">
-<!ENTITY ktextwidgets-md5sum        "edece6e1ff4b80cf799e7e7c15b45634">
+<!ENTITY ktextwidgets-md5sum        "f1ec0c94629ff465b2ce9de0ae413d0c">
 <!ENTITY ktextwidgets-size          "300 KB">
 <!ENTITY ktextwidgets-buildsize     "12 MB">
 <!ENTITY ktextwidgets-time          "0.2 SBU">
 
 <!ENTITY kunitconversion-download-http "&kf5-download-http;/kunitconversion-&kf5-version;.tar.xz">
 <!ENTITY kunitconversion-download-ftp  "&kf5-download-ftp;/kunitconversion-&kf5-version;.tar.xz">
-<!ENTITY kunitconversion-md5sum        "327963663a0a2be59ce07257a4cabaa8">
-<!ENTITY kunitconversion-size          "588 KB">
+<!ENTITY kunitconversion-md5sum        "d94c7abb18826b1bd8530c66dfa4901d">
+<!ENTITY kunitconversion-size          "596 KB">
 <!ENTITY kunitconversion-buildsize     "35 MB">
 <!ENTITY kunitconversion-time          "0.3 SBU">
 
 <!ENTITY kwallet-download-http "&kf5-download-http;/kwallet-&kf5-version;.tar.xz">
 <!ENTITY kwallet-download-ftp  "&kf5-download-ftp;/kwallet-&kf5-version;.tar.xz">
-<!ENTITY kwallet-md5sum        "f1c347255147b621788e664da4bf7afa">
+<!ENTITY kwallet-md5sum        "244af5c935e94271c5a7781e629a2a78">
 <!ENTITY kwallet-size          "260 KB">
 <!ENTITY kwallet-buildsize     "15 MB">
-<!ENTITY kwallet-time          "0.3 SBU">
+<!ENTITY kwallet-time          "0.4 SBU">
 
 <!ENTITY kwidgetsaddons-download-http "&kf5-download-http;/kwidgetsaddons-&kf5-version;.tar.xz">
 <!ENTITY kwidgetsaddons-download-ftp  "&kf5-download-ftp;/kwidgetsaddons-&kf5-version;.tar.xz">
-<!ENTITY kwidgetsaddons-md5sum        "97291bfed61f6d41c8396589cf9fad85">
+<!ENTITY kwidgetsaddons-md5sum        "ac2a39d3de060c91c3f65d21a21d6693">
 <!ENTITY kwidgetsaddons-size          "2.1 MB">
-<!ENTITY kwidgetsaddons-buildsize     "54 MB">
-<!ENTITY kwidgetsaddons-time          "1.4 SBU">
+<!ENTITY kwidgetsaddons-buildsize     "52 MB">
+<!ENTITY kwidgetsaddons-time          "1.2 SBU">
 
 <!ENTITY kwindowsystem-download-http "&kf5-download-http;/kwindowsystem-&kf5-version;.tar.xz">
 <!ENTITY kwindowsystem-download-ftp  "&kf5-download-ftp;/kwindowsystem-&kf5-version;.tar.xz">
-<!ENTITY kwindowsystem-md5sum        "b37ba1deb824f5c857c3080b8bfbf93c">
+<!ENTITY kwindowsystem-md5sum        "1c957a5fe43a98304be03f1404c4a236">
 <!ENTITY kwindowsystem-size          "156 KB">
 <!ENTITY kwindowsystem-buildsize     "12 MB">
 <!ENTITY kwindowsystem-time          "0.4 SBU">
 
 <!ENTITY kxmlgui-download-http "&kf5-download-http;/kxmlgui-&kf5-version;.tar.xz">
 <!ENTITY kxmlgui-download-ftp  "&kf5-download-ftp;/kxmlgui-&kf5-version;.tar.xz">
-<!ENTITY kxmlgui-md5sum        "97db539a7e6691fc90ca629660ac24e7">
+<!ENTITY kxmlgui-md5sum        "38f4a618897bdd73f20ec5629db27236">
 <!ENTITY kxmlgui-size          "872 MB">
 <!ENTITY kxmlgui-buildsize     "23 MB">
-<!ENTITY kxmlgui-time          "0.8 SBU">
+<!ENTITY kxmlgui-time          "0.9 SBU">
 
 <!ENTITY libdbusmenu-qt5-version       "0.9.3+14.10.20140619">
 <!ENTITY libdbusmenu-qt5-download-http "http://www.linuxfromscratch.org/~krejzi/libdbusmenu-qt-&libdbusmenu-qt5-version;.tar.xz">
@@ -437,10 +437,10 @@
 
 <!ENTITY plasma-framework-download-http "&kf5-download-http;/plasma-framework-&kf5-version;.tar.xz">
 <!ENTITY plasma-framework-download-ftp  "&kf5-download-ftp;/plasma-framework-&kf5-version;.tar.xz">
-<!ENTITY plasma-framework-md5sum        "89d72e5d339eb7556c33aa7e4f918e26">
+<!ENTITY plasma-framework-md5sum        "f55da2ff4612bbe6c920aef0ec31d29d">
 <!ENTITY plasma-framework-size          "3.9 MB">
 <!ENTITY plasma-framework-buildsize     "35 MB">
-<!ENTITY plasma-framework-time          "1.6 SBU">
+<!ENTITY plasma-framework-time          "2.0 SBU">
 
 <!ENTITY polkit-qt5-version       "0.112.0">
 <!ENTITY polkit-qt5-download-http "http://download.kde.org/stable/apps/KDE4.x/admin/polkit-qt-1-&polkit-qt5-version;.tar.bz2">
@@ -452,24 +452,24 @@
 
 <!ENTITY solid-download-http "&kf5-download-http;/solid-&kf5-version;.tar.xz">
 <!ENTITY solid-download-ftp  "&kf5-download-ftp;/solid-&kf5-version;.tar.xz">
-<!ENTITY solid-md5sum        "57e200ee49bf97ba1914cd6b031afe21">
+<!ENTITY solid-md5sum        "361b9d43063356aa275e43b73e212325">
 <!ENTITY solid-size          "256 KB">
-<!ENTITY solid-buildsize     "30 MB">
-<!ENTITY solid-time          "3.2 SBU">
+<!ENTITY solid-buildsize     "29 MB">
+<!ENTITY solid-time          "2.7 SBU">
 
 <!ENTITY sonnet-download-http "&kf5-download-http;/sonnet-&kf5-version;.tar.xz">
 <!ENTITY sonnet-download-ftp  "&kf5-download-ftp;/sonnet-&kf5-version;.tar.xz">
-<!ENTITY sonnet-md5sum        "e2c5c3e67fc02c34a498a71ee5970575">
+<!ENTITY sonnet-md5sum        "c100990572daeb8d07968671246674eb">
 <!ENTITY sonnet-size          "268 KB">
 <!ENTITY sonnet-buildsize     "19 MB">
-<!ENTITY sonnet-time          "0.5 SBU">
+<!ENTITY sonnet-time          "0.6 SBU">
 
 <!ENTITY threadweaver-download-http "&kf5-download-http;/threadweaver-&kf5-version;.tar.xz">
 <!ENTITY threadweaver-download-ftp  "&kf5-download-ftp;/threadweaver-&kf5-version;.tar.xz">
-<!ENTITY threadweaver-md5sum        "d321419e0cbfad6535ecb3650029d39a">
+<!ENTITY threadweaver-md5sum        "605b4e81d3edf061e8562976d29d0c76">
 <!ENTITY threadweaver-size          "1.4 MB">
 <!ENTITY threadweaver-buildsize     "13 MB">
-<!ENTITY threadweaver-time          "0.4 SBU">
+<!ENTITY threadweaver-time          "0.7 SBU">
 
 
 
