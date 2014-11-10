@@ -55,6 +55,9 @@
         <listitem>
           <para>[krejzi] - Merged fltk-1.3.3 update from trunk. Thanks to Bruce for doing all the work.</para>
         </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to MesaLib-10.3.3.</para>
+        </listitem>
       </itemizedlist>
     </listitem>
 
