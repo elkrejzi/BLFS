@@ -44,11 +44,17 @@
 
 -->
     <listitem>
-      <para>November 6th, 2014</para>
+      <para>November 10th, 2014</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>November 6th, 2014</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Updated to libwacom-0.11, poppler-0.28.1 and xf86-input-wacom-0.27.0.</para>
         </listitem>
