@@ -255,7 +255,7 @@ EOF</userinput></screen>
         If you have a multicore machine, <application>Firefox</application>
         will use all the cores by default. Exceptionally, you can reduce
         the number of cores, e.g. to 1, by prepending the
-        <envvar>MOZ_MAKE_FLAGS="-j1"</envvar> environment variable to all
+        <envar>MOZ_MAKE_FLAGS="-j1"</envar> environment variable to all
         of the <command>make</command> commands below.
       </para>
     </note>
