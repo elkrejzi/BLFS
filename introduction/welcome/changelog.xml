@@ -50,6 +50,9 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Merged x264-20141108-2245 update from trunk. Thanks to Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Merged gst-plugins-bad-1.4.4, gst-plugins-ugly-1.4.4 and gst-libav-1.4.4 updates from trunk. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
