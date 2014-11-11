@@ -50,6 +50,9 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Merged at-spi2-core-2.14.1 update from trunk. Thanks to Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Merged x264-20141108-2245, glib-2.42.1 and pciutils-3.3.0 updates from trunk. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
