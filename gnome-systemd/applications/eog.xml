@@ -6,7 +6,7 @@
 
   <!ENTITY eog-download-http "&gnome-download-http;/eog/&gnome-minor14;/eog-&eog-version;.tar.xz">
   <!ENTITY eog-download-ftp  "&gnome-download-ftp;/eog/&gnome-minor14;/eog-&eog-version;.tar.xz">
-  <!ENTITY eog-md5sum        "d946655a31edc2526dd6776c2b5cf129">
+  <!ENTITY eog-md5sum        "589f3eafea82dbab605fb18fc11ef027">
   <!ENTITY eog-size          "4.2 MB">
   <!ENTITY eog-buildsize     "60 MB">
   <!ENTITY eog-time          "0.6 SBU">
