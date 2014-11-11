@@ -50,7 +50,7 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
-          <para>[krejzi] - Updated to bluez-5.25.</para>
+          <para>[krejzi] - Updated to bluez-5.25 and gtk+-3.14.5.</para>
         </listitem>
         <listitem>
           <para>[krejzi] - Merged at-spi2-core-2.14.1 and gnutls-3.3.10 updates from trunk. Thanks to Fernando for doing all the work.</para>
