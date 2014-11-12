@@ -8,8 +8,8 @@
            "&gnome-download-http;/gnome-maps/&gnome-minor14;/gnome-maps-&gnome-maps-version;.tar.xz">
   <!ENTITY gnome-maps-download-ftp
            "&gnome-download-ftp;/gnome-maps/&gnome-minor14;/gnome-maps-&gnome-maps-version;.tar.xz">
-  <!ENTITY gnome-maps-md5sum        "6a54c8fd0ae520c12d1cc36f01d40969">
-  <!ENTITY gnome-maps-size          "768 KB">
+  <!ENTITY gnome-maps-md5sum        "237df59006998899dbaae47d4c2ee73d">
+  <!ENTITY gnome-maps-size          "772 KB">
   <!ENTITY gnome-maps-buildsize     "8.0 MB">
   <!ENTITY gnome-maps-time          "less than 0.1 SBU">
 ]>
