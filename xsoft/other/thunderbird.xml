@@ -7,7 +7,7 @@
   <!ENTITY thunderbird-download-http 
            "https://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/&thunderbird-version;/source/thunderbird-&thunderbird-version;.source.tar.bz2">
   <!ENTITY thunderbird-download-ftp
-           "&mozilla-ftp;/thunderbird/releases/&thunderbird-version;/source/thunderbird-&thunderbird-version;.source.tar.bz2">
+           "ftp://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/&thunderbird-version;/source/thunderbird-&thunderbird-version;.source.tar.bz2">
   <!ENTITY thunderbird-md5sum            "6bb66f5cb67d573939d4e2ead6f7c7ca">
   <!ENTITY thunderbird-size              "164 MB">
   <!ENTITY thunderbird-buildsize         "4.7 GB (68 MB installed)">
@@ -245,7 +245,7 @@ EOF</userinput></screen>
 
     <note>
       <para>
-        If you have a multicore machine, <application>Firefox</application>
+        If you have a multicore machine, <application>Thunderbird</application>
         will use all the cores by default. Exceptionally, you can reduce
         the number of cores, e.g. to 1, by prepending the
         <envar>MOZ_MAKE_FLAGS="-j1"</envar> environment variable to all

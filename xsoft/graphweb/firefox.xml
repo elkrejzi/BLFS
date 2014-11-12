@@ -8,9 +8,9 @@
            "http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/&firefox-version;/source/firefox-&firefox-version;.source.tar.bz2">
   <!ENTITY firefox-download-ftp
            "ftp://ftp.mozilla.org/pub/mozilla.org/firefox/releases/&firefox-version;/source/firefox-&firefox-version;.source.tar.bz2">
-  <!ENTITY firefox-md5sum        "385ad037451f141b68515c73cad01704">
-  <!ENTITY firefox-size          "148 MB">
-  <!ENTITY firefox-buildsize     "4.9 GB (66 MB installed)">
+  <!ENTITY firefox-md5sum        "bd94c6465c53bf315b470259f1b1c896">
+  <!ENTITY firefox-size          "149 MB">
+  <!ENTITY firefox-buildsize     "5.0 GB (64 MB installed)">
   <!ENTITY firefox-time          "60 SBU">
 ]>
 
@@ -95,28 +95,24 @@
 
     <note>
       <para>
-        If you don't install recommended dependencies,
-        then internal copies of those packages will
-        be used. They might be tested to work, but
-        they can be out of date or contain security
-        holes.
+        If you don't install recommended dependencies, then internal copies of
+        those packages will be used. They might be tested to work, but they can
+        be out of date or contain security holes.
       </para>
     </note>
 
     <note>
       <para>
-        With <application>Firefox-31.0</application> and later versions, you
-        must have installed <application>OpenSSL</application> before
+        You must have installed <application>OpenSSL</application> before
         <application>Python 2</application>, or the build system will quickly
         fail with output including "ImportError: cannot import name
-        HTTPSHandler". If you are in any doubt about this (e.g. upgrading
-        from an older version of Firefox), check if
-        <filename>/usr/lib/python2.7/lib-dynload/_ssl.so</filename> exists.
-        If it does not, reinstall <xref linkend="python2"/> (after
-        installing <xref linkend="openssl"/>  - the latest version of any
-        <emphasis>currently maintained</emphasis> version of Openssl should
-        be satisfactory if already installed - if that package has not already
-        been installed).
+        HTTPSHandler". If you are in any doubt about this (e.g. upgrading from
+        an older version of SeaMonkey), check if
+        <filename>/usr/lib/python2.7/lib-dynload/_ssl.so</filename> exists. If
+        it does not, reinstall <xref linkend="python2"/> (after installing
+        <xref linkend="openssl"/>  - the latest version of any
+        <emphasis>currently maintained</emphasis> version of OpenSSL should be
+        satisfactory if already installed.
       </para>
     </note>
 
@@ -160,10 +156,13 @@
     </para>
 
 <screen><userinput>cat &gt; mozconfig &lt;&lt; "EOF"
-<literal># If you have a multicore machine, firefox will now use all the cores by
-# default. Exceptionally, you can reduce the number of cores, e.g. to 1,
-# by uncommenting the next line and setting a valid number of CPU cores.
-#mk_add_options MOZ_MAKE_FLAGS="-j1"
+<literal># The following switch reduces optimization level when building
+# Firefox due to bugs in GCC-4.8 and early GCC-4.9 series that
+# would cause build to fail on i686 systems. If you are using
+# GCC-4.9.2 or later, or any supported version released before
+# GCC-4.8.0, remove the "=-O2" part if you wish to apply all of
+# the optimizations that this package can use:
+ac_add_options --enable-optimize=-O2
 
 # If you have installed DBus-Glib comment out this line:
 ac_add_options --disable-dbus
@@ -176,19 +175,21 @@ ac_add_options --disable-necko-wifi
 # If you have installed libnotify comment out this line:
 ac_add_options --disable-libnotify
 
-# GStreamer is necessary for H.264 video playback in HTML5 Video Player;
-# to be enabled, also remember to set "media.gstreamer.enabled" to "true"
-# in about:config. If you do *not* have GStreamer 0.x.y, uncomment this line:
+# Comment out following option if you have PulseAudio installed
+ac_add_options --disable-pulseaudio
+
+# GStreamer is necessary for H.264 video playback in HTML5 Video Player.
+# To enable it, make sure you also set "media.gstreamer.enabled" to
+# "true" in about:config.
+
+# If you don't have GStreamer 0.10.x installed, uncomment this line:
 #ac_add_options --disable-gstreamer
-# or uncomment this line, if you have GStreamer 1.x.y
+# or uncomment this line if you have GStreamer 1.x.y installed:
 #ac_add_options --enable-gstreamer=1.0
 
 # Uncomment these lines if you have installed optional dependencies:
 #ac_add_options --enable-system-hunspell
 #ac_add_options --enable-startup-notification
-
-# Comment out following option if you have PulseAudio installed
-ac_add_options --disable-pulseaudio
 
 # If you have not installed Yasm then uncomment this line:
 #ac_add_options --disable-webm
@@ -232,6 +233,16 @@ ac_add_options --with-system-zlib
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-build-dir</literal>
 EOF</userinput></screen>
 
+    <note>
+      <para>
+        If you have a multicore machine, <application>Firefox</application>
+        will use all the cores by default. Exceptionally, you can reduce
+        the number of cores, e.g. to 1, by prepending the
+        <envar>MOZ_MAKE_FLAGS="-j1"</envar> environment variable to all
+        of the <command>make</command> commands below.
+      </para>
+    </note>
+
     <para>
       Compile <application>Firefox</application> by issuing the following
       commands:
@@ -251,7 +262,7 @@ EOF</userinput></screen>
 <screen role="root"><userinput>make -f client.mk install INSTALL_SDK= &amp;&amp;
 
 mkdir -pv /usr/lib/mozilla/plugins &amp;&amp;
-ln -sfv ../mozilla/plugins /usr/lib/firefox-&firefox-version;</userinput></screen>
+ln -sfv ../../mozilla/plugins /usr/lib/firefox-&firefox-version;/browser</userinput></screen>
 
     <para>
       The above instruction just installs the parts you need to run
@@ -261,7 +272,7 @@ ln -sfv ../mozilla/plugins /usr/lib/firefox-&firefox-version;</userinput></scree
       <systemitem class="username">root</systemitem> user:
     </para>
 
-<screen role="root"><userinput>make -C firefox-build-dir install</userinput></screen>
+<screen role="root"><userinput>make -f client.mk install</userinput></screen>
 
   </sect2>
 
