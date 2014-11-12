@@ -6,7 +6,7 @@
 
   <!ENTITY mutter-download-http "&gnome-download-http;/mutter/&gnome-minor14;/mutter-&mutter-version;.tar.xz">
   <!ENTITY mutter-download-ftp  "&gnome-download-ftp;/mutter/&gnome-minor14;/mutter-&mutter-version;.tar.xz">
-  <!ENTITY mutter-md5sum        "109b17c68f94d0424d31cddfd4012417">
+  <!ENTITY mutter-md5sum        "28fdb6b2464d0a278013859f469a474b">
   <!ENTITY mutter-size          "1.6 MB">
   <!ENTITY mutter-buildsize     "62 MB">
   <!ENTITY mutter-time          "0.8 SBU">
