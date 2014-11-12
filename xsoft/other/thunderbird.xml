@@ -5,7 +5,7 @@
   %general-entities;
 
   <!ENTITY thunderbird-download-http 
-           "http://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/&thunderbird-version;/source/thunderbird-&thunderbird-version;.source.tar.bz2">
+           "https://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/&thunderbird-version;/source/thunderbird-&thunderbird-version;.source.tar.bz2">
   <!ENTITY thunderbird-download-ftp
            "&mozilla-ftp;/thunderbird/releases/&thunderbird-version;/source/thunderbird-&thunderbird-version;.source.tar.bz2">
   <!ENTITY thunderbird-md5sum            "6bb66f5cb67d573939d4e2ead6f7c7ca">
@@ -95,28 +95,24 @@
 
     <note>
       <para>
-        If you don't install recommended dependencies,
-        then internal copies of those packages will
-        be used. They might be tested to work, but
-        they can be out of date or contain security
-        holes.
+        If you don't install recommended dependencies, then internal copies of
+        those packages will be used. They might be tested to work, but they can
+        be out of date or contain security holes.
       </para>
     </note>
 
     <note>
       <para>
-        With <application>Thunderbird-31.0</application> and later versions, you
-        must have installed <application>Openssl</application> before
+        You must have installed <application>OpenSSL</application> before
         <application>Python 2</application>, or the build system will quickly
         fail with output including "ImportError: cannot import name
-        HTTPSHandler". If you are in any doubt about this (e.g. upgrading
-        from an older version of Thunderbird), check if
-        <filename>/usr/lib/python2.7/lib-dynload/_ssl.so</filename> exists.
-        If it does not, reinstall <xref linkend="python2"/> (after
-        installing <xref linkend="openssl"/>  - the latest version of any
-        <emphasis>currently maintained</emphasis> version of Openssl should
-        be satisfactory if already installed - if that package has not already
-        been installed).
+        HTTPSHandler". If you are in any doubt about this (e.g. upgrading from
+        an older version of SeaMonkey), check if
+        <filename>/usr/lib/python2.7/lib-dynload/_ssl.so</filename> exists. If
+        it does not, reinstall <xref linkend="python2"/> (after installing
+        <xref linkend="openssl"/>  - the latest version of any
+        <emphasis>currently maintained</emphasis> version of OpenSSL should be
+        satisfactory if already installed.
       </para>
     </note>
 
@@ -160,10 +156,13 @@
     </para>
 
 <screen><userinput>cat &gt; mozconfig &lt;&lt; "EOF"
-<literal># If you have a multicore machine, thunderbird will now use all the cores by
-# default. Exceptionally, you can reduce the number of cores, e.g. to 1,
-# by uncommenting the next line and setting a valid number of CPU cores.
-#mk_add_options MOZ_MAKE_FLAGS="-j1"
+<literal># The following switch reduces optimization level when building
+# Thunderbird due to bugs in GCC-4.8 and early GCC-4.9 series that
+# would cause build to fail on i686 systems. If you are using
+# GCC-4.9.2 or later, or any supported version released before
+# GCC-4.8.0, remove the "=-O2" part if you wish to apply all of
+# the optimizations that this package can use:
+ac_add_options --enable-optimize=-O2
 
 # If you have installed DBus-Glib comment out this line:
 ac_add_options --disable-dbus
@@ -174,19 +173,21 @@ ac_add_options --disable-necko-wifi
 # If you have installed libnotify comment out this line:
 ac_add_options --disable-libnotify
 
-# GStreamer is necessary for H.264 video playback in HTML5 Video Player;
-# to be enabled, also remember to set "media.gstreamer.enabled" to "true"
-# in about:config. If you do *not* have GStreamer 0.x.y, uncomment this line:
+# Comment out following option if you have PulseAudio installed
+ac_add_options --disable-pulseaudio
+
+# GStreamer is necessary for H.264 video playback in HTML5 Video Player.
+# To enable it, make sure you also set "media.gstreamer.enabled" to
+# "true" in about:config.
+
+# If you don't have GStreamer 0.10.x installed, uncomment this line:
 #ac_add_options --disable-gstreamer
-# or uncomment this line, if you have GStreamer 1.x.y
+# or uncomment this line if you have GStreamer 1.x.y installed:
 #ac_add_options --enable-gstreamer=1.0
 
 # Uncomment these lines if you have installed optional dependencies:
 #ac_add_options --enable-system-hunspell
 #ac_add_options --enable-startup-notification
-
-# Comment out following option if you have PulseAudio installed
-ac_add_options --disable-pulseaudio
 
 # If you have not installed Yasm then uncomment this line:
 #ac_add_options --disable-webm
@@ -240,7 +241,17 @@ EOF</userinput></screen>
       (MOZ_OBJDIR):
     </para>
 
-<screen><userinput>mkdir -pv mozilla/thunderbuild</userinput></screen>
+<screen><userinput>mkdir -v mozilla/thunderbuild</userinput></screen>
+
+    <note>
+      <para>
+        If you have a multicore machine, <application>Firefox</application>
+        will use all the cores by default. Exceptionally, you can reduce
+        the number of cores, e.g. to 1, by prepending the
+        <envar>MOZ_MAKE_FLAGS="-j1"</envar> environment variable to all
+        of the <command>make</command> commands below.
+      </para>
+    </note>
 
     <para>
       Compile <application>Thunderbird</application> by issuing the following
@@ -268,7 +279,7 @@ EOF</userinput></screen>
       <systemitem class="username">root</systemitem> user:
     </para>
 
-<screen role="root"><userinput>make -C thunderbuild install</userinput></screen>
+<screen role="root"><userinput>make -f client.mk install</userinput></screen>
 
   </sect2>
 
@@ -343,7 +354,7 @@ EOF</userinput></screen>
       commands as the <systemitem class="username">root</systemitem> user:
     </para>
 
-<screen role="root"><userinput>mkdir -pv /usr/share/{applications,pixmaps} &amp;&amp;
+<screen role="root"><userinput>mkdir -pv /usr/share/applications &amp;&amp;
 
 cat &gt; /usr/share/applications/thunderbird.desktop &lt;&lt; "EOF" &amp;&amp;
 <literal>[Desktop Entry]
