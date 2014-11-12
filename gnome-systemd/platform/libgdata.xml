@@ -6,9 +6,9 @@
 
   <!ENTITY libgdata-download-http "&gnome-download-http;/libgdata/0.16/libgdata-&libgdata-version;.tar.xz">
   <!ENTITY libgdata-download-ftp  "&gnome-download-ftp;/libgdata/0.16/libgdata-&libgdata-version;.tar.xz">
-  <!ENTITY libgdata-md5sum        "30200bd24c04fa85fd104c1d03129161">
+  <!ENTITY libgdata-md5sum        "eb552a8a8482e4231a3d1baf7262e64d">
   <!ENTITY libgdata-size          "1.5 MB">
-  <!ENTITY libgdata-buildsize     "60 MB">
+  <!ENTITY libgdata-buildsize     "62 MB">
   <!ENTITY libgdata-time          "0.5 SBU">
 ]>
 
@@ -77,16 +77,16 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="liboauth"/>,
-      <xref linkend="libsoup"/>,
-      <xref linkend="json-glib"/>, and
-      <xref linkend="uhttpmock"/>
+      <xref linkend="libsoup"/>, and
+      <xref linkend="json-glib"/>
     </para>
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gcr"/>,
-      <xref linkend="gnome-online-accounts"/>, and
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gnome-online-accounts"/>,
+      <xref linkend="gobject-introspection"/>, and
+      <xref linkend="uhttpmock"/>
     </para>
 
     <bridgehead renderas="sect4">Optional</bridgehead>
