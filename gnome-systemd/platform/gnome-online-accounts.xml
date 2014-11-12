@@ -8,9 +8,9 @@
            "&gnome-download-http;/gnome-online-accounts/&gnome-minor14;/gnome-online-accounts-&gnome-online-accounts-version;.tar.xz">
   <!ENTITY gnome-online-accounts-download-ftp
            "&gnome-download-ftp;/gnome-online-accounts/&gnome-minor14;/gnome-online-accounts-&gnome-online-accounts-version;.tar.xz">
-  <!ENTITY gnome-online-accounts-md5sum        "1c010fa4a15c920895d7b99d95521cc8">
+  <!ENTITY gnome-online-accounts-md5sum        "4d0097a6583e60d163ef22eeed5b56c4">
   <!ENTITY gnome-online-accounts-size          "1.4 MB">
-  <!ENTITY gnome-online-accounts-buildsize     "52 MB">
+  <!ENTITY gnome-online-accounts-buildsize     "57 MB">
   <!ENTITY gnome-online-accounts-time          "0.4 SBU">
 ]>
 
