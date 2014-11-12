@@ -6,8 +6,8 @@
 
   <!ENTITY tracker-download-http "&gnome-download-http;/tracker/1.2/tracker-&tracker-version;.tar.xz">
   <!ENTITY tracker-download-ftp  "&gnome-download-ftp;/tracker/1.2/tracker-&tracker-version;.tar.xz">
-  <!ENTITY tracker-md5sum        "a5b81d58c0f5a5d5ee3610e0facbf1f8">
-  <!ENTITY tracker-size          "6.0 MB">
+  <!ENTITY tracker-md5sum        "37b1bef444994a986a6d348759614a59">
+  <!ENTITY tracker-size          "5.8 MB">
   <!ENTITY tracker-buildsize     "110 MB">
   <!ENTITY tracker-time          "0.8 SBU">
 ]>
