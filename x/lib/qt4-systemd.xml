@@ -524,11 +524,26 @@ unset file</userinput></screen>
     <sect3 id="qt4-config">
       <title>Configuration Information</title>
 
+      <para>
+        Ensure that environment variables needed by certain packages
+        are set by running the following command as the
+        <systemitem class="username">root</systemitem> user:
+      </para>
+
+<screen role="root"><userinput>cat &gt; /etc/profile.d/qt4.sh &lt;&lt; EOF
+<literal># Begin /etc/profile.d/qt4.sh
+
+export QT4DIR=$QT4PREFIX
+export QT4BINDIR=$QT4BINDIR
+
+# End /etc/profile.d/qt4.sh</literal>
+EOF</userinput></screen>
+
       <note>
         <para>
           If you have installed <application>Qt4</application>
           in <filename class="directory">/usr</filename> you
-          can skip this section.
+          can skip the rest of this section.
         </para>
       </note>
 
@@ -569,6 +584,9 @@ ldconfig</userinput></screen>
 <screen role="root"><userinput>cat &gt; /etc/profile.d/qt4.sh &lt;&lt; EOF
 <literal># Begin /etc/profile.d/qt4.sh
 
+export QT4DIR=$QT4PREFIX
+export QT4BINDIR=$QT4BINDIR
+
 pathappend $QT4PREFIX/lib/pkgconfig PKG_CONFIG_PATH
 
 # End /etc/profile.d/qt4.sh</literal>
@@ -583,6 +601,9 @@ EOF</userinput></screen>
 
 <screen role="root"><userinput>cat &gt; /etc/profile.d/qt4.sh &lt;&lt; EOF
 <literal># Begin /etc/profile.d/qt4.sh
+
+export QT4DIR=$QT4PREFIX
+export QT4BINDIR=$QT4BINDIR
 
 pathappend $QT4BINDIR               PATH
 pathappend $QT4PREFIX/lib/pkgconfig PKG_CONFIG_PATH
