@@ -44,11 +44,17 @@
 
 -->
     <listitem>
-      <para>November 12th, 2014</para>
+      <para>November 13th, 2014</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>November 12th, 2014</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Updated to firefox-33.1.</para>
         </listitem>
