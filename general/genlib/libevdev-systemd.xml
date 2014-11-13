@@ -10,9 +10,9 @@
 
   <!ENTITY libevdev-download-http "http://www.freedesktop.org/software/libevdev/libevdev-&libevdev-version;.tar.xz">
   <!ENTITY libevdev-download-ftp  " ">
-  <!ENTITY libevdev-md5sum        "ab67de8f949e84ae2abb48af09eda423">
-  <!ENTITY libevdev-size          "375 KB">
-  <!ENTITY libevdev-buildsize     "7.6 MB">
+  <!ENTITY libevdev-md5sum        "c47d49e16c6f7d2eb45164a58895aecb">
+  <!ENTITY libevdev-size          "388 KB">
+  <!ENTITY libevdev-buildsize     "8.8 MB">
   <!ENTITY libevdev-time          "0.1 SBU (0.3 SBU with all tests)">
 ]>
 
@@ -97,23 +97,6 @@
 
   <sect2 role="installation">
     <title>Installation of libevdev</title>
-
-    <para>
-      If <xref linkend="valgrind"/> is installed and tests are
-      going to be run, fix a testing problem:
-    </para>
- 
-<screen><userinput>cat &gt;&gt; test/valgrind.suppressions &lt;&lt; "EOF"
-{
-   &lt;timer_create@@GLIBC_2.3.3-2&gt;
-   Memcheck:Param
-   timer_create(evp)
-   fun:timer_create@@GLIBC_2.3.3
-   fun:check_get_clockid
-   fun:srunner_run
-   fun:main
-}
-EOF</userinput></screen>
 
     <para>
       Install <application>libevdev</application> by running the following
