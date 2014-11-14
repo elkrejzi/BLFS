@@ -6,7 +6,7 @@
 
   <!ENTITY webkit2gtk-download-http "http://webkitgtk.org/releases/webkitgtk-&webkit2gtk-version;.tar.xz">
   <!ENTITY webkit2gtk-download-ftp  " ">
-  <!ENTITY webkit2gtk-md5sum        "92ee7b2b15cda9580b842834d4db118a">
+  <!ENTITY webkit2gtk-md5sum        "d133b8846e9418bf9253e88761853038">
   <!ENTITY webkit2gtk-size          "9.6 MB">
   <!ENTITY webkit2gtk-buildsize     "905 MB">
   <!ENTITY webkit2gtk-time          "95 SBU">
