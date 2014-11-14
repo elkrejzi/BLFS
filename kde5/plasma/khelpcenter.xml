@@ -137,7 +137,8 @@ make</userinput></screen>
           libkdeinit5_khelpcenter.so
         </seg>
         <seg>
-          $KF5_PREFIX/share/doc/HTML/*/{fundamentals,khelpcenter,onlinehelp} and
+          $KF5_PREFIX/share/doc/HTML/*/{fundamentals,khelpcenter,onlinehelp},
+          $KF5_PREFIX/share/khelpcenter and
           $KF5_PREFIX/share/kxmlgui5/khelpcenter
         </seg>
       </seglistitem>

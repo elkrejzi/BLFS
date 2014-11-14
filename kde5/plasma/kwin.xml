@@ -158,14 +158,14 @@ make</userinput></screen>
           libkdecorations.so, libkdeinit5_kwin_rules_dialog.so,
           libkdeinit5_kwin_wayland.so, libkdeinit5_kwin_x11.so,
           libkwin4_effect_builtins.so, libkwineffects.so,
-          libkwinglutils.so and libkwinxrenderutils.so
+          libkwinglutils.so, libkwin.so and libkwinxrenderutils.so
         </seg>
         <seg>
           $KF5_PREFIX/lib/cmake/{KDecorations,KWinDBusInterface},
           $KF5_PREFIX/&qt5-plugins-dir;/kwin,
           $KF5_PREFIX/&qt5-qml-dir;/org/kde/kwin,
-          $KF5_PREFIX/share/doc/HTML/*/kcontrol/{desktop,kwincompositing,kwindecoration}
-          $KF5_PREFIX/share/doc/HTML/*/kcontrol/{,kwinscreenedges,kwintabbox},
+          $KF5_PREFIX/share/doc/HTML/*/kcontrol/{desktop,kwincompositing,kwindecoration},
+          $KF5_PREFIX/share/doc/HTML/*/kcontrol/{kwinscreenedges,kwintabbox},
           $KF5_PREFIX/share/doc/HTML/*/kcontrol/{windowbehaviour,windowspecific},
           $KF5_PREFIX/share/kservices5/kwin,
           $KF5_PREFIX/share/kwin and

@@ -149,7 +149,8 @@ make</userinput></screen>
           $KF5_PREFIX/share/icons/breeze_cursors,
           $KF5_PREFIX/share/icons/breeze-dark,
           $KF5_PREFIX/share/kstyle/themes,
-          $KF5_PREFIX/share/kwin/decorations/kwin4_decoration_qml_breeze and
+          $KF5_PREFIX/share/kwin/decorations/kwin4_decoration_qml_breeze,
+          $KF5_PREFIX/share/QtCurve and
           $KF5_PREFIX/share/wallpapers/Next
         </seg>
       </seglistitem>
