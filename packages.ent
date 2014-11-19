@@ -268,7 +268,7 @@
 <!ENTITY php-version                  "5.6.2">
 <!ENTITY python2-version              "2.7.8">
 <!ENTITY python3-version              "3.4.2">
-<!ENTITY ruby-version                 "2.1.4">
+<!ENTITY ruby-version                 "2.1.5">
 <!ENTITY ruby-patch-version           "0">
 <!ENTITY scons-version                "2.3.4">
 <!ENTITY slang-version                "2.2.4">
@@ -359,7 +359,7 @@
 <!ENTITY NetworkManager-version       "0.9.10.0">
 <!ENTITY nmap-version                 "6.47">
 <!ENTITY traceroute-version           "2.0.21">
-<!ENTITY whois-version                "5.2.1">
+<!ENTITY whois-version                "5.2.2">
 <!ENTITY wicd-version                 "1.7.2.4">
 <!ENTITY wireshark-version            "1.12.2">  <!-- even minors only -->
 
@@ -706,7 +706,7 @@
 
 <!-- Part XII -->
 <!-- Chapter 42 -->
-<!ENTITY cups-version                 "2.0.0">
+<!ENTITY cups-version                 "2.0.1">
 <!ENTITY cups-filters-version         "1.0.61">
 <!ENTITY gs-version                   "9.15">
 <!ENTITY gutenprint-version           "5.2.10">
