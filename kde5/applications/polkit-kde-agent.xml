@@ -93,7 +93,6 @@ cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX    \
       -DSYSCONF_INSTALL_DIR=$KF5_SYSCONFDIR \
       -DLIB_INSTALL_DIR=lib                 \
       -DBUILD_TESTING=OFF                   \
-
       .. &amp;&amp;
 make</userinput></screen>
 
