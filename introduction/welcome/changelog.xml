@@ -50,6 +50,9 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Merged liblinear-1.96, librep-0.92.4 and rep-gtk-0.90.8.2 updates from trunk. Thanks to Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Merged autovivification-0.14, Archive-Zip-1.39 and Business-ISBN-2.09 updates from trunk. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
