@@ -50,6 +50,12 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Merged autovivification-0.14, Archive-Zip-1.39 and Business-ISBN-2.09 updates from trunk. Thanks to Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged List-AllUtils-0.09, Log-Log4perl-1.46, Net-DNS-0.81 and URI-1.65 updates from trunk. Thanks to Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Merged dhcpcd-6.6.2, mercurial-3.2.1 and xscreensaver-5.31 updates from trunk. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
