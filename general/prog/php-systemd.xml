@@ -6,10 +6,10 @@
 
   <!ENTITY php-download-http "http://www.php.net/distributions/php-&php-version;.tar.xz">
   <!ENTITY php-download-ftp  "ftp://ftp.isu.edu.tw/pub/Unix/Web/PHP/distributions/php-&php-version;.tar.xz">
-  <!ENTITY php-md5sum        "c976f54d429a0e5214659b0098e44e37">
+  <!ENTITY php-md5sum        "7635f344145a4edd7dff6ecec795aaea">
   <!ENTITY php-size          "11 MB">
   <!ENTITY php-buildsize     "378 MB">
-  <!ENTITY php-time          "4.0 SBU">
+  <!ENTITY php-time          "4.1 SBU">
 ]>
 
 <sect1 id="php" xreflabel="PHP-&php-version;">

@@ -50,10 +50,16 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Merged dhcpcd-6.6.2, mercurial-3.2.1 and xscreensaver-5.31 updates from trunk. Thanks to Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Merged cups-2.0.1, ruby-2.1.5 and whois-5.2.2 updates from trunk. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
           <para>[krejzi] - Merged libffi-3.2.1, tcl-8.6.3 and tk-8.6.3 updates from trunk. Thanks to Bruce for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to php-5.6.3.</para>
         </listitem>
       </itemizedlist>
     </listitem>
