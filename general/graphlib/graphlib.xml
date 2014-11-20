@@ -45,6 +45,7 @@ $Date: 2014-10-26 17:43:10 +0100 (Sun, 26 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libwebp.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="newt.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="openjpeg.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="openjpeg2.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="pixman.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="poppler-systemd.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="qpdf.xml"/>
