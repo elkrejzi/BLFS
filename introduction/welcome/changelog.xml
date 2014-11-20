@@ -50,6 +50,9 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Merged libmusicbrainz-5.1.0, LVM2-2.02.112 and unbound-1.5.0 updates from trunk. Thanks to Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Merged ImageMagick-6.9.0-0, sg3_utils-1.40 and xfdesktop-4.10.3 updates from trunk. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
