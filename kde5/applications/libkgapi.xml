@@ -90,7 +90,7 @@ cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
       -DCMAKE_BUILD_TYPE=Release         \
       -DLIB_INSTALL_DIR=lib              \
       -DECM_MKSPECS_INSTALL_DIR=&qt5-mkspecs-dir; \
-      .. &amp;&amp;
+      -Wno-dev .. &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -132,9 +132,8 @@ make</userinput></screen>
           None
         </seg>
         <seg>
-          libKF5GAPIBlogger.so, libKF5GAPICalendar.so,
-          libKF5GAPIContacts.so, libKF5GAPICore.so,
-          libKF5GAPIDrive.so, libKF5GAPILatitude.so,
+          libKF5GAPIBlogger.so, libKF5GAPICalendar.so, libKF5GAPIContacts.so,
+          libKF5GAPICore.so, libKF5GAPIDrive.so, libKF5GAPILatitude.so,
           libKF5GAPIMaps.so and libKF5GAPITasks.so
         </seg>
         <seg>

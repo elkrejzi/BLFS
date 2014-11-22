@@ -93,7 +93,7 @@ cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
       -DLIB_INSTALL_DIR=lib              \
       -DBUILD_TESTING=OFF                \
       -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
-      .. &amp;&amp;
+      -Wno-dev .. &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -138,11 +138,13 @@ make</userinput></screen>
           akonadi_baloo_indexer
         </seg>
         <seg>
-          llibBalooPimCore.so, libBalooPimXapian.so and libKF5BalooPim.so
+          libBalooPimCore.so, libBalooPimXapian.so and libKF5BalooPim.so
         </seg>
         <seg>
-          $KF5_PREFIX/include/KF5/Baloo/baloo/pim and
-          $KF5_PREFIX/lib/cmake/AkonadiSearch
+          $KF5_PREFIX/include/KF5/Baloo/baloo/pim,
+          $KF5_PREFIX/lib/cmake/AkonadiSearch,
+          $KF5_PREFIX/&qt5-plugins-dir;/akonadi and
+          $KF5_PREFIX/share/akonadi/agents
         </seg>
       </seglistitem>
     </segmentedlist>

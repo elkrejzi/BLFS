@@ -106,7 +106,7 @@ cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX      \
       -DLIB_INSTALL_DIR=lib                   \
       -DBUILD_TESTING=OFF                     \
       -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
-      .. &amp;&amp;
+      -Wno-dev .. &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -160,14 +160,16 @@ make</userinput></screen>
         </seg>
         <seg>
           $KF5_PREFIX/&qt5-plugins-dir;/ktexteditor,
-          $KF5_PREFIX/share/doc/HTML/*/{kate,katepart},
+          $KF5_PREFIX/&qt5-plugins-dir;/plasma/dataengine,
+          $KF5_PREFIX/share/doc/HTML/*/{kate,katepart,kwrite},
           $KF5_PREFIX/share/{kateproject,katexmltools},
-          $KF5_PREFIX/share/kxmlgui/{kate,katebuild,katecloseexceptplugin},
-          $KF5_PREFIX/share/kxmlgui/{katectags,katefiletree,kategdb},
-          $KF5_PREFIX/share/kxmlgui/{katekonsole,kateopenheaderplugin},
-          $KF5_PREFIX/share/kxmlgui/{kateproject,katesearch,katesnippets},
-          $KF5_PREFIX/share/kxmlgui/{katesql,katexmltools,kwrite,tabswitcher} and
-          $KF5_PREFIX/share/plasma/plasmoids/org.kde.plasma.katesessions/
+          $KF5_PREFIX/share/kxmlgui5/{kate,katebuild,katecloseexceptplugin},
+          $KF5_PREFIX/share/kxmlgui5/{katectags,katefiletree,kategdb},
+          $KF5_PREFIX/share/kxmlgui5/{katekonsole,kateopenheaderplugin},
+          $KF5_PREFIX/share/kxmlgui5/{kateproject,katesearch,katesnippets},
+          $KF5_PREFIX/share/kxmlgui5/{katesql,katesymbolviewer,katexmltools},
+          $KF5_PREFIX/share/kxmlgui5/{kwrite,tabswitcher} and
+          $KF5_PREFIX/share/plasma/plasmoids/org.kde.plasma.katesessions
         </seg>
       </seglistitem>
     </segmentedlist>

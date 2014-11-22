@@ -108,7 +108,7 @@ cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX      \
       -DSYSCONF_INSTALL_DIR=$KF5_SYSCONFDIR   \
       -DLIB_INSTALL_DIR=lib                   \
       -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
-      .. &amp;&amp;
+      -Wno-dev .. &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -152,14 +152,17 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          accountwizard, akonadi_birthdays_resource, akonadi_davgroupware_resource,
-          akonadi_icaldir_resource, akonadi_imap_resource, akonadi_invitations_agent,
+          akonadi_birthdays_resource, akonadi_davgroupware_resource,
+          akonadi_facebook_resource, akonadi_googlecalendar_resource,
+          akonadi_googlecontacts_resource, akonadi_icaldir_resource,
+          akonadi_imap_resource, akonadi_invitations_agent,
           akonadi_kdeaccounts_resource, akonadi_localbookmarks_resource,
           akonadi_maildispatcher_agent, akonadi_mailtransport_dummy_resource,
           akonadi_migration_agent, akonadi_mixedmaildir_resource,
           akonadi_newmailnotifier_agent, akonadi_nntp_resource,
-          akonadi_openxchange_resource, akonadi_pop3_resource, akonadi_vcarddir_resource,
-          gidmigrator, ispdb, kaddressbookmigrator, kjotsmigrator and kmail-migrator
+          akonadi_openxchange_resource, akonadi_pop3_resource,
+          akonadi_vcarddir_resource, gidmigrator, kaddressbookmigrator,
+          kjotsmigrator and kmail-migrator
         </seg>
         <seg>
           libakonadi-filestore.so, libakonadi-singlefileresource.so,
@@ -167,8 +170,9 @@ make</userinput></screen>
           libmaildir.so
         </seg>
         <seg>
-          $KF5_PREFIX/lib/qt5/plugins/imports/org/kde/akonadi,
-          $KF5_PREFIX/share/akonadi/{accountwizard,firstrun,plugins} and
+          $KF5_PREFIX/&qt5-plugins-dir;/imports/org/kde/akonadi,
+          $KF5_PREFIX/share/akonadi/{accountwizard,agents,firstrun},
+          $KF5_PREFIX/share/akonadi/plugins/serializer and
           $KF5_PREFIX/share/kservices5/akonadi/davgroupware-providers
         </seg>
       </seglistitem>

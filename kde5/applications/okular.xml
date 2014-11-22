@@ -114,7 +114,7 @@ cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
       -DLIB_INSTALL_DIR=lib              \
       -DBUILD_TESTING=OFF                \
       -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
-      .. &amp;&amp;
+      -Wno-dev .. &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -165,7 +165,7 @@ make</userinput></screen>
           $KF5_PREFIX/include/okular,
           $KF5_PREFIX/lib/cmake/Okular,
           $KF5_PREFIX/share/doc/HTML/*/okular,
-          $KF5_PREFIX/share/kxmlgui/okular and
+          $KF5_PREFIX/share/kxmlgui5/okular and
           $KF5_PREFIX/share/okular
         </seg>
       </seglistitem>

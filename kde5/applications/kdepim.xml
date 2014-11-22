@@ -114,8 +114,9 @@ cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX      \
       -DCMAKE_BUILD_TYPE=Release              \
       -DSYSCONF_INSTALL_DIR=$KF5_SYSCONFDIR   \
       -DLIB_INSTALL_DIR=lib                   \
+      -DKDEPIM_BUILD_MOBILE=OFF               \
       -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
-      .. &amp;&amp;
+      -Wno-dev .. &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -144,6 +145,13 @@ make</userinput></screen>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/kf5-libdir.xml"/>
 
+    <para>
+      <parameter>-DKDEPIM_BUILD_MOBILE=OFF</parameter>: This switch is
+      used to prevent building of the mobile versions of
+      <application>Kdepim</application> applications since they are
+      not useful on a desktop.
+    </para>
+
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/qt5-plugins-dir.xml"/>
 
@@ -159,50 +167,48 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          akonadi_archivemail_agent, akonadiconsole, akonadi_followupreminder_agent,
-          akonadi_mailfilter_agent, akonadi_notes_agent, akonadi_sendlater_agent,
-          akregator, akregatorstorageexporter, blogilo, calendarjanitor,
-          contactthemeeditor, headerthemeeditor, ical2vcal, importwizard,
-          kaddressbook, kaddressbook-mobile, kalarm, kalarmautostart, kgpgconf,
-          kincidenceeditor, kjots, kleopatra, kmail, kmailcvt, kmail-mobile, knotes,
-          konsolekalendar, kontact, korgac, korganizer, korganizer-mobile,
-          ksendemail, ktnef, kwatchgnupg, mboximporter, notes-mobile,
-          pimsettingexporter, sieveeditor, storageservicemanager and tasks-mobile
+          accountwizard, akonadi_archivemail_agent, akonadiconsole,
+          akonadi_followupreminder_agent, akonadi_mailfilter_agent,
+          akonadi_notes_agent, akonadi_sendlater_agent, akregator,
+          akregatorstorageexporter, blogilo, calendarjanitor,
+          contactthemeeditor, headerthemeeditor, ical2vcal,
+          importwizard, ispdb, kaddressbook, kalarm, kalarmautostart,
+          kgpgconf, kincidenceeditor, kleopatra, kmail, kmailcvt,
+          knotes, konsolekalendar, kontact, korgac, korganizer,
+          ktnef, kwatchgnupg, mboximporter, pimsettingexporter,
+          sieveeditor and storageservicemanager
         </seg>
         <seg>
-          libakonadi_next.so, libakregatorinterfaces.so, libcalendarsupport.so,
-          libcomposereditorng.so, libeventviews.so, libfollowupreminder.so,
-          libgrantleethemeeditor.so, libgrantleetheme.so, libincidenceeditorsngmobile.so,
-          libincidenceeditorsng.so, libkdepimdbusinterfaces.so, libkdepimmobileui.so,
-          libkdepim.so, libkdgantt2.so, libkleopatraclientcore.so,
-          libkleopatraclientgui.so, libkleo.so, libkmanagesieve.so, libkorganizer_core.so,
-          libkorganizer_interfaces.so, libkpgp.so, libksieve.so, libksieveui.so,
-          libmailcommon.so, libmailimporter.so, libmessagecomposer.so, libmessagecore.so,
-          libmessagelist.so, libmessageviewer.so, libnoteshared.so, libpimcommon.so,
-          libsendlater.so and libtemplateparser.so
+          libakonadi_next.so, libakregatorinterfaces.so, libakregatorprivate.so,
+          libcalendarsupport.so, libcomposereditorng.so, libeventviews.so,
+          libfollowupreminder.so, libgrantleethemeeditor.so, libgrantleetheme.so,
+          libincidenceeditorsngmobile.so, libincidenceeditorsng.so,
+          libkaddressbookgrantlee.so, libkaddressbookprivate.so,
+          libkdepimdbusinterfaces.so, libkdepim.so, libkdgantt2.so,
+          libkleopatraclientcore.so, libkleopatraclientgui.so, libkleo.so,
+          libkmailprivate.so, libkmanagesieve.so, libknotesprivate.so,
+          libkontactprivate.so, libkorganizer_core.so, libkorganizer_interfaces.so,
+          libkorganizerprivate.so, libkpgp.so, libksieve.so, libksieveui.so,
+          libmailcommon.so, libmailimporter.so, libmessagecomposer.so,
+          libmessagecore.so, libmessagelist.so, libmessageviewer.so,
+          libnoteshared.so, libpimcommon.so, libsendlater.so and
+          libtemplateparser.so
         </seg>
         <seg>
-          $KF5_PREFIX/lib/akonadi/contact/editorpageplugins,
-          $KF5_PREFIX/lib/qt5/plugins/grantlee,
-          $KF5_PREFIX/lib/qt5/plugins/imports/org/kde/pim,
-          $KF5_PREFIX/share/{akregator,composereditor,kaddressbook,kaddressbook-mobile},
-          $KF5_PREFIX/share/doc/HTML/*/{akonadi_archivemail_agent,akonadi_notes_agent},
-          $KF5_PREFIX/share/doc/HTML/*/{akonadi_sendlater_agent,akregator,blogilo},
-          $KF5_PREFIX/share/doc/HTML/*/{contactthemeeditor,headerthemeeditor,importwizard},
-          $KF5_PREFIX/share/doc/HTML/*/{kalarm,kjots,kleopatra,kmail,kmailcvt,knotes},
-          $KF5_PREFIX/share/doc/HTML/*/{konsolecalendar,kontact,kontact-admin,korganizer},
-          $KF5_PREFIX/share/doc/HTML/*/{ktnef,kwatchgnupg,pimsettingexporter,sieveeditor},
-          $KF5_PREFIX/share/{kalarm,kdepimwidgets,kjots,kleopatra,kmail2,kmailcvt},
-          $KF5_PREFIX/share/{kmail-mobile,knode,knotes,kontact,kontact-touch,korgac},
-          $KF5_PREFIX/share/{korganizer,korganizer-mobile,kwatchgnupg,libkleopatra},
-          $KF5_PREFIX/share/kservices5/{kontact,korganizer},
-          $KF5_PREFIX/share/kxmlgui5/{akonadiconsole,akregator,blogilo},
-          $KF5_PREFIX/share/kxmlgui5/{contactthemeeditor.headerthemeeditor,kaddressbook},
-          $KF5_PREFIX/share/kxmlgui5/{kalarm,kjots,kleopatra,kmail2,knotes,kontact},
-          $KF5_PREFIX/share/kxmlgui5/{kontactsummary,korganizer,ktnef,kwatchgnupg},
-          $KF5_PREFIX/share/kxmlgui5/{pimsettingexporter,sieveeditor,storageservicemanager},
-          $KF5_PREFIX/share/{libmessageviewer,messagelist,messageviewer,mobileui} and
-          $KF5_PREFIX/share/{notes-mobile,pimsettingexporter,sieve,tasks-mobile}
+          $KF5_PREFIX/lib/akonadi/contact,
+          $KF5_PREFIX/&qt5-plugins-dir;/{designer,grantlee},
+          $KF5_PREFIX/share/akonadi/{accountwizard,agents},
+          $KF5_PREFIX/share/{akregator,composereditor},
+          $KF5_PREFIX/share/doc/HTML/*/{akonadi_archivemail_agent,akonadi_notes_agent,akonadi_sendlater_agent},
+          $KF5_PREFIX/share/doc/HTML/*/{akregator,blogilo,contactthemeeditor,headerthemeeditor,importwizard},
+          $KF5_PREFIX/share/doc/HTML/*/{kalarm,kleopatra,kmail,kmailcvt,knotes,konsolecalendar,kontact},
+          $KF5_PREFIX/share/doc/HTML/*/{kontact-admin,korganizer,ktnef,kwatchgnupg,pimsettingexporter,sieveeditor},
+          $KF5_PREFIX/share/{kaddressbook,kalarm,kdepimwidgets,kleopatra,kmail2,kmailcvt},
+          $KF5_PREFIX/share/{knode,knotes,kontact,korgac,korganizer,kwatchgnupg},
+          $KF5_PREFIX/share/kxmlgui5/{akonadiconsole,akregator,blogilo,contactthemeeditor,headerthemeeditor},
+          $KF5_PREFIX/share/kxmlgui5/{kaddressbook,kalarm,kleopatra,kmail2,knotes,kontact,kontactsummary,korganizer},
+          $KF5_PREFIX/share/kxmlgui5/{ktnef,kwatchgnupg,pimsettingexporter,sieveeditor,storageservicemanager} and
+          $KF5_PREFIX/share/{libkleopatra,libmessageviewer,messagelist,messageviewer,pimsettingexporter,sieve}
         </seg>
       </seglistitem>
     </segmentedlist>

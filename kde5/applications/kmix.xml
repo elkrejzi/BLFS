@@ -99,7 +99,7 @@ cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX      \
       -DBUILD_TESTING=OFF                     \
       -DKMIX_KF5_BUILD=1                      \
       -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
-      .. &amp;&amp;
+      -Wno-dev .. &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -158,8 +158,7 @@ make</userinput></screen>
           libkdeinit5_kmixctrl.so and libkdeinit5_kmix.so
         </seg>
         <seg>
-          $KF5_PREFIX/share/kmix and
-          $KF5_PREFIX/share/kxmlgui/kmix
+          $KF5_PREFIX/share/kmix
         </seg>
       </seglistitem>
     </segmentedlist>
