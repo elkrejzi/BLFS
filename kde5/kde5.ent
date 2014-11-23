@@ -713,6 +713,14 @@
 <!ENTITY baloo-widgets5-buildsize     "3.7 MB">
 <!ENTITY baloo-widgets5-time          "0.4 SBU">
 
+<!ENTITY gwenview5-version       "4.14.1-223-g8aeb091">
+<!ENTITY gwenview5-download-http "&demo-url;/gwenview-&gwenview5-version;.tar.xz">
+<!ENTITY gwenview5-download-ftp  " ">
+<!ENTITY gwenview5-md5sum        "6ab58ab63c22e74d80b22f3113d75107">
+<!ENTITY gwenview5-size          "2.8 MB">
+<!ENTITY gwenview5-buildsize     "24 MB">
+<!ENTITY gwenview5-time          "1.9 SBU">
+
 <!ENTITY kate5-version       "4.13.80-972-g0b35526">
 <!ENTITY kate5-download-http "&demo-url;/kate-&kate5-version;.tar.xz">
 <!ENTITY kate5-download-ftp  " ">
