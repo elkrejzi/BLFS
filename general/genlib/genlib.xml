@@ -78,7 +78,7 @@ $Date: 2014-10-26 17:07:07 +0100 (Sun, 26 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libgcrypt-systemd.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libgpg-error-systemd.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libgsf.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libgusb-systemd.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libgusb.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libical.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libidn.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libinput-systemd.xml"/>
