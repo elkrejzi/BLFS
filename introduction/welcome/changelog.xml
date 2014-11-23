@@ -50,6 +50,10 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Fixed sane-backends to use the correct systemd
+          library.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Merged harfbuzz-0.9.36, libgusb-0.2.0 and
           libpng-1.6.15 updates from the main book. Thanks to
           Fernando for doing all the work.</para>

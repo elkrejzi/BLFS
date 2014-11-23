@@ -212,6 +212,13 @@
         </para>
       </note>
 
+      <para>
+        Fix linking with the systemd library when using <application>systemd</application>
+        210 and later:
+      </para>
+
+<screen><userinput>sed -i "s:systemd-daemon:systemd:g" configure configure.in</userinput></screen>
+
       <para>For a USB scanner, if you are linking to <xref linkend="libusb"/>,
       include the configure switch --enable-libusb_1_0. Install
       <application>SANE</application>-backends by running the following
