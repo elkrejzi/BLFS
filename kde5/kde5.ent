@@ -737,6 +737,14 @@
 <!ENTITY kate5-buildsize     "46 MB">
 <!ENTITY kate5-time          "2.5 SBU">
 
+<!ENTITY kcm-touchpad5-version       "1.1-8-g2319d35">
+<!ENTITY kcm-touchpad5-download-http "&demo-url;/kcm-touchpad-&kcm-touchpad5-version;.tar.xz">
+<!ENTITY kcm-touchpad5-download-ftp  " ">
+<!ENTITY kcm-touchpad5-md5sum        "53a3ec5c661f28cf461d599164bd2bc4">
+<!ENTITY kcm-touchpad5-size          "84 KB">
+<!ENTITY kcm-touchpad5-buildsize     "4.3 MB">
+<!ENTITY kcm-touchpad5-time          "0.4 SBU">
+
 <!ENTITY kde-baseapps5-version       "4.14.2-409-g7c465ab">
 <!ENTITY kde-baseapps5-download-http "&demo-url;/kde-baseapps-&kde-baseapps5-version;.tar.xz">
 <!ENTITY kde-baseapps5-download-ftp  " ">
