@@ -68,6 +68,14 @@
 <!ENTITY polkit-qt5-buildsize     "3.3 MB">
 <!ENTITY polkit-qt5-time          "0.2 SBU">
 
+<!ENTITY qca-qt5-version       "2.1.0">
+<!ENTITY qca-qt5-download-http "http://delta.affinix.com/download/qca/2.0/qca-&qca-version;.tar.gz">
+<!ENTITY qca-qt5-download-ftp  " ">
+<!ENTITY qca-qt5-md5sum        "c2b00c732036244701bae4853a2101cf">
+<!ENTITY qca-qt5-size          "956 KB">
+<!ENTITY qca-qt5-buildsize     "34 MB">
+<!ENTITY qca-qt5-time          "1.6 SBU">
+
 
 
 <!-- KDE Frameworks 5 -->
