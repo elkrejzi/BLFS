@@ -94,9 +94,9 @@
 <screen><userinput>mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
-      -DCMAKE_BUILD_TYPE=Release         \
-      -DBUILD_TESTS=OFF                  \
+cmake -DCMAKE_INSTALL_PREFIX=/usr \
+      -DCMAKE_BUILD_TYPE=Release  \
+      -DBUILD_TESTS=OFF           \
       .. &amp;&amp;
 make</userinput></screen>
 
@@ -124,8 +124,8 @@ make</userinput></screen>
       class="username">root</systemitem> user:
     </para>
 
-<screen role="root"><userinput>install -v -dm755 $KF5_PREFIX/share/doc/grantlee-&grantlee5-version; &amp;&amp;
-cp -v apidox/*    $KF5_PREFIX/share/doc/grantlee-&grantlee5-version; </userinput></screen>
+<screen role="root"><userinput>install -v -dm755 /usr/share/doc/grantlee-&grantlee5-version; &amp;&amp;
+cp -v apidox/*    /usr/share/doc/grantlee-&grantlee5-version; </userinput></screen>
 
   </sect2>
 
@@ -158,9 +158,9 @@ cp -v apidox/*    $KF5_PREFIX/share/doc/grantlee-&grantlee5-version; </userinput
           libGrantlee_Templates.so and libGrantlee_TextDocument.so
         </seg>
         <seg>
-          $KF5_PREFIX/include/grantlee,
-          $KF5_PREFIX/lib/cmake/Grantlee5 and
-          $KF5_PREFIX/lib/grantlee
+          /usr/include/grantlee,
+          /usr/lib/cmake/Grantlee5 and
+          /usr/lib/grantlee
         </seg>
       </seglistitem>
     </segmentedlist>

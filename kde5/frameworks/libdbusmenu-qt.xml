@@ -93,11 +93,11 @@
 <screen><userinput>mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
-      -DCMAKE_BUILD_TYPE=Release         \
-      -DCMAKE_INSTALL_LIBDIR=lib         \
-      -DUSE_QT5=TRUE                     \
-      -DWITH_DOC=OFF                     \
+cmake -DCMAKE_INSTALL_PREFIX=/usr \
+      -DCMAKE_BUILD_TYPE=Release  \
+      -DCMAKE_INSTALL_LIBDIR=lib  \
+      -DUSE_QT5=TRUE              \
+      -DWITH_DOC=OFF              \
       .. &amp;&amp;
 make</userinput></screen>
 
@@ -122,8 +122,8 @@ make</userinput></screen>
     <para>
       <parameter>-DCMAKE_INSTALL_LIBDIR=lib</parameter>: This switch is used
       to get libraries to install to <filename
-      class="directory">$KF5_PREFIX/lib</filename> instead of <filename
-      class="directory">$KF5_PREFIX/lib64</filename> on a 64 bit system.
+      class="directory">/usr/lib</filename> instead of <filename
+      class="directory">/usr/lib64</filename> on a 64 bit system.
     </para>
 
     <para>
@@ -157,9 +157,9 @@ make</userinput></screen>
           libdbusmenu-qt5.so
         </seg>
         <seg>
-          $KF5_PREFIX/include/dbusmenu-qt5,
-          $KF5_PREFIX/lib/cmake/dbusmenu-qt5 and
-          $KF5_PREFIX/share/doc/libdbusmenu-qt5-doc
+          /usr/include/dbusmenu-qt5,
+          /usr/lib/cmake/dbusmenu-qt5 and
+          /usr/share/doc/libdbusmenu-qt5-doc
         </seg>
       </seglistitem>
     </segmentedlist>

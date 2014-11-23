@@ -88,9 +88,9 @@
 <screen><userinput>mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
-      -DCMAKE_BUILD_TYPE=Release         \
-      -DCMAKE_INSTALL_LIBDIR=lib         \
+cmake -DCMAKE_INSTALL_PREFIX=/usr \
+      -DCMAKE_BUILD_TYPE=Release  \
+      -DCMAKE_INSTALL_LIBDIR=lib  \
       .. &amp;&amp;
 make</userinput></screen>
 
@@ -115,8 +115,8 @@ make</userinput></screen>
     <para>
       <parameter>-DCMAKE_INSTALL_LIBDIR=lib</parameter>: This switch is
       used to get libraries to install to <filename
-      class="directory">$KF5_PREFIX/lib</filename> instead of <filename
-      class="directory">$KF5_PREFIX/lib64</filename> on a 64 bit system.
+      class="directory">/usr/lib</filename> instead of <filename
+      class="directory">/usr/lib64</filename> on a 64 bit system.
     </para>
 
   </sect2>
@@ -137,8 +137,8 @@ make</userinput></screen>
           libpolkit-qt5-agent-1.so, libpolkit-qt5-core-1.so and libpolkit-qt5-gui-1.so
         </seg>
         <seg>
-          $KF5_PREFIX/include/polkit-qt5-1 and
-          $KF5_PREFIX/lib/cmake/PolkitQt5-1
+          /usr/include/polkit-qt5-1 and
+          /usr/lib/cmake/PolkitQt5-1
         </seg>
       </seglistitem>
     </segmentedlist>
