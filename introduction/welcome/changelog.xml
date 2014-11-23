@@ -50,6 +50,9 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Rebranded the book into KBLFS (Krejzi's BLFS).
+          </para>
+        <listitem>
           <para>[krejzi] - Fixed sane-backends to use the correct systemd
           library.</para>
         </listitem>
