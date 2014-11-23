@@ -771,6 +771,22 @@
 <!ENTITY kscreen5-buildsize     "5.0 MB">
 <!ENTITY kscreen5-time          "0.6 SBU">
 
+<!ENTITY libbluedevil5-version       "2.0-rc1-6-g0f933e0">
+<!ENTITY libbluedevil5-download-http "&demo-url;/libbluedevil-&libbluedevil5-version;.tar.xz">
+<!ENTITY libbluedevil5-download-ftp  " ">
+<!ENTITY libbluedevil5-md5sum        "d89389f2327735d7661b91b365edb166">
+<!ENTITY libbluedevil5-size          "188 KB">
+<!ENTITY libbluedevil5-buildsize     "5.4 MB">
+<!ENTITY libbluedevil5-time          "0.2 SBU">
+
+<!ENTITY libkdcraw5-version       "4.13.3-61-g71b45b1">
+<!ENTITY libkdcraw5-download-http "&demo-url;/libkdcraw-&libkdcraw5-version;.tar.xz">
+<!ENTITY libkdcraw5-download-ftp  " ">
+<!ENTITY libkdcraw5-md5sum        "fd0bbddb99a6e0822a8b999c44457a51">
+<!ENTITY libkdcraw5-size          "92 KB">
+<!ENTITY libkdcraw5-buildsize     "3.7 MB">
+<!ENTITY libkdcraw5-time          "0.3 SBU">
+
 <!ENTITY libkexiv25-version       "4.14.1-68-gda06d88">
 <!ENTITY libkexiv25-download-http "&demo-url;/libkexiv2-&libkexiv25-version;.tar.xz">
 <!ENTITY libkexiv25-download-ftp  " ">
