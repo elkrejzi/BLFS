@@ -68,7 +68,6 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="kdepimlibs5"/>,
-      <xref linkend="knewstuff"/>,
       <xref linkend="knotifyconfig"/> and
       <xref linkend="kross5"/>
     </para>
@@ -81,7 +80,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <ulink url="https://code.google.com/p/accounts-sso/">Accounts-SSO (Qt5 version)</ulink>,
-      <ulink url="http://download.kde.org/stable/libkfbapi/">libkfbapi</ulink>,
+      <ulink url="http://quickgit.kde.org/?p=libkfbapi.git">libkfbapi (Qt5 version)</ulink>,
       <ulink url="http://mirror.kolabsys.com/pub/releases/">libkolab (Qt5 version)</ulink>,
       <ulink url="http://mirror.kolabsys.com/pub/releases/">libkolabxml</ulink> and
       <ulink url="http://quickgit.kde.org/?p=prison.git">Prison (Qt5 version)</ulink>

@@ -75,8 +75,9 @@
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="kitemmodels"/> and
-      <xref linkend="plasma-framework"/>
+      <xref linkend="kitemmodels"/>,
+      <xref linkend="plasma-framework"/> and
+      <xref linkend="threadweaver"/>
     </para>
 
     <bridgehead renderas="sect4">Optional</bridgehead>

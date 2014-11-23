@@ -68,13 +68,15 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="akonadi-search"/>,
+      <xref linkend="baloo5"/>,
       <xref linkend="grantlee5"/>,
       <xref linkend="kdepimlibs5"/>,
       <xref linkend="kdewebkit"/>,
       <xref linkend="kdnssd"/>,
       <xref linkend="khtml"/>,
       <xref linkend="knewstuff"/>,
-      <xref linkend="knotifyconfig"/> and
+      <xref linkend="knotifyconfig"/>,
+      <xref linkend="kross5"/> and
       <xref linkend="ktexteditor"/>
     </para>
 
