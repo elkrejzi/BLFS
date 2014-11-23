@@ -50,16 +50,16 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
-          <para>[krejzi] - Merged harfbuzz-0.9.36, libgusb-0.2.0 and libpng-1.6.15 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged harfbuzz-0.9.36, libgusb-0.2.0 and libpng-1.6.15 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged k3b-2.0.3, sqlite-3.8.7.2 and xscreensaver-5.31 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged k3b-2.0.3, sqlite-3.8.7.2 and xscreensaver-5.31 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged icedtea-web-1.5.2 and openjdk-1.8.0.25 updates from trunk. Thanks to Pierre for doing all the work.</para>
+          <para>[krejzi] - Merged icedtea-web-1.5.2 and openjdk-1.8.0.25 updates from the main book. Thanks to Pierre for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged xkbcomp-1.3.0 update from trunk. Thanks to Bruce for doing all the work.</para>
+          <para>[krejzi] - Merged xkbcomp-1.3.0 update from the main book. Thanks to Bruce for doing all the work.</para>
         </listitem>
         <listitem>
           <para>[krejzi] - Updated to MesaLib-10.3.4.</para>
@@ -89,31 +89,31 @@
       <para>November 20th, 2014</para>
       <itemizedlist>
         <listitem>
-          <para>[krejzi] - Merged openjpeg-2.1.0 addition from trunk. Thanks to Igor for doing all the work.</para>
+          <para>[krejzi] - Merged openjpeg-2.1.0 addition from the main book. Thanks to Igor for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged libmusicbrainz-5.1.0, LVM2-2.02.112 and unbound-1.5.0 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged libmusicbrainz-5.1.0, LVM2-2.02.112 and unbound-1.5.0 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged ImageMagick-6.9.0-0, sg3_utils-1.40 and xfdesktop-4.10.3 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged ImageMagick-6.9.0-0, sg3_utils-1.40 and xfdesktop-4.10.3 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged liblinear-1.96, librep-0.92.4 and rep-gtk-0.90.8.2 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged liblinear-1.96, librep-0.92.4 and rep-gtk-0.90.8.2 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged autovivification-0.14, Archive-Zip-1.39 and Business-ISBN-2.09 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged autovivification-0.14, Archive-Zip-1.39 and Business-ISBN-2.09 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged List-AllUtils-0.09, Log-Log4perl-1.46, Net-DNS-0.81 and URI-1.65 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged List-AllUtils-0.09, Log-Log4perl-1.46, Net-DNS-0.81 and URI-1.65 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged dhcpcd-6.6.2, mercurial-3.2.1 and xscreensaver-5.31 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged dhcpcd-6.6.2, mercurial-3.2.1 and xscreensaver-5.31 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged cups-2.0.1, ruby-2.1.5 and whois-5.2.2 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged cups-2.0.1, ruby-2.1.5 and whois-5.2.2 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged libffi-3.2.1, tcl-8.6.3 and tk-8.6.3 updates from trunk. Thanks to Bruce for doing all the work.</para>
+          <para>[krejzi] - Merged libffi-3.2.1, tcl-8.6.3 and tk-8.6.3 updates from the main book. Thanks to Bruce for doing all the work.</para>
         </listitem>
         <listitem>
           <para>[krejzi] - Updated to php-5.6.3.</para>
@@ -131,16 +131,16 @@
           <para>[krejzi] - Updated to nautilus-3.14.1, qca-2.1.0 and wireshark-1.12.2.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged libpaper-1.1.24+nmu4 update from trunk. Thanks to Ken for doing all the work.</para>
+          <para>[krejzi] - Merged libpaper-1.1.24+nmu4 update from the main book. Thanks to Ken for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged midori-0.5.9 update from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged midori-0.5.9 update from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged mupdf-1.6 addition from trunk. Thanks to Igor for doing all the work.</para>
+          <para>[krejzi] - Merged mupdf-1.6 addition from the main book. Thanks to Igor for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged KDE-4.14.3 and traceroute-2.0.21 updates from trunk. Thanks to Bruce for doing all the work.</para>
+          <para>[krejzi] - Merged KDE-4.14.3 and traceroute-2.0.21 updates from the main book. Thanks to Bruce for doing all the work.</para>
         </listitem>
       </itemizedlist>
     </listitem>
@@ -194,19 +194,19 @@
           <para>[krejzi] - Updated to bluez-5.25, gtk+-3.14.5 and xorg-server-1.16.2.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged at-spi2-core-2.14.1 and gnutls-3.3.10 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged at-spi2-core-2.14.1 and gnutls-3.3.10 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged x264-20141108-2245, glib-2.42.1 and pciutils-3.3.0 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged x264-20141108-2245, glib-2.42.1 and pciutils-3.3.0 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged gst-plugins-bad-1.4.4, gst-plugins-ugly-1.4.4 and gst-libav-1.4.4 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged gst-plugins-bad-1.4.4, gst-plugins-ugly-1.4.4 and gst-libav-1.4.4 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged gstreamer-1.4.4, gst-plugins-base-1.4.4 and gst-plugins-good-1.4.4 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged gstreamer-1.4.4, gst-plugins-base-1.4.4 and gst-plugins-good-1.4.4 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged phonon-4.8.2 and phonon-backend-vlc-0.8.1 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged phonon-4.8.2 and phonon-backend-vlc-0.8.1 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
       </itemizedlist>
     </listitem>
@@ -215,10 +215,10 @@
       <para>November 10th, 2014</para>
       <itemizedlist>
         <listitem>
-          <para>[krejzi] - Merged dhcpcd-6.6.1 and libassuan-2.1.3 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged dhcpcd-6.6.1 and libassuan-2.1.3 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged fltk-1.3.3 update from trunk. Thanks to Bruce for doing all the work.</para>
+          <para>[krejzi] - Merged fltk-1.3.3 update from the main book. Thanks to Bruce for doing all the work.</para>
         </listitem>
         <listitem>
           <para>[krejzi] - Updated to MesaLib-10.3.3.</para>
@@ -233,7 +233,7 @@
           <para>[krejzi] - Updated to libwacom-0.11, poppler-0.28.1 and xf86-input-wacom-0.27.0.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged boost-1.57.0, curl-7.39.0 and unrar-5.2.2 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged boost-1.57.0, curl-7.39.0 and unrar-5.2.2 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
       </itemizedlist>
     </listitem>
@@ -248,13 +248,13 @@
           <para>[krejzi] - Removed instructions about creating /etc/shells since it has been moved to LFS.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged gcc-4.9.2 update from trunk. Thanks to Pierre for doing all the work.</para>
+          <para>[krejzi] - Merged gcc-4.9.2 update from the main book. Thanks to Pierre for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged sawfish-1.11 update from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged sawfish-1.11 update from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged ffmpeg-2.4.3 and raptor2-2.0.14 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged ffmpeg-2.4.3 and raptor2-2.0.14 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
       </itemizedlist>
     </listitem>
@@ -263,7 +263,7 @@
       <para>November 2nd, 2014</para>
       <itemizedlist>
         <listitem>
-          <para>[krejzi] - Merged stunnel-5.07 and mercurial-3.2 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged stunnel-5.07 and mercurial-3.2 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
           <para>[krejzi] - Updated to gnome-weather-3.14.1.</para>
@@ -314,10 +314,10 @@
           <para>[krejzi] - Updated to brasero-3.11.4, cheese-3.14.1, eog-3.14.1, epiphany-3.14.1 and evince-3.14.1.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged sbc-1.3 update from trunk. Thanks to Bruce for doing all the work.</para>
+          <para>[krejzi] - Merged sbc-1.3 update from the main book. Thanks to Bruce for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged sudo-1.8.11p2 and menu-cache-1.0.0 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged sudo-1.8.11p2 and menu-cache-1.0.0 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
           <para>[krejzi] - Updated to adwaita-icon-theme-3.14.1, gnome-session-3.14.0, gdm-3.14.1, gnome-user-docs-3.14.1 and yelp-3.14.1.</para>
@@ -329,7 +329,7 @@
       <para>October 31st, 2014</para>
       <itemizedlist>
         <listitem>
-          <para>[krejzi] - Merged gdb-7.8.1, git-2.1.3 and sqlite-3.8.7.1 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged gdb-7.8.1, git-2.1.3 and sqlite-3.8.7.1 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
           <para>[krejzi] - Removed Build Order page from GNOME section as the desktop packages are already sorted in the recommended build order.</para>
@@ -359,10 +359,10 @@
           <para>[krejzi] - Updated to caribou-0.4.15, dconf-0.22.0 and gnome-backgrounds-3.14.1.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged ruby-2.1.4, dhcpcd-6.6.0 and wget-1.16 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged ruby-2.1.4, dhcpcd-6.6.0 and wget-1.16 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged liblinear-1.95 and pinentry-0.9.0 updates from trunk. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged liblinear-1.95 and pinentry-0.9.0 updates from the main book. Thanks to Fernando for doing all the work.</para>
         </listitem>
       </itemizedlist>
     </listitem>
