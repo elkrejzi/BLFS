@@ -174,7 +174,7 @@
                                                        svg pixbuf loader. -->
 <!ENTITY libraw-version               "0.16.0">
 <!ENTITY libtiff-version              "4.0.3">
-<!ENTITY libwebp-version              "0.4.1">
+<!ENTITY libwebp-version              "0.4.2">
 <!ENTITY newt-version                 "0.52.18">
 <!ENTITY openjpeg-version             "1.5.2">
 <!ENTITY openjpeg2-version            "2.1.0">
@@ -434,7 +434,7 @@
 <!ENTITY xbitmaps-version             "1.1.1">
 <!ENTITY xcursor-themes-version       "1.0.4">
 <!ENTITY xkeyboard-config-version     "2.13">
-<!ENTITY mesalib-version              "10.3.3">
+<!ENTITY mesalib-version              "10.3.4">
 <!ENTITY xcb-util-version             "0.4.0">
 <!ENTITY xcb-util-image-version       "0.4.0">
 <!ENTITY xcb-util-keysyms-version     "0.4.0">

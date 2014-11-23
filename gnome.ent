@@ -73,10 +73,10 @@
 
 <!-- GNOME Applications -->
 <!ENTITY baobab-version               "3.14.1">
-<!ENTITY brasero-version              "3.11.4">
+<!ENTITY brasero-version              "3.12.0">
 <!ENTITY cheese-version               "3.14.2">
 <!ENTITY empathy-version              "3.12.7">
-<!ENTITY eog-version                  "3.14.2">
+<!ENTITY eog-version                  "3.14.3">
 <!ENTITY epiphany-version             "3.14.2">
 <!ENTITY evince-version               "3.14.1">
 <!ENTITY evolution-version            "3.12.8">
@@ -88,7 +88,7 @@
 <!ENTITY gnome-contacts-version       "3.14.2">
 <!ENTITY gnome-dictionary-version     "3.14.2">
 <!ENTITY gnome-disk-utility-version   "3.14.0">
-<!ENTITY gnome-documents-version      "3.14.1">
+<!ENTITY gnome-documents-version      "3.14.2">
 <!ENTITY gnome-font-viewer-version    "3.14.0">
 <!ENTITY gnome-logs-version           "3.14.2">
 <!ENTITY gnome-maps-version           "3.14.2">
@@ -100,8 +100,8 @@
 <!ENTITY gnome-sound-recorder-version "3.12.2">
 <!ENTITY gnome-system-monitor-version "3.14.1">
 <!ENTITY gnome-terminal-version       "3.14.2">
-<!ENTITY gnome-tweak-tool-version     "3.14.0">
-<!ENTITY gnome-user-share-version     "3.14.0">
+<!ENTITY gnome-tweak-tool-version     "3.14.2">
+<!ENTITY gnome-user-share-version     "3.14.1">
 <!ENTITY gnome-weather-version        "3.14.1">
 <!ENTITY gucharmap-version            "3.14.2">
 <!ENTITY nautilus-sendto-version      "3.8.2">
@@ -112,7 +112,7 @@
 <!ENTITY sushi-version                "3.12.0">
 <!ENTITY vinagre-version              "3.14.2">
 <!ENTITY vino-version                 "3.14.1">
-<!ENTITY totem-version                "3.14.0">
+<!ENTITY totem-version                "3.14.1">
 
 <!ENTITY polkit-gnome-version         "0.105">
 <!ENTITY notification-daemon-version  "3.14.0">

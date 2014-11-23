@@ -8,7 +8,7 @@
            "&gnome-download-http;/gnome-documents/&gnome-minor14;/gnome-documents-&gnome-documents-version;.tar.xz">
   <!ENTITY gnome-documents-download-ftp
            "&gnome-download-ftp;/gnome-documents/&gnome-minor14;/gnome-documents-&gnome-documents-version;.tar.xz">
-  <!ENTITY gnome-documents-md5sum        "6a74c0d8890898e0714582e566bb5ec1">
+  <!ENTITY gnome-documents-md5sum        "79b07d3bf053b558e439dbae29051722">
   <!ENTITY gnome-documents-size          "700 KB">
   <!ENTITY gnome-documents-buildsize     "20 MB">
   <!ENTITY gnome-documents-time          "0.3 SBU">
