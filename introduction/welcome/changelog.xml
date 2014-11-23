@@ -44,11 +44,17 @@
 
 -->
     <listitem>
-      <para>November 20th, 2014</para>
+      <para>November 23rd, 2014</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>November 20th, 2014</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Merged openjpeg-2.1.0 addition from trunk. Thanks to Igor for doing all the work.</para>
         </listitem>
