@@ -26,6 +26,7 @@ $Date: 2014-10-25 19:35:50 +0200 (Sat, 25 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kdepim-runtime.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kdepim.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ark.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="bluedevil.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gwenview.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kate.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kde-baseapps.xml"/>
