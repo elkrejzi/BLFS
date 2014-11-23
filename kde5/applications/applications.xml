@@ -17,7 +17,6 @@ $Date: 2014-10-25 19:35:50 +0200 (Sat, 25 Oct 2014) $
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="akonadi.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="baloo-widgets.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="grantlee.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kdepimlibs.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libbluedevil.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libkdcraw.xml"/>

@@ -9,14 +9,9 @@
 <!ENTITY qt5-plugins-dir              "lib/qt5/plugins">
 <!ENTITY qt5-qml-dir                  "lib/qt5/qml">
 
-<!-- KDE Frameworks 5 -->
-<!ENTITY attica5-download-http "&kf5-download-http;/attica-&kf5-version;.tar.xz">
-<!ENTITY attica5-download-ftp  "&kf5-download-ftp;/attica-&kf5-version;.tar.xz">
-<!ENTITY attica5-md5sum        "493c08ce82d5ab34bf2efeb1a01349ab">
-<!ENTITY attica5-size          "60 KB">
-<!ENTITY attica5-buildsize     "6.7 MB">
-<!ENTITY attica5-time          "0.9 SBU">
 
+
+<!-- KDE Frameworks 5 Dependencies -->
 <!ENTITY extra-cmake-modules-version       "1.4.0">
 <!ENTITY extra-cmake-modules-download-http "&kf5-download-http;/extra-cmake-modules-&extra-cmake-modules-version;.tar.xz">
 <!ENTITY extra-cmake-modules-download-ftp  "&kf5-download-ftp;/extra-cmake-modules-&extra-cmake-modules-version;.tar.xz">
@@ -24,6 +19,64 @@
 <!ENTITY extra-cmake-modules-size          "120 KB">
 <!ENTITY extra-cmake-modules-buildsize     "5.5 MB">
 <!ENTITY extra-cmake-modules-time          "less than 0.1 SBU">
+
+<!ENTITY grantlee5-version       "5.0.0">
+<!ENTITY grantlee5-download-http "http://downloads.grantlee.org/grantlee-&grantlee5-version;.tar.gz">
+<!ENTITY grantlee5-download-ftp  " ">
+<!ENTITY grantlee5-md5sum        "feb7f82d08e046fe078ea475dee710f6">
+<!ENTITY grantlee5-size          "1.2 MB">
+<!ENTITY grantlee5-buildsize     "18 MB">
+<!ENTITY grantlee5-time          "0.9 SBU">
+
+<!ENTITY libdbusmenu-qt5-version       "0.9.3+14.10.20140619">
+<!ENTITY libdbusmenu-qt5-download-http "http://www.linuxfromscratch.org/~krejzi/libdbusmenu-qt-&libdbusmenu-qt5-version;.tar.xz">
+<!ENTITY libdbusmenu-qt5-download-ftp  " ">
+<!ENTITY libdbusmenu-qt5-md5sum        "32d3e8c0fdb0068720bfe4f89228fdb8">
+<!ENTITY libdbusmenu-qt5-size          "40 KB">
+<!ENTITY libdbusmenu-qt5-buildsize     "4.1 MB">
+<!ENTITY libdbusmenu-qt5-time          "0.2 SBU">
+
+<!ENTITY phonon5-version       "4.8.2">
+<!ENTITY phonon5-download-http "http://download.kde.org/stable/phonon/&phonon5-version;/phonon-&phonon5-version;.tar.xz">
+<!ENTITY phonon5-download-ftp  "ftp://ftp.kde.org/pub/kde/stable/phonon/&phonon5-version;/phonon-&phonon5-version;.tar.xz">
+<!ENTITY phonon5-md5sum        "f8893c0f8a7ee449492262a05e7fca89">
+<!ENTITY phonon5-size          "316 KB">
+<!ENTITY phonon5-buildsize     "11 MB">
+<!ENTITY phonon5-time          "0.6 SBU">
+
+<!ENTITY phonon-backend-gstreamer5-version       "4.8.0">
+<!ENTITY phonon-backend-gstreamer5-download-http "http://download.kde.org/stable/phonon/phonon-backend-gstreamer/&phonon-backend-gstreamer5-version;/phonon-backend-gstreamer-&phonon-backend-gstreamer5-version;.tar.xz">
+<!ENTITY phonon-backend-gstreamer5-download-ftp  "ftp://ftp.kde.org/pub/kde/stable/phonon/phonon-backend-gstreamer/&phonon-backend-gstreamer5-version;/phonon-backend-gstreamer-&phonon-backend-gstreamer5-version;.tar.xz">
+<!ENTITY phonon-backend-gstreamer5-md5sum        "fad1ae2accbc2affee174fb8b52630ed">
+<!ENTITY phonon-backend-gstreamer5-size          "76 KB">
+<!ENTITY phonon-backend-gstreamer5-buildsize     "4.4 MB">
+<!ENTITY phonon-backend-gstreamer5-time          "0.3 SBU">
+
+<!ENTITY phonon-backend-vlc5-version       "0.8.1">
+<!ENTITY phonon-backend-vlc5-download-http "http://download.kde.org/stable/phonon/phonon-backend-vlc/&phonon-backend-vlc5-version;/phonon-backend-vlc-&phonon-backend-vlc5-version;.tar.xz">
+<!ENTITY phonon-backend-vlc5-download-ftp  "ftp://ftp.kde.org/pub/kde/stable/phonon/phonon-backend-vlc/&phonon-backend-vlc5-version;/phonon-backend-vlc-&phonon-backend-vlc5-version;.tar.xz">
+<!ENTITY phonon-backend-vlc5-md5sum        "5276dcf1baf1dece1cc78d8b4088771a">
+<!ENTITY phonon-backend-vlc5-size          "60 KB">
+<!ENTITY phonon-backend-vlc5-buildsize     "3.0 MB">
+<!ENTITY phonon-backend-vlc5-time          "0.2 SBU">
+
+<!ENTITY polkit-qt5-version       "0.112.0">
+<!ENTITY polkit-qt5-download-http "http://download.kde.org/stable/apps/KDE4.x/admin/polkit-qt-1-&polkit-qt5-version;.tar.bz2">
+<!ENTITY polkit-qt5-download-ftp  "ftp://ftp.kde.org/pub/kde/stable/apps/KDE4.x/admin/polkit-qt-1-&polkit-qt5-version;.tar.bz2">
+<!ENTITY polkit-qt5-md5sum        "bee71b71c12797e6fc498540a06c829b">
+<!ENTITY polkit-qt5-size          "68 KB">
+<!ENTITY polkit-qt5-buildsize     "3.3 MB">
+<!ENTITY polkit-qt5-time          "0.2 SBU">
+
+
+
+<!-- KDE Frameworks 5 -->
+<!ENTITY attica5-download-http "&kf5-download-http;/attica-&kf5-version;.tar.xz">
+<!ENTITY attica5-download-ftp  "&kf5-download-ftp;/attica-&kf5-version;.tar.xz">
+<!ENTITY attica5-md5sum        "493c08ce82d5ab34bf2efeb1a01349ab">
+<!ENTITY attica5-size          "60 KB">
+<!ENTITY attica5-buildsize     "6.7 MB">
+<!ENTITY attica5-time          "0.9 SBU">
 
 <!ENTITY frameworkintegration-download-http "&kf5-download-http;/frameworkintegration-&kf5-version;.tar.xz">
 <!ENTITY frameworkintegration-download-ftp  "&kf5-download-ftp;/frameworkintegration-&kf5-version;.tar.xz">
@@ -403,52 +456,12 @@
 <!ENTITY kxmlgui-buildsize     "23 MB">
 <!ENTITY kxmlgui-time          "0.9 SBU">
 
-<!ENTITY libdbusmenu-qt5-version       "0.9.3+14.10.20140619">
-<!ENTITY libdbusmenu-qt5-download-http "http://www.linuxfromscratch.org/~krejzi/libdbusmenu-qt-&libdbusmenu-qt5-version;.tar.xz">
-<!ENTITY libdbusmenu-qt5-download-ftp  " ">
-<!ENTITY libdbusmenu-qt5-md5sum        "32d3e8c0fdb0068720bfe4f89228fdb8">
-<!ENTITY libdbusmenu-qt5-size          "40 KB">
-<!ENTITY libdbusmenu-qt5-buildsize     "4.1 MB">
-<!ENTITY libdbusmenu-qt5-time          "0.2 SBU">
-
-<!ENTITY phonon5-version       "4.8.2">
-<!ENTITY phonon5-download-http "http://download.kde.org/stable/phonon/&phonon5-version;/phonon-&phonon5-version;.tar.xz">
-<!ENTITY phonon5-download-ftp  "ftp://ftp.kde.org/pub/kde/stable/phonon/&phonon5-version;/phonon-&phonon5-version;.tar.xz">
-<!ENTITY phonon5-md5sum        "f8893c0f8a7ee449492262a05e7fca89">
-<!ENTITY phonon5-size          "316 KB">
-<!ENTITY phonon5-buildsize     "11 MB">
-<!ENTITY phonon5-time          "0.6 SBU">
-
-<!ENTITY phonon-backend-gstreamer5-version       "4.8.0">
-<!ENTITY phonon-backend-gstreamer5-download-http "http://download.kde.org/stable/phonon/phonon-backend-gstreamer/&phonon-backend-gstreamer5-version;/phonon-backend-gstreamer-&phonon-backend-gstreamer5-version;.tar.xz">
-<!ENTITY phonon-backend-gstreamer5-download-ftp  "ftp://ftp.kde.org/pub/kde/stable/phonon/phonon-backend-gstreamer/&phonon-backend-gstreamer5-version;/phonon-backend-gstreamer-&phonon-backend-gstreamer5-version;.tar.xz">
-<!ENTITY phonon-backend-gstreamer5-md5sum        "fad1ae2accbc2affee174fb8b52630ed">
-<!ENTITY phonon-backend-gstreamer5-size          "76 KB">
-<!ENTITY phonon-backend-gstreamer5-buildsize     "4.4 MB">
-<!ENTITY phonon-backend-gstreamer5-time          "0.3 SBU">
-
-<!ENTITY phonon-backend-vlc5-version       "0.8.1">
-<!ENTITY phonon-backend-vlc5-download-http "http://download.kde.org/stable/phonon/phonon-backend-vlc/&phonon-backend-vlc5-version;/phonon-backend-vlc-&phonon-backend-vlc5-version;.tar.xz">
-<!ENTITY phonon-backend-vlc5-download-ftp  "ftp://ftp.kde.org/pub/kde/stable/phonon/phonon-backend-vlc/&phonon-backend-vlc5-version;/phonon-backend-vlc-&phonon-backend-vlc5-version;.tar.xz">
-<!ENTITY phonon-backend-vlc5-md5sum        "5276dcf1baf1dece1cc78d8b4088771a">
-<!ENTITY phonon-backend-vlc5-size          "60 KB">
-<!ENTITY phonon-backend-vlc5-buildsize     "3.0 MB">
-<!ENTITY phonon-backend-vlc5-time          "0.2 SBU">
-
 <!ENTITY plasma-framework-download-http "&kf5-download-http;/plasma-framework-&kf5-version;.tar.xz">
 <!ENTITY plasma-framework-download-ftp  "&kf5-download-ftp;/plasma-framework-&kf5-version;.tar.xz">
 <!ENTITY plasma-framework-md5sum        "f55da2ff4612bbe6c920aef0ec31d29d">
 <!ENTITY plasma-framework-size          "3.9 MB">
 <!ENTITY plasma-framework-buildsize     "35 MB">
 <!ENTITY plasma-framework-time          "2.0 SBU">
-
-<!ENTITY polkit-qt5-version       "0.112.0">
-<!ENTITY polkit-qt5-download-http "http://download.kde.org/stable/apps/KDE4.x/admin/polkit-qt-1-&polkit-qt5-version;.tar.bz2">
-<!ENTITY polkit-qt5-download-ftp  "ftp://ftp.kde.org/pub/kde/stable/apps/KDE4.x/admin/polkit-qt-1-&polkit-qt5-version;.tar.bz2">
-<!ENTITY polkit-qt5-md5sum        "bee71b71c12797e6fc498540a06c829b">
-<!ENTITY polkit-qt5-size          "68 KB">
-<!ENTITY polkit-qt5-buildsize     "3.3 MB">
-<!ENTITY polkit-qt5-time          "0.2 SBU">
 
 <!ENTITY solid-download-http "&kf5-download-http;/solid-&kf5-version;.tar.xz">
 <!ENTITY solid-download-ftp  "&kf5-download-ftp;/solid-&kf5-version;.tar.xz">
@@ -665,6 +678,7 @@
 
 
 
+<!-- KDE Frameworks 5 Based Applications -->
 <!ENTITY demo-url               "http://www.linuxfromscratch.org/~krejzi/pkgs">
 
 <!ENTITY akonadi5-version       "1.12.91-106-gd397a04">
@@ -698,14 +712,6 @@
 <!ENTITY baloo-widgets5-size          "40 KB">
 <!ENTITY baloo-widgets5-buildsize     "3.7 MB">
 <!ENTITY baloo-widgets5-time          "0.4 SBU">
-
-<!ENTITY grantlee5-version       "5.0.0">
-<!ENTITY grantlee5-download-http "http://downloads.grantlee.org/grantlee-&grantlee5-version;.tar.gz">
-<!ENTITY grantlee5-download-ftp  " ">
-<!ENTITY grantlee5-md5sum        "feb7f82d08e046fe078ea475dee710f6">
-<!ENTITY grantlee5-size          "1.2 MB">
-<!ENTITY grantlee5-buildsize     "18 MB">
-<!ENTITY grantlee5-time          "0.9 SBU">
 
 <!ENTITY kate5-version       "4.13.80-972-g0b35526">
 <!ENTITY kate5-download-http "&demo-url;/kate-&kate5-version;.tar.xz">
