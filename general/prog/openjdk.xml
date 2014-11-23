@@ -475,7 +475,7 @@ Icon=javaws
 Categories=Settings;</literal>
 EOF
 
-install -v -Dm0644 javaws.png /usr/share/pixmaps/javaws.png</userinput></screen>
+install -v -Dm644 javaws.png /usr/share/pixmaps/javaws.png</userinput></screen>
 
     <para>The choice of pt_BR is just an example. You can add any translation
     by adding lines corresponding to your locale, e.g. for fr_FR,
@@ -891,7 +891,7 @@ fi
 exit 0</literal>
 EOF
 
-chmod -c 0755 /opt/jdk/bin/mkcacerts</userinput></screen>
+chmod -v 755 /opt/jdk/bin/mkcacerts</userinput></screen>
 
   <note>
     <para>
