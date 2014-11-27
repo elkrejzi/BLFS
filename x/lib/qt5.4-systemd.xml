@@ -11,8 +11,8 @@
   <!ENTITY qt5-download-ftp  " ">
   <!ENTITY qt5-md5sum        "3d371bbc5598af620723a594f9f1a774">
   <!ENTITY qt5-size          "279 MB">
-  <!ENTITY qt5-buildsize     "2.6 GB (175 MB installed)">
-  <!ENTITY qt5-time          "93 SBU">
+  <!ENTITY qt5-buildsize     "6.7 GB (175 MB installed)">
+  <!ENTITY qt5-time          "86 SBU">
 ]>
 
 <sect1 id="qt5" xreflabel="Qt-&qt5-version;">
@@ -95,8 +95,7 @@
       <xref linkend="cups"/>,
       <xref linkend="dbus"/>,
       <xref linkend="glib2"/>,
-      <xref linkend="gperf"/> (required for QtWebKit),
-      <xref linkend="gst-plugins-base"/> (required for QtWebKit HTML5 Audio and Video Support),
+      <xref linkend="gst10-plugins-base"/> (required for QtWebKit HTML5 Audio and Video Support),
       <xref linkend="harfbuzz"/>,
       <xref linkend="icu"/> (Unicode support, also required for QtWebKit),
       <xref linkend="jasper"/>,
@@ -113,14 +112,14 @@
       <xref linkend="ruby"/> (required for QtWebKit),
       <xref linkend="sqlite"/>, and
       <xref linkend="wayland"/> (<xref linkend="mesalib"/> must be built with
-      <application>Wayland<application> support)
+      <application>Wayland</application> support)
     </para>
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="bluez"/>,
       <xref linkend="geoclue"/>,
-      <xref linkend="gst10-plugins-base"/>,
+      <xref linkend="gst-plugins-base"/>,
       <xref linkend="gtk2"/> (GTK+ Theme Support),
       <xref linkend="ibus"/>,
       <xref linkend="mariadb"/>,
