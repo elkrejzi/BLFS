@@ -95,6 +95,7 @@
       <xref linkend="cups"/>,
       <xref linkend="dbus"/>,
       <xref linkend="glib2"/>,
+      <xref linkend="gst-plugins-base"/> (required for QtMultimedia),
       <xref linkend="gst10-plugins-base"/> (required for QtWebKit HTML5 Audio and Video Support),
       <xref linkend="harfbuzz"/>,
       <xref linkend="icu"/> (Unicode support, also required for QtWebKit),
@@ -119,7 +120,6 @@
     <para role="optional">
       <xref linkend="bluez"/>,
       <xref linkend="geoclue"/>,
-      <xref linkend="gst-plugins-base"/>,
       <xref linkend="gtk2"/> (GTK+ Theme Support),
       <xref linkend="ibus"/>,
       <xref linkend="mariadb"/>,
@@ -295,6 +295,7 @@ ln -sfv qt-&qt5-version; /opt/qt5</userinput></screen>
             -system-harfbuzz  \
             -system-sqlite    \
             -nomake examples  \
+            -no-rpath         \
             -optimized-qmake  \
             -skip qtwebengine &amp;&amp;
 make</userinput></screen>
@@ -481,6 +482,13 @@ unset file</userinput></screen>
       disables building of the example programs included
       in the source tarball. Remove it if you want to build
       them.
+    </para>
+
+    <para>
+      <parameter>-no-rpath</parameter>: This switch disables linking
+      with hardcoded runtime path in order to prevent the build from
+      failing if another <application>Qt5</application> instance
+      already exists in the installation prefix.
     </para>
 
     <para>
