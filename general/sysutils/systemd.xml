@@ -120,8 +120,9 @@
       <ulink url="https://www.gnu.org/software/libmicrohttpd/">libmicrohttpd</ulink>,
       <ulink url="http://fukuchi.org/works/qrencode/">libqrencode</ulink>,
       <ulink url="http://sourceforge.net/projects/libseccomp/">libseccomp</ulink>,
-      <ulink url="http://lxml.de/">lxml</ulink> (Python Module), and
-      <ulink url="https://code.google.com/p/lz4/">lz4</ulink>
+      <ulink url="http://lxml.de/">lxml</ulink> (Python Module),
+      <ulink url="https://code.google.com/p/lz4/">lz4</ulink>, and
+      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
     </para>
 
     <note>
@@ -159,6 +160,10 @@
     </para>
 
 <screen><userinput>patch -Np1 -i ../systemd-${SYSTEMD_VERSION}-compat-1.patch</userinput></screen>
+
+    <para>
+      Additionally, apply any patch that is also applied in LFS.
+    </para>
 
     <para>
       Rebuild <application>systemd</application> by running the
