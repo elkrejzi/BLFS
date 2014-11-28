@@ -7,9 +7,9 @@
   <!ENTITY colord-download-http
            "http://www.freedesktop.org/software/colord/releases/colord-&colord-version;.tar.xz">
   <!ENTITY colord-download-ftp  " ">
-  <!ENTITY colord-md5sum        "d74f6d476bb161e8cab31e5bd0406f92">
+  <!ENTITY colord-md5sum        "ec1ad709bac22963877dbf48381ec34c">
   <!ENTITY colord-size          "1.2 MB">
-  <!ENTITY colord-buildsize     "37 MB">
+  <!ENTITY colord-buildsize     "36 MB">
   <!ENTITY colord-time          "0.5 SBU">
 ]>
 
@@ -94,15 +94,16 @@
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://bash-completion.alioth.debian.org/">Bash Completion</ulink>,
-      <ulink url="http://www.freedesktop.org/software/colord/releases/">
-      colord-gtk</ulink> and <xref linkend="gnome-desktop"/>
+      <xref linkend="colord-gtk"/> and
+      <xref linkend="gnome-desktop"/>
       (To build the example tools),
       <xref linkend="docbook-utils"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="sane"/>, and
       <xref linkend="valgrind"/> (required for the tests)
+      <ulink url="http://www.argyllcms.com/">ArgyllCMS</ulink>
+      <ulink url="http://bash-completion.alioth.debian.org/">Bash Completion</ulink>
     </para>
 
     <para condition="html" role="usernotes">User Notes:
@@ -129,12 +130,13 @@ useradd -c "Color Daemon Owner" -d /var/lib/colord -u 71 \
       commands:
     </para>
 
-<screen><userinput>./configure --prefix=/usr                \
-            --sysconfdir=/etc            \
-            --localstatedir=/var         \
-            --with-daemon-user=colord    \
-            --enable-vala                \
-            --disable-bash-completion    \
+<screen><userinput>./configure --prefix=/usr              \
+            --sysconfdir=/etc          \
+            --localstatedir=/var       \
+            --with-daemon-user=colord  \
+            --enable-vala              \
+            --disable-argyllcms-sensor \
+            --disable-bash-completion  \
             --disable-static &amp;&amp;
 make</userinput></screen>
 
@@ -168,6 +170,12 @@ make</userinput></screen>
       <parameter>--enable-vala</parameter>: This switch enables
       building of the Vala bindings. Remove if you don't
       have <xref linkend="vala"/> installed.
+    </para>
+
+    <para>
+      <parameter>--disable-argyllcms-sensor</parameter>: This switch
+      disables building of the ArgyllCMS sensor because the
+      dependency required to build it is not part of BLFS.
     </para>
 
     <para>
