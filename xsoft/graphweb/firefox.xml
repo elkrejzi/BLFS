@@ -8,9 +8,9 @@
            "http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/&firefox-version;/source/firefox-&firefox-version;.source.tar.bz2">
   <!ENTITY firefox-download-ftp
            "ftp://ftp.mozilla.org/pub/mozilla.org/firefox/releases/&firefox-version;/source/firefox-&firefox-version;.source.tar.bz2">
-  <!ENTITY firefox-md5sum        "bd94c6465c53bf315b470259f1b1c896">
-  <!ENTITY firefox-size          "149 MB">
-  <!ENTITY firefox-buildsize     "5.0 GB (64 MB installed)">
+  <!ENTITY firefox-md5sum        "d9b7e4819899e23466f5b0750408f128">
+  <!ENTITY firefox-size          "157 MB">
+  <!ENTITY firefox-buildsize     "5.2 GB (68 MB installed)">
   <!ENTITY firefox-time          "60 SBU">
 ]>
 
@@ -158,11 +158,10 @@
 <screen><userinput>cat &gt; mozconfig &lt;&lt; "EOF"
 <literal># The following switch reduces optimization level when building
 # Firefox due to bugs in GCC-4.8 and early GCC-4.9 series that
-# would cause build to fail on i686 systems. If you are using
+# would cause build to fail on 32 bit systems. If you are not using
 # GCC-4.9.2 or later, or any supported version released before
-# GCC-4.8.0, remove the "=-O2" part if you wish to apply all of
-# the optimizations that this package can use:
-ac_add_options --enable-optimize=-O2
+# GCC-4.8.0 on a 32 bit system, uncomment the following line:
+#ac_add_options --enable-optimize=-O2
 
 # If you have installed DBus-Glib comment out this line:
 ac_add_options --disable-dbus
