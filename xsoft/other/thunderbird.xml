@@ -8,9 +8,9 @@
            "https://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/&thunderbird-version;/source/thunderbird-&thunderbird-version;.source.tar.bz2">
   <!ENTITY thunderbird-download-ftp
            "ftp://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/&thunderbird-version;/source/thunderbird-&thunderbird-version;.source.tar.bz2">
-  <!ENTITY thunderbird-md5sum            "6bb66f5cb67d573939d4e2ead6f7c7ca">
+  <!ENTITY thunderbird-md5sum            "3781dfb541412c7f6b530a654b834ce5">
   <!ENTITY thunderbird-size              "164 MB">
-  <!ENTITY thunderbird-buildsize         "4.7 GB (68 MB installed)">
+  <!ENTITY thunderbird-buildsize         "4.8 GB (58 MB installed)">
   <!ENTITY thunderbird-time              "56 SBU">
 ]>
 
@@ -158,11 +158,10 @@
 <screen><userinput>cat &gt; mozconfig &lt;&lt; "EOF"
 <literal># The following switch reduces optimization level when building
 # Thunderbird due to bugs in GCC-4.8 and early GCC-4.9 series that
-# would cause build to fail on i686 systems. If you are using
+# would cause build to fail on 32 bit systems. If you are not using
 # GCC-4.9.2 or later, or any supported version released before
-# GCC-4.8.0, remove the "=-O2" part if you wish to apply all of
-# the optimizations that this package can use:
-ac_add_options --enable-optimize=-O2
+# GCC-4.8.0 on a 32 bit system, uncomment the following line:
+#ac_add_options --enable-optimize=-O2
 
 # If you have installed DBus-Glib comment out this line:
 ac_add_options --disable-dbus
@@ -230,18 +229,18 @@ ac_add_options --with-pthreads
 ac_add_options --with-system-bz2
 ac_add_options --with-system-jpeg
 ac_add_options --with-system-png
-ac_add_options --with-system-zlib
+ac_add_options --with-system-zlib<!--
 
-mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/thunderbuild</literal>
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/thunderbuild--></literal>
 EOF</userinput></screen>
 
-    <para>
+    <!-- <para>
       First, a bug needs to be fixed. Note that thunderbuild matches
       the value used in mozconfig above for the object directory
       (MOZ_OBJDIR):
     </para>
 
-<screen><userinput>mkdir -v mozilla/thunderbuild</userinput></screen>
+<screen><userinput>mkdir -v mozilla/thunderbuild</userinput></screen> -->
 
     <note>
       <para>
