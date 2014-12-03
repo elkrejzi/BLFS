@@ -7,7 +7,7 @@
   <!ENTITY colord-download-http
            "http://www.freedesktop.org/software/colord/releases/colord-&colord-version;.tar.xz">
   <!ENTITY colord-download-ftp  " ">
-  <!ENTITY colord-md5sum        "ec1ad709bac22963877dbf48381ec34c">
+  <!ENTITY colord-md5sum        "73d5979385667c5f0d683e7f2b226758">
   <!ENTITY colord-size          "1.2 MB">
   <!ENTITY colord-buildsize     "36 MB">
   <!ENTITY colord-time          "0.5 SBU">
