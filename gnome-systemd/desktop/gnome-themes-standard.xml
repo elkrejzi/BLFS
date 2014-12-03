@@ -8,7 +8,7 @@
            "&gnome-download-http;/gnome-themes-standard/&gnome-minor14;/gnome-themes-standard-&gnome-themes-standard-version;.tar.xz">
   <!ENTITY gnome-themes-standard-download-ftp
            "&gnome-download-ftp;/gnome-themes-standard/&gnome-minor14;/gnome-themes-standard-&gnome-themes-standard-version;.tar.xz">
-  <!ENTITY gnome-themes-standard-md5sum        "69988f762a50745f89f768db9d2d9df1">
+  <!ENTITY gnome-themes-standard-md5sum        "d2af109b0f6b04447d79b10d517cd5fa">
   <!ENTITY gnome-themes-standard-size          "2.8 MB">
   <!ENTITY gnome-themes-standard-buildsize     "39 MB">
   <!ENTITY gnome-themes-standard-time          "0.3 SBU">
