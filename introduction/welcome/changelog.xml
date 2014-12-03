@@ -44,11 +44,17 @@
 
 -->
     <listitem>
-      <para>November 28th, 2014</para>
+      <para>December 3rd, 2014</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>November 28th, 2014</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Updated to colord-1.2.6.</para>
         </listitem>
