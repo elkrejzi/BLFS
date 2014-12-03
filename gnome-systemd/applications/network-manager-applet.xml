@@ -99,8 +99,8 @@
 
     <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
     <para role="required">
-      <xref linkend="lxpolkit"/> or
-      <xref linkend="polkit-gnome"/>
+      <xref linkend="polkit-gnome"/> (only if using the applet outside
+      of GNOME environment)
     </para>
 
     <para condition="html" role="usernotes">User Notes:

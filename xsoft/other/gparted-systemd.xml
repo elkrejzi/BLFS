@@ -181,11 +181,10 @@ sed -i 's/Exec=/Exec=sudo -A /'
 
         <para>
           To optionally use <command>pkexec</command>, you need
-          <xref linkend="polkit-gnome"/> or <xref linkend="lxpolkit"/> or
-          any Polkit authentication agent provided by your desktop
-          environment and  <xref linkend="systemd"/> (for Logind). Run the
-          following commands as the <systemitem
-          class="username">root</systemitem> user:
+          <xref linkend="polkit-gnome"/> or any Polkit authentication agent
+          provided by your desktop environment and
+          <xref linkend="systemd"/> (for Logind). Run the following commands
+          as the <systemitem class="username">root</systemitem> user:
         </para>
 
 <screen role="root"><userinput>cp -v  /usr/share/applications/gparted.desktop \

@@ -95,6 +95,26 @@
     </para>
   </sect2>
 
+  <sect2 role="kernel" id="libevdev-kernel">
+    <title>Kernel Configuration</title>
+
+  <para>
+    Enable the following options in the kernel configuration and recompile the
+    kernel if necessary:
+  </para>
+
+<screen><literal>Device Drivers  ---&gt;
+  Input device support ---&gt;
+    &lt;*&gt; Generic input layer (needed for...) [CONFIG_INPUT]
+    &lt;*&gt;   Event interface                   [CONFIG_INPUT_EVDEV]
+    [*]   Miscellaneous devices  ---&gt;       [CONFIG_INPUT_MISC]
+      &lt;*&gt;    User level driver support      [CONFIG_INPUT_UINPUT]</literal></screen>
+
+    <indexterm zone="libevdev libevdev-kernel">
+      <primary sortas="d-libevdev">libevdev</primary>
+    </indexterm>
+  </sect2>
+
   <sect2 role="installation">
     <title>Installation of libevdev</title>
 
