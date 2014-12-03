@@ -50,31 +50,45 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
-          <para>[krejzi] - Merged xfce4-power-manager-1.4.2 update from the main book. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged xfce4-power-manager-1.4.2 update
+          from the main book. Thanks to Fernando for doing all the
+          work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged samba-4.1.14 and unrarsrc-5.2.3, xterm-313 updates from the main book. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged samba-4.1.14 and unrarsrc-5.2.3,
+          xterm-313 updates from the main book. Thanks to Fernando
+          for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged lxsession-0.5.2, mercurial-3.2.2 and nss-3.17.3 updates from the main book. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged lxsession-0.5.2, mercurial-3.2.2
+          and nss-3.17.3 updates from the main book. Thanks to
+          Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged ffmpeg-2.4.4, libgusb-0.2.3 and LVM2-2.02.114 updates from the main book. Thanks to Fernando for doing all the work.</para>
+          <para>[krejzi] - Merged ffmpeg-2.4.4, libgusb-0.2.3 and
+          LVM2-2.02.114 updates from the main book. Thanks to
+          Fernando for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Merged Kernel Configuration updates for several packages from the main book. Thanks to Pierre for doing all the work.</para>
+          <para>[krejzi] - Merged Kernel Configuration updates for
+          several packages from the main book. Thanks to Pierre
+          for doing all the work.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Removed libgee-0.6.8 and lxpolkit-0.1.0.</para>
+          <para>[krejzi] - Removed libgee-0.6.8 and
+          lxpolkit-0.1.0.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Updated to gnome-themes-standard-3.14.2.3 and fontforge-20141126.</para>
+          <para>[krejzi] - Updated to gnome-themes-standard-3.14.2.3
+          and fontforge-20141126.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Updated to colord-1.2.7, colord-gtk-0.1.26 and rpcbind-0.2.2.</para>
+          <para>[krejzi] - Updated to colord-1.2.7,
+          colord-gtk-0.1.26 and rpcbind-0.2.2.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Updated to firefox-34.0.5, highlight-3.20 and thunderbird-31.3.0.</para>
+          <para>[krejzi] - Updated to firefox-34.0.5,
+          highlight-3.20 and thunderbird-31.3.0.</para>
         </listitem>
       </itemizedlist>
     </listitem>
