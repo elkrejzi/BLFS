@@ -9,9 +9,9 @@
 
   <!ENTITY qt5-download-http "&qt5-url;/qt-everywhere-opensource-src-&qt5-version;.tar.xz">
   <!ENTITY qt5-download-ftp  " ">
-  <!ENTITY qt5-md5sum        "3d371bbc5598af620723a594f9f1a774">
+  <!ENTITY qt5-md5sum        "21843b00ecde8956217faab391bc007b">
   <!ENTITY qt5-size          "279 MB">
-  <!ENTITY qt5-buildsize     "6.7 GB (175 MB installed)">
+  <!ENTITY qt5-buildsize     "7.6 GB (280 MB installed)">
   <!ENTITY qt5-time          "86 SBU">
 ]>
 
@@ -108,6 +108,7 @@
       <xref linkend="libxkbcommon"/>,
       <xref linkend="libxslt"/> (required for QtWebKit),
       <xref linkend="mtdev"/>,
+      <xref linkend="nss"/> (required for QtWebEngine),
       <xref linkend="openssl"/>,
       <xref linkend="pcre"/>,
       <xref linkend="ruby"/> (required for QtWebKit),
@@ -123,12 +124,11 @@
       <xref linkend="gtk2"/> (GTK+ Theme Support),
       <xref linkend="ibus"/>,
       <xref linkend="mariadb"/>,
-      <xref linkend="nss"/> (required for QtWebEngine),
       <xref linkend="postgresql"/>,
       <xref linkend="pulseaudio"/>,
       <xref linkend="unixodbc"/>,
       <ulink url="http://www.directfb.org/">DirectFB</ulink>,
-      <ulink url="http://www.firebirdsql.org/">Firebird</ulink> and
+      <ulink url="http://www.firebirdsql.org/">Firebird</ulink>, and
       <ulink url="http://kcat.strangesoft.net/openal-releases/">OpenAL-Soft</ulink>
     </para>
 
@@ -278,7 +278,10 @@ ln -sfv qt-&qt5-version; /opt/qt5</userinput></screen>
       following commands:
     </para>
 
-<screen><userinput>./configure -prefix         $QT5PREFIX                        \
+<screen><userinput>sed -i "/^QMAKE_LFLAGS_RPATH/s| -Wl,-rpath,||g" \
+       qtbase/mkspecs/common/gcc-base-unix.conf &amp;&amp;
+
+./configure -prefix         $QT5PREFIX                        \
             -sysconfdir     /etc/xdg                          \
             -bindir         $QT5BINDIR                        \
             -headerdir      $QT5PREFIX/include/qt5            \
@@ -287,17 +290,16 @@ ln -sfv qt-&qt5-version; /opt/qt5</userinput></screen>
             -docdir         $QT5PREFIX/share/doc/qt5          \
             -translationdir $QT5PREFIX/share/qt5/translations \
             -examplesdir    $QT5PREFIX/share/doc/qt5/examples \
-            -confirm-license  \
-            -opensource       \
-            -dbus-linked      \
-            -openssl-linked   \
-            -journald         \
-            -system-harfbuzz  \
-            -system-sqlite    \
-            -nomake examples  \
-            -no-rpath         \
-            -optimized-qmake  \
-            -skip qtwebengine &amp;&amp;
+            -confirm-license \
+            -opensource      \
+            -dbus-linked     \
+            -openssl-linked  \
+            -journald        \
+            -system-harfbuzz \
+            -system-sqlite   \
+            -nomake examples \
+            -no-rpath        \
+            -optimized-qmake &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -485,22 +487,17 @@ unset file</userinput></screen>
     </para>
 
     <para>
-      <parameter>-no-rpath</parameter>: This switch disables linking
-      with hardcoded runtime path in order to prevent the build from
-      failing if another <application>Qt5</application> instance
+      <parameter>-no-rpath</parameter> and  <command>sed -i
+      "/^QMAKE_LFLAGS_RPATH/s| -Wl,-rpath,||g" ...</command>:
+      This switch and command prevent linking with hardcoded
+      runtime path in order to prevent the build from failing
+      if another <application>Qt5</application> instance
       already exists in the installation prefix.
     </para>
 
     <para>
       <parameter>-optimized-qmake</parameter>: This switch enables
       building of the optimized <command>qmake</command> program.
-    </para>
-
-    <para>
-      <parameter>-skip qtwebengine</parameter>: This switch disables
-      building of the QtWebEngine module since it doesn't build on
-      unmodified BLFS setup, it doubles the build time and nothing
-      uses it yet.
     </para>
 
   </sect2>
@@ -574,6 +571,7 @@ ldconfig</userinput></screen>
 export QT5DIR=$QT5PREFIX
 export QT5BINDIR=$QT5BINDIR
 
+pathappend $QT5PREFIX               CMAKE_PREFIX_PATH
 pathappend $QT5PREFIX/lib/pkgconfig PKG_CONFIG_PATH
 
 # End /etc/profile.d/qt5.sh</literal>
@@ -592,6 +590,7 @@ EOF</userinput></screen>
 export QT5DIR=$QT5PREFIX
 export QT5BINDIR=$QT5BINDIR
 
+pathappend $QT5PREFIX               CMAKE_PREFIX_PATH
 pathappend $QT5BINDIR               PATH
 pathappend $QT5PREFIX/lib/pkgconfig PKG_CONFIG_PATH
 
@@ -645,13 +644,30 @@ EOF</userinput></screen>
           libQt5QuickWidgets.so, libQt5Script.so, libQt5ScriptTools.so,
           libQt5Sensors.so, libQt5SerialPort.so, libQt5Sql.so, libQt5Svg.so,
           libQt5Test.so, libQt5UiTools.a, libQt5WaylandClient.so,
-          libQt5WebChannel.so, libQt5WebKit.so, libQt5WebKitWidgets.so,
+          libQt5WebChannel.so, libQt5WebEngineCore.so, libQt5WebEngine.so,
+          libQt5WebEngineWidgets.so, libQt5WebKit.so, libQt5WebKitWidgets.so,
           libQt5WebSockets.so, libQt5Widgets.so, libQt5X11Extras.so,
           libQt5XmlPatterns.so, and libQt5Xml.so
         </seg>
         <seg>
           $QT5PREFIX/include/qt5,
           $QT5PREFIX/lib/qt5,
+          $QT5PREFIX/lib/cmake/{Qt5,Qt5Bluetooth,Qt5Concurrent},
+          $QT5PREFIX/lib/cmake/{Qt5Core,Qt5DBus,Qt5Declarative},
+          $QT5PREFIX/lib/cmake/{Qt5Designer,Qt5Enginio,Qt5Gui},
+          $QT5PREFIX/lib/cmake/{Qt5Help,Qt5LinguistTools,Qt5Location},
+          $QT5PREFIX/lib/cmake/{Qt5Multimedia,Qt5MultimediaWidgets},
+          $QT5PREFIX/lib/cmake/{Qt5Network,Qt5Nfc,Qt5OpenGL},
+          $QT5PREFIX/lib/cmake/{Qt5OpenGLExtensions,Qt5Positioning},
+          $QT5PREFIX/lib/cmake/{Qt5PrintSupport,Qt5Qml,Qt5Quick},
+          $QT5PREFIX/lib/cmake/{Qt5QuickTest,Qt5QuickWidgets,Qt5Script},
+          $QT5PREFIX/lib/cmake/{Qt5ScriptTools,Qt5Sensors,Qt5SerialPort},
+          $QT5PREFIX/lib/cmake/{Qt5Sql,Qt5Svg,Qt5Test,Qt5UiTools},
+          $QT5PREFIX/lib/cmake/{Qt5WaylandClient,Qt5WebChannel},
+          $QT5PREFIX/lib/cmake/{Qt5WebEngine,Qt5WebEngineCore},
+          $QT5PREFIX/lib/cmake/{Qt5WebEngineWidgets,Qt5WebKit},
+          $QT5PREFIX/lib/cmake/{Qt5WebKitWidgets,Qt5WebSockets,Qt5Widgets},
+          $QT5PREFIX/lib/cmake/{Qt5X11Extras,Qt5Xml,Qt5XmlPatterns},
           $QT5PREFIX/share/doc/qt5, and
           $QT5PREFIX/share/qt5
         </seg>
