@@ -6,9 +6,9 @@
 
   <!ENTITY libinput-download-http "http://www.freedesktop.org/software/libinput/libinput-&libinput-version;.tar.xz">
   <!ENTITY libinput-download-ftp  " ">
-  <!ENTITY libinput-md5sum        "3afaf9f66d8796323a79edb879c10ba3">
-  <!ENTITY libinput-size          "390 KB">
-  <!ENTITY libinput-buildsize     "9.5 MB">
+  <!ENTITY libinput-md5sum        "381b61396de28c12716ef7a5475fea50">
+  <!ENTITY libinput-size          "432 KB">
+  <!ENTITY libinput-buildsize     "12 MB">
   <!ENTITY libinput-time          "0.1 SBU">
 ]>
 
@@ -83,8 +83,8 @@
     <para role="optional">
       <xref linkend="check"/>,
       <xref linkend="doxygen"/>, and
-      <xref linkend="gtk3"/> (to build the GUI event viewer)
-      <!-- <xref linkend="valgrind"/> broken -->
+      <xref linkend="gtk3"/> (to build the GUI event viewer)<!--, and
+      <xref linkend="valgrind"/> -->
     </para>
 
     <para condition="html" role="usernotes">
@@ -103,11 +103,15 @@
 <screen><userinput>./configure --prefix=/usr --disable-static &amp;&amp;
 make</userinput></screen>
 
-    <para>
+    <!-- <para>
       If you have the optional <xref linkend="check"/> package installed,
       the regression tests can be run as the <systemitem 
       class="username">root</systemitem> user with
       <userinput>make -C test check-TESTS</userinput>.
+    </para> -->
+
+    <para>
+      This package does not have a working testsuite.
     </para>
 
     <para>

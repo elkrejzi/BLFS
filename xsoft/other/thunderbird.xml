@@ -5,9 +5,9 @@
   %general-entities;
 
   <!ENTITY thunderbird-download-http 
-           "https://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/&thunderbird-version;/source/thunderbird-&thunderbird-version;.source.tar.bz2">
+           "&mozilla-http;/thunderbird/releases/&thunderbird-version;/source/thunderbird-&thunderbird-version;.source.tar.bz2">
   <!ENTITY thunderbird-download-ftp
-           "ftp://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/&thunderbird-version;/source/thunderbird-&thunderbird-version;.source.tar.bz2">
+           "&mozilla-ftp;/thunderbird/releases/&thunderbird-version;/source/thunderbird-&thunderbird-version;.source.tar.bz2">
   <!ENTITY thunderbird-md5sum            "3781dfb541412c7f6b530a654b834ce5">
   <!ENTITY thunderbird-size              "164 MB">
   <!ENTITY thunderbird-buildsize         "4.8 GB (58 MB installed)">
@@ -108,9 +108,9 @@
         fail with output including "ImportError: cannot import name
         HTTPSHandler". If you are in any doubt about this (e.g. upgrading from
         an older version of SeaMonkey), check if
-        <filename>/usr/lib/python2.7/lib-dynload/_ssl.so</filename> exists. If
-        it does not, reinstall <xref linkend="python2"/> (after installing
-        <xref linkend="openssl"/>  - the latest version of any
+        <filename>/usr/lib/python&python2-majorver;/lib-dynload/_ssl.so</filename>
+        exists. If it does not, reinstall <xref linkend="python2"/> (after
+        installing <xref linkend="openssl"/>. The latest version of any
         <emphasis>currently maintained</emphasis> version of OpenSSL should be
         satisfactory if already installed.
       </para>

@@ -48,6 +48,7 @@ $Date: 2014-10-28 18:37:22 +0100 (Tue, 28 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gtkmm3.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gtk-vnc-systemd.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="imlib2.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="keybinder2.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libdrm.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libepoxy.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libglade.xml"/>

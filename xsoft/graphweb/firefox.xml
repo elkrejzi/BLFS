@@ -5,9 +5,9 @@
   %general-entities;
 
   <!ENTITY firefox-download-http
-           "http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/&firefox-version;/source/firefox-&firefox-version;.source.tar.bz2">
+           "&mozilla-http;/firefox/releases/&firefox-version;/source/firefox-&firefox-version;.source.tar.bz2">
   <!ENTITY firefox-download-ftp
-           "ftp://ftp.mozilla.org/pub/mozilla.org/firefox/releases/&firefox-version;/source/firefox-&firefox-version;.source.tar.bz2">
+           "&mozilla-ftp;/firefox/releases/&firefox-version;/source/firefox-&firefox-version;.source.tar.bz2">
   <!ENTITY firefox-md5sum        "d9b7e4819899e23466f5b0750408f128">
   <!ENTITY firefox-size          "157 MB">
   <!ENTITY firefox-buildsize     "5.2 GB (68 MB installed)">
@@ -108,9 +108,9 @@
         fail with output including "ImportError: cannot import name
         HTTPSHandler". If you are in any doubt about this (e.g. upgrading from
         an older version of SeaMonkey), check if
-        <filename>/usr/lib/python2.7/lib-dynload/_ssl.so</filename> exists. If
-        it does not, reinstall <xref linkend="python2"/> (after installing
-        <xref linkend="openssl"/>  - the latest version of any
+        <filename>/usr/lib/python&python2-majorver;/lib-dynload/_ssl.so</filename>
+        exists. If it does not, reinstall <xref linkend="python2"/> (after
+        installing <xref linkend="openssl"/>. The latest version of any
         <emphasis>currently maintained</emphasis> version of OpenSSL should be
         satisfactory if already installed.
       </para>

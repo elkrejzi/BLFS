@@ -44,11 +44,70 @@
 
 -->
     <listitem>
-      <para>December 3rd, 2014</para>
+      <para>December 10th, 2014</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+        <listitem>
+          <para>[krejzi] - Updated to poppler-0.29.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libevdev-1.2.2,
+          libinput-0.7.0 and MesaLib-10.3.5.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged x264-snapshot-20141208 and
+          xfsprogs-3.2.2 updates from the main book. Thanks to
+          Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged seamonkey-2.31, sqlite-3.8.7.3
+          and wget-1.16.1 updates from the main book. Thanks to
+          Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged librsvg-2.40.6, libsoup-2.48.1
+          and lxpanel-0.8.0 updates from the main book. Thanks
+          to Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged ffmpeg-2.5, freetype-2.5.4 and
+          glib-networking-2.42.1 updates from the main book.
+          Thanks to Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged keybinder2-0.3.0 addition from
+          the main book. Thanks to Fernando for doing all the
+          work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged phonon-4.8.3,
+          phonon-backend-gstreamer-4.8.1 and
+          phonon-backend-vlc-0.8.2 updates from the main book.
+          Thanks to Bruce for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged Qemu networking instructions
+          changes from the main book. Thanks to Bruce for
+          doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged remaining Kernel Configuration
+          updates from the main book. Thanks to Pierre for doing
+          all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Commented out "Devices for Servers"
+          section from the "About Devices" page as it is not
+          relevant on systemd based setups.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>December 3rd, 2014</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Merged xfce4-power-manager-1.4.2 update
           from the main book. Thanks to Fernando for doing all the
