@@ -87,6 +87,7 @@ $Date: 2014-10-26 17:07:07 +0100 (Sun, 26 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="liblinear.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libmbim-systemd.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libpaper.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libpciaccess-systemd.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libqmi-systemd.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libsigc++.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libsigsegv.xml"/>

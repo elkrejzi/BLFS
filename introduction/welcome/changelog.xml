@@ -50,6 +50,11 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Moved libpciaccess from the Xorg
+          Libraries page into a standalone page in the
+          General Libraries section.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Updated to poppler-0.29.0.</para>
         </listitem>
         <listitem>
