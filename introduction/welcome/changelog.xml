@@ -55,7 +55,7 @@
           General Libraries section.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Updated to poppler-0.29.0.</para>
+          <para>[krejzi] - Updated to poppler-0.29.0 and qt-5.4.0.</para>
         </listitem>
         <listitem>
           <para>[krejzi] - Updated to libevdev-1.2.2,
