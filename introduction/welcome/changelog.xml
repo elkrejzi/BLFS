@@ -55,7 +55,12 @@
           General Libraries section.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Updated to poppler-0.29.0 and qt-5.4.0.</para>
+          <para>[krejzi] - Updated to evolution-data-server-3.12.9,
+          evolution-3.12.9 and gedit-3.14.2.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to poppler-0.29.0, qt-5.4.0
+          and tracker-1.2.5.</para>
         </listitem>
         <listitem>
           <para>[krejzi] - Updated to libevdev-1.2.2,
