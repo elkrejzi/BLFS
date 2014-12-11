@@ -34,7 +34,7 @@
 <!ENTITY polkit-version               "0.112">
 <!ENTITY shadow-version               "4.2.1">
 <!ENTITY ssh-askpass-version          "&openssh-version;">
-<!ENTITY stunnel-version              "5.07">
+<!ENTITY stunnel-version              "5.08">
 <!ENTITY sudo-version                 "1.8.11p2">
 <!ENTITY tripwire-version             "2.4.2.2">
 
@@ -64,7 +64,7 @@
 <!ENTITY zsh-version                  "5.0.7">
 
 <!-- Chapter 8 Virtualization -->
-<!ENTITY qemu-version                 "2.1.2">
+<!ENTITY qemu-version                 "2.2.0">
 
 <!-- Part III -->
 <!-- Chapter 9 -->
@@ -189,7 +189,7 @@
 <!ENTITY graphviz-version             "2.38.0">   <!-- Even minors only -->
 <!ENTITY gtk-doc-version              "1.21">
 <!ENTITY hd2u-version                 "1.0.3">
-<!ENTITY hicolor-icon-theme-version   "0.13">
+<!ENTITY hicolor-icon-theme-version   "0.14">
 <!ENTITY icon-naming-utils-version    "0.8.90">
 <!ENTITY imagemagick-version          "6.9.0">
 <!ENTITY intltool-version             "0.50.2">
@@ -335,7 +335,7 @@
 <!-- Part IV -->
 <!-- Chapter 14 -->
 <!ENTITY ppp-version                  "2.4.5">
-<!ENTITY dhcpcd-version               "6.6.4">
+<!ENTITY dhcpcd-version               "6.6.5">
 <!ENTITY dhcp-version                 "4.3.1">
 
 <!-- Chapter 15 -->
@@ -406,18 +406,18 @@
 
 <!ENTITY exim-version                 "4.84">
 <!ENTITY postfix-version              "2.11.3">
-<!ENTITY sendmail-version             "8.14.9">
+<!ENTITY sendmail-version             "8.15.1">
 
 <!-- Chapter 22 -->
 <!ENTITY db-version                   "6.1.19">
 <!ENTITY mariadb-version              "10.0.15">
 <!ENTITY postgresql-version           "9.3.5">
-<!ENTITY sqlite-version               "3.8.7.3">
+<!ENTITY sqlite-version               "3.8.7.4">
 
 <!-- Chapter 23 -->
 <!ENTITY openldap-version             "2.4.40">
 <!ENTITY soprano-version              "2.9.4">
-<!ENTITY unbound-version              "1.5.0">
+<!ENTITY unbound-version              "1.5.1">
 <!ENTITY virtuoso-version             "6.1.8">
 <!ENTITY xinetd-version               "2.3.15">
 

@@ -44,11 +44,33 @@
 
 -->
     <listitem>
-      <para>December 10th, 2014</para>
+      <para>December 11th, 2014</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+        <listitem>
+          <para>[krejzi] - Merged stunnel-5.08 and unbound-1.5.1
+          updates from the main book. Thanks to Fernando for
+          doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged dhcpcd-6.6.5,
+          hicolor-icon-theme-0.13 and sqlite-3.8.7.4 updates
+          from the main book. Thanks to Fernando for doing
+          all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged qemu-2.2.0 and sendmail-8.15.1
+          updates from the main book. Thanks to Bruce for doing
+          all the work.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>December 10th, 2014</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Moved libpciaccess from the Xorg
           Libraries page into a standalone page in the
