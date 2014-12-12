@@ -5,7 +5,7 @@
   %general-entities;
 
   <!ENTITY kf5-size          "28 MB">
-  <!ENTITY kf5-buildsize     "1010 MB">
+  <!ENTITY kf5-buildsize     "1.1 GB">
   <!ENTITY kf5-time          "65 SBU">
 ]>
 
@@ -40,8 +40,8 @@
       packages in one go, using a <command>bash</command> script. This is useful if you need all
       of the Frameworks packages to build, eg. the <application>KDE Plasma Desktop</application>.
       If you need only a small amount of packages to build a certain <application>KDE
-      Frameworks</application> based application, we offer the instructions for building each
-      of the <application>KDE Frameworks</application> packages separately.
+      Frameworks</application> based application, we offer instructions for building each of the
+      <application>KDE Frameworks</application> packages separately.
     </para>
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
@@ -246,7 +246,6 @@ do
   pushd $packagedir/build
   cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX      \
         -DCMAKE_BUILD_TYPE=Release              \
-        -DSYSCONF_INSTALL_DIR=$KF5_SYSCONFDIR   \
         -DLIB_INSTALL_DIR=lib                   \
         -DBUILD_TESTING=OFF                     \
         -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
@@ -278,11 +277,6 @@ done</userinput></screen>
 
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/cmake-release.xml"/>
-
-    <para>
-      <parameter>-DSYSCONF_INSTALL_DIR=$KF5_SYSCONFDIR</parameter>: This switch
-      is used to set correct XDG configuration directory.
-    </para>
 
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/kf5-libdir.xml"/>

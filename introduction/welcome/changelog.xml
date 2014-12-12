@@ -44,11 +44,26 @@
 
 -->
     <listitem>
-      <para>December 11th, 2014</para>
+      <para>December 12th, 2014</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+        <listitem>
+          <para>[krejzi] - Updated to extra-cmake-modules-1.5.0
+          and KDE Frameworks-5.5.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to phonon-4.8.3 (Qt5 version),
+          phonon-backend-gstreamer-4.8.1 (Qt5 version) and
+          phonon-backend-vlc-0.8.2 (Qt5 version).</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>December 11th, 2014</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Merged stunnel-5.08 and unbound-1.5.1
           updates from the main book. Thanks to Fernando for
