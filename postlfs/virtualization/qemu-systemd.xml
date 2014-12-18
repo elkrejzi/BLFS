@@ -160,14 +160,11 @@ make</userinput></screen>
 
     <para>
       You will need a dedicated group that will contain users (other than root)
-      allowed to access the KVM device.  Add the group and allow network
-      bridging connectivity for that group by running the following commands as
-      the <systemitem class="username">root</systemitem> user:
+      allowed to access the KVM device.  Create this group by running the following 
+      command as the <systemitem class="username">root</systemitem> user:
     </para>
 
-<screen role="root"><userinput>groupadd -g 61 kvm                         &amp;&amp;
-chgrp kvm  /usr/libexec/qemu-bridge-helper &amp;&amp;
-chmod 4750 /usr/libexec/qemu-bridge-helper</userinput></screen>
+<screen role="root"><userinput>groupadd -g 61 kvm</userinput></screen>
 
     <para>
       Add any users that might use the KVM device to that group:
@@ -200,8 +197,11 @@ EOF</userinput></screen>
   <sect2 role="commands">
     <title>Command Explanations</title>
 
+    <!-- Developer note: it is not needed for glibc-2.20 -->
+
     <para><command>sed ... virtfs-proxy-helper.c</command>: Fix a build
-    problem introduced by recent glibc include files.</para>
+    problem due to changes in some versions of the glibc include file 
+    sys/xattr.h.</para>
 
     <para><parameter>--target-list=x86_64-softmmu</parameter>: This switch
     limits the build target to the x86_64 architecture.  For other 

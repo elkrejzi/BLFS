@@ -113,7 +113,8 @@
       commands:
     </para>
 
-<screen><userinput>./bootstrap &amp;&amp;
+<screen><userinput>rm -rf libltdl &amp;&amp;
+./bootstrap    &amp;&amp;
 ./configure --prefix=/usr     \
             --enable-gtk2-use \
             --disable-static  \
@@ -134,6 +135,12 @@ make</userinput></screen>
 
   <sect2 role="commands">
     <title>Command Explanations</title>
+
+    <para>
+      <command>rm -rf libltdl</command>: This prevents the
+      <command>bootstrap</command> command from failing if a recent version
+      of <application>Libtool</application> has been installed.
+    </para>
 
     <para>
       <parameter>--enable-gtk2-use</parameter>: This switch enables building

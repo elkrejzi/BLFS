@@ -10,7 +10,7 @@
 <!ENTITY libsecret-version            "0.18">
 <!ENTITY totem-pl-parser-version      "3.10.3">
 <!ENTITY tracker-version              "1.2.5">
-<!ENTITY vte-version                  "0.38.2">
+<!ENTITY vte-version                  "0.38.3">
 <!ENTITY yelp-xsl-version             "3.14.0">
 <!ENTITY GConf-version                "3.2.6">
 <!ENTITY gcr-version                  "3.14.0">
@@ -35,7 +35,7 @@
 <!ENTITY libzapojit-version           "0.0.3">
 <!ENTITY evolution-data-server-version "3.12.9">
 <!ENTITY folks-version                "0.10.0">
-<!ENTITY gnome-online-miners-version  "3.14.0">
+<!ENTITY gnome-online-miners-version  "3.14.1">
 
 <!-- Telepathy Framework -->
 <!ENTITY telepathy-glib-version       "0.24.1">
@@ -110,7 +110,7 @@
 <!ENTITY seahorse-version             "3.14.0">
 <!ENTITY sound-juicer-version         "3.14.0">
 <!ENTITY sushi-version                "3.12.0">
-<!ENTITY vinagre-version              "3.14.2">
+<!ENTITY vinagre-version              "3.14.3">
 <!ENTITY vino-version                 "3.14.1">
 <!ENTITY totem-version                "3.14.1">
 

@@ -8,10 +8,10 @@
            "&gnome-download-http;/gnome-online-miners/&gnome-minor14;/gnome-online-miners-&gnome-online-miners-version;.tar.xz">
   <!ENTITY gnome-online-miners-download-ftp
            "&gnome-download-ftp;/gnome-online-miners/&gnome-minor14;/gnome-online-miners-&gnome-online-miners-version;.tar.xz">
-  <!ENTITY gnome-online-miners-md5sum        "a7cf302540938d56116c16917f733969">
-  <!ENTITY gnome-online-miners-size          "248 KB">
-  <!ENTITY gnome-online-miners-buildsize     "6.6 MB">
-  <!ENTITY gnome-online-miners-time          "less than 0.1 SBU">
+  <!ENTITY gnome-online-miners-md5sum        "cd60db9d3ad65fb6071a635975f08b62">
+  <!ENTITY gnome-online-miners-size          "252 KB">
+  <!ENTITY gnome-online-miners-buildsize     "6.7 MB">
+  <!ENTITY gnome-online-miners-time          "0.1 SBU">
 ]>
 
 <sect1 id="gnome-online-miners" xreflabel="gnome-online-miners-&gnome-online-miners-version;">

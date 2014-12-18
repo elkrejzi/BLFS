@@ -50,6 +50,18 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Merged speex-1.2rc2 update from the main
+          book. Thanks to Bruce for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to udisks-2.1.4, vinagre-3.14.3
+           and vte-0.38.3.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to gnome-online-miners-3.14.1 and
+           setuptools-8.0.4 - Python Module.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Updated to gtk+-3.14.6,
           network-manager-applet-0.995.0.0 and
           upower-0.99.2.</para>
