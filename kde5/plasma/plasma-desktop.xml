@@ -101,12 +101,11 @@
 <screen><userinput>mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX      \
-      -DCMAKE_BUILD_TYPE=Release              \
-      -DSYSCONF_INSTALL_DIR=$KF5_SYSCONFDIR   \
-      -DLIB_INSTALL_DIR=lib                   \
-      -DBUILD_TESTING=OFF                     \
-      -DQML_INSTALL_DIR=&qt5-qml-dir;           \
+cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
+      -DCMAKE_BUILD_TYPE=Release         \
+      -DLIB_INSTALL_DIR=lib              \
+      -DBUILD_TESTING=OFF                \
+      -DQML_INSTALL_DIR=&qt5-qml-dir;    \
       -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
       .. &amp;&amp;
 make</userinput></screen>
@@ -128,11 +127,6 @@ make</userinput></screen>
 
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/cmake-release.xml"/>
-
-    <para>
-      <parameter>-DSYSCONF_INSTALL_DIR=$KF5_SYSCONFDIR</parameter>: This switch
-      is used to set correct XDG configuration directory.
-    </para>
 
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/kf5-libdir.xml"/>
@@ -175,7 +169,7 @@ make</userinput></screen>
           $KF5_PREFIX/share/{kcm_componentchooser,kcminput,kcmkeyboard,kcmkeys},
           $KF5_PREFIX/share/{kcm_phonon,kcmsolidactions,kcontrol,kdisplay,kdm,kfontinst},
           $KF5_PREFIX/share/{konqsidebartng,ksmserver,kthememanager},
-          $KF5_PREFIX/share/kxmlgui/{kfontinst,kfontview} and
+          $KF5_PREFIX/share/kxmlgui5/{kfontinst,kfontview} and
           $KF5_PREFIX/share/plasma/{kcms,layout-templates,packages,plasmoids/shells}
         </seg>
       </seglistitem>

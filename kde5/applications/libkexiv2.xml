@@ -69,7 +69,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="exiv2"/> and
-      <xref linkend="kdelibs4support"/>
+      <xref linkend="ktextwidgets"/>
     </para>
 
     <para condition="html" role="usernotes">
@@ -92,7 +92,7 @@ cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
       -DCMAKE_BUILD_TYPE=Release         \
       -DLIB_INSTALL_DIR=lib              \
       -DBUILD_TESTING=OFF                \
-      -Wno-dev .. &amp;&amp;
+      .. &amp;&amp;
 make</userinput></screen>
 
     <para>

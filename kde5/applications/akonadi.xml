@@ -99,11 +99,10 @@
 <screen><userinput>mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX      \
-      -DCMAKE_BUILD_TYPE=Release              \
-      -DSYSCONF_INSTALL_DIR=$KF5_SYSCONFDIR   \
-      -DLIB_INSTALL_DIR=lib                   \
-      -DBUILD_TESTING=OFF                     \
+cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
+      -DCMAKE_BUILD_TYPE=Release         \
+      -DLIB_INSTALL_DIR=lib              \
+      -DBUILD_TESTING=OFF                \
       -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
       -Wno-dev .. &amp;&amp;
 make</userinput></screen>
@@ -159,7 +158,7 @@ make</userinput></screen>
           libKF5AkonadiPrivate.so
         </seg>
         <seg>
-          $KF5_SYSCONFDIR/xdg/akonadi,
+          $KF5_PREFIX/etc/xdg/akonadi,
           $KF5_PREFIX/include/KF5/akonadi,
           $KF5_PREFIX/lib/cmake/KF5AkonadiServer and
           $KF5_PREFIX/&qt5-plugins-dir;/sqldrivers
