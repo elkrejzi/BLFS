@@ -7,10 +7,10 @@
   <!ENTITY mesalib-download-http " ">
   <!ENTITY mesalib-download-ftp
            "ftp://ftp.freedesktop.org/pub/mesa/&mesalib-version;/MesaLib-&mesalib-version;.tar.bz2">
-  <!ENTITY mesalib-md5sum        "f404f9ecece1e04f2c99dadc42a7d215">
-  <!ENTITY mesalib-size          "7.0 MB">
-  <!ENTITY mesalib-buildsize     "255 MB">
-  <!ENTITY mesalib-time          "5.2 SBU">
+  <!ENTITY mesalib-md5sum        "b7b37117eecbdfaaf3075acfb063d5a3">
+  <!ENTITY mesalib-size          "7.2 MB">
+  <!ENTITY mesalib-buildsize     "225 MB">
+  <!ENTITY mesalib-time          "9.5 SBU">
 ]>
 
 <sect1 id="mesalib" xreflabel="MesaLib-&mesalib-version;">
@@ -93,6 +93,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="elfutils"/> (required for Radeon 3D drivers),
+      <xref linkend="libva"/> (to build VAAPI drivers for supported hardware),
       <xref linkend="libvdpau"/> (to build VDPAU drivers for supported hardware),
       <xref linkend="llvm"/> (required for Radeon 3D drivers and also for
       llvmpipe which is intended to be the fastest of the three sw rasterizers,
@@ -156,13 +157,10 @@
 <screen><userinput>./autogen.sh CFLAGS="-O2" CXXFLAGS="-O2" \
             --prefix=/usr                \
             --sysconfdir=/etc            \
-            --disable-gallium-egl        \
             --enable-texture-float       \
             --enable-gles1               \
             --enable-gles2               \
-            --enable-osmesa              \
             --enable-xa                  \
-            --enable-gbm                 \
             --enable-glx-tls             \
             --with-egl-platforms="drm,x11,wayland" \
             --with-gallium-drivers="nouveau,r300,r600,radeonsi,svga,swrast" &amp;&amp;
@@ -216,12 +214,6 @@ cp -rfv docs/* /usr/share/doc/MesaLib-&mesalib-version;</userinput></screen>
     </para>
 
     <para>
-      <parameter>--disable-gallium-egl</parameter>: This switch disables
-      the egl_gallium loader in favor of egl_dri2 loader which supports
-      both DRI and Gallium drivers.
-    </para>
-
-    <para>
       <parameter>--enable-texture-float</parameter>: This switch enables
       floating-point textures and render buffers. Please consult
       <filename>docs/patents.txt</filename> to see if there are
@@ -239,23 +231,8 @@ cp -rfv docs/* /usr/share/doc/MesaLib-&mesalib-version;</userinput></screen>
     </para>
 
     <para>
-      <parameter>--enable-osmesa</parameter>: This switch enables building of
-      the <filename class="libraryfile">libOSMesa</filename> library.
-    </para>
-
-    <para>
       <parameter>--enable-xa</parameter>: This switch enables building of the
       XA X Acceleration API (Required for VMware 3D Driver).
-    </para>
-
-    <para>
-      <parameter>--enable-gbm</parameter>: This switch enables building of the
-      <application>Mesa</application> Graphics Buffer Manager library.
-    </para>
-
-    <para>
-      <parameter>--enable-gallium-gbm</parameter>: This switch enables optional
-      GBM state tracker for Gallium.
     </para>
 
     <para>
@@ -280,12 +257,6 @@ cp -rfv docs/* /usr/share/doc/MesaLib-&mesalib-version;</userinput></screen>
       <application>LLVM</application>.
     </para>
 
-    <para>
-      <option>--enable-r600-llvm-compiler</option>: Use this switch to
-      enable experimental R600 <application>LLVM</application> backend
-      for graphics shaders which claims to speed up the driver.
-    </para>
-
   </sect2>
 
   <sect2 role="content">
@@ -307,24 +278,17 @@ cp -rfv docs/* /usr/share/doc/MesaLib-&mesalib-version;</userinput></screen>
           libGLESv1_CM.so,
           libGLESv2.so,
           libGL.so,
-          libOSMesa.so,
-          libwayland-egl.so, and
-          libxatracker.so
+          libwayland-egl.so,
+          libxatracker.so,
+          libXvMCnouveau.so, and
+          libXvMCr600.so
         </seg>
         <seg>
-          /usr/include/EGL,
-          /usr/include/GL,
-          /usr/include/GLES,
-          /usr/include/GLES2,
-          /usr/include/GLES3,
-          /usr/include/KHR,
-          /usr/include/VG,
+          /usr/include/{EGL,GL,GLES},
+          /usr/include/{GLES2,GLES3,KHR},
           /usr/lib/dri,
-          /usr/lib/egl,
-          /usr/lib/gallium-pipe,
-          /usr/lib/gbm,
           /usr/lib/vdpau, and
-          /usr/share/doc/MesaLib-&mesalib-version; (optional)
+          /usr/share/doc/MesaLib-&mesalib-version;
         </seg>
       </seglistitem>
     </segmentedlist>
@@ -418,18 +382,6 @@ cp -rfv docs/* /usr/share/doc/MesaLib-&mesalib-version;</userinput></screen>
           </para>
           <indexterm zone="mesalib libGL">
             <primary sortas="c-libGL">libGL.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-
-      <varlistentry id="libOSMesa">
-        <term><filename class="libraryfile">libOSMesa.so</filename></term>
-        <listitem>
-          <para>
-            is the <application>Mesa</application> Off-screen Rendering library.
-          </para>
-          <indexterm zone="mesalib libOSMesa">
-            <primary sortas="c-libOSMesa">libOSMesa.so</primary>
           </indexterm>
         </listitem>
       </varlistentry>

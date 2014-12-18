@@ -84,14 +84,30 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="mesalib"/>
+      <xref linkend="libdrm"/>
+    </para>
+
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="mesalib"/>,
+      <xref linkend="wayland"/> and
+      <xref linkend="xorg7-lib"/>
     </para>
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/> and
-      <xref linkend="wayland"/>
+      <xref linkend="doxygen"/>
     </para>
+
+    <note>
+      <para>
+        There is a circular dependency between <xref linkend="mesalib"/>
+        and this package. If you need the VAAPI driver provided by
+        <xref linkend="mesalib"/>, build this package without EGL and
+        GLX support, install <application>MesaLib</application>, then
+        reinstall this package with EGL and GLX support.
+      </para>
+    </note>
 
     <bridgehead renderas="sect4">Runtime Dependency</bridgehead>
     <para role="optional">
