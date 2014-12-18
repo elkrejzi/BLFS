@@ -50,7 +50,13 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
-          <para>[krejzi] - Updated to MesaLib-10.4.0.</para>
+          <para>[krejzi] - Updated to gtk+-3.14.6,
+          network-manager-applet-0.995.0.0 and
+          upower-0.99.2.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to bluez-5.26, MesaLib-10.4.0 and
+          NetworkManager-0.995.0.0.</para>
         </listitem>
       </itemizedlist>
     </listitem>

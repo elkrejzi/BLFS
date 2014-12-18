@@ -6,10 +6,10 @@
 
   <!ENTITY bluez-download-http "http://www.kernel.org/pub/linux/bluetooth/bluez-&bluez-version;.tar.xz">
   <!ENTITY bluez-download-ftp  "ftp://ftp.kernel.org/pub/linux/bluetooth/bluez-&bluez-version;.tar.xz">
-  <!ENTITY bluez-md5sum        "41bd0c915abde255622150ce6dcae67b">
+  <!ENTITY bluez-md5sum        "17d497a118ea66aa8c01ab1e6fac25cd">
   <!ENTITY bluez-size          "1.5 MB">
-  <!ENTITY bluez-buildsize     "70 MB">
-  <!ENTITY bluez-time          "0.6 SBU"> 
+  <!ENTITY bluez-buildsize     "65 MB">
+  <!ENTITY bluez-time          "0.5 SBU"> 
 ]>
 
 <sect1 id="bluez" xreflabel="BlueZ-&bluez-version;">
@@ -130,10 +130,10 @@
     </para>
 
 <screen><userinput>patch -Np1 -i ../bluez-&bluez-version;-obexd_without_systemd-1.patch &amp;&amp;
-./configure --prefix=/usr         \
-            --sysconfdir=/etc     \
-            --localstatedir=/var  \
-            --enable-library &amp;&amp;
+./configure --prefix=/usr        \
+            --sysconfdir=/etc    \
+            --localstatedir=/var \
+            --enable-library     &amp;&amp;
 make</userinput></screen>
 
     <para>

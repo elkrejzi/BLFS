@@ -5,13 +5,13 @@
   %general-entities;
 
   <!ENTITY NetworkManager-download-http
-           "&gnome-download-http;/NetworkManager/0.9/NetworkManager-&NetworkManager-version;.tar.xz">
+           "&gnome-download-http;/NetworkManager/0.995/NetworkManager-&NetworkManager-version;.tar.xz">
   <!ENTITY NetworkManager-download-ftp
-           "&gnome-download-ftp;/NetworkManager/0.9/NetworkManager-&NetworkManager-version;.tar.xz">
-  <!ENTITY NetworkManager-md5sum        "21b9051dbbd6434df4624a90ca9d71b6">
-  <!ENTITY NetworkManager-size          "2.5 MB">
-  <!ENTITY NetworkManager-buildsize     "127 MB (additional 10 MB for the tests)">
-  <!ENTITY NetworkManager-time          "1.5 SBU">
+           "&gnome-download-ftp;/NetworkManager/0.995/NetworkManager-&NetworkManager-version;.tar.xz">
+  <!ENTITY NetworkManager-md5sum        "94fab7ea75c79446f463b3a5b2b4507d">
+  <!ENTITY NetworkManager-size          "3.1 MB">
+  <!ENTITY NetworkManager-buildsize     "295 MB">
+  <!ENTITY NetworkManager-time          "1.6 SBU">
 ]>
 
 <sect1 id="NetworkManager" xreflabel="NetworkManager-&NetworkManager-version;">
@@ -133,7 +133,8 @@
             --disable-ppp                   \
             --with-nmtui                    \
             --with-session-tracking=systemd \
-            --with-systemdsystemunitdir=/lib/systemd/system &amp;&amp;
+            --with-systemdsystemunitdir=/lib/systemd/system  \
+            --docdir=/usr/share/doc/NetworkManager-&NetworkManager-version; &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -270,20 +271,18 @@ EOF</userinput></screen>
 
       <seglistitem>
         <seg>
-          NetworkManager, nm-online, nmcli, nmtui, nmtui-connect,
+          NetworkManager, nmcli, nm-online, nmtui, nmtui-connect,
           nmtui-edit, and nmtui-hostname
         </seg>
         <seg>
-          libnm-glib.so, libnm-glib-vpn.so, and libnm-util.so
+          libnm.so, libnm-glib.so, libnm-glib-vpn.so, and libnm-util.so
         </seg>
         <seg>
           /etc/NetworkManager,
-          /usr/include/libnm-glib,
-          /usr/include/NetworkManager,
+          /usr/include/{libnm,libnm-glib,NetworkManager},
           /usr/lib/NetworkManager,
-          /usr/share/doc/NetworkManager,
-          /usr/share/gtk-doc/html/libnm-glib,
-          /usr/share/gtk-doc/html/libnm-util,
+          /usr/share/doc/NetworkManager-&NetworkManager-version;,
+          /usr/share/gtk-doc/html/{libnm,libnm-glib,libnm-util},
           /usr/share/gtk-doc/html/NetworkManager,
           /var/lib/NetworkManager, and
           /var/run/NetworkManager

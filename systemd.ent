@@ -24,7 +24,7 @@
 <!ENTITY qtchooser-version            "39">
 <!ENTITY sound-theme-freedesktop-version "0.8">
 <!ENTITY uhttpmock-version            "0.3.3">
-<!ENTITY upower1-version              "0.99.1">
+<!ENTITY upower1-version              "0.99.2">
 <!ENTITY wayland-version              "1.6.0">
 <!ENTITY webkit2gtk-version           "2.6.4">
 <!ENTITY weston-version               "1.6.0">
