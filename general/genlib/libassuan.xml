@@ -7,8 +7,8 @@
   <!ENTITY libassuan-download-http " ">
   <!ENTITY libassuan-download-ftp
            "ftp://ftp.gnupg.org/gcrypt/libassuan/libassuan-&libassuan-version;.tar.bz2">
-  <!ENTITY libassuan-md5sum        "b5373485419a7e2c23457d20811caabe">
-  <!ENTITY libassuan-size          "504 KB">
+  <!ENTITY libassuan-md5sum        "a104faed3e97b9c302c5d67cc22b1d60">
+  <!ENTITY libassuan-size          "508 KB">
   <!ENTITY libassuan-buildsize     "7.9 MB">
   <!ENTITY libassuan-time          "0.1 SBU">
 ]>

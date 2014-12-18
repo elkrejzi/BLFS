@@ -50,6 +50,21 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Merged rasqal-0.9.23 and subversion-1.8.11
+          updates from the main book. Thanks to Fernando for doing
+          all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged harfbuzz-0.9.37, libassuan-2.2.0
+          and python-2.7.9 updates from the main book. Thanks to
+          Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged ffmpeg-2.5.1, gnutls-3.3.11 and
+          gpgme-1.5.3 updates from the main book. Thanks to Fernando
+          for doing all the work.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Merged speex-1.2rc2 update from the main
           book. Thanks to Bruce for doing all the work.</para>
         </listitem>
