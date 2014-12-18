@@ -44,6 +44,7 @@ $Date: 2014-10-19 19:23:14 +0200 (Sun, 19 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="powerdevil.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="plasma-desktop.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kdeplasma-addons.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="sddm.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="starting.xml"/>
 
 </chapter>

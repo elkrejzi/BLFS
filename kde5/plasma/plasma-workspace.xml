@@ -219,10 +219,11 @@ EOF
 chmod -v 755 $KF5_PREFIX/bin/startkde-wrapper</userinput></screen>
 
     <para>
-      If you are using a display manager to log into your desktop,
-      let it know about <application>KDE</application> Plasma
-      Desktop by running the following command as the
-      <systemitem class="username">root</systemitem> user:
+      If you are using a display manager to log into your desktop
+      (such as <xref linkend="sddm"/>), let it know about the
+      <application>KDE</application> Plasma Desktop by running
+      the following command as the <systemitem
+      class="username">root</systemitem> user:
     </para>
 
 <screen role="root"><userinput>install -v -dm755 /usr/share/xsessions

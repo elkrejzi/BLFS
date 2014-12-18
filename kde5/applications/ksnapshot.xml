@@ -5,26 +5,27 @@
   %general-entities;
 ]>
 
-<sect1 id="gwenview5" xreflabel="Gwenview-&gwenview5-version;">
-  <?dbhtml filename="gwenview.html"?>
+<sect1 id="ksnapshot5" xreflabel="KSnapshot-&ksnapshot5-version;">
+  <?dbhtml filename="ksnapshot.html"?>
 
   <sect1info>
     <othername>$LastChangedBy: krejzi $</othername>
     <date>$Date: 2014-10-25 18:13:26 +0200 (Sat, 25 Oct 2014) $</date>
   </sect1info>
 
-  <title>Gwenview-&gwenview5-version;</title>
+  <title>KSnapshot-&ksnapshot5-version;</title>
 
-  <indexterm zone="gwenview5">
-    <primary sortas="a-Gwenview">Gwenview</primary>
+  <indexterm zone="ksnapshot5">
+    <primary sortas="a-KSnapshot">KSnapshot</primary>
   </indexterm>
 
   <sect2 role="package">
-    <title>Introduction to Gwenview</title>
+    <title>Introduction to KSnapshot</title>
 
     <para>
-      The <application>Gwenview</application> package contains an image
-      viewer for the <application>KDE Plasma</application> Desktop.
+      The <application>KSnapshot</application> package contains
+      a screen capture program for the <application>KDE
+      Plasma</application> Desktop.
     </para>
 
     &lfs76_checked;
@@ -33,52 +34,41 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gwenview5-download-http;"/>
+          Download (HTTP): <ulink url="&ksnapshot5-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gwenview5-download-ftp;"/>
+          Download (FTP): <ulink url="&ksnapshot5-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gwenview5-md5sum;
+          Download MD5 sum: &ksnapshot5-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gwenview5-size;
+          Download size: &ksnapshot5-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gwenview5-buildsize;
+          Estimated disk space required: &ksnapshot5-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gwenview5-time;
+          Estimated build time: &ksnapshot5-time;
         </para>
       </listitem>
     </itemizedlist>
 
-    <bridgehead renderas="sect3">Gwenview Dependencies</bridgehead>
+    <bridgehead renderas="sect3">KSnapshot Dependencies</bridgehead>
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kactivities5"/>,
-      <xref linkend="kdelibs4support"/>,
-      <xref linkend="lcms2"/>,
-      <xref linkend="libjpeg"/> and
-      <xref linkend="libpng"/>
-    </para>
-
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="baloo5"/>,
-      <xref linkend="exiv2"/> and
-      <xref linkend="libkdcraw5"/>
+      <xref linkend="kio"/>
     </para>
 
     <bridgehead renderas="sect4">Optional</bridgehead>
@@ -87,15 +77,15 @@
     </para>
 
     <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/gwenview5"/>
+      User Notes: <ulink url="&blfs-wiki;/ksnapshot5"/>
     </para>
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Gwenview</title>
+    <title>Installation of KSnapshot</title>
 
     <para>
-      Install <application>Gwenview</application> by running the following
+      Install <application>KSnapshot</application> by running the following
       commands:
     </para>
 
@@ -106,8 +96,7 @@ cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
       -DCMAKE_BUILD_TYPE=Release         \
       -DLIB_INSTALL_DIR=lib              \
       -DBUILD_TESTING=OFF                \
-      -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
-      -Wno-dev .. &amp;&amp;
+      .. &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -134,9 +123,6 @@ make</userinput></screen>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/kf5-tests.xml"/>
 
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/qt5-plugins-dir.xml"/>
-
   </sect2>
 
   <sect2 role="content">
@@ -149,16 +135,13 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          gwenview
+          kbackgroundsnapshot and ksnapshot
         </seg>
         <seg>
-          libgwenviewlib.so
+          None
         </seg>
         <seg>
-          $KF5_PREFIX/share/doc/HTML/*/gwenview,
-          $KF5_PREFIX/share/gvpart,
-          $KF5_PREFIX/share/gwenview and
-          $KF5_PREFIX/share/kxmlgui5/gwenview
+          $KF5_PREFIX/share/doc/HTML/*/ksnapshot
         </seg>
       </seglistitem>
     </segmentedlist>

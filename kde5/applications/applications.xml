@@ -34,6 +34,7 @@ $Date: 2014-10-25 19:35:50 +0200 (Sat, 25 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kmix.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="konsole.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kscreen.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ksnapshot.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="okular.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="polkit-kde-agent.xml"/>
 

@@ -27,6 +27,13 @@
   <sect2>
     <title>Starting KDE Plasma 5 from the command line</title>
 
+    <note>
+      <para>
+        You can skip these instructions if you are going to
+        use a display manager such as <xref linkend="sddm"/>.
+      </para>
+    </note>
+
     <para>
       To start <application>KDE Plasma 5</application> from the command
       line, you first need to modify your <filename>.xinitrc</filename>
