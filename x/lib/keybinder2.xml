@@ -13,27 +13,26 @@
   <!ENTITY keybinder2-time          "less than 0.1 SBU">
 ]>
 
-<sect1 id="keybinder2" xreflabel="keybinder2-&keybinder2-version;">
-  <?dbhtml filename="keybinder2.html" ?>
+<sect1 id="keybinder2" xreflabel="Keybinder-&keybinder2-version;">
+  <?dbhtml filename="keybinder2.html"?>
 
   <sect1info>
-    <othername>$LastChangedBy: fernando $</othername>
-    <date>$Date: 2014-12-10 11:01:08 +0100 (Wed, 10 Dec 2014) $</date>
+    <othername>$LastChangedBy: pierre $</othername>
+    <date>$Date: 2014-08-30 18:39:13 +1200 (Sat, 30 Aug 2014) $</date>
   </sect1info>
 
-  <title>keybinder2-&keybinder2-version;</title>
+  <title>Keybinder-&keybinder2-version;</title>
 
   <indexterm zone="keybinder2">
-    <primary sortas="a-keybinder2">keybinder2</primary>
+    <primary sortas="a-Keybinder2">Keybinder2</primary>
   </indexterm>
 
   <sect2 role="package">
-    <title>Introduction to keybinder2</title>
+    <title>Introduction to Keybinder</title>
 
     <para>
-      The <application>keybinder2</application> package contains a utility
-      library registering global <application>X</application> keyboard
-      shortcuts.
+      The <application>Keybinder</application> package contains a library
+      for registering global keyboard shortcuts.
     </para>
 
     &lfs76_checked;
@@ -72,7 +71,7 @@
       </listitem>
     </itemizedlist>
 
-    <bridgehead renderas="sect3">keybinder2 Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Keybinder Dependencies</bridgehead>
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
@@ -87,23 +86,22 @@
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
-      <xref linkend="lua"/> (currently broken, because older lua version
-      is required)
+      <xref linkend="gtk-doc"/>
     </para>
 
-    <para condition="html" role="usernotes">User Notes:
-      <ulink url="&blfs-wiki;/keybinder2"/>
+    <para condition="html" role="usernotes">
+      User Notes: <ulink url="&blfs-wiki;/keybinder2"/>
     </para>
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of keybinder2</title>
+    <title>Installation of Keybinder</title>
 
     <para>
-      Install <application>keybinder2</application> by running the
-      following commands:
+      Install <application>Keybinder</application> by running the following
+      commands:
     </para>
+
 
 <screen><userinput>./configure --prefix=/usr --disable-lua &amp;&amp;
 make</userinput></screen>
@@ -124,9 +122,10 @@ make</userinput></screen>
     <title>Command Explanations</title>
 
     <para>
-      <parameter>--disable-lua</parameter>: Use this switch to disable <xref
-      linkend="lua"/> bindings (currently broken, because older lua version is
-      required).
+      <parameter>--disable-lua</parameter>: This switch prevents
+      <application>Lua</application> bindings from being built
+      since they fail to build with <application>Lua</application>
+      5.2.
     </para>
 
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -139,7 +138,7 @@ make</userinput></screen>
 
     <segmentedlist>
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 
       <seglistitem>
@@ -147,8 +146,7 @@ make</userinput></screen>
           None
         </seg>
         <seg>
-          libkeybinder.so and
-          /usr/lib/python&python2-majorver;/site-packages/keybinder/_keybinder.so
+          libkeybinder.so
         </seg>
         <seg>
           /usr/lib/python&python2-majorver;/site-packages/keybinder and
@@ -162,15 +160,14 @@ make</userinput></screen>
       <?dbfo list-presentation="list"?>
       <?dbhtml list-presentation="table"?>
 
-      <varlistentry id="keybinder2-lib">
+      <varlistentry id="libkeybinder">
         <term><filename class="libraryfile">libkeybinder.so</filename></term>
         <listitem>
           <para>
-            is the library that registers global <application>X</application>
-            keyboard shortcuts.
+            is a library for registering global keyboard shortcuts.
           </para>
-          <indexterm zone="keybinder2 keybinder2-lib">
-            <primary sortas="c-keybinder2">libkeybinder.so</primary>
+          <indexterm zone="keybinder2 libkeybinder">
+            <primary sortas="c-libkeybinder">libkeybinder.so</primary>
           </indexterm>
         </listitem>
       </varlistentry>
