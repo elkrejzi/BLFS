@@ -5,10 +5,10 @@
   %general-entities;
 
   <!ENTITY NetworkManager-download-http
-           "&gnome-download-http;/NetworkManager/0.995/NetworkManager-&NetworkManager-version;.tar.xz">
+           "&gnome-download-http;/NetworkManager/1.0/NetworkManager-&NetworkManager-version;.tar.xz">
   <!ENTITY NetworkManager-download-ftp
-           "&gnome-download-ftp;/NetworkManager/0.995/NetworkManager-&NetworkManager-version;.tar.xz">
-  <!ENTITY NetworkManager-md5sum        "94fab7ea75c79446f463b3a5b2b4507d">
+           "&gnome-download-ftp;/NetworkManager/1.0/NetworkManager-&NetworkManager-version;.tar.xz">
+  <!ENTITY NetworkManager-md5sum        "71cae8707a90fa92e28cafbc9262b548">
   <!ENTITY NetworkManager-size          "3.1 MB">
   <!ENTITY NetworkManager-buildsize     "295 MB">
   <!ENTITY NetworkManager-time          "1.6 SBU">
@@ -115,8 +115,10 @@
       <xref linkend="pygobject3"/>,
       <xref linkend="qt4"/>,
       <xref linkend="valgrind"/>,
-      <xref linkend="wpa_supplicant"/> (built with D-Bus support), and
-      <ulink url="http://libteam.org/">libteam</ulink>
+      <xref linkend="wpa_supplicant"/> (built with D-Bus support),
+      <ulink url="http://libteam.org/">libteam</ulink>,
+      <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>, and
+      <ulink url="https://www.roaringpenguin.com/products/pppoe">RP-PPPoE</ulink>
     </para>
 
     <para condition="html" role="usernotes">User Notes:
@@ -133,8 +135,8 @@
             --disable-ppp                   \
             --with-nmtui                    \
             --with-session-tracking=systemd \
-            --with-systemdsystemunitdir=/lib/systemd/system  \
-            --docdir=/usr/share/doc/NetworkManager-&NetworkManager-version; &amp;&amp;
+            --with-systemdsystemunitdir=/lib/systemd/system \
+            --docdir=/usr/share/doc/NetworkManager-&NetworkManager-version;    &amp;&amp;
 make</userinput></screen>
 
     <para>

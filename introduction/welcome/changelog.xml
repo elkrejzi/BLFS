@@ -44,11 +44,41 @@
 
 -->
     <listitem>
-      <para>December 18th, 2014</para>
+      <para>December 21st, 2014</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+        <listitem>
+          <para>[krejzi] - Updated qtchooser patch for Qt-5.4.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Fixed Inkscape build with Poppler-0.29.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to appstream-glib-0.3.3 and
+          libvdpau-0.9.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to gnome-shell-3.14.3,
+          gnome-shell-extensions-3.14.3 and
+          gnome-user-share-3.14.2.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to network-manager-applet-1.0.0,
+          setuptools-8.2.1 - Python module and
+          xorg-server-1.16.3.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libreoffice-4.3.5, mutter-3.14.3
+          and NetworkManager-1.0.0.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>December 18th, 2014</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Merged rasqal-0.9.23 and subversion-1.8.11
           updates from the main book. Thanks to Fernando for doing

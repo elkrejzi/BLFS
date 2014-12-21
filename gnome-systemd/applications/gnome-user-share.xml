@@ -8,7 +8,7 @@
            "&gnome-download-http;/gnome-user-share/&gnome-minor14;/gnome-user-share-&gnome-user-share-version;.tar.xz">
   <!ENTITY gnome-user-share-download-ftp
            "&gnome-download-ftp;/gnome-user-share/&gnome-minor14;/gnome-user-share-&gnome-user-share-version;.tar.xz">
-  <!ENTITY gnome-user-share-md5sum        "77860ed6f0ad783599eacb80a03f8913">
+  <!ENTITY gnome-user-share-md5sum        "ccf4bb24067b6e85f0d40c131cfaaf4f">
   <!ENTITY gnome-user-share-size          "384 KB">
   <!ENTITY gnome-user-share-buildsize     "6.2 MB">
   <!ENTITY gnome-user-share-time          "less than 0.1 SBU">

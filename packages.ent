@@ -182,7 +182,7 @@
 
 <!-- Chapter 11 -->
 <!ENTITY appdata-tools-version        "0.1.8">
-<!ENTITY appstream-glib-version       "0.3.1">
+<!ENTITY appstream-glib-version       "0.3.3">
 <!ENTITY compface-version             "1.5.2">
 <!ENTITY desktop-file-utils-version   "0.22">
 <!ENTITY gperf-version                "3.0.4">
@@ -356,7 +356,7 @@
 <!ENTITY avahi-version                "0.6.31">
 <!ENTITY bind-version                 "9.10.1-P1">
 <!ENTITY mod_dnssd-version            "0.6">
-<!ENTITY NetworkManager-version       "0.995.0.0">
+<!ENTITY NetworkManager-version       "1.0.0">
 <!ENTITY nmap-version                 "6.47">
 <!ENTITY traceroute-version           "2.0.21">
 <!ENTITY whois-version                "5.2.2">
@@ -439,7 +439,7 @@
 <!ENTITY xcb-util-keysyms-version     "0.4.0">
 <!ENTITY xcb-util-renderutil-version  "0.3.9">
 <!ENTITY xcb-util-wm-version          "0.4.1">
-<!ENTITY xorg-server-version          "1.16.2">
+<!ENTITY xorg-server-version          "1.16.3">
 <!ENTITY twm-version                  "1.0.8">
 <!ENTITY xterm-version                "313">
 <!ENTITY xclock-version               "1.0.7">
@@ -580,8 +580,8 @@
 <!ENTITY gnumeric-version             "1.12.18">
 <!ENTITY gnucash-version              "2.4.11">
 
-<!ENTITY libreoffice-version          "4.3.4">
-<!ENTITY libreoffice-patch            ".1">
+<!ENTITY libreoffice-version          "4.3.5">
+<!ENTITY libreoffice-patch            ".2">
 <!ENTITY libreoffice-dlversion        "&libreoffice-version;&libreoffice-patch;">
 
 <!-- Chapter 35 -->
@@ -675,7 +675,7 @@
 <!-- Chapter 38 -->
 <!ENTITY libva-version                "1.4.1">
 <!ENTITY libva-intel-driver-version   "1.4.1">
-<!ENTITY libvdpau-version             "0.8">
+<!ENTITY libvdpau-version             "0.9">
 <!ENTITY libvdpau-va-gl-version       "0.3.4">
 
 <!-- Chapter 39 -->
