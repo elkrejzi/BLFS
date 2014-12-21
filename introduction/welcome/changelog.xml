@@ -50,6 +50,15 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Merged elfutils-0.161 update from the main book.
+          Thanks to Igor for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged cmake-3.1.0, dhcpcd-6.6.6 and
+          mplayer-2014-12-19 updates from the main book. Thanks
+          to Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Updated qtchooser patch for Qt-5.4.</para>
         </listitem>
         <listitem>

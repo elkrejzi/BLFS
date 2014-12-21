@@ -129,11 +129,11 @@
       Install the server by running the following commands:
     </para>
 
-<screen><userinput>./configure $XORG_CONFIG                    \
-           --with-xkb-output=/var/lib/xkb   \
-           --enable-dmx                     \
-           --enable-glamor                  \
-           --enable-suid-wrapper            &amp;&amp;
+<screen><userinput>./configure $XORG_CONFIG                  \
+           --with-xkb-output=/var/lib/xkb \
+           --enable-dmx                   \
+           --enable-glamor                \
+           --enable-suid-wrapper          &amp;&amp;
 make</userinput></screen>
 
     <para>
