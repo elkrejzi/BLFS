@@ -114,6 +114,7 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="libgcrypt"/>,
       <xref linkend="libidn"/>,
+      <xref linkend="libxkbcommon"/>,
       <xref linkend="python3"/>,
       <xref linkend="valgrind"/>,
       <ulink url="https://code.google.com/p/cryptsetup/">cryptsetup</ulink>,
