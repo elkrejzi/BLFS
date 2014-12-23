@@ -257,7 +257,7 @@ make</userinput></screen>
 <literal># Begin Systemd addition
     
 session   required    pam_loginuid.so
--session   optional    pam_systemd.so
+-session  optional    pam_systemd.so
 
 # End Systemd addition</literal>
 EOF
