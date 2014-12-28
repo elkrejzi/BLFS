@@ -22,7 +22,6 @@ $Date: 2014-10-26 18:38:54 +0100 (Sun, 26 Oct 2014) $
   build many popular programming environments to greatly expand your
   system's development capabilities.</para>
 
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="bazaar.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="check.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="clisp.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="cmake-systemd.xml"/>

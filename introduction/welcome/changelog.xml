@@ -50,6 +50,51 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Removed Bazaar from the book.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged ruby-2.2.0 update from the
+          main book. Thanks to Fernando for doing all the
+          work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged abiword-3.0.1, libxklavier-5.4
+          and ntp-4.2.8 updates from the main book. Thanks to
+          Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged gst-plugins-bad-1.4.5,
+          gst-plugins-ugly-1.4.5 and gst-libav-1.4.5 updates
+          from the main book. Thanks to Igor for doing
+          all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged gstreamer-1.4.5, gst-plugins-base-1.4.5
+          and gst-plugins-good-1.4.5 updates from the main book.
+          Thanks to Igor for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged ffmpeg-2.5.2 and git-2.2.1
+          updates from the main book. Thanks to Igor for
+          doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged heirloom-mailx-12.5 and
+          mutt-1.5.23 security fix updates from the main
+          book. Thanks to Ken for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged php-5.6.4 update from the
+          main book. Thanks to Pierre for doing all the
+          work.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>December 21st, 2014</para>
+      <itemizedlist>
+        <listitem>
           <para>[krejzi] - Merged mercurial-3.2.3 and postgresql-9.4.0
           updates from the main book. Thanks to Fernando for doing all
           the work.</para>

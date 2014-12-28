@@ -179,8 +179,8 @@ ac_add_options --disable-pulseaudio
 # To enable it, make sure you also set "media.gstreamer.enabled" to
 # "true" in about:config.
 
-# If you don't have GStreamer 0.10.x installed, uncomment this line:
-#ac_add_options --disable-gstreamer
+# If you have GStreamer 0.10.x installed, comment out this line:
+ac_add_options --disable-gstreamer
 # or uncomment this line if you have GStreamer 1.x.y installed:
 #ac_add_options --enable-gstreamer=1.0
 

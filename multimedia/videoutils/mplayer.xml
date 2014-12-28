@@ -245,7 +245,7 @@
       <xref linkend="unrar"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="DocBook"/> and
-      <xref linkend="docbook-xsl"/> (all three required to build the HTML documentation), and
+      <xref linkend="docbook-xsl"/> (all three required to build the HTML documentation),
       <ulink url="http://cihar.com/software/enca/">Enca</ulink>,
       <ulink url="http://www.ladspa.org/">LADSPA</ulink>,
       <ulink url="http://sourceforge.net/projects/bs2b/">libbs2b</ulink>, and
