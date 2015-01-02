@@ -153,7 +153,7 @@ install -v -dm755 -o sddm -g sddm /var/lib/sddm</userinput></screen>
         class="username">root</systemitem> user:
       </para>
 
-<screen role="root"><userinput>cat &gt; ${DEST}/etc/pam.d/sddm &lt;&lt; "EOF"  &amp;&amp;
+<screen role="root"><userinput>cat &gt; /etc/pam.d/sddm &lt;&lt; "EOF"  &amp;&amp;
 <literal># Begin /etc/pam.d/sddm
 
 auth     requisite      pam_nologin.so
@@ -171,7 +171,7 @@ session  include        system-session
 # End /etc/pam.d/sddm</literal>
 EOF
 
-cat &gt; ${DEST}/etc/pam.d/sddm-autologin &lt;&lt; "EOF" &amp;&amp;
+cat &gt; /etc/pam.d/sddm-autologin &lt;&lt; "EOF" &amp;&amp;
 <literal># Begin /etc/pam.d/sddm-autologin
 
 auth     requisite      pam_nologin.so
@@ -190,7 +190,7 @@ session  include        system-session
 # End /etc/pam.d/sddm-autologin</literal>
 EOF
 
-cat &gt; ${DEST}/etc/pam.d/sddm-greeter &lt;&lt; "EOF"
+cat &gt; /etc/pam.d/sddm-greeter &lt;&lt; "EOF"
 <literal># Begin /etc/pam.d/sddm-greeter
 
 auth     required       pam_env.so

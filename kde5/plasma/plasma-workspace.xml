@@ -181,8 +181,7 @@ make</userinput></screen>
       <systemitem class="username">root</systemitem> user:
     </para>
 
-<screen role="root"><userinput>install -v -dm755 /etc/pam.d &amp;&amp;
-cat &gt;&gt; /etc/pam.d/kde &lt;&lt; "EOF"
+<screen role="root"><userinput>cat &gt; /etc/pam.d/kde &lt;&lt; "EOF"
 # Begin /etc/pam.d/kde
 
 auth     include        system-auth
