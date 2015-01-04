@@ -44,11 +44,45 @@
 
 -->
     <listitem>
-      <para>December 21st, 2014</para>
+      <para>January 4th, 2015</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+        <listitem>
+          <para>[krejzi] - Merged whois-5.2.3, xproto-7.0.27 and
+          xterm-314 updates from the main book. Thanks to
+          Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged phonon-backend-gstreamer-4.8.2,
+          rxvt-unicode-9.2 and stunnel-5.09 updates from the main book.
+          Thanks to Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged libpng-1.6.16, libxshmfence-1.2 and
+          mercurial-3.2.4 updates from the main book. Thanks to
+          Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged bdftopcf-1.0.5, doxygen-1.8.9 and
+          freetype-2.5.5 updates from the main book. Thanks to
+          Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged links-2.9 update from the main
+          book. Thanks to Igor for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged fix for Clisp testsuite from the
+          main book. Thanks to Pierre for doing all the work.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>December 21st, 2014</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Removed Bazaar from the book.</para>
         </listitem>
