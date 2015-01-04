@@ -50,6 +50,22 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Updated to setuptools-11.0 - Python
+          Module, wicd-1.7.3 and xf86-video-intel-2.99.917.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to MesaLib-10.4.1 and
+          phonon-backend-gstreamer-4.8.2 (Qt5 version).</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libqmi-1.10.6, libva-1.5.0
+          and libva-intel-driver-1.5.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to bluez-5.27,
+          libgweather-3.14.2 and libmbim-1.10.2.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Merged whois-5.2.3, xproto-7.0.27 and
           xterm-314 updates from the main book. Thanks to
           Fernando for doing all the work.</para>
@@ -159,7 +175,7 @@
         </listitem>
         <listitem>
           <para>[krejzi] - Updated to network-manager-applet-1.0.0,
-          setuptools-8.2.1 - Python module and
+          setuptools-8.2.1 - Python Module and
           xorg-server-1.16.3.</para>
         </listitem>
         <listitem>

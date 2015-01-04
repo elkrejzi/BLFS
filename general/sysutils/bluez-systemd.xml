@@ -6,7 +6,7 @@
 
   <!ENTITY bluez-download-http "http://www.kernel.org/pub/linux/bluetooth/bluez-&bluez-version;.tar.xz">
   <!ENTITY bluez-download-ftp  "ftp://ftp.kernel.org/pub/linux/bluetooth/bluez-&bluez-version;.tar.xz">
-  <!ENTITY bluez-md5sum        "17d497a118ea66aa8c01ab1e6fac25cd">
+  <!ENTITY bluez-md5sum        "a8fc508690e497e88c2c0b373cd653a8">
   <!ENTITY bluez-size          "1.5 MB">
   <!ENTITY bluez-buildsize     "65 MB">
   <!ENTITY bluez-time          "0.5 SBU"> 

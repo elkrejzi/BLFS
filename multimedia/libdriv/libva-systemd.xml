@@ -8,9 +8,9 @@
 
   <!ENTITY libva-download-http "&libva-http;/libva/libva-&libva-version;.tar.bz2">
   <!ENTITY libva-download-ftp  " ">
-  <!ENTITY libva-md5sum        "8e3e7096750c14d1f98da807df7c1ba5">
-  <!ENTITY libva-size          "744 KB">
-  <!ENTITY libva-buildsize     "19 MB">
+  <!ENTITY libva-md5sum        "16752f1584398265072129553b7907ce">
+  <!ENTITY libva-size          "760 KB">
+  <!ENTITY libva-buildsize     "20 MB">
   <!ENTITY libva-time          "0.3 SBU">
 ]>
 
@@ -160,12 +160,13 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          avcenc, h264encode, loadjpeg, mpeg2vaenc, mpeg2vldemo,
-          putsurface, putsurface_wayland, and vainfo
+          avcenc, h264encode, jpegenc, loadjpeg, mpeg2vaenc,
+          mpeg2vldemo, putsurface, putsurface_wayland and
+          vainfo
         </seg>
         <seg>
           libva-drm.so, libva-egl.so, libva-glx.so, libva.so,
-          libva-tpi.so, libva-wayland.so, and libva-x11.so
+          libva-tpi.so, libva-wayland.so and libva-x11.so
         </seg>
         <seg>
           /usr/include/va
