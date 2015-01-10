@@ -44,11 +44,21 @@
 
 -->
     <listitem>
-      <para>January 4th, 2015</para>
+      <para>January 10th, 2015</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+        <listitem>
+          <para>[krejzi] - Updated to extra-cmake-modules-1.6.0 and
+          KDE Frameworks-5.6.0.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>January 4th, 2015</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Updated to setuptools-11.0 - Python
           Module, wicd-1.7.3 and xf86-video-intel-2.99.917.</para>
