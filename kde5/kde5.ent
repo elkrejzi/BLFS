@@ -667,12 +667,17 @@
 <!ENTITY plasma-desktop-buildsize     "169 MB">
 <!ENTITY plasma-desktop-time          "6.7 SBU">
 
+<!--
 <!ENTITY plasma-nm-download-http "&plasma-download-http;/plasma-nm-&plasma-version;.tar.xz">
 <!ENTITY plasma-nm-download-ftp  "&plasma-download-ftp;/plasma-nm-&plasma-version;.tar.xz">
-<!ENTITY plasma-nm-md5sum        "85bcbb4dc40ff020a566413a209858ca">
-<!ENTITY plasma-nm-size          "480 KB">
-<!ENTITY plasma-nm-buildsize     "37 MB">
-<!ENTITY plasma-nm-time          "2.0 SBU">
+-->
+<!ENTITY plasma-nm-version       "5.1.2.1">
+<!ENTITY plasma-nm-download-http "http://download.kde.org/stable/plasma/&plasma-nm-version;/plasma-nm-&plasma-nm-version;.tar.xz">
+<!ENTITY plasma-nm-download-ftp  "ftp://ftp.kde.org/pub/kde/stable/plasma/&plasma-nm-version;/plasma-nm-&plasma-nm-version;.tar.xz">
+<!ENTITY plasma-nm-md5sum        "3fcad6c0ce0bacb2fa4e3e2a9f4c2cd2">
+<!ENTITY plasma-nm-size          "484 KB">
+<!ENTITY plasma-nm-buildsize     "36 MB">
+<!ENTITY plasma-nm-time          "1.9 SBU">
 
 <!ENTITY plasma-workspace-download-http "&plasma-download-http;/plasma-workspace-&plasma-version;.tar.xz">
 <!ENTITY plasma-workspace-download-ftp  "&plasma-download-ftp;/plasma-workspace-&plasma-version;.tar.xz">
