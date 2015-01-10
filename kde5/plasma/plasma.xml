@@ -26,7 +26,6 @@ $Date: 2014-10-19 19:23:14 +0200 (Sun, 19 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libkscreen.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libksysguard.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libmm-qt.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libnm-qt.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="oxygen-fonts.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="oxygen-icons.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="oxygen.xml"/>

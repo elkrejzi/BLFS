@@ -48,6 +48,7 @@ $Date: 2014-10-18 11:51:01 +0200 (Sat, 18 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kplotting.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kwidgetsaddons.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kwindowsystem.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="networkmanager-qt.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="solid.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="sonnet.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="threadweaver.xml"/>
@@ -60,6 +61,7 @@ $Date: 2014-10-18 11:51:01 +0200 (Sat, 18 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kunitconversion.xml"/>
   <!-- -->
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kconfigwidgets.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kpackage.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kservice.xml"/>
   <!-- -->
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kdesu.xml"/>

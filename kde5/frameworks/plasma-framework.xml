@@ -68,7 +68,8 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kactivities5"/>
+      <xref linkend="kactivities5"/> and
+      <xref linkend="kpackage"/>
     </para>
 
     <para condition="html" role="usernotes">

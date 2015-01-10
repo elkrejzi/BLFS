@@ -5,27 +5,27 @@
   %general-entities;
 ]>
 
-<sect1 id="libnm-qt" xreflabel="libnm-qt-&plasma-version;">
-  <?dbhtml filename="libnm-qt.html"?>
+<sect1 id="kpackage" xreflabel="KPackage-&kf5-version;">
+  <?dbhtml filename="kpackage.html"?>
 
   <sect1info>
     <othername>$LastChangedBy: krejzi $</othername>
-    <date>$Date: 2014-10-19 17:01:03 +0200 (Sun, 19 Oct 2014) $</date>
+    <date>$Date: 2014-10-09 22:03:42 +0200 (Thu, 09 Oct 2014) $</date>
   </sect1info>
 
-  <title>libnm-qt-&plasma-version;</title>
+  <title>KPackage-&kf5-version;</title>
 
-  <indexterm zone="libnm-qt">
-    <primary sortas="a-libnm-qt">libnm-qt</primary>
+  <indexterm zone="kpackage">
+    <primary sortas="a-KPackage">KPackage</primary>
   </indexterm>
 
   <sect2 role="package">
-    <title>Introduction to libnm-qt</title>
+    <title>Introduction to KPackage</title>
 
     <para>
-      The <application>libnm-qt</application> package contains a
-      <application>Qt</application> wrapper for NetworkManager
-      DBus API.
+      The <application>KPackage</application> package contains a library
+      that lets applications manage user installable packages of non-binary
+      assets.
     </para>
 
     &lfs76_checked;
@@ -34,55 +34,61 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libnm-qt-download-http;"/>
+          Download (HTTP): <ulink url="&kpackage-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libnm-qt-download-ftp;"/>
+          Download (FTP): <ulink url="&kpackage-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libnm-qt-md5sum;
+          Download MD5 sum: &kpackage-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libnm-qt-size;
+          Download size: &kpackage-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libnm-qt-buildsize;
+          Estimated disk space required: &kpackage-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libnm-qt-time;
+          Estimated build time: &kpackage-time;
         </para>
       </listitem>
     </itemizedlist>
 
-    <bridgehead renderas="sect3">libnm-qt Dependencies</bridgehead>
+    <bridgehead renderas="sect3">KPackage Dependencies</bridgehead>
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="extra-cmake-modules"/>,
-      <xref linkend="NetworkManager"/> and
-      <xref linkend="qt5"/>
+      <xref linkend="karchive"/>,
+      <xref linkend="kconfig"/>,
+      <xref linkend="kcoreaddons"/> and
+      <xref linkend="ki18n"/>
+    </para>
+
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="kdoctools"/>
     </para>
 
     <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/libnm-qt"/>
+      User Notes: <ulink url="&blfs-wiki;/kpackage"/>
     </para>
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of libnm-qt</title>
+    <title>Installation of KPackage</title>
 
     <para>
-      Install <application>libnm-qt</application> by running the following
+      Install <application>KPackage</application> by running the following
       commands:
     </para>
 
@@ -93,7 +99,6 @@ cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
       -DCMAKE_BUILD_TYPE=Release         \
       -DLIB_INSTALL_DIR=lib              \
       -DBUILD_TESTING=OFF                \
-      -DECM_MKSPECS_INSTALL_DIR=&qt5-mkspecs-dir; \
       .. &amp;&amp;
 make</userinput></screen>
 
@@ -121,9 +126,6 @@ make</userinput></screen>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/kf5-tests.xml"/>
 
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/qt5-mkspecs-dir.xml"/>
-
   </sect2>
 
   <sect2 role="content">
@@ -136,14 +138,14 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          None
+          kpackagetool5
         </seg>
         <seg>
-          libKF5NetworkManagerQt.so
+          libKF5Package.so
         </seg>
         <seg>
-          $KF5_PREFIX/include/KF5/NetworkManagerQt and
-          $KF5_PREFIX/lib/cmake/KF5NetworkManagerQt
+          $KF5_PREFIX/include/KF5/{kpackage,KPackage} and
+          $KF5_PREFIX/lib/cmake/KF5Package
         </seg>
       </seglistitem>
     </segmentedlist>

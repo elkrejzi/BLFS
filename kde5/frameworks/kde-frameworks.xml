@@ -4,9 +4,9 @@
   <!ENTITY % general-entities SYSTEM "../../general.ent">
   %general-entities;
 
-  <!ENTITY kf5-size          "28 MB">
+  <!ENTITY kf5-size          "29 MB">
   <!ENTITY kf5-buildsize     "1.1 GB">
-  <!ENTITY kf5-time          "65 SBU">
+  <!ENTITY kf5-time          "55 SBU">
 ]>
 
 <sect1 id="kf5" xreflabel="KDE Frameworks-&kf5-version;">
@@ -85,6 +85,7 @@
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="libxslt"/>,
+      <xref linkend="NetworkManager"/>,
       <xref linkend="phonon5"/>,
       <xref linkend="shared-mime-info"/> and
       <xref linkend="wget"/> (required to download the packages)
@@ -161,6 +162,7 @@
 &kplotting-md5sum;  kplotting-&kf5-version;.tar.xz
 &kwidgetsaddons-md5sum;  kwidgetsaddons-&kf5-version;.tar.xz
 &kwindowsystem-md5sum;  kwindowsystem-&kf5-version;.tar.xz
+&networkmanager-qt-md5sum;  networkmanager-qt-&kf5-version;.tar.xz
 &solid-md5sum;  solid-&kf5-version;.tar.xz
 &sonnet-md5sum;  sonnet-&kf5-version;.tar.xz
 &threadweaver-md5sum;  threadweaver-&kf5-version;.tar.xz
@@ -171,6 +173,7 @@
 &kpty-md5sum;  kpty-&kf5-version;.tar.xz
 &kunitconversion-md5sum;  kunitconversion-&kf5-version;.tar.xz
 &kconfigwidgets-md5sum;  kconfigwidgets-&kf5-version;.tar.xz
+&kpackage-md5sum;  kpackage-&kf5-version;.tar.xz
 &kservice-md5sum;  kservice-&kf5-version;.tar.xz
 &kdesu-md5sum;  kdesu-&kf5-version;.tar.xz
 &kemoticons-md5sum;  kemoticons-&kf5-version;.tar.xz

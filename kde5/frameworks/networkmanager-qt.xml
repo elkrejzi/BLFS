@@ -5,26 +5,26 @@
   %general-entities;
 ]>
 
-<sect1 id="plasma-nm" xreflabel="Plasma-NM-&plasma-version;">
-  <?dbhtml filename="plasma-nm.html"?>
+<sect1 id="networkmanager-qt" xreflabel="NetworkManager-Qt-&kf5-version;">
+  <?dbhtml filename="networkmanager-qt.html"?>
 
   <sect1info>
     <othername>$LastChangedBy: krejzi $</othername>
     <date>$Date: 2014-10-19 17:01:03 +0200 (Sun, 19 Oct 2014) $</date>
   </sect1info>
 
-  <title>Plasma-NM-&plasma-version;</title>
+  <title>NetworkManager-Qt-&kf5-version;</title>
 
-  <indexterm zone="plasma-nm">
-    <primary sortas="a-Plasma-NM">Plasma-NM</primary>
+  <indexterm zone="networkmanager-qt">
+    <primary sortas="a-NetworkManager-Qt">NetworkManager-Qt</primary>
   </indexterm>
 
   <sect2 role="package">
-    <title>Introduction to Plasma-NM</title>
+    <title>Introduction to NetworkManager-Qt</title>
 
     <para>
-      The <application>Plasma-NM</application> package contains a plasma
-      applet written in QML for managing network connections.
+      The <application>NetworkManager-Qt</application> package contains a
+      <application>Qt</application> wrapper for NetworkManager DBus API.
     </para>
 
     &lfs76_checked;
@@ -33,63 +33,55 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&plasma-nm-download-http;"/>
+          Download (HTTP): <ulink url="&networkmanager-qt-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&plasma-nm-download-ftp;"/>
+          Download (FTP): <ulink url="&networkmanager-qt-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &plasma-nm-md5sum;
+          Download MD5 sum: &networkmanager-qt-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &plasma-nm-size;
+          Download size: &networkmanager-qt-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &plasma-nm-buildsize;
+          Estimated disk space required: &networkmanager-qt-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &plasma-nm-time;
+          Estimated build time: &networkmanager-qt-time;
         </para>
       </listitem>
     </itemizedlist>
 
-    <bridgehead renderas="sect3">Plasma-NM Dependencies</bridgehead>
+    <bridgehead renderas="sect3">NetworkManager-Qt Dependencies</bridgehead>
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kdelibs4support"/>,
-      <xref linkend="networkmanager-qt"/> and
-      <xref linkend="plasma-framework"/>
-    </para>
-
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="libmm-qt"/>,
-      <ulink url="&gnome-download-http;/mobile-broadband-provider-info">
-      mobile-broadband-provider-info</ulink> and
-      <ulink url="http://www.infradead.org/openconnect">OpenConnect</ulink>
+      <xref linkend="extra-cmake-modules"/>,
+      <xref linkend="NetworkManager"/> and
+      <xref linkend="qt5"/>
     </para>
 
     <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/plasma-nm"/>
+      User Notes: <ulink url="&blfs-wiki;/networkmanager-qt"/>
     </para>
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Plasma-NM</title>
+    <title>Installation of NetworkManager-Qt</title>
 
     <para>
-      Install <application>Plasma-NM</application> by running the following
+      Install <application>NetworkManager-Qt</application> by running the following
       commands:
     </para>
 
@@ -100,8 +92,7 @@ cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
       -DCMAKE_BUILD_TYPE=Release         \
       -DLIB_INSTALL_DIR=lib              \
       -DBUILD_TESTING=OFF                \
-      -DQML_INSTALL_DIR=&qt5-qml-dir;           \
-      -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
+      -DECM_MKSPECS_INSTALL_DIR=&qt5-mkspecs-dir; \
       .. &amp;&amp;
 make</userinput></screen>
 
@@ -130,10 +121,7 @@ make</userinput></screen>
       href="../../xincludes/kf5-tests.xml"/>
 
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/qt5-qml-dir.xml"/>
-
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/qt5-plugins-dir.xml"/>
+      href="../../xincludes/qt5-mkspecs-dir.xml"/>
 
   </sect2>
 
@@ -147,15 +135,14 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          kde5-nm-connection-editor
+          None
         </seg>
         <seg>
-          libplasmanm_editor.so and libplasmanm_internal.so
+          libKF5NetworkManagerQt.so
         </seg>
         <seg>
-          $KF5_PREFIX/&qt5-qml-dir;/org/kde/plasma/networkmanagement,
-          $KF5_PREFIX/share/kxmlgui5/kde5-nm-connection-editor and
-          $KF5_PREFIX/share/plasma/plasmoids/org.kde.plasma.networkmanagement
+          $KF5_PREFIX/include/KF5/NetworkManagerQt and
+          $KF5_PREFIX/lib/cmake/KF5NetworkManagerQt
         </seg>
       </seglistitem>
     </segmentedlist>
