@@ -50,6 +50,10 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Updated to evolution-data-server-3.12.10
+          and evolution-3.12.10.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Updated to poppler-0.30.0,
           webkitgtk-2.4.8 and wireshark-1.12.3.</para>
         </listitem>
