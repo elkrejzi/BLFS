@@ -50,6 +50,18 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Updated to poppler-0.30.0,
+          webkitgtk-2.4.8 and wireshark-1.12.3.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to gtksourceview-3.14.3,
+          gvfs-1.22.3 and MesaLib-10.4.2.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to extra-cmake-modules-1.6.1,
+          firefox-35.0 and gtk+-3.14.7.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Merged xf86-input-wacom-0.28.0 update
           from the main book. Thanks to Fernando for doing all
           the work.</para>

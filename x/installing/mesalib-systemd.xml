@@ -7,10 +7,10 @@
   <!ENTITY mesalib-download-http " ">
   <!ENTITY mesalib-download-ftp
            "ftp://ftp.freedesktop.org/pub/mesa/&mesalib-version;/MesaLib-&mesalib-version;.tar.bz2">
-  <!ENTITY mesalib-md5sum        "461ab299aa38937a679c57b401788a42">
+  <!ENTITY mesalib-md5sum        "ca915badc9c676f811a5ee514748ef78">
   <!ENTITY mesalib-size          "7.2 MB">
-  <!ENTITY mesalib-buildsize     "220 MB">
-  <!ENTITY mesalib-time          "9.5 SBU">
+  <!ENTITY mesalib-buildsize     "155 MB">
+  <!ENTITY mesalib-time          "7.2 SBU">
 ]>
 
 <sect1 id="mesalib" xreflabel="MesaLib-&mesalib-version;">
