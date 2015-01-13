@@ -125,8 +125,7 @@ useradd -c "stunnel Daemon" -d /var/lib/stunnel \
 
 <screen><userinput>./configure --prefix=/usr        \
             --sysconfdir=/etc    \
-            --localstatedir=/var \
-            --with-ssl=/usr      &amp;&amp;
+            --localstatedir=/var &amp;&amp;
 make</userinput></screen>
 
     <para>This package does not come with a test suite.</para>

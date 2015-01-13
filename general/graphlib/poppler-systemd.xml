@@ -130,7 +130,9 @@
       <xref linkend="gtk2"/>,
       <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
       <xref linkend="libtiff"/>,
-      <xref linkend="openjpeg"/>,
+      <xref linkend="openjpeg"/> or
+      <xref linkend="openjpeg2"/> (<application>OpenJPEG1</application> is preferred
+      due to regressions in <application>OpenJPEG2</application> code),
       <xref linkend="qt4"/> (the <filename>libpoppler-qt4.so</filename> library
       is needed for PDF support in <application>Okular</application>), and
       <xref linkend="qt5"/>
