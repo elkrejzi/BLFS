@@ -102,7 +102,7 @@
     <para role="optional">
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>, and
-      <xref linkend="texlive"/>
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
     </para>
 
     <bridgehead renderas="sect4">Runtime Dependency</bridgehead>

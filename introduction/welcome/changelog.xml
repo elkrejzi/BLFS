@@ -82,6 +82,11 @@
           <para>[krejzi] - Merged libevent-2.0.22 update from the
           main book. Thanks to Igor for doing all the work.</para>
         </listitem>
+        <listitem>
+          <para>[krejzi] - Merged asymptote and xindy separation
+          from texlive. Thanks to Ken for doing all the work.
+          </para>
+        </listitem>
       </itemizedlist>
     </listitem>
 

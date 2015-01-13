@@ -112,6 +112,7 @@
       <xref linkend="opus"/>,
       <xref linkend="pulseaudio"/>,
       <xref linkend="speex"/>,
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>) for PDF and PS documentation,
       <xref linkend="xvid"/>,
       <ulink url="http://www.speech.cs.cmu.edu/flite/">Flite</ulink>,
       <ulink url="https://files.dyne.org/frei0r/snapshots/">frei0r</ulink>,

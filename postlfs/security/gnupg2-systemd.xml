@@ -94,11 +94,12 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="curl"/>,
-      <ulink url="http://www.chiark.greenend.org.uk/~ian/adns/">GNU
-      ADNS</ulink>,
       <xref linkend="libusb-compat"/>,
-      an <xref linkend="server-mail"/> and
-      <xref linkend="openldap"/>
+      an <xref linkend="server-mail"/>,
+      <xref linkend="openldap"/>,
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>) and
+      <ulink url="http://www.chiark.greenend.org.uk/~ian/adns/">GNU
+      ADNS</ulink>
     </para>
 
     <para condition="html" role="usernotes">User Notes:
