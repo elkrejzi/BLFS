@@ -66,17 +66,18 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kcmutils"/>,
+      <xref linkend="kdecoration"/>,
       <xref linkend="kinit5"/>,
       <xref linkend="knewstuff"/>,
       <xref linkend="libepoxy"/> and
       <xref linkend="plasma-framework"/>
     </para>
 
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">Optional (required for the Wayland Compositor)</bridgehead>
     <para role="optional">
-      <xref linkend="kwayland"/> and
-      <xref linkend="wayland"/>
+      <xref linkend="kwayland"/>,
+      <xref linkend="libinput"/> and
+      <xref linkend="mesalib"/> (built with Wayland support)
     </para>
 
     <para condition="html" role="usernotes">
@@ -149,14 +150,14 @@ make</userinput></screen>
           kwin_wayland and kwin_x11
         </seg>
         <seg>
-          libkdecorations.so, libkdeinit5_kwin_rules_dialog.so,
-          libkdeinit5_kwin_wayland.so, libkdeinit5_kwin_x11.so,
-          libkwin4_effect_builtins.so, libkwineffects.so,
-          libkwinglutils.so, libkwin.so and libkwinxrenderutils.so
+          libkdeinit5_kwin_rules_dialog.so, libkdeinit5_kwin_wayland.so,
+          libkdeinit5_kwin_x11.so, libkwin4_effect_builtins.so,
+          libkwineffects.so, libkwinglutils.so, libkwin.so and
+          libkwinxrenderutils.so
         </seg>
         <seg>
-          $KF5_PREFIX/lib/cmake/{KDecorations,KWinDBusInterface},
-          $KF5_PREFIX/&qt5-plugins-dir;/kwin,
+          $KF5_PREFIX/lib/cmake/KWinDBusInterface,
+          $KF5_PREFIX/&qt5-plugins-dir;/{kwin,org.kde.kdecoration2},
           $KF5_PREFIX/&qt5-qml-dir;/org/kde/kwin,
           $KF5_PREFIX/share/doc/HTML/*/kcontrol/{desktop,kwincompositing,kwindecoration},
           $KF5_PREFIX/share/doc/HTML/*/kcontrol/{kwinscreenedges,kwintabbox},

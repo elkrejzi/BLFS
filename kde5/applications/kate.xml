@@ -5,7 +5,7 @@
   %general-entities;
 ]>
 
-<sect1 id="kate5" xreflabel="Kate-&kate5-version;">
+<sect1 id="kate5" xreflabel="Kate-&kf5apps-version;">
   <?dbhtml filename="kate.html"?>
 
   <sect1info>
@@ -13,7 +13,7 @@
     <date>$Date: 2014-10-21 16:07:43 +0200 (Tue, 21 Oct 2014) $</date>
   </sect1info>
 
-  <title>Kate-&kate5-version;</title>
+  <title>Kate-&kf5apps-version;</title>
 
   <indexterm zone="kate5">
     <primary sortas="a-Kate">Kate</primary>

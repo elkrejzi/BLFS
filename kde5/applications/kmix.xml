@@ -5,7 +5,7 @@
   %general-entities;
 ]>
 
-<sect1 id="kmix5" xreflabel="KMix-&kmix5-version;">
+<sect1 id="kmix5" xreflabel="KMix-&kf5apps-version;">
   <?dbhtml filename="kmix.html"?>
 
   <sect1info>
@@ -13,7 +13,7 @@
     <date>$Date: 2014-10-25 18:13:26 +0200 (Sat, 25 Oct 2014) $</date>
   </sect1info>
 
-  <title>KMix-&kmix5-version;</title>
+  <title>KMix-&kf5apps-version;</title>
 
   <indexterm zone="kmix5">
     <primary sortas="a-KMix">KMix</primary>

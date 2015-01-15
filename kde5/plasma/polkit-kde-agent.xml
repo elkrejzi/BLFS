@@ -5,26 +5,27 @@
   %general-entities;
 ]>
 
-<sect1 id="bluedevil5" xreflabel="Bluedevil-&bluedevil5-version;">
-  <?dbhtml filename="bluedevil.html"?>
+<sect1 id="polkit-kde-agent5" xreflabel="Polkit-KDE-Agent-&plasma-version;">
+  <?dbhtml filename="polkit-kde-agent.html"?>
 
   <sect1info>
     <othername>$LastChangedBy: krejzi $</othername>
-    <date>$Date: 2014-10-25 18:13:26 +0200 (Sat, 25 Oct 2014) $</date>
+    <date>$Date: 2014-10-25 19:35:50 +0200 (Sat, 25 Oct 2014) $</date>
   </sect1info>
 
-  <title>Bluedevil-&bluedevil5-version;</title>
+  <title>Polkit-KDE-Agent-&plasma-version;</title>
 
-  <indexterm zone="bluedevil5">
-    <primary sortas="a-Bluedevil">Bluedevil</primary>
+  <indexterm zone="polkit-kde-agent5">
+    <primary sortas="a-Polkit-KDE-Agent">Polkit-KDE-Agent</primary>
   </indexterm>
 
   <sect2 role="package">
-    <title>Introduction to Bluedevil</title>
+    <title>Introduction to Polkit-KDE-Agent</title>
 
     <para>
-      The <application>Bluedevil</application> package contains a Bluetooth
-      stack for the <application>KDE Plasma</application> Desktop.
+      The <application>Polkit-KDE-Agent</application> package contains a
+      graphical <application>Polkit</application> authentication agent
+      for the <application>KDE Plasma</application> Desktop.
     </para>
 
     &lfs76_checked;
@@ -33,55 +34,54 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&bluedevil5-download-http;"/>
+          Download (HTTP): <ulink url="&polkit-kde-agent5-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&bluedevil5-download-ftp;"/>
+          Download (FTP): <ulink url="&polkit-kde-agent5-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &bluedevil5-md5sum;
+          Download MD5 sum: &polkit-kde-agent5-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &bluedevil5-size;
+          Download size: &polkit-kde-agent5-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &bluedevil5-buildsize;
+          Estimated disk space required: &polkit-kde-agent5-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &bluedevil5-time;
+          Estimated build time: &polkit-kde-agent5-time;
         </para>
       </listitem>
     </itemizedlist>
 
-    <bridgehead renderas="sect3">Bluedevil Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Polkit-KDE-Agent Dependencies</bridgehead>
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="bluez"/>,
-      <xref linkend="kio"/> and
-      <xref linkend="libbluedevil5"/>
+      <xref linkend="knotifications"/> and
+      <xref linkend="polkit-qt5"/>
     </para>
 
     <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/bluedevil5"/>
+      User Notes: <ulink url="&blfs-wiki;/polkit-kde-agent5"/>
     </para>
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Bluedevil</title>
+    <title>Installation of Polkit-KDE-Agent</title>
 
     <para>
-      Install <application>Bluedevil</application> by running the following
+      Install <application>Polkit-KDE-Agent</application> by running the following
       commands:
     </para>
 
@@ -92,8 +92,7 @@ cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
       -DCMAKE_BUILD_TYPE=Release         \
       -DLIB_INSTALL_DIR=lib              \
       -DBUILD_TESTING=OFF                \
-      -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
-      -Wno-dev .. &amp;&amp;
+      .. &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -120,9 +119,6 @@ make</userinput></screen>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/kf5-tests.xml"/>
 
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/qt5-plugins-dir.xml"/>
-
   </sect2>
 
   <sect2 role="content">
@@ -135,13 +131,13 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          bluedevil-monolithic, bluedevil-sendfile and bluedevil-wizard
+          polkit-kde-authentication-agent-1
         </seg>
         <seg>
           None
         </seg>
         <seg>
-          $KF5_PREFIX/share/bluedevilwizard
+          None
         </seg>
       </seglistitem>
     </segmentedlist>

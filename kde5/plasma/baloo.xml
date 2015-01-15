@@ -5,7 +5,7 @@
   %general-entities;
 ]>
 
-<sect1 id="baloo5" xreflabel="Baloo-&plasma-version;">
+<sect1 id="baloo5" xreflabel="Baloo-&baloo5-version;">
   <?dbhtml filename="baloo.html"?>
 
   <sect1info>
@@ -13,7 +13,7 @@
     <date>$Date: 2014-10-19 17:01:03 +0200 (Sun, 19 Oct 2014) $</date>
   </sect1info>
 
-  <title>Baloo-&plasma-version;</title>
+  <title>Baloo-&baloo5-version;</title>
 
   <indexterm zone="baloo5">
     <primary sortas="a-Baloo">Baloo</primary>
@@ -67,10 +67,9 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kcmutils"/>,
       <xref linkend="kdelibs4support"/>,
       <xref linkend="kfilemetadata5"/>,
-      <xref linkend="kidletime"/>
+      <xref linkend="kidletime"/> and
       <xref linkend="xapian"/>
     </para>
 
@@ -145,13 +144,11 @@ make</userinput></screen>
           baloosearch and balooshow
         </seg>
         <seg>
-          libKF5BalooCore.so, libKF5BalooFiles.so, libKF5BalooNaturalQueryParser.so and
-          libKF5BalooXapian.so
+          libKF5Baloo.so  and libKF5BalooXapian.so
         </seg>
         <seg>
           $KF5_PREFIX/include/KF5/Baloo,
-          $KF5_PREFIX/lib/cmake/KF5Baloo,
-          $KF5_PREFIX/&qt5-plugins-dir;/kf5/baloo and
+          $KF5_PREFIX/lib/cmake/KF5Baloo and
           $KF5_PREFIX/&qt5-qml-dir;/org/kde/baloo
         </seg>
       </seglistitem>

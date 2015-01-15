@@ -67,10 +67,9 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="karchive"/>,
       <xref linkend="kauth"/>,
       <xref linkend="kcodecs"/>,
-      <xref linkend="kcoreaddons"/>,
+      <xref linkend="kconfig"/>,
       <xref linkend="kdoctools"/>,
       <xref linkend="kguiaddons"/>,
       <xref linkend="ki18n"/> and

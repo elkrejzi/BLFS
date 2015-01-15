@@ -2,10 +2,10 @@
 <!ENTITY kf5-version                  "5.6.0">
 <!ENTITY kf5-download-http            "http://download.kde.org/stable/frameworks/5.6"> <!-- &kf5-version;"> -->
 <!ENTITY kf5-download-ftp             "ftp://ftp.kde.org/pub/kde/stable/frameworks/5.6"> <!-- &kf5-version;"> -->
-<!ENTITY plasma-version               "5.1.2">
-<!ENTITY plasma-download-http         "http://download.kde.org/stable/plasma/&plasma-version;">
-<!ENTITY plasma-download-ftp          "ftp://ftp.kde.org/pub/kde/stable/plasma/&plasma-version;">
-<!ENTITY kf5apps-version              "14.12.0">
+<!ENTITY plasma-version               "5.1.95">
+<!ENTITY plasma-download-http         "http://download.kde.org/unstable/plasma/&plasma-version;">
+<!ENTITY plasma-download-ftp          "ftp://ftp.kde.org/pub/kde/unstable/plasma/&plasma-version;">
+<!ENTITY kf5apps-version              "14.12.1">
 <!ENTITY kf5apps-download-http        "http://download.kde.org/stable/applications/&kf5apps-version;/src">
 <!ENTITY kf5apps-download-ftp         "ftp://ftp.kde.org/pub/kde/stable/applications/&kf5apps-version;/src">
 <!ENTITY qt5-mkspecs-dir              "$KF5_PREFIX/share/qt5/mkspecs/modules">
@@ -512,200 +512,238 @@
 
 
 <!-- KDE Plasma 5 -->
-<!ENTITY baloo5-download-http "&plasma-download-http;/baloo-&plasma-version;.tar.xz">
-<!ENTITY baloo5-download-ftp  "&plasma-download-ftp;/baloo-&plasma-version;.tar.xz">
-<!ENTITY baloo5-md5sum        "a8ddea44b89176530b6598231ff89c43">
-<!ENTITY baloo5-size          "228 KB">
-<!ENTITY baloo5-buildsize     "31 MB">
-<!ENTITY baloo5-time          "2.1 SBU">
+<!ENTITY baloo5-version       "5.5.95">
+<!ENTITY baloo5-download-http "&plasma-download-http;/baloo-&baloo5-version;.tar.xz">
+<!ENTITY baloo5-download-ftp  "&plasma-download-ftp;/baloo-&baloo5-version;.tar.xz">
+<!ENTITY baloo5-md5sum        "3d2805bcc93dfee47ad7adf29959aefa">
+<!ENTITY baloo5-size          "136 KB">
+<!ENTITY baloo5-buildsize     "24 MB">
+<!ENTITY baloo5-time          "1.7 SBU">
+
+<!ENTITY bluedevil5-download-http "&plasma-download-http;/bluedevil-&plasma-version;.tar.xz">
+<!ENTITY bluedevil5-download-ftp  "&plasma-download-ftp;/bluedevil-&plasma-version;.tar.xz">
+<!ENTITY bluedevil5-md5sum        "9a090f1e4ae1d6c9d3ac1fd24877acf5">
+<!ENTITY bluedevil5-size          "68 KB">
+<!ENTITY bluedevil5-buildsize     "14 MB">
+<!ENTITY bluedevil5-time          "1.7 SBU">
 
 <!ENTITY breeze-download-http "&plasma-download-http;/breeze-&plasma-version;.tar.xz">
 <!ENTITY breeze-download-ftp  "&plasma-download-ftp;/breeze-&plasma-version;.tar.xz">
-<!ENTITY breeze-md5sum        "d3ca341863579bab1222353a84fa09fa">
-<!ENTITY breeze-size          "17 MB">
-<!ENTITY breeze-buildsize     "56 MB">
-<!ENTITY breeze-time          "0.7 SBU">
+<!ENTITY breeze-md5sum        "217ce70929d9dd82cf15eee28d26c3b7">
+<!ENTITY breeze-size          "27 MB">
+<!ENTITY breeze-buildsize     "114 MB">
+<!ENTITY breeze-time          "1.1 SBU">
+
+<!ENTITY kcm-touchpad5-download-http "&plasma-download-http;/kcm-touchpad-&plasma-version;.tar.xz">
+<!ENTITY kcm-touchpad5-download-ftp  "&plasma-download-ftp;/kcm-touchpad-&plasma-version;.tar.xz">
+<!ENTITY kcm-touchpad5-md5sum        "25f22612196f820dafe395cdf2fdf0a8">
+<!ENTITY kcm-touchpad5-size          "84 KB">
+<!ENTITY kcm-touchpad5-buildsize     "4.4 MB">
+<!ENTITY kcm-touchpad5-time          "0.4 SBU">
 
 <!ENTITY kde-cli-tools-download-http "&plasma-download-http;/kde-cli-tools-&plasma-version;.tar.xz">
 <!ENTITY kde-cli-tools-download-ftp  "&plasma-download-ftp;/kde-cli-tools-&plasma-version;.tar.xz">
-<!ENTITY kde-cli-tools-md5sum        "774eab3599c2d5455e066799e62b0d7d">
+<!ENTITY kde-cli-tools-md5sum        "dc91bfdcaed85949458512c5ee33c2b3">
 <!ENTITY kde-cli-tools-size          "468 KB">
 <!ENTITY kde-cli-tools-buildsize     "25 MB">
 <!ENTITY kde-cli-tools-time          "1.0 SBU">
 
+<!ENTITY kdecoration-download-http "&plasma-download-http;/kdecoration-&plasma-version;.tar.xz">
+<!ENTITY kdecoration-download-ftp  "&plasma-download-ftp;/kdecoration-&plasma-version;.tar.xz">
+<!ENTITY kdecoration-md5sum        "62d1244bf28ba5ed9884fd37def64d82">
+<!ENTITY kdecoration-size          "36 KB">
+<!ENTITY kdecoration-buildsize     "2.5 MB">
+<!ENTITY kdecoration-time          "0.2 SBU">
+
 <!ENTITY kdeplasma-addons5-download-http "&plasma-download-http;/kdeplasma-addons-&plasma-version;.tar.xz">
 <!ENTITY kdeplasma-addons5-download-ftp  "&plasma-download-ftp;/kdeplasma-addons-&plasma-version;.tar.xz">
-<!ENTITY kdeplasma-addons5-md5sum        "5412aa209b5a2df0c09f2ccbd0b3a857">
+<!ENTITY kdeplasma-addons5-md5sum        "0efb09dbc63526ecda59ab8007511f76">
 <!ENTITY kdeplasma-addons5-size          "2.0 MB">
 <!ENTITY kdeplasma-addons5-buildsize     "63 MB">
-<!ENTITY kdeplasma-addons5-time          "1.0 SBU">
+<!ENTITY kdeplasma-addons5-time          "1.2 SBU">
 
-<!ENTITY kfilemetadata5-download-http "&plasma-download-http;/kfilemetadata-&plasma-version;.tar.xz">
-<!ENTITY kfilemetadata5-download-ftp  "&plasma-download-ftp;/kfilemetadata-&plasma-version;.tar.xz">
-<!ENTITY kfilemetadata5-md5sum        "994b8a39da1877778f06ac054f5573a6">
-<!ENTITY kfilemetadata5-size          "88 KB">
-<!ENTITY kfilemetadata5-buildsize     "4.2 MB">
+<!ENTITY kfilemetadata5-version       "5.5.95">
+<!ENTITY kfilemetadata5-download-http "&plasma-download-http;/kfilemetadata-&kfilemetadata5-version;.tar.xz">
+<!ENTITY kfilemetadata5-download-ftp  "&plasma-download-ftp;/kfilemetadata-&kfilemetadata5-version;.tar.xz">
+<!ENTITY kfilemetadata5-md5sum        "dd979e8c8af98603713cde36aa520629">
+<!ENTITY kfilemetadata5-size          "112 KB">
+<!ENTITY kfilemetadata5-buildsize     "6.9 MB">
 <!ENTITY kfilemetadata5-time          "0.4 SBU">
 
 <!ENTITY khelpcenter-download-http "&plasma-download-http;/khelpcenter-&plasma-version;.tar.xz">
 <!ENTITY khelpcenter-download-ftp  "&plasma-download-ftp;/khelpcenter-&plasma-version;.tar.xz">
-<!ENTITY khelpcenter-md5sum        "2e7ade6053c7f403fc93373d4fe430d8">
+<!ENTITY khelpcenter-md5sum        "e2d3695d46555e1412cddc4bc8087c59">
 <!ENTITY khelpcenter-size          "2.0 MB">
 <!ENTITY khelpcenter-buildsize     "22 MB">
 <!ENTITY khelpcenter-time          "0.7 SBU">
 
 <!ENTITY khotkeys-download-http "&plasma-download-http;/khotkeys-&plasma-version;.tar.xz">
 <!ENTITY khotkeys-download-ftp  "&plasma-download-ftp;/khotkeys-&plasma-version;.tar.xz">
-<!ENTITY khotkeys-md5sum        "1c9ca79b33f8793087eae0a3240d1eb2">
+<!ENTITY khotkeys-md5sum        "1f03a3276a586cb85858663cb773e8ab">
 <!ENTITY khotkeys-size          "728 KB">
 <!ENTITY khotkeys-buildsize     "19 MB">
-<!ENTITY khotkeys-time          "1.2 SBU">
+<!ENTITY khotkeys-time          "1.3 SBU">
 
 <!ENTITY kinfocenter-download-http "&plasma-download-http;/kinfocenter-&plasma-version;.tar.xz">
 <!ENTITY kinfocenter-download-ftp  "&plasma-download-ftp;/kinfocenter-&plasma-version;.tar.xz">
-<!ENTITY kinfocenter-md5sum        "07a21ff708ebd1b9bdfa65300eca2b13">
+<!ENTITY kinfocenter-md5sum        "f29e1416d73aa228775ad87acefabe38">
 <!ENTITY kinfocenter-size          "1.1 MB">
-<!ENTITY kinfocenter-buildsize     "38 MB">
-<!ENTITY kinfocenter-time          "1.1 SBU">
+<!ENTITY kinfocenter-buildsize     "39 MB">
+<!ENTITY kinfocenter-time          "1.2 SBU">
 
 <!ENTITY kio-extras-download-http "&plasma-download-http;/kio-extras-&plasma-version;.tar.xz">
 <!ENTITY kio-extras-download-ftp  "&plasma-download-ftp;/kio-extras-&plasma-version;.tar.xz">
-<!ENTITY kio-extras-md5sum        "16aacd3f6d7a4bcfda9fcc456edead77">
-<!ENTITY kio-extras-size          "476 KB">
-<!ENTITY kio-extras-buildsize     "33 MB">
-<!ENTITY kio-extras-time          "1.4 SBU">
+<!ENTITY kio-extras-md5sum        "ad7226b132b646f9455a3c24dc249394">
+<!ENTITY kio-extras-size          "504 KB">
+<!ENTITY kio-extras-buildsize     "35 MB">
+<!ENTITY kio-extras-time          "1.6 SBU">
 
 <!ENTITY kmenuedit-download-http "&plasma-download-http;/kmenuedit-&plasma-version;.tar.xz">
 <!ENTITY kmenuedit-download-ftp  "&plasma-download-ftp;/kmenuedit-&plasma-version;.tar.xz">
-<!ENTITY kmenuedit-md5sum        "da4259b609817e10fc53bd69d2d11e04">
-<!ENTITY kmenuedit-size          "336 KB">
-<!ENTITY kmenuedit-buildsize     "9.1 MB">
+<!ENTITY kmenuedit-md5sum        "969343d015e3d1f4d187951b3cc6360a">
+<!ENTITY kmenuedit-size          "368 KB">
+<!ENTITY kmenuedit-buildsize     "11 MB">
 <!ENTITY kmenuedit-time          "0.3 SBU">
+
+<!ENTITY kscreen5-download-http "&plasma-download-http;/kscreen-&plasma-version;.tar.xz">
+<!ENTITY kscreen5-download-ftp  "&plasma-download-ftp;/kscreen-&plasma-version;.tar.xz">
+<!ENTITY kscreen5-md5sum        "cf7963f7ed3fae410db6f6711853d38a">
+<!ENTITY kscreen5-size          "64 KB">
+<!ENTITY kscreen5-buildsize     "5.4 MB">
+<!ENTITY kscreen5-time          "0.6 SBU">
 
 <!ENTITY ksysguard-download-http "&plasma-download-http;/ksysguard-&plasma-version;.tar.xz">
 <!ENTITY ksysguard-download-ftp  "&plasma-download-ftp;/ksysguard-&plasma-version;.tar.xz">
-<!ENTITY ksysguard-md5sum        "90ac274e1cc5a078fd8c285cef130a95">
-<!ENTITY ksysguard-size          "432 KB">
-<!ENTITY ksysguard-buildsize     "19 MB">
-<!ENTITY ksysguard-time          "0.6 SBU">
+<!ENTITY ksysguard-md5sum        "9626a0d43920b2bbbfc78bdca888b3f1">
+<!ENTITY ksysguard-size          "460 KB">
+<!ENTITY ksysguard-buildsize     "20 MB">
+<!ENTITY ksysguard-time          "0.7 SBU">
 
 <!ENTITY kwayland-download-http "&plasma-download-http;/kwayland-&plasma-version;.tar.xz">
 <!ENTITY kwayland-download-ftp  "&plasma-download-ftp;/kwayland-&plasma-version;.tar.xz">
-<!ENTITY kwayland-md5sum        "49a5563621a4d6bd6bfd670903ea34bb">
-<!ENTITY kwayland-size          "60 KB">
-<!ENTITY kwayland-buildsize     "4.0 MB">
-<!ENTITY kwayland-time          "0.3 SBU">
+<!ENTITY kwayland-md5sum        "b3a69ef5e5556bf1cd47a13d8cb34b1a">
+<!ENTITY kwayland-size          "84 KB">
+<!ENTITY kwayland-buildsize     "6.7 MB">
+<!ENTITY kwayland-time          "0.5 SBU">
 
 <!ENTITY kwin5-download-http "&plasma-download-http;/kwin-&plasma-version;.tar.xz">
 <!ENTITY kwin5-download-ftp  "&plasma-download-ftp;/kwin-&plasma-version;.tar.xz">
-<!ENTITY kwin5-md5sum        "feb97cc6591e2526406d988a8fcf2f20">
+<!ENTITY kwin5-md5sum        "c3dd539dd75b15ef258eb908f1431fc7">
 <!ENTITY kwin5-size          "3.7 MB">
-<!ENTITY kwin5-buildsize     "124 MB">
-<!ENTITY kwin5-time          "7.0 SBU">
+<!ENTITY kwin5-buildsize     "123 MB">
+<!ENTITY kwin5-time          "7.3 SBU">
 
 <!ENTITY kwrited-download-http "&plasma-download-http;/kwrited-&plasma-version;.tar.xz">
 <!ENTITY kwrited-download-ftp  "&plasma-download-ftp;/kwrited-&plasma-version;.tar.xz">
-<!ENTITY kwrited-md5sum        "dd352072591ee6b6fd28866413de43e0">
+<!ENTITY kwrited-md5sum        "02534cf9698a17aa773c47cb0b7c7280">
 <!ENTITY kwrited-size          "20 KB">
-<!ENTITY kwrited-buildsize     "608 KB">
+<!ENTITY kwrited-buildsize     "628 KB">
 <!ENTITY kwrited-time          "less than 0.1 SBU">
+
+<!ENTITY libbluedevil5-download-http "&plasma-download-http;/libbluedevil-&plasma-version;.tar.xz">
+<!ENTITY libbluedevil5-download-ftp  "&plasma-download-ftp;/libbluedevil-&plasma-version;.tar.xz">
+<!ENTITY libbluedevil5-md5sum        "c2c7086c106f4815e2949b8ad6f14382">
+<!ENTITY libbluedevil5-size          "188 KB">
+<!ENTITY libbluedevil5-buildsize     "5.4 MB">
+<!ENTITY libbluedevil5-time          "0.2 SBU">
 
 <!ENTITY libkscreen-download-http "&plasma-download-http;/libkscreen-&plasma-version;.tar.xz">
 <!ENTITY libkscreen-download-ftp  "&plasma-download-ftp;/libkscreen-&plasma-version;.tar.xz">
-<!ENTITY libkscreen-md5sum        "f9e86a4a9985040bfe1abdd09d9b325d">
-<!ENTITY libkscreen-size          "60 KB">
-<!ENTITY libkscreen-buildsize     "4.8 MB">
-<!ENTITY libkscreen-time          "0.5 SBU">
+<!ENTITY libkscreen-md5sum        "20ef5ad1d63c148bcd4c48cd5aa50db4">
+<!ENTITY libkscreen-size          "72 KB">
+<!ENTITY libkscreen-buildsize     "6.7 MB">
+<!ENTITY libkscreen-time          "0.7 SBU">
 
 <!ENTITY libksysguard-download-http "&plasma-download-http;/libksysguard-&plasma-version;.tar.xz">
 <!ENTITY libksysguard-download-ftp  "&plasma-download-ftp;/libksysguard-&plasma-version;.tar.xz">
-<!ENTITY libksysguard-md5sum        "0b3de3028b07b82f3fba8885f1699e25">
+<!ENTITY libksysguard-md5sum        "9f63beb2f76a5321692a64f6ce1d21d6">
 <!ENTITY libksysguard-size          "540 KB">
 <!ENTITY libksysguard-buildsize     "29 MB">
 <!ENTITY libksysguard-time          "0.6 SBU">
 
 <!ENTITY libmm-qt-download-http "&plasma-download-http;/libmm-qt-&plasma-version;.tar.xz">
 <!ENTITY libmm-qt-download-ftp  "&plasma-download-ftp;/libmm-qt-&plasma-version;.tar.xz">
-<!ENTITY libmm-qt-md5sum        "e4623d229ae306db05cf0641235674d3">
+<!ENTITY libmm-qt-md5sum        "e98add86aed89df84dbad8e72c574314">
 <!ENTITY libmm-qt-size          "76 KB">
 <!ENTITY libmm-qt-buildsize     "5.8 MB">
-<!ENTITY libmm-qt-time          "0.6 SBU">
+<!ENTITY libmm-qt-time          "0.7 SBU">
 
 <!ENTITY milou-download-http "&plasma-download-http;/milou-&plasma-version;.tar.xz">
 <!ENTITY milou-download-ftp  "&plasma-download-ftp;/milou-&plasma-version;.tar.xz">
-<!ENTITY milou-md5sum        "ee3e0465e94c1d81626cf843191368f4">
+<!ENTITY milou-md5sum        "b00b4509ba2df9f4172550cb1af1e05b">
 <!ENTITY milou-size          "52 KB">
-<!ENTITY milou-buildsize     "4.7 MB">
+<!ENTITY milou-buildsize     "4.8 MB">
 <!ENTITY milou-time          "0.2 SBU">
 
 <!ENTITY oxygen-download-http "&plasma-download-http;/oxygen-&plasma-version;.tar.xz">
 <!ENTITY oxygen-download-ftp  "&plasma-download-ftp;/oxygen-&plasma-version;.tar.xz">
-<!ENTITY oxygen-md5sum        "12dc862b9d557f249e049959f398dddc">
+<!ENTITY oxygen-md5sum        "0cae271ae261054fa5283890e4257baf">
 <!ENTITY oxygen-size          "4.3 MB">
-<!ENTITY oxygen-buildsize     "66 MB">
-<!ENTITY oxygen-time          "1.9 SBU">
+<!ENTITY oxygen-buildsize     "62 MB">
+<!ENTITY oxygen-time          "1.8 SBU">
 
 <!ENTITY oxygen-fonts-download-http "&plasma-download-http;/oxygen-fonts-&plasma-version;.tar.xz">
 <!ENTITY oxygen-fonts-download-ftp  "&plasma-download-ftp;/oxygen-fonts-&plasma-version;.tar.xz">
-<!ENTITY oxygen-fonts-md5sum        "b16b4fb6e87f984fc6d5b61072fa8020">
+<!ENTITY oxygen-fonts-md5sum        "ed714712a1f0ce48968283df586ed213">
 <!ENTITY oxygen-fonts-size          "160 KB">
 <!ENTITY oxygen-fonts-buildsize     "1.4 MB">
 <!ENTITY oxygen-fonts-time          "less than 0.1 SBU">
 
-<!ENTITY oxygen-icons5-version       "14.12.0">
-<!ENTITY oxygen-icons5-download-http "&kf5apps-download-http;/oxygen-icons-&oxygen-icons5-version;.tar.xz">
-<!ENTITY oxygen-icons5-download-ftp  "&kf5apps-download-ftp;/oxygen-icons-&oxygen-icons5-version;.tar.xz">
-<!ENTITY oxygen-icons5-md5sum        "de56eb6c024e888f5c9924489245caf2">
+<!ENTITY oxygen-icons5-download-http "&kf5apps-download-http;/oxygen-icons-&kf5apps-version;.tar.xz">
+<!ENTITY oxygen-icons5-download-ftp  "&kf5apps-download-ftp;/oxygen-icons-&kf5apps-version;.tar.xz">
+<!ENTITY oxygen-icons5-md5sum        "69bdaadeec36d09796c92f09af3007ed">
 <!ENTITY oxygen-icons5-size          "220 MB">
 <!ENTITY oxygen-icons5-buildsize     "474 MB">
 <!ENTITY oxygen-icons5-time          "less than 0.1 SBU">
 
 <!ENTITY plasma-desktop-download-http "&plasma-download-http;/plasma-desktop-&plasma-version;.tar.xz">
 <!ENTITY plasma-desktop-download-ftp  "&plasma-download-ftp;/plasma-desktop-&plasma-version;.tar.xz">
-<!ENTITY plasma-desktop-md5sum        "cd5dbce577c175cb33008702400d5598">
-<!ENTITY plasma-desktop-size          "5.8 MB">
-<!ENTITY plasma-desktop-buildsize     "169 MB">
-<!ENTITY plasma-desktop-time          "6.7 SBU">
+<!ENTITY plasma-desktop-md5sum        "cdc26599be69d93ba4c81328f61be254">
+<!ENTITY plasma-desktop-size          "5.5 MB">
+<!ENTITY plasma-desktop-buildsize     "170 MB">
+<!ENTITY plasma-desktop-time          "7.8 SBU">
 
-<!--
 <!ENTITY plasma-nm-download-http "&plasma-download-http;/plasma-nm-&plasma-version;.tar.xz">
 <!ENTITY plasma-nm-download-ftp  "&plasma-download-ftp;/plasma-nm-&plasma-version;.tar.xz">
--->
-<!ENTITY plasma-nm-version       "5.1.2.1">
-<!ENTITY plasma-nm-download-http "http://download.kde.org/stable/plasma/&plasma-nm-version;/plasma-nm-&plasma-nm-version;.tar.xz">
-<!ENTITY plasma-nm-download-ftp  "ftp://ftp.kde.org/pub/kde/stable/plasma/&plasma-nm-version;/plasma-nm-&plasma-nm-version;.tar.xz">
-<!ENTITY plasma-nm-md5sum        "3fcad6c0ce0bacb2fa4e3e2a9f4c2cd2">
-<!ENTITY plasma-nm-size          "484 KB">
-<!ENTITY plasma-nm-buildsize     "36 MB">
-<!ENTITY plasma-nm-time          "1.9 SBU">
+<!ENTITY plasma-nm-md5sum        "55db1c8b355532d63c9512d923616659">
+<!ENTITY plasma-nm-size          "488 KB">
+<!ENTITY plasma-nm-buildsize     "38 MB">
+<!ENTITY plasma-nm-time          "2.3 SBU">
 
 <!ENTITY plasma-workspace-download-http "&plasma-download-http;/plasma-workspace-&plasma-version;.tar.xz">
 <!ENTITY plasma-workspace-download-ftp  "&plasma-download-ftp;/plasma-workspace-&plasma-version;.tar.xz">
-<!ENTITY plasma-workspace-md5sum        "8a01835179b25e3a7ff644fd7e52ec96">
+<!ENTITY plasma-workspace-md5sum        "247127e7e857eaaeb4f6009ca527af0b">
 <!ENTITY plasma-workspace-size          "6.5 MB">
-<!ENTITY plasma-workspace-buildsize     "198 MB">
-<!ENTITY plasma-workspace-time          "8.2 SBU">
+<!ENTITY plasma-workspace-buildsize     "204 MB">
+<!ENTITY plasma-workspace-time          "8.9 SBU">
 
 <!ENTITY plasma-workspace-wallpapers-download-http "&plasma-download-http;/plasma-workspace-wallpapers-&plasma-version;.tar.xz">
 <!ENTITY plasma-workspace-wallpapers-download-ftp  "&plasma-download-ftp;/plasma-workspace-wallpapers-&plasma-version;.tar.xz">
-<!ENTITY plasma-workspace-wallpapers-md5sum        "ded5fa7e54ad45d4ab1e5968ef9ccc72">
+<!ENTITY plasma-workspace-wallpapers-md5sum        "1dfaf639969f41f9dba6e03b82fc34c0">
 <!ENTITY plasma-workspace-wallpapers-size          "28 MB">
 <!ENTITY plasma-workspace-wallpapers-buildsize     "57 MB">
 <!ENTITY plasma-workspace-wallpapers-time          "less than 0.1 SBU">
 
+<!ENTITY polkit-kde-agent5-download-http "&plasma-download-http;/polkit-kde-agent-1-&plasma-version;.tar.xz">
+<!ENTITY polkit-kde-agent5-download-ftp  "&plasma-download-ftp;/polkit-kde-agent-1-&plasma-version;.tar.xz">
+<!ENTITY polkit-kde-agent5-md5sum        "994b8a39da1877778f06ac054f5573a6">
+<!ENTITY polkit-kde-agent5-size          "40 KB">
+<!ENTITY polkit-kde-agent5-buildsize     "4.1 MB">
+<!ENTITY polkit-kde-agent5-time          "0.1 SBU">
+
 <!ENTITY powerdevil-download-http "&plasma-download-http;/powerdevil-&plasma-version;.tar.xz">
 <!ENTITY powerdevil-download-ftp  "&plasma-download-ftp;/powerdevil-&plasma-version;.tar.xz">
-<!ENTITY powerdevil-md5sum        "3b2e979cb956861e4444e4d89e5bf19f">
-<!ENTITY powerdevil-size          "412 KB">
-<!ENTITY powerdevil-buildsize     "20 MB">
-<!ENTITY powerdevil-time          "1.2 SBU">
+<!ENTITY powerdevil-md5sum        "a9d1b87b117bd76ea225561eb3cda0e6">
+<!ENTITY powerdevil-size          "408 KB">
+<!ENTITY powerdevil-buildsize     "21 MB">
+<!ENTITY powerdevil-time          "1.4 SBU">
 
 <!ENTITY systemsettings-download-http "&plasma-download-http;/systemsettings-&plasma-version;.tar.xz">
 <!ENTITY systemsettings-download-ftp  "&plasma-download-ftp;/systemsettings-&plasma-version;.tar.xz">
-<!ENTITY systemsettings-md5sum        "8ffe9ac1164fa6344f48842815bfd5e0">
-<!ENTITY systemsettings-size          "136 KB">
-<!ENTITY systemsettings-buildsize     "9.3 MB">
-<!ENTITY systemsettings-time          "0.4 SBU">
+<!ENTITY systemsettings-md5sum        "d13c963142e8a9bef483bac601ff624a">
+<!ENTITY systemsettings-size          "156 KB">
+<!ENTITY systemsettings-buildsize     "11 MB">
+<!ENTITY systemsettings-time          "0.5 SBU">
 
 <!ENTITY sddm-version       "0.11.0">
 <!ENTITY sddm-download-http "http://www.linuxfromscratch.org/~krejzi/pkgs/sddm-&sddm-version;.tar.gz">
@@ -713,7 +751,7 @@
 <!ENTITY sddm-md5sum        "e110a7683867400dc9484d4744fd41dd">
 <!ENTITY sddm-size          "4.6 MB">
 <!ENTITY sddm-buildsize     "18 MB">
-<!ENTITY sddm-time          "0.7 SBU">
+<!ENTITY sddm-time          "0.8 SBU">
 
 
 
@@ -738,59 +776,42 @@
 <!ENTITY akonadi-search-time          "0.8 SBU">
 -->
 
-<!ENTITY ark5-version       "14.12.0-58-gc4d31c3">
+<!ENTITY ark5-version       "14.12.1-68-gd2cd294">
 <!ENTITY ark5-download-http "&demo-url;/ark-&ark5-version;.tar.xz">
 <!ENTITY ark5-download-ftp  " ">
-<!ENTITY ark5-md5sum        "4e659958f9c33a9143205b08ea7fd62b">
-<!ENTITY ark5-size          "236 KB">
+<!ENTITY ark5-md5sum        "83721c06401797d6e7f858484a3b153c">
+<!ENTITY ark5-size          "232 KB">
 <!ENTITY ark5-buildsize     "8.8 MB">
 <!ENTITY ark5-time          "0.7 SBU">
 
-<!ENTITY baloo-widgets5-version       "4.13.80-49-g7a85453">
+<!ENTITY baloo-widgets5-version       "4.13.80-60-g423203e">
 <!ENTITY baloo-widgets5-download-http "&demo-url;/baloo-widgets-&baloo-widgets5-version;.tar.xz">
 <!ENTITY baloo-widgets5-download-ftp  " ">
-<!ENTITY baloo-widgets5-md5sum        "3c0d43362782e71d059ca5d561ef18e5">
-<!ENTITY baloo-widgets5-size          "40 KB">
+<!ENTITY baloo-widgets5-md5sum        "5974d9f6c3cd5650d7e4637db6b38ee7">
+<!ENTITY baloo-widgets5-size          "60 KB">
 <!ENTITY baloo-widgets5-buildsize     "3.7 MB">
 <!ENTITY baloo-widgets5-time          "0.4 SBU">
-
-<!ENTITY bluedevil5-version       "2.0-rc1-61-gc06b1c3">
-<!ENTITY bluedevil5-download-http "&demo-url;/bluedevil-&bluedevil5-version;.tar.xz">
-<!ENTITY bluedevil5-download-ftp  " ">
-<!ENTITY bluedevil5-md5sum        "7510529c8246c6735572f8e6cb5b2621">
-<!ENTITY bluedevil5-size          "72 KB">
-<!ENTITY bluedevil5-buildsize     "14 MB">
-<!ENTITY bluedevil5-time          "1.3 SBU">
 
 <!ENTITY gwenview5-version       "14.11.97-25-gbe0da0e">
 <!ENTITY gwenview5-download-http "&demo-url;/gwenview-&gwenview5-version;.tar.xz">
 <!ENTITY gwenview5-download-ftp  " ">
-<!ENTITY gwenview5-md5sum        "e696b52673bae1dca866c0d78abfd95d">
+<!ENTITY gwenview5-md5sum        "f7e1157f4cc3ae5200a6ae60d0f032ed">
 <!ENTITY gwenview5-size          "2.8 MB">
 <!ENTITY gwenview5-buildsize     "24 MB">
 <!ENTITY gwenview5-time          "1.9 SBU">
 
-<!ENTITY kate5-version       "14.12.0">
-<!ENTITY kate5-download-http "&kf5apps-download-http;/kate-&kate5-version;.tar.xz">
-<!ENTITY kate5-download-ftp  "&kf5apps-download-ftp;/kate-&kate5-version;.tar.xz">
-<!ENTITY kate5-md5sum        "0783b6e9a2ef7de64c6159e1346f08bb">
+<!ENTITY kate5-download-http "&kf5apps-download-http;/kate-&kf5apps-version;.tar.xz">
+<!ENTITY kate5-download-ftp  "&kf5apps-download-ftp;/kate-&kf5apps-version;.tar.xz">
+<!ENTITY kate5-md5sum        "63fdecd295473eb02ef8564d7f9e90c0">
 <!ENTITY kate5-size          "1.7 MB">
 <!ENTITY kate5-buildsize     "46 MB">
 <!ENTITY kate5-time          "2.5 SBU">
 
-<!ENTITY kcm-touchpad5-version       "1.1-8-g2319d35">
-<!ENTITY kcm-touchpad5-download-http "&demo-url;/kcm-touchpad-&kcm-touchpad5-version;.tar.xz">
-<!ENTITY kcm-touchpad5-download-ftp  " ">
-<!ENTITY kcm-touchpad5-md5sum        "53a3ec5c661f28cf461d599164bd2bc4">
-<!ENTITY kcm-touchpad5-size          "84 KB">
-<!ENTITY kcm-touchpad5-buildsize     "4.3 MB">
-<!ENTITY kcm-touchpad5-time          "0.4 SBU">
-
-<!ENTITY kde-baseapps5-version       "4.14.2-427-gc2a0d3e">
+<!ENTITY kde-baseapps5-version       "4.14.2-453-g291fa7f">
 <!ENTITY kde-baseapps5-download-http "&demo-url;/kde-baseapps-&kde-baseapps5-version;.tar.xz">
 <!ENTITY kde-baseapps5-download-ftp  " ">
-<!ENTITY kde-baseapps5-md5sum        "71e29b602d1b139aa898b675ad41564d">
-<!ENTITY kde-baseapps5-size          "2.3 MB">
+<!ENTITY kde-baseapps5-md5sum        "a98011d2a9301f75151298057ed2c79a">
+<!ENTITY kde-baseapps5-size          "2.2 MB">
 <!ENTITY kde-baseapps5-buildsize     "59 MB">
 <!ENTITY kde-baseapps5-time          "4.8 SBU">
 
@@ -820,58 +841,40 @@
 <!ENTITY kdepim5-time          "42 SBU">
 -->
 
-<!ENTITY kmix5-version       "14.11.90">
-<!ENTITY kmix5-download-http "&demo-url;/kmix-&kmix5-version;.tar.xz">
-<!ENTITY kmix5-download-ftp  " ">
-<!ENTITY kmix5-md5sum        "eedb9c7e8a815a87d6f6489bdc6bbc8d">
+<!ENTITY kmix5-download-http "&kf5apps-download-http;/kmix-&kf5apps-version;.tar.xz">
+<!ENTITY kmix5-download-ftp  "&kf5apps-download-ftp;/kmix-&kf5apps-version;.tar.xz">
+<!ENTITY kmix5-md5sum        "66778eac4c511c7d572c4560ce2a179f">
 <!ENTITY kmix5-size          "380 KB">
 <!ENTITY kmix5-buildsize     "14 MB">
 <!ENTITY kmix5-time          "1.8 SBU">
 
-<!ENTITY konsole5-version       "14.12.0">
-<!ENTITY konsole5-download-http "&kf5apps-download-http;/konsole-&konsole5-version;.tar.xz">
-<!ENTITY konsole5-download-ftp  "&kf5apps-download-ftp;/konsole-&konsole5-version;.tar.xz">
-<!ENTITY konsole5-md5sum        "525505713740de3cf0d158cb29900970">
+<!ENTITY konsole5-download-http "&kf5apps-download-http;/konsole-&kf5apps-version;.tar.xz">
+<!ENTITY konsole5-download-ftp  "&kf5apps-download-ftp;/konsole-&kf5apps-version;.tar.xz">
+<!ENTITY konsole5-md5sum        "7306f9d0f181a0625828f9aaf6485026">
 <!ENTITY konsole5-size          "452 KB">
 <!ENTITY konsole5-buildsize     "16 MB">
 <!ENTITY konsole5-time          "1.0 SBU">
 
-<!ENTITY kscreen5-version       "1.0.2.1-109-g88b2a3f">
-<!ENTITY kscreen5-download-http "&demo-url;/kscreen-&kscreen5-version;.tar.xz">
-<!ENTITY kscreen5-download-ftp  " ">
-<!ENTITY kscreen5-md5sum        "9ae55004cd39ad7063541ce6d191baef">
-<!ENTITY kscreen5-size          "60 KB">
-<!ENTITY kscreen5-buildsize     "5.0 MB">
-<!ENTITY kscreen5-time          "0.6 SBU">
-
-<!ENTITY ksnapshot5-version       "14.12.0-101-g87a7c2a">
+<!ENTITY ksnapshot5-version       "14.12.1-104-g9a015dd">
 <!ENTITY ksnapshot5-download-http "&demo-url;/ksnapshot-&ksnapshot5-version;.tar.xz">
 <!ENTITY ksnapshot5-download-ftp  " ">
-<!ENTITY ksnapshot5-md5sum        "217c70afaea1933024d36837b074ae8e">
+<!ENTITY ksnapshot5-md5sum        "42bfaa6995838435214bf7b316742bf9">
 <!ENTITY ksnapshot5-size          "260 KB">
 <!ENTITY ksnapshot5-buildsize     "3.8 MB">
 <!ENTITY ksnapshot5-time          "0.4 SBU">
 
-<!ENTITY libbluedevil5-version       "2.0-rc1-6-g0f933e0">
-<!ENTITY libbluedevil5-download-http "&demo-url;/libbluedevil-&libbluedevil5-version;.tar.xz">
-<!ENTITY libbluedevil5-download-ftp  " ">
-<!ENTITY libbluedevil5-md5sum        "d89389f2327735d7661b91b365edb166">
-<!ENTITY libbluedevil5-size          "188 KB">
-<!ENTITY libbluedevil5-buildsize     "5.4 MB">
-<!ENTITY libbluedevil5-time          "0.2 SBU">
-
-<!ENTITY libkdcraw5-version       "4.13.3-102-g24dce9d">
+<!ENTITY libkdcraw5-version       "4.13.3-116-gf3f4eed">
 <!ENTITY libkdcraw5-download-http "&demo-url;/libkdcraw-&libkdcraw5-version;.tar.xz">
 <!ENTITY libkdcraw5-download-ftp  " ">
-<!ENTITY libkdcraw5-md5sum        "3ec08baff1a37787423e7ec05e031ccd">
+<!ENTITY libkdcraw5-md5sum        "467313c15ba43126f70b00afdc6b1f78">
 <!ENTITY libkdcraw5-size          "96 KB">
 <!ENTITY libkdcraw5-buildsize     "3.7 MB">
 <!ENTITY libkdcraw5-time          "0.3 SBU">
 
-<!ENTITY libkexiv25-version       "4.14.1-108-g9ceebc1">
+<!ENTITY libkexiv25-version       "a6d9add4e22202a00fe76c131981b525">
 <!ENTITY libkexiv25-download-http "&demo-url;/libkexiv2-&libkexiv25-version;.tar.xz">
 <!ENTITY libkexiv25-download-ftp  " ">
-<!ENTITY libkexiv25-md5sum        "1b5cbeb179cc164194d33514dd1b872b">
+<!ENTITY libkexiv25-md5sum        "4.14.1-114-gecaeaf6">
 <!ENTITY libkexiv25-size          "132 KB">
 <!ENTITY libkexiv25-buildsize     "7.3 MB">
 <!ENTITY libkexiv25-time          "0.4 SBU">
@@ -894,10 +897,3 @@
 <!ENTITY okular5-buildsize     "38 MB">
 <!ENTITY okular5-time          "2.8 SBU">
 
-<!ENTITY polkit-kde-agent5-version       "0.99.1-27-gb0163f5">
-<!ENTITY polkit-kde-agent5-download-http "&demo-url;/polkit-kde-agent-1-&polkit-kde-agent5-version;.tar.xz">
-<!ENTITY polkit-kde-agent5-download-ftp  " ">
-<!ENTITY polkit-kde-agent5-md5sum        "fa64ec55f7c96efe53676988d23fe42a">
-<!ENTITY polkit-kde-agent5-size          "20 KB">
-<!ENTITY polkit-kde-agent5-buildsize     "1.3 MB">
-<!ENTITY polkit-kde-agent5-time          "0.1 SBU">

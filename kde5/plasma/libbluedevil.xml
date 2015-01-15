@@ -5,26 +5,27 @@
   %general-entities;
 ]>
 
-<sect1 id="kscreen5" xreflabel="KScreen-&kscreen5-version;">
-  <?dbhtml filename="kscreen.html"?>
+<sect1 id="libbluedevil5" xreflabel="libbluedevil-&plasma-version;">
+  <?dbhtml filename="libbluedevil.html"?>
 
   <sect1info>
     <othername>$LastChangedBy: krejzi $</othername>
-    <date>$Date: 2014-10-25 19:35:50 +0200 (Sat, 25 Oct 2014) $</date>
+    <date>$Date: 2014-10-23 14:29:15 +0200 (Thu, 23 Oct 2014) $</date>
   </sect1info>
 
-  <title>KScreen-&kscreen5-version;</title>
+  <title>libbluedevil-&plasma-version;</title>
 
-  <indexterm zone="kscreen5">
-    <primary sortas="a-KScreen">KScreen</primary>
+  <indexterm zone="libbluedevil5">
+    <primary sortas="a-libbluedevil">libbluedevil</primary>
   </indexterm>
 
   <sect2 role="package">
-    <title>Introduction to KScreen</title>
+    <title>Introduction to libbluedevil</title>
 
     <para>
-      The <application>KScreen</application> package contains a screen configuration
-      module for the <application>KDE Plasma</application> Desktop.
+      The <application>libbluedevil</application> package contains a
+      Qt based library which makes easier to develop Qt based
+      applications that use <application>BlueZ</application>.
     </para>
 
     &lfs76_checked;
@@ -33,54 +34,58 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&kscreen5-download-http;"/>
+          Download (HTTP): <ulink url="&libbluedevil5-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&kscreen5-download-ftp;"/>
+          Download (FTP): <ulink url="&libbluedevil5-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &kscreen5-md5sum;
+          Download MD5 sum: &libbluedevil5-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &kscreen5-size;
+          Download size: &libbluedevil5-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &kscreen5-buildsize;
+          Estimated disk space required: &libbluedevil5-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &kscreen5-time;
+          Estimated build time: &libbluedevil5-time;
         </para>
       </listitem>
     </itemizedlist>
 
-    <bridgehead renderas="sect3">KScreen Dependencies</bridgehead>
+    <bridgehead renderas="sect3">libbluedevil Dependencies</bridgehead>
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kxmlgui"/> and
-      <xref linkend="libkscreen"/>
+      <xref linkend="qt5"/>
+    </para>
+
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/>
     </para>
 
     <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/kscreen5"/>
+      User Notes: <ulink url="&blfs-wiki;/libbluedevil5"/>
     </para>
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of KScreen</title>
+    <title>Installation of libbluedevil</title>
 
     <para>
-      Install <application>KScreen</application> by running the following
+      Install <application>libbluedevil</application> by running the following
       commands:
     </para>
 
@@ -90,8 +95,6 @@ cd    build &amp;&amp;
 cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
       -DCMAKE_BUILD_TYPE=Release         \
       -DLIB_INSTALL_DIR=lib              \
-      -DBUILD_TESTING=OFF                \
-      -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
       -Wno-dev .. &amp;&amp;
 make</userinput></screen>
 
@@ -116,12 +119,6 @@ make</userinput></screen>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/kf5-libdir.xml"/>
 
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/kf5-tests.xml"/>
-
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/qt5-plugins-dir.xml"/>
-
   </sect2>
 
   <sect2 role="content">
@@ -134,13 +131,13 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          kscreen-console
-        </seg>
-        <seg>
           None
         </seg>
         <seg>
-          $KF5_PREFIX/share/kcm_kscreen
+          libbluedevil.so
+        </seg>
+        <seg>
+          $KF5_PREFIX/include/bluedevil
         </seg>
       </seglistitem>
     </segmentedlist>

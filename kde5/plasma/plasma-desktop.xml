@@ -77,14 +77,6 @@
       <xref linkend="pulseaudio"/>
     </para>
 
-    <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
-    <para role="required">
-      <xref linkend="khotkeys"/>,
-      <xref linkend="ksysguard"/>,
-      <xref linkend="powerdevil"/> and
-      <xref linkend="systemsettings"/>
-    </para>
-
     <para condition="html" role="usernotes">
       User Notes: <ulink url="&blfs-wiki;/plasma-desktop"/>
     </para>
@@ -167,10 +159,10 @@ make</userinput></screen>
           $KF5_PREFIX/share/doc/HTML/*/kcontrol/{khtml-plugins,smb,solid-actions,splashscreen,useragent},
           $KF5_PREFIX/share/doc/HTML/*/{kfontview,knetattach,plasma-desktop},
           $KF5_PREFIX/share/{kcm_componentchooser,kcminput,kcmkeyboard,kcmkeys},
-          $KF5_PREFIX/share/{kcm_phonon,kcmsolidactions,kcontrol,kdisplay,kdm,kfontinst},
-          $KF5_PREFIX/share/{konqsidebartng,ksmserver,kthememanager},
+          $KF5_PREFIX/share/{kcm_phonon,kcmsolidactions,kcontrol,kdisplay,kdm},
+          $KF5_PREFIX/share/{kfontinst,konqsidebartng,ksmserver},
           $KF5_PREFIX/share/kxmlgui5/{kfontinst,kfontview} and
-          $KF5_PREFIX/share/plasma/{kcms,layout-templates,packages,plasmoids/shells}
+          $KF5_PREFIX/share/plasma/{kcms,layout-templates,packages,plasmoids,shells}
         </seg>
       </seglistitem>
     </segmentedlist>

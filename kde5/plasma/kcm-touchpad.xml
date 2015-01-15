@@ -5,27 +5,27 @@
   %general-entities;
 ]>
 
-<sect1 id="polkit-kde-agent5" xreflabel="Polkit-KDE-Agent-&polkit-kde-agent5-version;">
-  <?dbhtml filename="polkit-kde-agent.html"?>
+<sect1 id="kcm-touchpad5" xreflabel="KCM-Touchpad-&plasma-version;">
+  <?dbhtml filename="kcm-touchpad.html"?>
 
   <sect1info>
     <othername>$LastChangedBy: krejzi $</othername>
-    <date>$Date: 2014-10-25 19:35:50 +0200 (Sat, 25 Oct 2014) $</date>
+    <date>$Date: 2014-10-25 18:13:26 +0200 (Sat, 25 Oct 2014) $</date>
   </sect1info>
 
-  <title>Polkit-KDE-Agent-&polkit-kde-agent5-version;</title>
+  <title>KCM-Touchpad-&plasma-version;</title>
 
-  <indexterm zone="polkit-kde-agent5">
-    <primary sortas="a-Polkit-KDE-Agent">Polkit-KDE-Agent</primary>
+  <indexterm zone="kcm-touchpad5">
+    <primary sortas="a-KCM-Touchpad">KCM-Touchpad</primary>
   </indexterm>
 
   <sect2 role="package">
-    <title>Introduction to Polkit-KDE-Agent</title>
+    <title>Introduction to KCM-Touchpad</title>
 
     <para>
-      The <application>Polkit-KDE-Agent</application> package contains a
-      graphical <application>Polkit</application> authentication agent
-      for the <application>KDE Plasma</application> Desktop.
+      The <application>KCM-Touchpad</application> package contains a touchpad
+      configuration module for the <application>KDE Plasma</application>
+      Desktop.
     </para>
 
     &lfs76_checked;
@@ -34,54 +34,56 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&polkit-kde-agent5-download-http;"/>
+          Download (HTTP): <ulink url="&kcm-touchpad5-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&polkit-kde-agent5-download-ftp;"/>
+          Download (FTP): <ulink url="&kcm-touchpad5-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &polkit-kde-agent5-md5sum;
+          Download MD5 sum: &kcm-touchpad5-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &polkit-kde-agent5-size;
+          Download size: &kcm-touchpad5-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &polkit-kde-agent5-buildsize;
+          Estimated disk space required: &kcm-touchpad5-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &polkit-kde-agent5-time;
+          Estimated build time: &kcm-touchpad5-time;
         </para>
       </listitem>
     </itemizedlist>
 
-    <bridgehead renderas="sect3">Polkit-KDE-Agent Dependencies</bridgehead>
+    <bridgehead renderas="sect3">KCM-Touchpad Dependencies</bridgehead>
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="knotifications"/> and
-      <xref linkend="polkit-qt5"/>
+      <xref linkend="kinit5"/>,
+      <xref linkend="knotifyconfig"/>,
+      <xref linkend="plasma-framework"/> and
+      <xref linkend="xorg-synaptics-driver"/>
     </para>
 
     <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/polkit-kde-agent5"/>
+      User Notes: <ulink url="&blfs-wiki;/kcm-touchpad5"/>
     </para>
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of Polkit-KDE-Agent</title>
+    <title>Installation of KCM-Touchpad</title>
 
     <para>
-      Install <application>Polkit-KDE-Agent</application> by running the following
+      Install <application>KCM-Touchpad</application> by running the following
       commands:
     </para>
 
@@ -92,7 +94,8 @@ cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
       -DCMAKE_BUILD_TYPE=Release         \
       -DLIB_INSTALL_DIR=lib              \
       -DBUILD_TESTING=OFF                \
-      .. &amp;&amp;
+      -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
+      -Wno-dev .. &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -119,6 +122,9 @@ make</userinput></screen>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/kf5-tests.xml"/>
 
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+      href="../../xincludes/qt5-plugins-dir.xml"/>
+
   </sect2>
 
   <sect2 role="content">
@@ -131,13 +137,13 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          polkit-kde-authentication-agent-1
+          kcm-touchpad-list-devices
         </seg>
         <seg>
           None
         </seg>
         <seg>
-          None
+          $KF5_PREFIX/share/plasma/plasmoids/touchpad
         </seg>
       </seglistitem>
     </segmentedlist>

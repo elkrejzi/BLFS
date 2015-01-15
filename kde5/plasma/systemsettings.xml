@@ -72,9 +72,11 @@
       <xref linkend="khtml"/>
     </para>
 
-    <bridgehead renderas="sect4">Optional Runtime Dependency</bridgehead>
+    <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
     <para role="optional">
-      <xref linkend="kscreen5"/> (screen configuration module)
+      <xref linkend="bluedevil5"/> (Bluetooth Configuration Module>,
+      <xref linkend="kcm-touchpad5"/> (Touchpad Configuration Module) and
+      <xref linkend="kscreen5"/> (Screen Configuration Module)
     </para>
 
     <para condition="html" role="usernotes">

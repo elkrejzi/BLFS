@@ -5,26 +5,26 @@
   %general-entities;
 ]>
 
-<sect1 id="kinfocenter" xreflabel="KInfoCenter-&plasma-version;">
-  <?dbhtml filename="kinfocenter.html"?>
+<sect1 id="kscreen5" xreflabel="KScreen-&plasma-version;">
+  <?dbhtml filename="kscreen.html"?>
 
   <sect1info>
     <othername>$LastChangedBy: krejzi $</othername>
-    <date>$Date: 2014-10-19 17:01:03 +0200 (Sun, 19 Oct 2014) $</date>
+    <date>$Date: 2014-10-25 19:35:50 +0200 (Sat, 25 Oct 2014) $</date>
   </sect1info>
 
-  <title>KInfoCenter-&plasma-version;</title>
+  <title>KScreen-&plasma-version;</title>
 
-  <indexterm zone="kinfocenter">
-    <primary sortas="a-KInfoCenter">KInfoCenter</primary>
+  <indexterm zone="kscreen5">
+    <primary sortas="a-KScreen">KScreen</primary>
   </indexterm>
 
   <sect2 role="package">
-    <title>Introduction to KInfoCenter</title>
+    <title>Introduction to KScreen</title>
 
     <para>
-      The <application>KInfoCenter</application> package contains an
-      application that provides information about a computer system.
+      The <application>KScreen</application> package contains a screen configuration
+      module for the <application>KDE Plasma</application> Desktop.
     </para>
 
     &lfs76_checked;
@@ -33,62 +33,54 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&kinfocenter-download-http;"/>
+          Download (HTTP): <ulink url="&kscreen5-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&kinfocenter-download-ftp;"/>
+          Download (FTP): <ulink url="&kscreen5-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &kinfocenter-md5sum;
+          Download MD5 sum: &kscreen5-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &kinfocenter-size;
+          Download size: &kscreen5-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &kinfocenter-buildsize;
+          Estimated disk space required: &kscreen5-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &kinfocenter-time;
+          Estimated build time: &kscreen5-time;
         </para>
       </listitem>
     </itemizedlist>
 
-    <bridgehead renderas="sect3">KInfoCenter Dependencies</bridgehead>
+    <bridgehead renderas="sect3">KScreen Dependencies</bridgehead>
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kcmutils"/> and
-      <xref linkend="kdelibs4support"/>
-    </para>
-
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="glu"/>,
-      <xref linkend="kwayland"/>,
-      <ulink url="http://www.linux1394.org/">libraw1394</ulink> and
-      <xref linkend="pciutils"/>
+      <xref linkend="kxmlgui"/> and
+      <xref linkend="libkscreen"/>
     </para>
 
     <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/kinfocenter"/>
+      User Notes: <ulink url="&blfs-wiki;/kscreen5"/>
     </para>
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of KInfoCenter</title>
+    <title>Installation of KScreen</title>
 
     <para>
-      Install <application>KInfoCenter</application> by running the following
+      Install <application>KScreen</application> by running the following
       commands:
     </para>
 
@@ -100,7 +92,7 @@ cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
       -DLIB_INSTALL_DIR=lib              \
       -DBUILD_TESTING=OFF                \
       -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
-      .. &amp;&amp;
+      -Wno-dev .. &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -142,16 +134,13 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          kinfocenter
+          kscreen-console
         </seg>
         <seg>
           None
         </seg>
         <seg>
-          $KF5_PREFIX/share/doc/HTML/*/kinfocenter,
-          $KF5_PREFIX/share/kcmusb,
-          $KF5_PREFIX/share/kcmview1394 and
-          $KF5_PREFIX/share/kxmlgui5/kinfocenter
+          $KF5_PREFIX/share/kcm_kscreen
         </seg>
       </seglistitem>
     </segmentedlist>

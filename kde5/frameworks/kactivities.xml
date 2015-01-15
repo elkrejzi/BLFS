@@ -67,7 +67,8 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="boost"/> and
+      <xref linkend="boost"/>,
+      <xref linkend="kcmutils"/> and
       <xref linkend="kdeclarative"/>
     </para>
 

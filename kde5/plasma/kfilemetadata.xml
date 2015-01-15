@@ -5,7 +5,7 @@
   %general-entities;
 ]>
 
-<sect1 id="kfilemetadata5" xreflabel="KFileMetaData-&plasma-version;">
+<sect1 id="kfilemetadata5" xreflabel="KFileMetaData-&kfilemetadata5-version;">
   <?dbhtml filename="kfilemetadata.html"?>
 
   <sect1info>
@@ -13,7 +13,7 @@
     <date>$Date: 2014-10-19 17:01:03 +0200 (Sun, 19 Oct 2014) $</date>
   </sect1info>
 
-  <title>KFileMetaData-&plasma-version;</title>
+  <title>KFileMetaData-&kfilemetadata5-version;</title>
 
   <indexterm zone="kfilemetadata5">
     <primary sortas="a-KFileMetaData">KFileMetaData</primary>

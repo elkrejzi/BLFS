@@ -67,6 +67,7 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="kdelibs4support"/>,
       <xref linkend="knewstuff"/> and
       <xref linkend="libksysguard"/>
     </para>

@@ -70,10 +70,10 @@
       <xref linkend="baloo5"/>,
       <xref linkend="kdesu"/>,
       <xref linkend="kdewebkit"/>,
-      <xref linkend="kidletime"/>,
       <xref linkend="kjsembed"/>,
       <xref linkend="knotifyconfig"/>,
       <xref linkend="krunner"/>,
+      <xref linkend="kwayland"/>,
       <xref linkend="kwin5"/>,
       <xref linkend="libkscreen"/> and
       <xref linkend="libksysguard"/>
@@ -84,25 +84,34 @@
       <xref linkend="ktexteditor"/>
     </para>
 
-    <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
-    <para role="required">
-      <xref linkend="breeze"/>,
-      <xref linkend="kde-cli-tools"/>,
-      <xref linkend="kded"/>,
-      <xref linkend="khelpcenter"/>,
-      <xref linkend="kio-extras"/>,
-      <xref linkend="milou"/>,
-      <xref linkend="oxygen"/>,
-      <xref linkend="plasma-workspace-wallpapers"/> and
-      <xref linkend="polkit-kde-agent5"/>
-    </para>
-
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <ulink url="http://gpsd.berlios.de/">libgps</ulink>,
       <ulink url="http://qalculate.sourceforge.net">libqalculate</ulink>,
       <xref linkend="linux-pam"/> and
       <ulink url="http://projects.kde.org/prison/">Prison</ulink>
+    </para>
+
+    <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
+    <para role="optional"> <!-- Because of circular deps -->
+      <xref linkend="breeze"/>,
+      <xref linkend="kde-cli-tools"/>,
+      <xref linkend="kded"/>,
+      <xref linkend="khelpcenter"/>,
+      <xref linkend="khotkeys"/>,
+      <xref linkend="kinfocenter"/> (Hardware Information, optional),
+      <xref linkend="kio-extras"/>,
+      <xref linkend="kmenuedit"/> (Editor for Menu Entries, optional),
+      <xref linkend="ksysguard"/>,
+      <xref linkend="kwrited"/>,
+      <xref linkend="milou"/>,
+      <xref linkend="oxygen"/>,
+      <xref linkend="plasma-desktop"/>,
+      <xref linkend="plasma-nm"/> (Network Manager Applet, optional),
+      <xref linkend="plasma-workspace-wallpapers"/> (Additional Wallpapers, optional),
+      <xref linkend="polkit-kde-agent5"/>,
+      <xref linkend="powerdevil"/> and
+      <xref linkend="systemsettings"/>
     </para>
 
     <para condition="html" role="usernotes">
@@ -258,15 +267,14 @@ ln -sfv $KF5_PREFIX/share/xsessions/plasma.desktop /usr/share/xsessions/kf5-plas
           $KF5_PREFIX/include/{KDE,kworkspace5,plasma,taskmanager},
           $KF5_PREFIX/lib/cmake/{KRunnerAppDBusInterface,KSMServerDBusInterface},
           $KF5_PREFIX/lib/cmake/{LibKWorkspace,LibTaskManager,ScreenSaverDBusInterface},
-          $KF5_PREFIX/&qt5-plugins-dir;/plasma,
-          $KF5_PREFIX/&qt5-qml-dir;/org/kde/{plasma,private},
+          $KF5_PREFIX/&qt5-plugins-dir;/plasma/{dataengine,packagestructure},
+          $KF5_PREFIX/&qt5-qml-dir;/org/kde/plasma/{private,wallpapers,workspace},
+          $KF5_PREFIX/&qt5-qml-dir;/org/kde/private/systemtray,
           $KF5_PREFIX/share/doc/HTML/*/klipper,
-          $KF5_PREFIX/share/{drkonqi,ksmserver,ksplash},
+          $KF5_PREFIX/share/{drkonqi,ksmserver,ksplash,kstyle},
           $KF5_PREFIX/share/plasma/{kcms,look-and-feel,plasmoids,services},
-          $KF5_PREFIX/share/plasma/{shareprovider,wallpapers},
-          $KF5_PREFIX/share/sddm,
-          $KF5_PREFIX/share/solid and
-          $KF5_PREFIX/share/xsessions
+          $KF5_PREFIX/share/plasma/{shareprovider,wallpapers} and
+          $KF5_PREFIX/share/{sddm,solid,xsessions}
         </seg>
       </seglistitem>
     </segmentedlist>

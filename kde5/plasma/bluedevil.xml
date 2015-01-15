@@ -5,27 +5,26 @@
   %general-entities;
 ]>
 
-<sect1 id="libbluedevil5" xreflabel="libbluedevil-&libbluedevil5-version;">
-  <?dbhtml filename="libbluedevil.html"?>
+<sect1 id="bluedevil5" xreflabel="Bluedevil-&plasma-version;">
+  <?dbhtml filename="bluedevil.html"?>
 
   <sect1info>
     <othername>$LastChangedBy: krejzi $</othername>
-    <date>$Date: 2014-10-23 14:29:15 +0200 (Thu, 23 Oct 2014) $</date>
+    <date>$Date: 2014-10-25 18:13:26 +0200 (Sat, 25 Oct 2014) $</date>
   </sect1info>
 
-  <title>libbluedevil-&libbluedevil5-version;</title>
+  <title>Bluedevil-&plasma-version;</title>
 
-  <indexterm zone="libbluedevil5">
-    <primary sortas="a-libbluedevil">libbluedevil</primary>
+  <indexterm zone="bluedevil5">
+    <primary sortas="a-Bluedevil">Bluedevil</primary>
   </indexterm>
 
   <sect2 role="package">
-    <title>Introduction to libbluedevil</title>
+    <title>Introduction to Bluedevil</title>
 
     <para>
-      The <application>libbluedevil</application> package contains a
-      Qt based library which makes easier to develop Qt based
-      applications that use <application>BlueZ</application>.
+      The <application>Bluedevil</application> package contains a Bluetooth
+      stack for the <application>KDE Plasma</application> Desktop.
     </para>
 
     &lfs76_checked;
@@ -34,54 +33,55 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libbluedevil5-download-http;"/>
+          Download (HTTP): <ulink url="&bluedevil5-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libbluedevil5-download-ftp;"/>
+          Download (FTP): <ulink url="&bluedevil5-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libbluedevil5-md5sum;
+          Download MD5 sum: &bluedevil5-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libbluedevil5-size;
+          Download size: &bluedevil5-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libbluedevil5-buildsize;
+          Estimated disk space required: &bluedevil5-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libbluedevil5-time;
+          Estimated build time: &bluedevil5-time;
         </para>
       </listitem>
     </itemizedlist>
 
-    <bridgehead renderas="sect3">libbluedevil Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Bluedevil Dependencies</bridgehead>
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="extra-cmake-modules"/> and
-      <xref linkend="qt5"/>
+      <xref linkend="bluez"/>,
+      <xref linkend="kio"/> and
+      <xref linkend="libbluedevil5"/>
     </para>
 
     <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/libbluedevil5"/>
+      User Notes: <ulink url="&blfs-wiki;/bluedevil5"/>
     </para>
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of libbluedevil</title>
+    <title>Installation of Bluedevil</title>
 
     <para>
-      Install <application>libbluedevil</application> by running the following
+      Install <application>Bluedevil</application> by running the following
       commands:
     </para>
 
@@ -91,6 +91,8 @@ cd    build &amp;&amp;
 cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
       -DCMAKE_BUILD_TYPE=Release         \
       -DLIB_INSTALL_DIR=lib              \
+      -DBUILD_TESTING=OFF                \
+      -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
       -Wno-dev .. &amp;&amp;
 make</userinput></screen>
 
@@ -115,6 +117,12 @@ make</userinput></screen>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/kf5-libdir.xml"/>
 
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+      href="../../xincludes/kf5-tests.xml"/>
+
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+      href="../../xincludes/qt5-plugins-dir.xml"/>
+
   </sect2>
 
   <sect2 role="content">
@@ -127,13 +135,13 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
+          bluedevil-monolithic, bluedevil-sendfile and bluedevil-wizard
+        </seg>
+        <seg>
           None
         </seg>
         <seg>
-          libbluedevil.so
-        </seg>
-        <seg>
-          $KF5_PREFIX/include/bluedevil
+          $KF5_PREFIX/share/bluedevilwizard
         </seg>
       </seglistitem>
     </segmentedlist>

@@ -5,27 +5,26 @@
   %general-entities;
 ]>
 
-<sect1 id="kcm-touchpad5" xreflabel="KCM-Touchpad-&kcm-touchpad5-version;">
-  <?dbhtml filename="kcm-touchpad.html"?>
+<sect1 id="kdecoration" xreflabel="KDecoration-&plasma-version;">
+  <?dbhtml filename="kdecoration.html"?>
 
   <sect1info>
     <othername>$LastChangedBy: krejzi $</othername>
-    <date>$Date: 2014-10-25 18:13:26 +0200 (Sat, 25 Oct 2014) $</date>
+    <date>$Date: 2014-10-19 18:17:48 +0200 (Sun, 19 Oct 2014) $</date>
   </sect1info>
 
-  <title>KCM-Touchpad-&kcm-touchpad5-version;</title>
+  <title>KDecoration-&plasma-version;</title>
 
-  <indexterm zone="kcm-touchpad5">
-    <primary sortas="a-KCM-Touchpad">KCM-Touchpad</primary>
+  <indexterm zone="kdecoration">
+    <primary sortas="a-KDecoration">KDecoration</primary>
   </indexterm>
 
   <sect2 role="package">
-    <title>Introduction to KCM-Touchpad</title>
+    <title>Introduction to KDecoration</title>
 
     <para>
-      The <application>KCM-Touchpad</application> package contains a touchpad
-      configuration module for the <application>KDE Plasma</application>
-      Desktop.
+      The <application>KDecoration</application> package contains a
+      library to create window decorations.
     </para>
 
     &lfs76_checked;
@@ -34,57 +33,54 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&kcm-touchpad5-download-http;"/>
+          Download (HTTP): <ulink url="&kdecoration-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&kcm-touchpad5-download-ftp;"/>
+          Download (FTP): <ulink url="&kdecoration-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &kcm-touchpad5-md5sum;
+          Download MD5 sum: &kdecoration-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &kcm-touchpad5-size;
+          Download size: &kdecoration-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &kcm-touchpad5-buildsize;
+          Estimated disk space required: &kdecoration-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &kcm-touchpad5-time;
+          Estimated build time: &kdecoration-time;
         </para>
       </listitem>
     </itemizedlist>
 
-    <bridgehead renderas="sect3">KCM-Touchpad Dependencies</bridgehead>
+    <bridgehead renderas="sect3">KDecoration Dependencies</bridgehead>
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kcmutils"/>,
-      <xref linkend="kinit5"/>,
-      <xref linkend="knotifyconfig"/>,
-      <xref linkend="plasma-framework"/> and
-      <xref linkend="xorg-synaptics-driver"/>
+      <xref linkend="extra-cmake-modules"/> and
+      <xref linkend="qt5"/>
     </para>
 
     <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/kcm-touchpad5"/>
+      User Notes: <ulink url="&blfs-wiki;/kdecoration"/>
     </para>
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of KCM-Touchpad</title>
+    <title>Installation of KDecoration</title>
 
     <para>
-      Install <application>KCM-Touchpad</application> by running the following
+      Install <application>KDecoration</application> by running the following
       commands:
     </para>
 
@@ -95,8 +91,7 @@ cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
       -DCMAKE_BUILD_TYPE=Release         \
       -DLIB_INSTALL_DIR=lib              \
       -DBUILD_TESTING=OFF                \
-      -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
-      -Wno-dev .. &amp;&amp;
+      .. &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -123,9 +118,6 @@ make</userinput></screen>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/kf5-tests.xml"/>
 
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/qt5-plugins-dir.xml"/>
-
   </sect2>
 
   <sect2 role="content">
@@ -138,13 +130,14 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          kcm-touchpad-list-devices
-        </seg>
-        <seg>
           None
         </seg>
         <seg>
-          $KF5_PREFIX/share/plasma/plasmoids/touchpad
+          libkdecorations2private.so and libkdecorations2.so
+        </seg>
+        <seg>
+          $KF5_PREFIX/include/KF5/KDecoration2 and
+          $KF5_PREFIX/lib/cmake/KDecoration2
         </seg>
       </seglistitem>
     </segmentedlist>

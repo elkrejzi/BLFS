@@ -5,7 +5,7 @@
   %general-entities;
 ]>
 
-<sect1 id="oxygen-icons5" xreflabel="Oxygen-Icons-&oxygen-icons5-version;">
+<sect1 id="oxygen-icons5" xreflabel="Oxygen-Icons-&kf5apps-version;">
   <?dbhtml filename="oxygen-icons.html"?>
 
   <sect1info>
@@ -13,7 +13,7 @@
     <date>$Date: 2014-07-23 01:33:54 +0200 (Sri, 23 Jul 2014) $</date>
   </sect1info>
 
-  <title>Oxygen-Icons-&oxygen-icons5-version;</title>
+  <title>Oxygen-Icons-&kf5apps-version;</title>
 
   <indexterm zone="oxygen-icons5">
     <primary sortas="a-Oxygen-Icons">Oxygen-Icons</primary>

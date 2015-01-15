@@ -67,8 +67,7 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kconfigwidgets"/> and
-      <xref linkend="kcoreaddons"/>
+      <xref linkend="kconfigwidgets"/>
     </para>
 
     <para condition="html" role="usernotes">
