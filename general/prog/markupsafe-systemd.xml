@@ -125,9 +125,17 @@
       <title>Contents</title>
 
       <segmentedlist>
+        <segtitle>Installed Programs</segtitle>
+        <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 
         <seglistitem>
+          <seg>
+            None
+          </seg>
+          <seg>
+            None
+          </seg>
           <seg>
             /usr/lib/python&python2-majorver;/site-packages/markupsafe,
             /usr/lib/python&python2-majorver;/site-packages/MarkupSafe-&MarkupSafe-version;-py&python2-majorver;.egg-info and/or

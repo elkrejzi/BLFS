@@ -4,31 +4,30 @@
   <!ENTITY % general-entities SYSTEM "../../general.ent">
   %general-entities;
 
-  <!ENTITY setuptools-download-http
-           "https://pypi.python.org/packages/source/s/setuptools/setuptools-&setuptools-version;.tar.gz">
-  <!ENTITY setuptools-download-ftp  " ">
-  <!ENTITY setuptools-md5sum        "01f69212e019a2420c1693fb43593930">
-  <!ENTITY setuptools-size          "612 KB">
-  <!ENTITY setuptools-buildsize     "8.5 MB">
-  <!ENTITY setuptools-time          "less than 0.1 SBU">
+  <!ENTITY Jinja2-download-http
+           "https://pypi.python.org/packages/source/J/Jinja2/Jinja2-&Jinja2-version;.tar.gz">
+  <!ENTITY Jinja2-download-ftp  " ">
+  <!ENTITY Jinja2-md5sum        "b9dffd2f3b43d673802fe857c8445b1a">
+  <!ENTITY Jinja2-size          "372 KB">
+  <!ENTITY Jinja2-buildsize     "7.8 MB">
+  <!ENTITY Jinja2-time          "less than 0.1 SBU">
 ]>
 
-  <!-- Begin Setuptools -->
-  <sect2 id="setuptools" xreflabel="Setuptools-&setuptools-version;">
+  <!-- Begin Jinja2 -->
+  <sect2 id="Jinja2" xreflabel="Jinja2-&Jinja2-version;">
 
-    <title>Setuptools-&setuptools-version;</title>
+    <title>Jinja2-&Jinja2-version;</title>
 
-    <indexterm zone="setuptools">
-      <primary sortas="a-Setuptools">Setuptools</primary>
+    <indexterm zone="Jinja2">
+      <primary sortas="a-Jinja2">Jinja2</primary>
     </indexterm>
 
     <sect3 role="package">
-      <title>Introduction to Setuptools Module</title>
+      <title>Introduction to Jinja2 Module</title>
 
       <para>
-        <application>Setuptools</application> is a <application>Python</application>
-        module that makes it easier to download, build, install, upgrade, and
-        uninstall <application>Python</application> packages.
+        <application>Jinja2</application> is a <application>Python</application>
+        module that implements a simple pythonic template language.
       </para>
 
       &lfs76_checked;
@@ -37,51 +36,50 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&setuptools-download-http;"/>
+            Download (HTTP): <ulink url="&Jinja2-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&setuptools-download-ftp;"/>
+            Download (FTP): <ulink url="&Jinja2-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &setuptools-md5sum;
+            Download MD5 sum: &Jinja2-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &setuptools-size;
+            Download size: &Jinja2-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &setuptools-buildsize;
+            Estimated disk space required: &Jinja2-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &setuptools-time;
+            Estimated build time: &Jinja2-time;
           </para>
         </listitem>
       </itemizedlist>
 
-      <bridgehead renderas="sect4">Setuptools Dependencies</bridgehead>
+      <bridgehead renderas="sect4">Jinja2 Dependencies</bridgehead>
 
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
-        <xref linkend="python2"/> and/or
-        <xref linkend="python3"/>
+        <xref linkend="MarkupSafe"/>
       </para>
 
       <para condition="html" role="usernotes">
-        User Notes: <ulink url="&blfs-wiki;/setuptools"/>
+        User Notes: <ulink url="&blfs-wiki;/Jinja2"/>
       </para>
     </sect3>
 
     <sect3 role="installation">
-      <title>Installation of Setuptools</title>
+      <title>Installation of Jinja2</title>
 
       <note>
         <para>
@@ -119,18 +117,16 @@
 
         <seglistitem>
           <seg>
-            easy_install, easy_install-&python2-majorver;, and easy_install-&python3-majorver;
+            None
           </seg>
           <seg>
             None
           </seg>
           <seg>
-            /usr/lib/python&python2-majorver;/site-packages/_markerlib,
-            /usr/lib/python&python2-majorver;/site-packages/setuptools,
-            /usr/lib/python&python2-majorver;/site-packages/setuptools-&setuptools-version;-py&python2-majorver;.egg-info and/or
-            /usr/lib/python&python3-majorver;/site-packages/_markerlib,
-            /usr/lib/python&python3-majorver;/site-packages/setuptools,
-            /usr/lib/python&python3-majorver;/site-packages/setuptools-&setuptools-version;-py&python3-majorver;.egg-info
+            /usr/lib/python&python2-majorver;/site-packages/Jinja2,
+            /usr/lib/python&python2-majorver;/site-packages/Jinja2-&Jinja2-version;-py&python2-majorver;.egg-info and/or
+            /usr/lib/python&python3-majorver;/site-packages/Jinja2,
+            /usr/lib/python&python3-majorver;/site-packages/Jinja2-&Jinja2-version;-py&python3-majorver;.egg-info
           </seg>
         </seglistitem>
       </segmentedlist>
@@ -138,4 +134,4 @@
     </sect3>
 
   </sect2>
-  <!--End Setuptools -->
+  <!--End Jinja2 -->

@@ -8,10 +8,10 @@
            "&mozilla-http;/thunderbird/releases/&thunderbird-version;/source/thunderbird-&thunderbird-version;.source.tar.bz2">
   <!ENTITY thunderbird-download-ftp
            "&mozilla-ftp;/thunderbird/releases/&thunderbird-version;/source/thunderbird-&thunderbird-version;.source.tar.bz2">
-  <!ENTITY thunderbird-md5sum            "3781dfb541412c7f6b530a654b834ce5">
+  <!ENTITY thunderbird-md5sum            "da9c86271bb498c5feb02ce9c360669f">
   <!ENTITY thunderbird-size              "164 MB">
   <!ENTITY thunderbird-buildsize         "4.8 GB (58 MB installed)">
-  <!ENTITY thunderbird-time              "56 SBU">
+  <!ENTITY thunderbird-time              "41 SBU">
 ]>
 
 <sect1 id="thunderbird" xreflabel="Thunderbird-&thunderbird-version;">

@@ -6,10 +6,10 @@
 
   <!ENTITY libqmi-download-http "http://www.freedesktop.org/software/libqmi/libqmi-&libqmi-version;.tar.xz">
   <!ENTITY libqmi-download-ftp  " ">
-  <!ENTITY libqmi-md5sum        "0c603a926329250ea43e9187c4f70a8d">
-  <!ENTITY libqmi-size          "640 KB">
-  <!ENTITY libqmi-buildsize     "50 MB">
-  <!ENTITY libqmi-time          "0.5 SBU">
+  <!ENTITY libqmi-md5sum        "d8f3c494eb98df8eba0064cbbf4d5c19">
+  <!ENTITY libqmi-size          "672 KB">
+  <!ENTITY libqmi-buildsize     "65 MB">
+  <!ENTITY libqmi-time          "0.4 SBU">
 ]>
 
 <sect1 id="libqmi" xreflabel="libqmi-&libqmi-version;">

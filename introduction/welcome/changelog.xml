@@ -50,6 +50,23 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Updated to libmbim-1.12.0, libqmi-1.12.0 and
+          ModemManager-1.4.2.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to colord-1.2.8, setuptools-11.3.1 - Python Module
+          and thunderbird-31.4.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Added Beaker-1.6.4 - Python Module.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>January 13th, 2015</para>
+      <itemizedlist>
+        <listitem>
           <para>[krejzi] - Updated to evolution-data-server-3.12.10
           and evolution-3.12.10.</para>
         </listitem>

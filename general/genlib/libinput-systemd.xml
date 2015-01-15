@@ -6,10 +6,10 @@
 
   <!ENTITY libinput-download-http "http://www.freedesktop.org/software/libinput/libinput-&libinput-version;.tar.xz">
   <!ENTITY libinput-download-ftp  " ">
-  <!ENTITY libinput-md5sum        "381b61396de28c12716ef7a5475fea50">
-  <!ENTITY libinput-size          "432 KB">
-  <!ENTITY libinput-buildsize     "12 MB">
-  <!ENTITY libinput-time          "0.1 SBU">
+  <!ENTITY libinput-md5sum        "9ac28ca42670d38d8f785e96506c9227">
+  <!ENTITY libinput-size          "496 KB">
+  <!ENTITY libinput-buildsize     "13 MB">
+  <!ENTITY libinput-time          "0.2 SBU">
 ]>
 
 <sect1 id="libinput" xreflabel="libinput-&libinput-version;">
@@ -81,10 +81,11 @@
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="check"/>,
-      <xref linkend="doxygen"/>, and
-      <xref linkend="gtk3"/> (to build the GUI event viewer)<!--, and
-      <xref linkend="valgrind"/> -->
+      <xref linkend="check"/> and
+      <xref linkend="valgrind"/> (to build the tests),
+      <xref linkend="doxygen"/> and
+      <xref linkend="graphviz"/> (to build the documentation) and
+      <xref linkend="gtk3"/> (to build the GUI event viewer)
     </para>
 
     <para condition="html" role="usernotes">
@@ -103,15 +104,19 @@
 <screen><userinput>./configure --prefix=/usr --disable-static &amp;&amp;
 make</userinput></screen>
 
-    <!-- <para>
-      If you have the optional <xref linkend="check"/> package installed,
-      the regression tests can be run as the <systemitem 
-      class="username">root</systemitem> user with
-      <userinput>make -C test check-TESTS</userinput>.
-    </para> -->
-
     <para>
-      This package does not have a working testsuite.
+      If you have the optional <xref linkend="check"/> and
+      <xref linkend="valgrind"/> packages installed, the regression
+      tests can be run as the <systemitem
+      class="username">root</systemitem> user with
+      <userinput>make -C test check-TESTS</userinput>. Be warned
+      though - the test suite will generate a lot of keyboard/mouse
+      input events, so if you are using a desktop it may issue
+      unwanted clicks or keyboard input in the application that
+      mouse and keyboard are currently focused at. It also generates
+      a lot of kernel input events which may crash some programs that
+      listen for input events due to the large number of events
+      appearing at once.
     </para>
 
     <para>
@@ -121,9 +126,10 @@ make</userinput></screen>
 <screen role="root"><userinput>make install</userinput></screen>
 
     <para>
-      If <xref linkend="doxygen"/> was present during the build, you
-      can install the generated documentation by running the following
-      command as the <systemitem class="username">root</systemitem> user:
+      If <xref linkend="doxygen"/> and <xref linkend="graphviz"/> were
+      present during the build, you can install the generated documentation
+      by running the following commands as the <systemitem
+      class="username">root</systemitem> user:
     </para>
 
 <screen role="root"><userinput>install -v -dm755 /usr/share/doc/libinput-&libinput-version; &amp;&amp;
