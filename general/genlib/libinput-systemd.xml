@@ -113,7 +113,7 @@ make</userinput></screen>
       though - the test suite will generate a lot of keyboard/mouse
       input events, so if you are using a desktop it may issue
       unwanted clicks or keyboard input in the application that
-      mouse and keyboard are currently focused at. It also generates
+      mouse and keyboard are currently focused on. It also generates
       a lot of kernel input events which may crash some programs that
       listen for input events due to the large number of events
       appearing at once.
