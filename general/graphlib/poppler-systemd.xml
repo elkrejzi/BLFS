@@ -118,8 +118,9 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="cairo"/>,
-      <xref linkend="libjpeg"/>, and
-      <xref linkend="libpng"/>
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libpng"/>, and
+      <xref linkend="openjpeg"/>
     </para>
 
     <bridgehead renderas="sect4">Optional</bridgehead>
@@ -130,7 +131,6 @@
       <xref linkend="gtk2"/>,
       <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
       <xref linkend="libtiff"/>,
-      <xref linkend="openjpeg"/> or
       <xref linkend="openjpeg2"/> (<application>OpenJPEG1</application> is preferred
       due to regressions in <application>OpenJPEG2</application> code),
       <xref linkend="qt4"/> (the <filename>libpoppler-qt4.so</filename> library

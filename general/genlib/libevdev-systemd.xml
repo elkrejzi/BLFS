@@ -80,7 +80,8 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="python2"/>
+      <xref linkend="python2"/> or
+      <xref linkend="python3"/>
     </para>
 
     <bridgehead renderas="sect4">Optional</bridgehead>

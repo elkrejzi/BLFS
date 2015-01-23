@@ -44,11 +44,54 @@
 
 -->
     <listitem>
-      <para>January 13th, 2015</para>
+      <para>January 23rd, 2015</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+        <listitem>
+          <para>[krejzi] - Merged vala-0.26.2 update from the main
+          book. Thanks to Bruce for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged cups-filters-1.0.62, llvm-3.5.1 and
+          seamonkey-2.32 updates from the main book. Thanks to Bruce
+          for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged samba-4.1.16 update from the main
+          book. Thanks to Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged gnutls-3.3.12, iceauth-1.0.7 and
+           mkfontscale-1.1.2 updates from the main book. Thanks to
+          Fernando for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged libdrm-2.4.59 and sqlite-3.8.8.1
+          updates from the main book. Thanks to Igor for doing all
+          the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged cmake-3.1.1, exim-4.85 and git-2.2.2
+          updates from the main book. Thanks to Igor for doing all the
+          work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged hexchat-2.10.2 addition from the
+          main book. Thanks to Igor for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged gdb-7.8.2 and swig-3.0.4 updates
+          from the main book. Thanks to Pierre for doing all the
+          work.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>January 13th, 2015</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Updated to libmbim-1.12.0, libqmi-1.12.0 and
           ModemManager-1.4.2.</para>

@@ -13,7 +13,7 @@
 <!ENTITY cracklib-version             "2.9.2">
 <!ENTITY cyrus-sasl-version           "2.1.26">
 <!ENTITY gnupg2-version               "2.0.26">
-<!ENTITY gnutls-version               "3.3.11">
+<!ENTITY gnutls-version               "3.3.12">
 <!ENTITY gpgme-version                "1.5.3">
 <!ENTITY haveged-version              "1.9.1">
 <!ENTITY iptables-version             "1.4.21">
@@ -108,7 +108,7 @@
 <!ENTITY libcroco-version             "0.6.8">
 <!ENTITY libdaemon-version            "0.14">
 <!ENTITY libdbusmenu-qt-version       "0.9.2">
-<!ENTITY libdrm-version               "2.4.58">
+<!ENTITY libdrm-version               "2.4.59">
 <!ENTITY libepoxy-version             "1.2">
 <!ENTITY libesmtp-version             "1.0.6">
 <!ENTITY libffi-version               "3.2.1">
@@ -204,7 +204,6 @@
 <!ENTITY time-version                 "1.7">
 <!ENTITY tree-version                 "1.7.0">
 <!ENTITY unixodbc-version             "2.3.2">
-<!ENTITY xscreensaver-version         "5.32">
 
 <!-- Chapter 12 -->
 <!ENTITY acpid-version                "2.0.23">
@@ -213,7 +212,7 @@
 <!ENTITY bluez-version                "5.27">
 <!ENTITY colord-version               "1.2.8">    <!-- Even minors only -->
 <!ENTITY cpio-version                 "2.11">
-<!ENTITY dbus-version                 "1.8.8">   <!-- Even minors only -->
+<!ENTITY dbus-version                 "1.8.14">   <!-- Even minors only -->
 <!ENTITY eudev-version                "1.7">
 <!ENTITY fcron-version                "3.2.0">
 <!ENTITY gpm-version                  "1.20.7">
@@ -247,7 +246,7 @@
 <!ENTITY check-version                "0.9.14">
 <!ENTITY clisp-version                "2.49">
 <!ENTITY cmake-major-version          "3.1">
-<!ENTITY cmake-minor-version          "0">
+<!ENTITY cmake-minor-version          "1">
 <!ENTITY cmake-version                "&cmake-major-version;.&cmake-minor-version;">
 <!ENTITY cvs-version                  "1.11.23">
 <!ENTITY dejagnu-version              "1.5.1">
@@ -256,11 +255,11 @@
 <!ENTITY expect-version               "5.45">
 <!ENTITY gcc-version                  "4.9.2">
 <!ENTITY gc-version                   "7.4.2">
-<!ENTITY gdb-version                  "7.8.1">
-<!ENTITY git-version                  "2.2.1">
+<!ENTITY gdb-version                  "7.8.2">
+<!ENTITY git-version                  "2.2.2">
 <!ENTITY guile-version                "2.0.11">
 <!ENTITY librep-version               "0.92.4">
-<!ENTITY llvm-version                 "3.5.0">
+<!ENTITY llvm-version                 "3.5.1">
 <!ENTITY lua-version                  "5.2.3">
 <!ENTITY mercurial-version            "3.2.4">
 <!ENTITY nasm-version                 "2.11.06">
@@ -273,11 +272,11 @@
 <!ENTITY scons-version                "2.3.4">
 <!ENTITY slang-version                "2.2.4">
 <!ENTITY subversion-version           "1.8.11">
-<!ENTITY swig-version                 "3.0.2">
+<!ENTITY swig-version                 "3.0.4">
 <!ENTITY tcl-version                  "8.6.3">
 <!ENTITY tk-version                   "8.6.3">
 <!ENTITY vala-major-version           "0.26">  <!-- even minors only -->
-<!ENTITY vala-version                 "&vala-major-version;.1">
+<!ENTITY vala-version                 "&vala-major-version;.2">
 <!ENTITY valgrind-version             "3.10.1">
 <!ENTITY yasm-version                 "1.3.0">
 
@@ -347,7 +346,7 @@
 <!ENTITY ntp-version                  "4.2.8">
 <!ENTITY rpcbind-version              "0.2.2">
 <!ENTITY rsync-version                "3.1.1">
-<!ENTITY samba-version                "4.1.14">
+<!ENTITY samba-version                "4.1.16">
 <!ENTITY wget-version                 "1.16.1">
 <!ENTITY wireless-tools-version       "29">
 <!ENTITY wpa_supplicant-version       "2.3">
@@ -404,7 +403,7 @@
 <!ENTITY dovecot-micro                "15">
 <!ENTITY dovecot-version              "&dovecot-major;.&dovecot-minor;.&dovecot-micro;">
 
-<!ENTITY exim-version                 "4.84">
+<!ENTITY exim-version                 "4.85">
 <!ENTITY postfix-version              "2.11.3">
 <!ENTITY sendmail-version             "8.15.1">
 
@@ -412,7 +411,7 @@
 <!ENTITY db-version                   "6.1.19">
 <!ENTITY mariadb-version              "10.0.15">
 <!ENTITY postgresql-version           "9.4.0">
-<!ENTITY sqlite-version               "3.8.7.4">
+<!ENTITY sqlite-version               "3.8.8.1">
 
 <!-- Chapter 23 -->
 <!ENTITY openldap-version             "2.4.40">
@@ -478,7 +477,7 @@
 <!ENTITY shared-mime-info-version     "1.3">
 <!ENTITY startup-notification-version "0.12">
 <!ENTITY webkitgtk2-version           "2.4.8">    <!-- Even minors only -->
-<!ENTITY webkitgtk26-version          "2.6.4">    <!-- Even minors only -->
+<!ENTITY webkitgtk26-version          "2.6.5">    <!-- Even minors only -->
 
 <!ENTITY gtk2-libdir                  "2.0/2.10.0">
 <!ENTITY qt4-dir                      "$QT4DIR">
@@ -585,7 +584,7 @@
 <!ENTITY libreoffice-dlversion        "&libreoffice-version;&libreoffice-patch;">
 
 <!-- Chapter 35 -->
-<!ENTITY seamonkey-version            "2.31">
+<!ENTITY seamonkey-version            "2.32">
 <!ENTITY firefox-version              "35.0">
 
 <!-- Chapter 36 -->
@@ -598,6 +597,7 @@
 <!ENTITY gparted-version              "0.20.0">
 <!ENTITY gnash-version                "0.8.10">
 <!ENTITY gimp-version                 "2.8.14">
+<!ENTITY hexchat-version              "2.10.2">
 <!ENTITY icedtea-web-version          "1.5.2">
 <!ENTITY inkscape-version             "0.48.5">
 <!ENTITY pan-version                  "0.133">
@@ -609,6 +609,7 @@
 <!ENTITY transmission-version         "2.84">
 <!ENTITY xchat-version                "2.8.8">
 <!ENTITY xdg-utils-version            "1.1.0-rc3">
+<!ENTITY xscreensaver-version         "5.32">
 
 <!-- Part XI -->
 <!-- Chapter 37 -->
@@ -711,7 +712,7 @@
 <!-- Part XII -->
 <!-- Chapter 42 -->
 <!ENTITY cups-version                 "2.0.1">
-<!ENTITY cups-filters-version         "1.0.61">
+<!ENTITY cups-filters-version         "1.0.62">
 <!ENTITY gs-version                   "9.15">
 <!ENTITY gutenprint-version           "5.2.10">
 

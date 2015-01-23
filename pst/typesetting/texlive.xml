@@ -89,6 +89,9 @@
 
     <itemizedlist spacing="compact">
       <listitem>
+        <para>Download (HTTP): <ulink url="&texlive-texmf-download-http;"/></para>
+      </listitem>
+      <listitem>
         <para>Download (FTP): <ulink url="&texlive-texmf-download-ftp;"/></para>
       </listitem>
       <listitem>
@@ -103,15 +106,17 @@
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="gs"/> (for dvisvgm - used by asymptote which provides a
+      mathematical coordinate-based framework for technical drawing),
       <xref linkend="x-window-system"/>
     </para>
 
-    <!-- text for recommended libraries, shared with texlive itself -->
+    <!-- text for recommended libraries -->
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
      href="../../xincludes/texrecommendlibs.xml"/>
 
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <!-- text for optional deps, shared with texlive itself -->
+    <!-- text for optional deps -->
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
      href="../../xincludes/texoptional.xml"/>
 
@@ -134,7 +139,7 @@
 
 <!-- the configure switches should be identical to those in the
  first part of texlive itself -->
-<screen role="root"><userinput>export TEXARCH=$(uname -m | sed -e 's/i.86/i386/' -e 's/$/-linux/') &amp;&amp;
+<screen><userinput>TEXARCH=$(uname -m | sed -e 's/i.86/i386/' -e 's/$/-linux/') &amp;&amp;
 mkdir texlive-build &amp;&amp;
 cd texlive-build    &amp;&amp;
 
@@ -155,6 +160,7 @@ cd texlive-build    &amp;&amp;
     --with-system-harfbuzz                          \
     --with-system-icu                               \
     --with-system-libgs                             \
+    --with-system-libpaper                          \
     --with-system-libpng                            \
     --with-system-pixman                            \
     --with-system-poppler                           \
@@ -172,14 +178,14 @@ make</userinput></screen>
     <para>Now, as the <systemitem class="username">root</systemitem>
     user:</para>
 
-<screen><userinput role="root">make install &amp;&amp;
+<screen role="root"><userinput>make install &amp;&amp;
 make texlinks</userinput></screen>
 
     <para>And now, install the additional files as the
     <systemitem class="username">root</systemitem> user:</para>
 
-<screen><userinput role="root">mkdir -pv /opt/texlive/&texlive-year; &amp;&amp;
-tar -xf texlive-&texlive-version;-texmf.tar.xz -C /opt/texlive/&texlive-year; --strip-components=1</userinput></screen>
+<screen role="root"><userinput>mkdir -pv /opt/texlive/&texlive-year; &amp;&amp;
+tar -xf ../../texlive-&texlive-version;-texmf.tar.xz -C /opt/texlive/&texlive-year; --strip-components=1</userinput></screen>
 
     <para>Now proceed to <xref linkend="tex-path"/>.</para>
 

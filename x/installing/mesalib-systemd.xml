@@ -92,15 +92,15 @@
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="elfutils"/> (required for Radeon 3D drivers),
+      <xref linkend="elfutils"/> (required for Gallium3D r300 and radeonsi drivers),
       <xref linkend="libva"/> (to build VAAPI drivers for supported hardware),
       <xref linkend="libvdpau"/> (to build VDPAU drivers for supported hardware),
-      <xref linkend="llvm"/> (required for Radeon 3D drivers and also for
-      llvmpipe which is intended to be the fastest of the three sw rasterizers,
-      see <ulink url="http://www.mesa3d.org/faq.html#part3"></ulink>) and
-      <xref linkend="wayland"/> (required for <filename>libwayland-egl</filename>
-      library which is used by many packages that use
-      <application>Wayland</application>)
+      <xref linkend="llvm"/> (required for Gallium3D r300 and radeonsi drivers and
+      also for llvmpipe which is intended to be the fastest of the three software
+      rasterizers, see <ulink url="http://www.mesa3d.org/faq.html#part3"></ulink>)
+      and <xref linkend="wayland"/> (required to build the
+      <filename>libwayland-egl</filename> library which is used by many packages
+      that use <application>Wayland</application>)
     </para>
 
     <bridgehead renderas="sect4">Optional</bridgehead>
@@ -118,8 +118,8 @@
         need to modify the instructions if you choose not to install them.
         Please note that <application>elfutils</application> and
         <application>LLVM</application> are <emphasis>required</emphasis>
-        for Radeon 3D drivers. For an explanation of Gallium please see
-        <ulink url="https://en.wikipedia.org/wiki/Gallium3D"></ulink>.
+        for Gallium3D r300 and radeonsi drivers. For an explanation of Gallium3D
+        please see <ulink url="https://en.wikipedia.org/wiki/Gallium3D"></ulink>.
       </para>
     </note>
 
@@ -250,9 +250,9 @@ cp -rfv docs/* /usr/share/doc/MesaLib-&mesalib-version;</userinput></screen>
 
     <para>
       <parameter>--with-gallium-drivers="..."</parameter>: This parameter
-      controls which Gallium drivers should be built. Available drivers
+      controls which Gallium3D drivers should be built. Available drivers
       are: i915, ilo, nouveau, r300, r600, radeonsi, svga and swrast. You
-      will need to remove r300, r600 and radeonsi from the list if you did
+      will need to remove r300 and radeonsi from the list if you did
       not install <application>elfutils</application> and
       <application>LLVM</application>.
     </para>
