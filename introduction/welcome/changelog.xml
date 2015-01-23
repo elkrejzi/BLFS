@@ -50,6 +50,9 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Added Mako-1.0.1 - Python Module.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Updated to setuptools-12.0.4 - Python
           Module and webkitgtk-2.6.5.</para>
         </listitem>

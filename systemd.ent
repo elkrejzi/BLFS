@@ -32,6 +32,7 @@
 
 <!ENTITY Beaker-version               "1.6.4">
 <!ENTITY Jinja2-version               "2.7.3">
+<!ENTITY Mako-version                 "1.0.1">
 <!ENTITY MarkupSafe-version           "0.23">
 <!ENTITY setuptools-version           "12.0.4">
 <!ENTITY PyYAML-version               "3.11">
