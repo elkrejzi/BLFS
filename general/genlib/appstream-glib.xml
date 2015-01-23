@@ -7,7 +7,7 @@
   <!ENTITY appstream-glib-download-http 
            "http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-&appstream-glib-version;.tar.xz">
   <!ENTITY appstream-glib-download-ftp  " ">
-  <!ENTITY appstream-glib-md5sum        "5a15f297748d99b7e5c87f5e05583200">
+  <!ENTITY appstream-glib-md5sum        "b3652e289d5fade9efbc07b9eabff488">
   <!ENTITY appstream-glib-size          "1.8 MB">
   <!ENTITY appstream-glib-buildsize     "17 MB">
   <!ENTITY appstream-glib-time          "0.3 SBU ">

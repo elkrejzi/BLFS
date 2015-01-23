@@ -8,9 +8,9 @@
            "&gnome-download-http;/libgweather/&gnome-minor14;/libgweather-&libgweather-version;.tar.xz">
   <!ENTITY libgweather-download-ftp
            "&gnome-download-ftp;/libgweather/&gnome-minor14;/libgweather-&libgweather-version;.tar.xz">
-  <!ENTITY libgweather-md5sum        "c5b5b8ad48d33cc54ca86357b9021d75">
+  <!ENTITY libgweather-md5sum        "607f6801d7d3f538b545949a67647bc3">
   <!ENTITY libgweather-size          "3.4 MB">
-  <!ENTITY libgweather-buildsize     "105 MB">
+  <!ENTITY libgweather-buildsize     "102 MB">
   <!ENTITY libgweather-time          "0.2 SBU">
 ]>
 

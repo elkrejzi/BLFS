@@ -50,6 +50,18 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Updated to setuptools-12.0.4 - Python
+          Module and webkitgtk-2.6.5.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to gnome-online-accounts-3.14.3
+          and libgweather-3.14.3.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to accountsservice-0.6.40,
+          appstream-glib-0.3.4 and folks-0.10.1.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Merged vala-0.26.2 update from the main
           book. Thanks to Bruce for doing all the work.</para>
         </listitem>

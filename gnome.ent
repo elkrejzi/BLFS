@@ -5,7 +5,7 @@
 
 <!-- Part VIII -->
 <!-- GNOME Libraries and Utilities -->
-<!ENTITY accountsservice-version      "0.6.39">
+<!ENTITY accountsservice-version      "0.6.40">
 <!ENTITY gsettings-desktop-schemas-version "3.14.1">
 <!ENTITY libsecret-version            "0.18">
 <!ENTITY totem-pl-parser-version      "3.10.3">
@@ -24,17 +24,17 @@
 <!ENTITY libchamplain-version         "0.12.9">
 <!ENTITY libgee08-version             "0.16.1">
 <!ENTITY libgtop-version              "2.30.0">
-<!ENTITY libgweather-version          "3.14.2">
+<!ENTITY libgweather-version          "3.14.3">
 <!ENTITY libpeas-version              "1.12.1">
 <!ENTITY librest-version              "0.7.92">
 <!ENTITY libwacom-version             "0.11">
 <!ENTITY libwnck-version              "3.14.0">
-<!ENTITY gnome-online-accounts-version "3.14.2">
+<!ENTITY gnome-online-accounts-version "3.14.3">
 <!ENTITY gfbgraph-version             "0.2.2">
 <!ENTITY libgdata-version             "0.16.1">
 <!ENTITY libzapojit-version           "0.0.3">
 <!ENTITY evolution-data-server-version "3.12.10">
-<!ENTITY folks-version                "0.10.0">
+<!ENTITY folks-version                "0.10.1">
 <!ENTITY gnome-online-miners-version  "3.14.1">
 
 <!-- Telepathy Framework -->
