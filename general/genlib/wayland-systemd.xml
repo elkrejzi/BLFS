@@ -6,9 +6,9 @@
 
   <!ENTITY wayland-download-http "http://wayland.freedesktop.org/releases/wayland-&wayland-version;.tar.xz">
   <!ENTITY wayland-download-ftp  " ">
-  <!ENTITY wayland-md5sum        "d34c141c975084e4fb668e77b38f840e">
-  <!ENTITY wayland-size          "398 KB">
-  <!ENTITY wayland-buildsize     "10.1 MB">
+  <!ENTITY wayland-md5sum        "feaa0754fe49931a3fe5aa98f7d1e0e9">
+  <!ENTITY wayland-size          "412 KB">
+  <!ENTITY wayland-buildsize     "12 MB">
   <!ENTITY wayland-time          "0.1 SBU">
 ]>
 
