@@ -73,10 +73,10 @@
       <xref linkend="kpty"/>
     </para>
 
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <!-- <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="kde-baseapps5"/>
-    </para>
+    </para> -->
 
     <para condition="html" role="usernotes">
       User Notes: <ulink url="&blfs-wiki;/konsole5"/>

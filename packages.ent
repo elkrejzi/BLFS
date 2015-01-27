@@ -432,7 +432,7 @@
 <!ENTITY xbitmaps-version             "1.1.1">
 <!ENTITY xcursor-themes-version       "1.0.4">
 <!ENTITY xkeyboard-config-version     "2.13">
-<!ENTITY mesalib-version              "10.4.2">
+<!ENTITY mesalib-version              "10.4.3">
 <!ENTITY xcb-util-version             "0.4.0">
 <!ENTITY xcb-util-image-version       "0.4.0">
 <!ENTITY xcb-util-keysyms-version     "0.4.0">
@@ -585,7 +585,7 @@
 
 <!-- Chapter 35 -->
 <!ENTITY seamonkey-version            "2.32">
-<!ENTITY firefox-version              "35.0">
+<!ENTITY firefox-version              "35.0.1">
 
 <!-- Chapter 36 -->
 <!ENTITY asymptote-version            "2.32">

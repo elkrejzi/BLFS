@@ -94,23 +94,26 @@
 
     <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
     <para role="optional"> <!-- Because of circular deps -->
+      <xref linkend="bluedevil5"/> (Bluetooth Applet, optional),
       <xref linkend="breeze"/>,
       <xref linkend="kde-cli-tools"/>,
       <xref linkend="kded"/>,
-      <xref linkend="khelpcenter"/>,
+      <xref linkend="khelpcenter"/> (Help Viewer, required for most apps' "Help" functionality, optional),
       <xref linkend="khotkeys"/>,
       <xref linkend="kinfocenter"/> (Hardware Information, optional),
       <xref linkend="kio-extras"/>,
       <xref linkend="kmenuedit"/> (Editor for Menu Entries, optional),
+      <xref linkend="kmix5"/> (Volume Control Applet, optional),
       <xref linkend="ksysguard"/>,
       <xref linkend="kwrited"/>,
       <xref linkend="milou"/>,
       <xref linkend="oxygen"/>,
       <xref linkend="plasma-desktop"/>,
-      <xref linkend="plasma-nm"/> (Network Manager Applet, optional),
+      <xref linkend="plasma-nm"/> (Network Management Applet, optional),
       <xref linkend="plasma-workspace-wallpapers"/> (Additional Wallpapers, optional),
-      <xref linkend="polkit-kde-agent5"/>,
-      <xref linkend="powerdevil"/> and
+      <xref linkend="polkit-kde-agent5"/> (Polkit Authentication Agent, recommended),
+      <xref linkend="powerdevil"/>,
+      <xref linkend="systemd"/> (for Logind) and
       <xref linkend="systemsettings"/>
     </para>
 
@@ -186,7 +189,7 @@ make</userinput></screen>
     <para>
       If <application>Linux PAM</application> was present at build time,
       create the necessary configuration file so that the Screen Locker
-      can work properly by running the following commands as the
+      can work properly by running the following command as the
       <systemitem class="username">root</systemitem> user:
     </para>
 

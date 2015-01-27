@@ -8,7 +8,7 @@
            "&mozilla-http;/firefox/releases/&firefox-version;/source/firefox-&firefox-version;.source.tar.bz2">
   <!ENTITY firefox-download-ftp
            "&mozilla-ftp;/firefox/releases/&firefox-version;/source/firefox-&firefox-version;.source.tar.bz2">
-  <!ENTITY firefox-md5sum        "d9b7e4819899e23466f5b0750408f128">
+  <!ENTITY firefox-md5sum        "82eda528e4570b181aadcee602afda2d">
   <!ENTITY firefox-size          "169 MB">
   <!ENTITY firefox-buildsize     "5.5 GB (70 MB installed)">
   <!ENTITY firefox-time          "45 SBU">

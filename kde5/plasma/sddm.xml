@@ -170,7 +170,6 @@ session  include        system-session
 
 # End /etc/pam.d/sddm</literal>
 EOF
-
 cat &gt; /etc/pam.d/sddm-autologin &lt;&lt; "EOF" &amp;&amp;
 <literal># Begin /etc/pam.d/sddm-autologin
 
@@ -189,7 +188,6 @@ session  include        system-session
 
 # End /etc/pam.d/sddm-autologin</literal>
 EOF
-
 cat &gt; /etc/pam.d/sddm-greeter &lt;&lt; "EOF"
 <literal># Begin /etc/pam.d/sddm-greeter
 

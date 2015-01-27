@@ -12,7 +12,7 @@
   <!ENTITY qt5-md5sum        "21843b00ecde8956217faab391bc007b">
   <!ENTITY qt5-size          "279 MB">
   <!ENTITY qt5-buildsize     "7.6 GB (270 MB installed)">
-  <!ENTITY qt5-time          "135 SBU">
+  <!ENTITY qt5-time          "86 SBU (135 SBU with QtWebEngine)">
 ]>
 
 <sect1 id="qt5" xreflabel="Qt-&qt5-version;">
@@ -274,6 +274,15 @@ ln -sfv qt-&qt5-version; /opt/qt5</userinput></screen>
     </warning>
 
     <para>
+      If you didn't install <application>PulseAudio</application> but
+      wish  to build the QtWebEngine component, fix the build by
+      running the following command:
+    </para>
+
+<screen><userinput>sed -e "$ a !contains(QT_CONFIG, pulseaudio): GYP_CONFIG += use_pulseaudio=0" \
+    -i qtwebengine/src/core/config/desktop_linux.pri</userinput></screen>
+
+    <para>
       Install <application>Qt5</application> by running the
       following commands:
     </para>
@@ -290,16 +299,17 @@ ln -sfv qt-&qt5-version; /opt/qt5</userinput></screen>
             -docdir         $QT5PREFIX/share/doc/qt5          \
             -translationdir $QT5PREFIX/share/qt5/translations \
             -examplesdir    $QT5PREFIX/share/doc/qt5/examples \
-            -confirm-license \
-            -opensource      \
-            -dbus-linked     \
-            -openssl-linked  \
-            -journald        \
-            -system-harfbuzz \
-            -system-sqlite   \
-            -nomake examples \
-            -no-rpath        \
-            -optimized-qmake &amp;&amp;
+            -confirm-license  \
+            -opensource       \
+            -dbus-linked      \
+            -openssl-linked   \
+            -journald         \
+            -system-harfbuzz  \
+            -system-sqlite    \
+            -nomake examples  \
+            -no-rpath         \
+            -optimized-qmake  \
+            -skip qtwebengine &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -498,6 +508,12 @@ unset file</userinput></screen>
     <para>
       <parameter>-optimized-qmake</parameter>: This switch enables
       building of the optimized <command>qmake</command> program.
+    </para>
+
+    <para>
+      <parameter>-skip qtwebengine</parameter>: This switch disables
+      building of the QtWebEngine component as it nearly doubles the
+      build time and nothing uses it yet.
     </para>
 
   </sect2>

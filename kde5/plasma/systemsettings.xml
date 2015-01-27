@@ -67,15 +67,14 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kcmutils"/>,
-      <xref linkend="kdelibs4support"/> and
+      <xref linkend="kcmutils"/> and
       <xref linkend="khtml"/>
     </para>
 
-    <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
+    <bridgehead renderas="sect4">Optional Runtime Dependencies</bridgehead>
     <para role="optional">
-      <xref linkend="bluedevil5"/> (Bluetooth Configuration Module>,
-      <xref linkend="kcm-touchpad5"/> (Touchpad Configuration Module) and
+      <xref linkend="bluedevil5"/> (Bluetooth Configuration Module><!--,
+      <xref linkend="kcm-touchpad5"/> (Touchpad Configuration Module)--> and
       <xref linkend="kscreen5"/> (Screen Configuration Module)
     </para>
 

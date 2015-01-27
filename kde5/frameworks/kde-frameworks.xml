@@ -99,6 +99,11 @@
       <xref linkend="polkit-qt5"/> (Authentication backend for KAuth)
     </para>
 
+    <bridgehead renderas="sect4">Runtime dependency for FrameworkIntegration</bridgehead>
+    <para role="optional">
+      <xref linkend="oxygen-fonts"/>
+    </para>
+
     <bridgehead renderas="sect4">Runtime dependencies for kapidox</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/>,

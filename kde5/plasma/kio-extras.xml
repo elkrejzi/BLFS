@@ -68,8 +68,9 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="kdelibs4support"/>,
-      <xref linkend="kdnssd"/> and
-      <xref linkend="khtml"/>
+      <xref linkend="kdnssd"/>,
+      <xref linkend="khtml"/> and
+      <xref linkend="kpty"/>
     </para>
 
     <bridgehead renderas="sect4">Optional</bridgehead>
