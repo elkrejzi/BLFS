@@ -102,6 +102,12 @@
             --docdir=/usr/share/doc/openbox-&openbox-version; &amp;&amp;
 make</userinput></screen>
 
+    <para>If you installed only Python 3 PyXDG module convert one of the
+    scripts to Python 3:</para>
+
+<screen><userinput>2to3 -w data/autostart/openbox-xdg-autostart &amp;&amp;
+sed 's/python/python3/' -i data/autostart/openbox-xdg-autostart</userinput></screen>
+
     <para>
       This package does not come with a test suite. 
     </para>

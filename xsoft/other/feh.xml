@@ -90,23 +90,15 @@
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libexif"/>
+      <xref linkend="libexif"/> and
+      <ulink url="http://search.cpan.org/dist/Test-Command/">Test::Command</ulink>
+      (required to run the testsuite)
     </para>
 
     <bridgehead renderas="sect4">Optional (runtime)</bridgehead>
     <para role="optional">
       <xref linkend="libjpeg"/> (for lossless image rotation), and
       <xref linkend="imagemagick"/> (to load unsupported formats)
-    </para>
-
-    <bridgehead renderas="sect4">Optional (test suite)</bridgehead>
-    <para role="optional">
-      <ulink url="http://mdocml.bsd.lv/snapshots/">mdocml</ulink>
-      (warning: this package will overwrite many files and programs of
-      <application>Man-DB</application> - installed in LFS - and should not be
-      installed, unless you know how to modify file and binary names that it
-      installs), and
-      <ulink url="https://cpan.metacpan.org/authors/id/D/DA/DANBOO/">Test::Command</ulink>
     </para>
 
     <para condition="html" role="usernotes">
