@@ -44,11 +44,26 @@
 
 -->
     <listitem>
-      <para>January 27th, 2015</para>
+      <para>January 28th, 2015</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+        <listitem>
+          <para>[krejzi] - Updated jasper-1.900.1 patch to address more
+          recent security issues.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Added an optional Qt4 patch that adds some
+          new features that are not upstream but can be used by some
+          packages.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>January 27th, 2015</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Updated to firefox-35.0.1 and
           MesaLib-10.4.3.</para>
