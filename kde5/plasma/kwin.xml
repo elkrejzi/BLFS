@@ -62,16 +62,6 @@
       </listitem>
     </itemizedlist>
 
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Required patch:
-          <ulink url="&patch-root;/kwin-&plasma-version;-libinput_fixes-1.patch"/>
-        </para>
-      </listitem>
-    </itemizedlist>
-
     <bridgehead renderas="sect3">KWin Dependencies</bridgehead>
 
     <bridgehead renderas="sect4">Required</bridgehead>
@@ -103,7 +93,8 @@
       commands:
     </para>
 
-<screen><userinput>patch -Np1 -i ../kwin-&plasma-version;-libinput_fixes-1.patch &amp;&amp;
+<screen><userinput>sed -e "s:Libinput_FOUND AND UDEV_FOUND:&amp; AND Libinput_VERSION VERSION_LESS 0.8:g" \
+    -i CMakeLists.txt &amp;&amp;
 
 mkdir build &amp;&amp;
 cd    build &amp;&amp;
@@ -131,6 +122,11 @@ make</userinput></screen>
 
   <sect2 role="commands">
     <title>Command Explanations</title>
+
+    <para>
+      <command>sed -e ...</command>: This sed fixes building with
+      libinput-0.8.0 and later.
+    </para>
 
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/cmake-release.xml"/>
