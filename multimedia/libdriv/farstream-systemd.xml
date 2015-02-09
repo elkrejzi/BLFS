@@ -7,9 +7,9 @@
   <!ENTITY farstream-download-http
            "http://freedesktop.org/software/farstream/releases/farstream/farstream-&farstream-version;.tar.gz">
   <!ENTITY farstream-download-ftp  " ">
-  <!ENTITY farstream-md5sum        "63cecbb912e7a8b96d4470420327e2cc">
+  <!ENTITY farstream-md5sum        "bb56af4cbf2cd42f35353f20cf04bc17">
   <!ENTITY farstream-size          "1.3 MB">
-  <!ENTITY farstream-buildsize     "30 MB">
+  <!ENTITY farstream-buildsize     "26 MB">
   <!ENTITY farstream-time          "0.2 SBU">
 ]>
 

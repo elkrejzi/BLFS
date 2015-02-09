@@ -57,7 +57,7 @@
 
     <para>
       This package is known to build and work properly using an
-      LFS-7.6 systemd platform using systemd-216 source.
+      LFS-7.6 systemd platform using systemd-218 source.
     </para>
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
@@ -167,6 +167,12 @@
     </para>
 
     <para>
+      Disable a test case that always fails:
+    </para>
+
+<screen><userinput>sed -i "s:test/udev-test.pl ::g" Makefile.in</userinput></screen>
+
+    <para>
       Rebuild <application>systemd</application> by running the
       following commands:
     </para>
@@ -253,7 +259,7 @@ make</userinput></screen>
      class="username">root</systemitem> user:
     </para>
 
-<screen role="root"><userinput>cat &gt;&gt; /etc/pam.d/system-session &lt;&lt; "EOF"
+<screen role="root"><userinput>cat &gt;&gt; /etc/pam.d/system-session &lt;&lt; "EOF" &amp;&amp;
 <literal># Begin Systemd addition
     
 session   required    pam_loginuid.so
@@ -261,7 +267,6 @@ session   required    pam_loginuid.so
 
 # End Systemd addition</literal>
 EOF
-
 cat &gt; /etc/pam.d/systemd-user &lt;&lt; "EOF"
 <literal># Begin /etc/pam.d/systemd-user
 

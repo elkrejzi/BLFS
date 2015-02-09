@@ -7,23 +7,23 @@
   <!ENTITY libreoffice-dl "http://download.documentfoundation.org/libreoffice/src/&libreoffice-version;">
 
   <!ENTITY libreoffice-core-download-http "&libreoffice-dl;/libreoffice-&libreoffice-dlversion;.tar.xz">
-  <!ENTITY libreoffice-core-md5sum        "86b47f5b6e4b816f54fa12eaf75dbd79">
-  <!ENTITY libreoffice-core-size          "146 MB">
+  <!ENTITY libreoffice-core-md5sum        "34cf1a7fbac5b496c141c32c8464a73a">
+  <!ENTITY libreoffice-core-size          "157 MB">
 
   <!ENTITY libreoffice-dict-download-http "&libreoffice-dl;/libreoffice-dictionaries-&libreoffice-dlversion;.tar.xz">
-  <!ENTITY libreoffice-dict-md5sum        "e5a28bbd127951abafc0d43bcc2127a9">
+  <!ENTITY libreoffice-dict-md5sum        "f61c11b64e4f15620b9d96bd58af4041">
   <!ENTITY libreoffice-dict-size          "36 MB">
 
   <!ENTITY libreoffice-help-download-http "&libreoffice-dl;/libreoffice-help-&libreoffice-dlversion;.tar.xz">
-  <!ENTITY libreoffice-help-md5sum        "ae73ebf344f02c4d24b0c698e52fa587">
+  <!ENTITY libreoffice-help-md5sum        "46e893fdbc435917b5cf70565e38d6f0">
   <!ENTITY libreoffice-help-size          "1.8 MB">
 
   <!ENTITY libreoffice-translations-download-http "&libreoffice-dl;/libreoffice-translations-&libreoffice-dlversion;.tar.xz">
-  <!ENTITY libreoffice-translations-md5sum        "ffc4271845377c407db316f6adce084f">
+  <!ENTITY libreoffice-translations-md5sum        "064605fe0695dcf0b461036c07e75c7a">
   <!ENTITY libreoffice-translations-size          "122 MB">
 
-  <!ENTITY libreoffice-buildsize          "7.9 GB (630 MB installed)">
-  <!ENTITY libreoffice-time               "220 SBU">
+  <!ENTITY libreoffice-buildsize          "8.5 GB (615 MB installed)">
+  <!ENTITY libreoffice-time               "140 SBU">
 ]>
 
 <sect1 id="libreoffice" xreflabel="LibreOffice-&libreoffice-version;">
@@ -129,12 +129,6 @@
       </listitem>
       <listitem>
         <para>
-          Required patch to fix building with system Boost:
-          <ulink url="&patch-root;/libreoffice-&libreoffice-dlversion;-boost_1_56_0-1.patch"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
           Required patch for i686 systems, in order to fix a problem introduced
           by <application>&gcc-490;</application>:
           <ulink url="&patch-root;/libreoffice-&libreoffice-dlversion;-gcc_4_9_0-1.patch"/>
@@ -211,23 +205,27 @@
       <xref linkend="sane"/>,
       <xref linkend="vlc"/>,
       <xref linkend="zenity"/>,
+      <ulink url="https://projects.coin-or.org/CoinMP/">CoinMP</ulink>,
       <ulink url="http://sourceforge.net/projects/cppunit/">Cppunit</ulink>,
       <ulink url="http://www.firebirdsql.org/">Firebird</ulink>,
       <ulink url="http://downloads.sourceforge.net/glew/">GLEW</ulink>,
+      <ulink url="https://code.google.com/p/hamcrest/">Hamcrest</ulink>,
       <ulink url="http://hunspell.sourceforge.net/">Hunspell</ulink>,
       <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
-      <ulink url="http://www.freedesktop.org/wiki/Software/libabw/">libabw</ulink>,
-      <ulink url="http://www.freedesktop.org/wiki/Software/libcdr/">libcdr</ulink>,
+      <ulink url="https://code.google.com/p/include-what-you-use/">IWYU</ulink>,
+      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libabw">libabw</ulink>,
+      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libcdr">libcdr</ulink>,
       <ulink url="http://sourceforge.net/projects/libcmis/">libcmis</ulink>,
       <ulink url="http://www.sourceforge.net/projects/libebook/">libebook</ulink>,
       <ulink url="http://www.freedesktop.org/wiki/Software/libexttextcat/">libexttextcat</ulink>,
-      <ulink url="http://www.freedesktop.org/wiki/Software/libfreehand/">libfreehand</ulink>,
+      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libfreehand">libfreehand</ulink>,
       <ulink url="http://tagoh.bitbucket.org/liblangtag/">liblangtag</ulink>,
-      <ulink url="http://www.freedesktop.org/wiki/Software/libmspub/">libmspub</ulink>,
+      <ulink url="http://www.freedesktop.org/wiki/Software/libexttextcat/">libmspub</ulink>,
       <ulink url="http://sourceforge.net/projects/libmwaw/">libmwaw</ulink>,
       <ulink url="http://sourceforge.net/projects/libwpd/files/libodfgen/">libodfgen</ulink>,
+      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libpagemaker">libpagemaker</ulink>,
       <ulink url="http://sourceforge.net/projects/libwpd/files/librevenge/">librevenge</ulink>,
-      <ulink url="http://www.freedesktop.org/wiki/Software/libvisio/">libvisio</ulink>,
+      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libvisio">libvisio</ulink>,
       <ulink url="http://libwpd.sourceforge.net/">libwpd</ulink>,
       <ulink url="http://libwpg.sourceforge.net/">libwpg</ulink>,
       <ulink url="http://libwps.sourceforge.net/">libwps</ulink>,
@@ -235,6 +233,7 @@
       <ulink url="http://code.google.com/p/multidimalgorithm/">mdds</ulink>,
       <ulink url="http://sourceforge.net/projects/hunspell/files/MyThes/">MyThes</ulink>,
       <ulink url="http://sourceforge.net/projects/ogl-math/">OGL-Math</ulink>,
+      <ulink url="https://github.com/KhronosGroup/OpenCOLLADA/">OpenCOLLADA</ulink>,
       <ulink url="https://gitorious.org/orcus">Orcus</ulink>, and
       <ulink url="http://hci.iwr.uni-heidelberg.de/vigra/">VIGRA</ulink>
     </para>
@@ -295,14 +294,15 @@ ln -sfv ../../../libreoffice-help-&libreoffice-dlversion;.tar.xz external/tarbal
       the following commands:
     </para>
 
-<screen><userinput>patch -Np1 -i ../libreoffice-&libreoffice-dlversion;-boost_1_56_0-1.patch &amp;&amp;
-
-sed -e "/gzip -f/d"   \
+<screen><userinput>sed -e "/gzip -f/d"   \
     -e "s|.1.gz|.1|g" \
     -i bin/distro-install-desktop-integration &amp;&amp;
 
 sed -e "/distro-install-file-lists/d" \
     -i Makefile.in                            &amp;&amp;
+
+sed -e "/ustrbuf/a #include &lt;algorithm&gt;" \
+    -i svl/source/misc/gridprinter.cxx        &amp;&amp;
 
 chmod -v +x bin/unpack-sources                &amp;&amp;
 
@@ -379,7 +379,8 @@ install -v -m644  sysui/desktop/appstream-appdata/*.xml \
 
     <para>
       <command>sed -e ...</command>: The first sed prevents compression of the
-      manual pages and the second one prevents install from failing.
+      manual pages, the second one prevents install from failing and the
+      third one prevents a build failure by adding a necessary include.
     </para>
 
     <para>
@@ -488,14 +489,14 @@ install -v -m644  sysui/desktop/appstream-appdata/*.xml \
     </para>
 
     <para>
-      <option>--disable-gstreamer-0-10</option>: Use this switch if you
-      haven't installed <xref linkend="gst-plugins-base"/>.
+      <option>--enable-gstreamer-0-10</option>: Use this switch if you want to
+      use <xref linkend="gst-plugins-base"/> instead of
+      <xref linkend="gst10-plugins-base"/> for the avmedia module.
     </para>
 
     <para>
-      <option>--enable-gstreamer</option>: Use this switch if you want to
-      use <xref linkend="gst10-plugins-base"/> instead of
-      <xref linkend="gst-plugins-base"/> for the avmedia module.
+      <option>--disable-gstreamer-1-0</option>: Use this switch if you
+      haven't installed <xref linkend="gst10-plugins-base"/>.
     </para>
 
     <para>

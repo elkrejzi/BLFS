@@ -199,7 +199,7 @@ make</userinput></screen>
     </para>
 
     <para>
-      <option>--disable-gudev</option>: Use this switch if you don't have
+      <option>--disable-udev</option>: Use this switch if you don't have
       GUdev installed.
     </para>
 

@@ -8,10 +8,10 @@
 
   <!ENTITY git-download-http "&git-root;/git-&git-version;.tar.xz">
   <!ENTITY git-download-ftp  "ftp://ftp.kernel.org/pub/software/scm/git/git-&git-version;.tar.xz">
-  <!ENTITY git-md5sum        "f694e8c911a6f7cfd7aec7b99454ed1f">
-  <!ENTITY git-size          "3.4 MB">
-  <!ENTITY git-buildsize     "0.3 GB (additional 13 MB for downloaded docs and man pages, or 27 MB building docs and man pages)">
-  <!ENTITY git-time          "0.7 SBU and additional 2.2 SBU for tests (using parallelism=4) or 2.9 SBU for docs and man build">
+  <!ENTITY git-md5sum        "e5880760d1f43f4f49b3bf94b9046eee">
+  <!ENTITY git-size          "3.5 MB">
+  <!ENTITY git-buildsize     "300 MB (additional 13 MB for downloaded docs and man pages or 27 MB for building the docs and man pages)">
+  <!ENTITY git-time          "0.7 SBU (additional 7.7 SBU for tests and 2.9 SBU for building the docs and man pages)">
 ]>
 
 <sect1 id="git" xreflabel="git-&git-version;">
@@ -87,16 +87,16 @@
         <para>
           <ulink url="&git-root;/git-manpages-&git-version;.tar.xz">
           &git-root;/git-manpages-&git-version;.tar.xz</ulink>
-          (if you prefer the original, not needed if you've installed asciidoc
-          and xmlto and prefer to build them).
+          (Not needed if you have installed asciidoc and xmlto and
+          wish to build them).
         </para>
       </listitem>
       <listitem>
         <para>
           <ulink url="&git-root;/git-htmldocs-&git-version;.tar.xz">
           &git-root;/git-htmldocs-&git-version;.tar.xz</ulink>
-          and other docs (if you prefer the original, not needed if you've
-          installed asciidoc and prefer to build them).
+          and other docs (Not needed if you have installed asciidoc
+          and wish to build them).
         </para>
       </listitem>
     </itemizedlist>
@@ -135,13 +135,6 @@
     <title>Installation of Git</title>
 
     <para>
-      First, silence a lot of compiler warnings by running the following
-      command:
-    </para>
-
-<screen><userinput>sed -i "/BSD_SOURCE/d" git-compat-util.h</userinput></screen>
-
-    <para>
       Install <application>Git</application> by running the following
       commands:
     </para>
@@ -150,23 +143,17 @@
 make</userinput></screen>
 
     <para>
-      You can build the man pages and/or html docs, or
-      use downloaded ones. If you choose to build them, use next two following
-      instructions.
-    </para>
-
-    <para>
-      If you have installed <ulink
-      url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> you can
-      create the html version of the man pages and other docs:
+      If you have installed <application>AsciiDoc</application>,
+      you can build a html version of the man pages and other
+      docs by running the following command:
     </para>
 
 <screen><userinput>make html</userinput></screen>
 
     <para>
-      If you have installed <ulink
-      url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> and
-      <xref linkend="xmlto"/> you can create the man pages:
+      If you have installed <application>AsciiDoc</application>
+      and <application>xmlto</application>, you can build the
+      man pages by running the following command:
     </para>
 
 <screen><userinput>make man</userinput></screen>
@@ -182,63 +169,60 @@ make</userinput></screen>
 
 <screen role="root"><userinput>make install</userinput></screen>
 
-<!-- ==== Method 1 for docs ====== -->
-    <bridgehead renderas="sect3">If you created the man pages and/or html docs</bridgehead>
-
     <para>
-      Install the man pages as
-      <systemitem class="username">root</systemitem> user:
+      If the manual pages were built, install them by running the
+      following command as the <systemitem
+      class="username">root</systemitem> user:
     </para>
 
 <screen role="root"><userinput>make install-man</userinput></screen>
 
     <para>
-      Install the html docs as
-      <systemitem class="username">root</systemitem> user:
-    </para>
-
-<screen role="root"><userinput>make htmldir=/usr/share/doc/git-&git-version; install-html</userinput></screen>
-
-<!-- ==== Method 2 for docs ====== -->
-    <bridgehead renderas="sect3">If you downloaded the man pages and/or html docs</bridgehead>
-
-    <para>
-      If you downloaded the man pages untar them as the
-      <systemitem class="username">root</systemitem> user:
+      Or, if you have downloaded the optional manual pages tarball, you
+      can install the manual pages by running the following commands
+      as the <systemitem class="username">root</systemitem> user:
     </para>
 
 <screen role="root"><userinput>tar -xf ../git-manpages-&git-version;.tar.xz \
     -C /usr/share/man --no-same-owner --no-overwrite-dir</userinput></screen>
 
     <para>
-      If you downloaded the html docs untar them as the
-      <systemitem class="username">root</systemitem> user:
+      If the html docs were built, install them by running the
+      following command as the <systemitem
+      class="username">root</systemitem> user:
     </para>
 
-<screen role="root"><userinput>mkdir -vp   /usr/share/doc/git-&git-version; &amp;&amp;
+<screen role="root"><userinput>make htmldir=/usr/share/doc/git-&git-version; install-html</userinput></screen>
+
+    <para>
+      Or, if you have downloaded the optional html docs tarball, you
+      can install the html docs by running the following commands
+      as the <systemitem class="username">root</systemitem> user:
+    </para>
+
+<screen role="root"><userinput>mkdir -pv   /usr/share/doc/git-&git-version;                                    &amp;&amp;
 tar   -xf   ../git-htmldocs-&git-version;.tar.xz \
       -C    /usr/share/doc/git-&git-version; --no-same-owner --no-overwrite-dir &amp;&amp;
 
-find        /usr/share/doc/git-&git-version; -type d -exec chmod 755 {} \; &amp;&amp;
+find        /usr/share/doc/git-&git-version; -type d -exec chmod 755 {} \;      &amp;&amp;
 find        /usr/share/doc/git-&git-version; -type f -exec chmod 644 {} \;</userinput></screen>
 
-<!-- ==== Reorganize docs ====== -->
-    <bridgehead renderas="sect3">Reorganize man pages and/or html docs (both methods)</bridgehead>
-
     <para>
-      For both methods, reorganize the files, as
-      <systemitem class="username">root</systemitem> user:
+      If the html documentation was installed, ensure that the files
+      were installed in proper locations by running the following
+      commands as the <systemitem class="username">root</systemitem>
+      user:
     </para>
 
-<screen role="root"><userinput>mkdir -vp /usr/share/doc/git-&git-version;/man-pages/{html,text}         &amp;&amp;
+<screen role="root"><userinput>mkdir -v /usr/share/doc/git-&git-version;/man-pages/{html,text}          &amp;&amp;
 mv        /usr/share/doc/git-&git-version;/{git*.txt,man-pages/text}     &amp;&amp;
 mv        /usr/share/doc/git-&git-version;/{git*.,index.,man-pages/}html &amp;&amp;
 
-mkdir -vp /usr/share/doc/git-&git-version;/technical/{html,text}         &amp;&amp;
+mkdir -v /usr/share/doc/git-&git-version;/technical/{html,text}          &amp;&amp;
 mv        /usr/share/doc/git-&git-version;/technical/{*.txt,text}        &amp;&amp;
 mv        /usr/share/doc/git-&git-version;/technical/{*.,}html           &amp;&amp;
 
-mkdir -vp /usr/share/doc/git-&git-version;/howto/{html,text}             &amp;&amp;
+mkdir -v /usr/share/doc/git-&git-version;/howto/{html,text}              &amp;&amp;
 mv        /usr/share/doc/git-&git-version;/howto/{*.txt,text}            &amp;&amp;
 mv        /usr/share/doc/git-&git-version;/howto/{*.,}html</userinput></screen>
 

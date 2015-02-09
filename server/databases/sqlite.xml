@@ -4,21 +4,21 @@
   <!ENTITY % general-entities SYSTEM "../../general.ent">
   %general-entities;
 
-  <!ENTITY sqlite-dl-version    "3080801">
-  <!ENTITY sqlite-doc-version   "3080801">
+  <!ENTITY sqlite-dl-version    "3080802">
+  <!ENTITY sqlite-doc-version   "3080802">
 
   <!ENTITY sqlite-download-http
            "https://sqlite.org/2015/sqlite-autoconf-&sqlite-dl-version;.tar.gz">
   <!ENTITY sqlite-download-ftp  " ">
-  <!ENTITY sqlite-md5sum        "a6381941ffe8817ba19669ec0c0ede6f">
-  <!ENTITY sqlite-size          "1.9 MB">
+  <!ENTITY sqlite-md5sum        "3425fa580a56880f56bcb887dd26cc06">
+  <!ENTITY sqlite-size          "2.0 MB">
   <!ENTITY sqlite-buildsize     "22 MB (additional 25 MB for the Optional Documentation)">
   <!ENTITY sqlite-time          "0.4 SBU">
 
   <!ENTITY sqlite-docs-download
            "https://sqlite.org/2015/sqlite-doc-&sqlite-doc-version;.zip">
-  <!ENTITY sqlite-docs-md5sum   "877c0192b41b61686662efb50200043a">
-  <!ENTITY sqlite-docs-size     "4.7 MB">
+  <!ENTITY sqlite-docs-md5sum   "785a45179b03a2e63c23fa37436f3632">
+  <!ENTITY sqlite-docs-size     "4.8 MB">
 ]>
 
 <sect1 id="sqlite" xreflabel="SQLite-&sqlite-version;">

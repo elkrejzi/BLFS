@@ -6,8 +6,8 @@
 
   <!ENTITY libinput-download-http "http://www.freedesktop.org/software/libinput/libinput-&libinput-version;.tar.xz">
   <!ENTITY libinput-download-ftp  " ">
-  <!ENTITY libinput-md5sum        "9ac28ca42670d38d8f785e96506c9227">
-  <!ENTITY libinput-size          "496 KB">
+  <!ENTITY libinput-md5sum        "05f7d54380ff033d421944d906dc1ecb">
+  <!ENTITY libinput-size          "504 KB">
   <!ENTITY libinput-buildsize     "13 MB">
   <!ENTITY libinput-time          "0.2 SBU">
 ]>

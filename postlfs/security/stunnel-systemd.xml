@@ -6,9 +6,9 @@
 
   <!ENTITY stunnel-download-http "http://mirrors.zerg.biz/stunnel/stunnel-&stunnel-version;.tar.gz">
   <!ENTITY stunnel-download-ftp  "ftp://ftp.stunnel.org/stunnel/stunnel-&stunnel-version;.tar.gz">
-  <!ENTITY stunnel-md5sum        "deab04ec8b78ec3102b36113b28b4cce">
-  <!ENTITY stunnel-size          "576 KB">
-  <!ENTITY stunnel-buildsize     "5.7 MB">
+  <!ENTITY stunnel-md5sum        "a0edda805eb7d6ea600a230fb0979ea1">
+  <!ENTITY stunnel-size          "592 KB">
+  <!ENTITY stunnel-buildsize     "6 MB">
   <!ENTITY stunnel-time          "0.1 SBU">
 ]>
 
@@ -119,6 +119,14 @@ useradd -c "stunnel Daemon" -d /var/lib/stunnel \
     </para>
 
 <screen><userinput>sed -i /syslog.target/d tools/stunnel.service.in</userinput></screen>
+
+    <para>
+      On some systems, <command>configure</command> may fail if using
+      <application>Binutils</application> 2.25. Fix the issue by
+      running the following command:
+    </para>
+
+<screen><userinput>sed -i '/LDFLAGS.*static_flag/ s/^/#/' configure</userinput></screen>
 
     <para>Install <application>stunnel</application> by running the following
     commands:</para>

@@ -6,9 +6,9 @@
 
   <!ENTITY evolution-download-http "&gnome-download-http;/evolution/&gnome-minor12;/evolution-&evolution-version;.tar.xz">
   <!ENTITY evolution-download-ftp  "&gnome-download-ftp;/evolution/&gnome-minor12;/evolution-&evolution-version;.tar.xz">
-  <!ENTITY evolution-md5sum        "8cb2ee955d7adccee07d00eb46d7451b">
+  <!ENTITY evolution-md5sum        "22ceaebe4add813e15253a76939af7f0">
   <!ENTITY evolution-size          "11 MB">
-  <!ENTITY evolution-buildsize     "525 MB">
+  <!ENTITY evolution-buildsize     "530 MB">
   <!ENTITY evolution-time          "5.9 SBU">
 ]>
 

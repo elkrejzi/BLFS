@@ -72,34 +72,27 @@
       </listitem>
     </itemizedlist>
 
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Required patch:
-          <ulink url="&patch-root;/fltk-&fltk-version;-dynamic_libs-1.patch"/>
-       </para>
-      </listitem>
-    </itemizedlist>
-
     <bridgehead renderas="sect3">FLTK Dependencies</bridgehead>
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glu"/>
+      <xref linkend="xorg7-lib"/>
     </para>
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="desktop-file-utils"/>,
-      <xref linkend="hicolor-icon-theme"/>, and
-      <xref linkend="libjpeg"/>
+      <xref linkend="hicolor-icon-theme"/>,
+      <xref linkend="libjpeg"/>, and
+      <xref linkend="libpng"/>
     </para>
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="alsa-lib"/>,
-      <xref linkend="doxygen"/>, and
+      <xref linkend="desktop-file-utils"/>,
+      <xref linkend="doxygen"/>,
+      <xref linkend="glu"/>,
+      <xref linkend="mesalib"/>, and
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
     </para>
 
@@ -121,10 +114,8 @@
       commands:
     </para>
 
-<screen><userinput>patch -Np1 -i ../fltk-&fltk-version;-dynamic_libs-1.patch &amp;&amp;
-sed -i -e '/cat./d' documentation/Makefile       &amp;&amp;
-
-./configure --prefix=/usr --enable-shared &amp;&amp;
+<screen><userinput>sed -i -e '/cat./d' documentation/Makefile &amp;&amp;
+./configure --prefix=/usr --enable-shared  &amp;&amp;
 make</userinput></screen>
 
     <para>If you wish to create the api documentation, issue:</para>
@@ -155,8 +146,9 @@ make -C documentation docdir=/usr/share/doc/fltk-&fltk-version; install-linux</u
     <title>Command Explanations</title>
 
     <para>
-      <command>sed ... documentation/Makefile</command>: Avoid installing
-      pages in <filename class="directory">/usr/share/man/cat*</filename>.
+      <command>sed ... documentation/Makefile</command>: This sed prevents
+      installation of man pages in
+      <filename class="directory">/usr/share/man/cat*</filename>.
     </para>
 
     <para>

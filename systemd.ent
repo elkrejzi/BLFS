@@ -3,20 +3,20 @@
 <!ENTITY bogofilter-version           "1.2.4">
 <!ENTITY colord-gtk-version           "0.1.26">
 <!ENTITY cups-pk-helper-version       "0.2.5">
-<!ENTITY farstream-version            "0.2.6">
+<!ENTITY farstream-version            "0.2.7">
 <!ENTITY geoclue2-version             "2.1.10">
 <!ENTITY gtk-vnc-version              "0.5.3">
-<!ENTITY highlight-version            "3.20">
+<!ENTITY highlight-version            "3.21">
 <!ENTITY ibus-version                 "1.5.9">
 <!ENTITY libevdev-version             "1.3.2">
-<!ENTITY libinput-version             "0.8.0">
-<!ENTITY libmbim-version              "1.12.0">
+<!ENTITY libinput-version             "0.10.0">
+<!ENTITY libmbim-version              "1.12.2">
 <!ENTITY libmediaart-version          "0.7.0">
-<!ENTITY libnice-version              "0.1.8">
+<!ENTITY libnice-version              "0.1.10">
 <!ENTITY liboauth-version             "1.0.3">
-<!ENTITY libpciaccess-version         "0.13.2">
+<!ENTITY libpciaccess-version         "0.13.3">
 <!ENTITY libpwquality-version         "1.2.4">
-<!ENTITY libqmi-version               "1.12.0">
+<!ENTITY libqmi-version               "1.12.2">
 <!ENTITY libva-vdpau-driver-version   "0.7.4">
 <!ENTITY libxkbcommon-version         "0.5.0">
 <!ENTITY ModemManager-version         "1.4.2">
@@ -34,7 +34,7 @@
 <!ENTITY Jinja2-version               "2.7.3">
 <!ENTITY Mako-version                 "1.0.1">
 <!ENTITY MarkupSafe-version           "0.23">
-<!ENTITY setuptools-version           "12.0.4">
+<!ENTITY setuptools-version           "12.0.5">
 <!ENTITY PyYAML-version               "3.11">
 
 <!ENTITY % kde5-package-entities SYSTEM      "kde5/kde5.ent">

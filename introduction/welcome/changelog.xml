@@ -44,11 +44,104 @@
 
 -->
     <listitem>
-      <para>January 28th, 2015</para>
+      <para>February 9th, 2015</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+        <listitem>
+          <para>[krejzi] - Updated to xkeyboard-config-2.14 and xorg-server-1.17.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to totem-3.14.2, unrar-5.2.5 and xf86-video-vmware-13.1.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to shared-mime-info-1.4, sqlite-3.8.8.2 and stunnel-5.10.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to sessreg-1.1.0 - Xorg Applications and setuptools-12.0.5 - Python Module.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to php-5.6.5, postgresql-9.4.1 and seamonkey-2.32.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to nss-3.17.4, ntp-4.2.8p1 and openssl-1.0.2.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to mercurial-3.3, MesaLib-10.4.4 and nspr-4.10.8.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libqmi-1.12.2, libreoffice-4.4.0.3 and mariadb-10.0.16.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libmbim-1.12.2, libnice-0.1.10 and libpciaccess-0.13.3.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libgpg-error-1.18, libgsf-1.14.31 and libinput-0.10.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to httpd-2.4.12, libdvdread-5.0.2 and libdvdnav-5.0.3.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to gtk+-3.14.8, harfbuzz-0.9.38 and highlight-3.21.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to gedit-3.14.3, git-2.3.0 and gparted-0.21.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to evolution-data-server-3.12.11, evolution-3.12.11 and farstream-0.2.7.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to clutter-gst-2.0.14, cmake-3.1.2 and dhcpcd-6.7.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to babl-0.1.12, bluefish-2.2.7 and bluez-5.28.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Fixed ALSA-Plugins build when speexdsp-1.2rc2 is present.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged tigervnc-1.4.2 and whois-5.2.4 updates from the main
+          book. Thanks to Bruce for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged dejagnu-1.5.2, lzo-2.09 and sharutils-4.15 updates from the main
+          book. Thanks to Bruce for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged XML-LibXML-Simple-0.95 and XML-LibXSLT-1.94 - Perl Modules updates from the main
+          book. Thanks to Ken for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged Net-DNS-0.82, Text-BibTex-0.70 and Unicode-Collate-1.10 - Perl Modules updates from the main
+          book. Thanks to Ken for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged Archive-Zip-1.45, Business-ISMN-1.13 and Data-Compare-1.25 - Perl Modules updates from the main
+          book. Thanks to Ken for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged inkscape-0.91 update from the main
+          book. Thanks to Ken for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged Cairo upstream fixes addition from the main
+          book. Thanks to Ken for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged OpenJDK-1.8.0.31 and swig-3.0.5 updates from the main
+          book. Thanks to Pierre for doing all the work.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Merged goffice-0.10.20, gnumeric-1.12.20 and LVM2-2.02.116 updates from the main
+          book. Thanks to Pierre for doing all the work.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>January 28th, 2015</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Updated jasper-1.900.1 patch to address more
           recent security issues.</para>

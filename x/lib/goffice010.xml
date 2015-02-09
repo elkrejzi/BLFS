@@ -8,9 +8,9 @@
            "&gnome-download-http;/goffice/0.10/goffice-&goffice010-version;.tar.xz">
   <!ENTITY goffice010-download-ftp
             "&gnome-download-ftp;/goffice/0.10/goffice-&goffice010-version;.tar.xz">
-  <!ENTITY goffice010-md5sum        "a08dfc7c6dc8b9b2ae7968bbcb9224b6">
-  <!ENTITY goffice010-size          "2.3 MB">
-  <!ENTITY goffice010-buildsize     "83 MB (additional 2 MB for the tests)">
+  <!ENTITY goffice010-md5sum        "1785853fa42a13a3067e42773abdc905">
+  <!ENTITY goffice010-size          "2.2 MB">
+  <!ENTITY goffice010-buildsize     "95 MB (additional 2 MB for the tests)">
   <!ENTITY goffice010-time          "0.9 SBU (additional less than 0.1 SBU for the tests)">
 ]>
 
@@ -145,7 +145,7 @@ make</userinput></screen>
           None
         </seg>
         <seg>
-          libgoffice-0.10.so and
+          libgoffice-0.10.so
         </seg>
         <seg>
           /usr/include/libgoffice-0.10,

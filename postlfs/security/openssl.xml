@@ -8,9 +8,9 @@
            "http://www.openssl.org/source/openssl-&openssl-version;.tar.gz">
   <!ENTITY openssl-download-ftp
            "ftp://ftp.openssl.org/source/openssl-&openssl-version;.tar.gz">
-  <!ENTITY openssl-md5sum        "d4f002bd22a56881340105028842ae1f">
-  <!ENTITY openssl-size          "4.3 MB">
-  <!ENTITY openssl-buildsize     "51 MB (additional 1 MB for the tests)">
+  <!ENTITY openssl-md5sum        "38373013fc85c790aabf8837969c5eba">
+  <!ENTITY openssl-size          "5.1 MB">
+  <!ENTITY openssl-buildsize     "60 MB">
   <!ENTITY openssl-time          "1.1 SBU (additional 0.4 SBU for the tests)">
 ]>
 

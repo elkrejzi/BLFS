@@ -80,7 +80,7 @@
       <xref linkend="boost"/>,
       <xref linkend="llvm"/> (with Clang), 
       <xref linkend="gdb"/> (for tests), and
-      <ulink url="http://www.openmp.org/">OpenMP</ulink>
+      <ulink url="http://www.open-mpi.org/">OpenMPI</ulink>
     </para>
 
     <bridgehead renderas="sect4">Optional for regenerating the documentation</bridgehead>
@@ -100,11 +100,11 @@
     <para>Install <application>Valgrind</application> by running the following
     commands:</para>
 
-<screen><userinput>sed -i 's/-mt//g' configure &amp;&amp;
-sed -i 's|/doc/valgrind||' docs/Makefile.in &amp;&amp;
+<screen><userinput>sed -i "s:-mt::g" configure                  &amp;&amp;
+sed -i "s:2.20:2.21:g" configure             &amp;&amp;
+sed -i "s:/doc/valgrind::g" docs/Makefile.in &amp;&amp;
 
-./configure --prefix=/usr \
-            --datadir=/usr/share/doc/valgrind-&valgrind-version; &amp;&amp;
+./configure --prefix=/usr --datadir=/usr/share/doc/valgrind-&valgrind-version; &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -131,8 +131,13 @@ popd</userinput></screen>
     <title>Command Explanations</title>
 
     <para>
-      <command>sed -i 's/-mt//g' configure</command>: Fixes configure script to
+      <command>sed -i "s:-mt::g" configure</command>: Fixes configure script to
       find newer versions of Boost.
+    </para>
+
+    <para>
+      <command>sed -i "s:2.20:2.21:g" configure</command>: Fixes building with
+      <application>Glibc</application> 2.21.
     </para>
 
     <para>

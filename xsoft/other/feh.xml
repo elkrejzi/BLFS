@@ -91,7 +91,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="libexif"/> and
-      <ulink url="http://search.cpan.org/dist/Test-Command/">Test::Command</ulink>
+      <xref linkend="perl-test-command"/>
       (required to run the testsuite)
     </para>
 

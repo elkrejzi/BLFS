@@ -6,9 +6,9 @@
 
   <!ENTITY gnumeric-download-http "&gnome-download-http;/gnumeric/1.12/gnumeric-&gnumeric-version;.tar.xz">
   <!ENTITY gnumeric-download-ftp  "&gnome-download-ftp;/gnumeric/1.12/gnumeric-&gnumeric-version;.tar.xz">
-  <!ENTITY gnumeric-md5sum        "14897887000c7c6ca4e1e1d2dd230ee7">
-  <!ENTITY gnumeric-size          "18 MB">
-  <!ENTITY gnumeric-buildsize     "252 MB (additional 2 MB for the tests)">
+  <!ENTITY gnumeric-md5sum        "d60bad3065348fefe2096a16a9bc11dd">
+  <!ENTITY gnumeric-size          "17.6 MB">
+  <!ENTITY gnumeric-buildsize     "276 MB (additional 2 MB for the tests)">
   <!ENTITY gnumeric-time          "1.8 SBU (additional 1.5 SBU for the tests)">
 ]>
 
@@ -78,8 +78,18 @@
       <xref linkend="rarian"/>
     </para>
 
+    <bridgehead renderas="sect4">Recommended Runtime</bridgehead>
+    <para role="recommended runtime">
+       an icon theme such as <xref linkend="adwaita-icon-theme"/>,
+       <xref linkend="oxygen-icons"/> or
+       <xref linkend="gnome-icon-theme"/>,
+       <xref linkend="x-window-system"/>, and
+       <xref linkend="yelp"/> for the buit-in help functionality
+    </para>
+
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="dconf"/> (to prevent some test failures),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="pygobject3"/>,
       <xref linkend="valgrind"/> (for some tests),
@@ -91,14 +101,16 @@
       <ulink url="http://www.frodol.dds.nl/psiconv/index.html">Psiconv</ulink>
     </para>
 
-    <note>
+<!--  Now in "recommendended runtime deps". Keeping as a comment because it
+      is easier to revert
+   <note>
       <para>
         Though only a run-time dependency, if you don't install the
         <xref linkend="yelp"/> package, the built-in help functionality in
         <application>Gnumeric</application> will not be available.
       </para>
     </note>
-
+-->
     <para condition="html" role="usernotes">User Notes:
       <ulink url="&blfs-wiki;/gnumeric"/>
     </para>
@@ -126,7 +138,9 @@ make</userinput></screen>
 
     <para>
       If you wish to test the results, issue <command>make -k check</command>.
-      A few tests fail, some for known reasons.
+      Tests must be run from an active X session, and <xref linkend="dconf"/>
+      should be installed to prevent some failures. Even so, a few tests fail,
+      some for known reasons.
     </para>
 
   </sect2>

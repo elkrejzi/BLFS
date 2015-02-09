@@ -8,7 +8,7 @@
            "&gnome-download-http;/evolution-data-server/&gnome-minor12;/evolution-data-server-&evolution-data-server-version;.tar.xz">
   <!ENTITY evolution-data-server-download-ftp
            "&gnome-download-ftp;/evolution-data-server/&gnome-minor12;/evolution-data-server-&evolution-data-server-version;.tar.xz">
-  <!ENTITY evolution-data-server-md5sum        "3069c344bd9af0e92db66f123958ea9d">
+  <!ENTITY evolution-data-server-md5sum        "a05df58de484bb6ff6fe23e3eee71db3">
   <!ENTITY evolution-data-server-size          "5.1 MB">
   <!ENTITY evolution-data-server-buildsize     "245 MB">
   <!ENTITY evolution-data-server-time          "2.1 SBU">

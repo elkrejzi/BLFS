@@ -6,8 +6,8 @@
 
   <!ENTITY libpciaccess-download-http "&xorg-download-http;/lib/libpciaccess-&libpciaccess-version;.tar.bz2">
   <!ENTITY libpciaccess-download-ftp  "&xorg-download-ftp;/lib/libpciaccess-&libpciaccess-version;.tar.bz2">
-  <!ENTITY libpciaccess-md5sum        "b7c0d3afce14eedca57312a3141ec13a">
-  <!ENTITY libpciaccess-size          "352 KB">
+  <!ENTITY libpciaccess-md5sum        "1f65be5ffc55641c1846c2f41d180d00">
+  <!ENTITY libpciaccess-size          "364 KB">
   <!ENTITY libpciaccess-buildsize     "3.3 MB">
   <!ENTITY libpciaccess-time          "less than 0.1 SBU">
 ]>
