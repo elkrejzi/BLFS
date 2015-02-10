@@ -6,8 +6,8 @@
 
   <!ENTITY ModemManager-download-http "http://www.freedesktop.org/software/ModemManager/ModemManager-&ModemManager-version;.tar.xz">
   <!ENTITY ModemManager-download-ftp  " ">
-  <!ENTITY ModemManager-md5sum        "fe74eaa9a77e51e552b4356b4c7195cb">
-  <!ENTITY ModemManager-size          "1.3 MB">
+  <!ENTITY ModemManager-md5sum        "248954c98df0002591506753b8011aa9">
+  <!ENTITY ModemManager-size          "1.4 MB">
   <!ENTITY ModemManager-buildsize     "84 MB">
   <!ENTITY ModemManager-time          "1.2 SBU">
 ]>

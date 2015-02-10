@@ -4,10 +4,6 @@
   <!ENTITY % general-entities SYSTEM "../../general.ent">
   %general-entities;
 
-  <!-- Place this in the general.ent file
-  <!ENTITY libevdev-version "">
-  -->
-
   <!ENTITY libevdev-download-http "http://www.freedesktop.org/software/libevdev/libevdev-&libevdev-version;.tar.xz">
   <!ENTITY libevdev-download-ftp  " ">
   <!ENTITY libevdev-md5sum        "80c7b490bf3e7ec8e8b60d4fb307b664">

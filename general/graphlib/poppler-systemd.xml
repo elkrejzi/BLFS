@@ -7,10 +7,10 @@
   <!ENTITY poppler-download-http
            "http://poppler.freedesktop.org/poppler-&poppler-version;.tar.xz">
   <!ENTITY poppler-download-ftp       " ">
-  <!ENTITY poppler-md5sum             "fb0a9d82b5433c823421a123eb8e9789">
+  <!ENTITY poppler-md5sum             "b631498668562ba47732785e54808468">
   <!ENTITY poppler-size               "1.6 MB">
-  <!ENTITY poppler-buildsize          "190 MB">
-  <!ENTITY poppler-time               "1.5 SBU">
+  <!ENTITY poppler-buildsize          "245 MB">
+  <!ENTITY poppler-time               "2.0 SBU">
 
   <!ENTITY poppler-data-version       "0.4.7">
 
@@ -147,19 +147,28 @@
     <title>Installation of Poppler</title>
 
     <para>
+      In order to optionally run the test suite, an additional download
+      of about 9 MB using <xref linkend="git"/> is necessary.
+    </para>
+
+<screen><userinput>rm -rf testfiles &amp;&amp;
+git clone git://git.freedesktop.org/git/poppler/test testfiles</userinput></screen>
+
+    <para>
       Install <application>Poppler</application> by running the following
       commands:
     </para>
 
 <!-- Warning: Using zlib is not totally safe -->
-<screen><userinput>./configure --prefix=/usr     \
-            --sysconfdir=/etc \
-            --disable-static  \
-            --enable-xpdf-headers &amp;&amp;
+<screen><userinput>./configure --prefix=/usr         \
+            --sysconfdir=/etc     \
+            --disable-static      \
+            --enable-xpdf-headers \
+            --with-testdatadir=$PWD/testfiles &amp;&amp;
 make</userinput></screen>
 
     <para>
-      This package does not have a working testsuite.
+      To test the results, issue: <command>LC_ALL=en_US.UTF-8 make check</command>.
     </para>
 
     <para>
@@ -206,11 +215,22 @@ cd poppler-data-&poppler-data-version;</userinput></screen>
     </para>
 
     <para>
+      <option>--with-testdatadir=$PWD/testfiles</option>: This switch is used
+      to tell the test programs where the auxillary files are located.
+    </para>
+
+    <para>
       <option>--enable-libcurl</option>: Use libcurl for HTTP support.
     </para>
 
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/gtk-doc-rebuild.xml"/>
+
+    <para>
+      <command>LC_ALL=en_US.UTF-8 make check</command>: Run the test suite.
+      The environment variable LC_ALL=en_US.UTF-8 is only needed if the
+      default locale does not include UTF-8.
+    </para>
 
   </sect2>
 

@@ -35,7 +35,7 @@
 <!ENTITY shadow-version               "4.2.1">
 <!ENTITY ssh-askpass-version          "&openssh-version;">
 <!ENTITY stunnel-version              "5.10">
-<!ENTITY sudo-version                 "1.8.11p2">
+<!ENTITY sudo-version                 "1.8.12">
 <!ENTITY tripwire-version             "2.4.2.2">
 
 <!-- Chapter 5 -->
@@ -79,7 +79,7 @@
 <!ENTITY boost-dl-version             "&boost-major;_&boost-minor;_&boost-patch;">
 
 <!ENTITY clucene-version              "2.3.3.4">
-<!ENTITY dbus-glib-version            "0.102">
+<!ENTITY dbus-glib-version            "0.104">
 <!ENTITY enchant-version              "1.6.0">
 <!ENTITY exempi-version               "2.2.2">
 <!ENTITY expat-version                "2.1.0">
@@ -177,7 +177,7 @@
 <!ENTITY openjpeg-version             "1.5.2">
 <!ENTITY openjpeg2-version            "2.1.0">
 <!ENTITY pixman-version               "0.32.6">   <!-- Even minors only -->
-<!ENTITY poppler-version              "0.30.0">   <!-- Even minors only -->
+<!ENTITY poppler-version              "0.31.0">   
 <!ENTITY qpdf-version                 "5.1.2">
 
 <!-- Chapter 11 -->
@@ -343,7 +343,7 @@
 <!ENTITY cifsutils-version            "6.4">
 <!ENTITY ncftp-version                "3.2.5">
 <!ENTITY net-tools-version            "CVS_20101030">
-<!ENTITY nfs-utils-version            "1.3.1">
+<!ENTITY nfs-utils-version            "1.3.2">
 <!ENTITY ntp-version                  "4.2.8p1">
 <!ENTITY rpcbind-version              "0.2.2">
 <!ENTITY rsync-version                "3.1.1">
@@ -484,7 +484,7 @@
 <!ENTITY qt4-dir                      "$QT4DIR">
 
 <!-- Chapter 26 -->
-<!ENTITY fluxbox-version              "1.3.6">
+<!ENTITY fluxbox-version              "1.3.7">
 <!ENTITY icewm-version                "1.3.8">
 <!ENTITY openbox-version              "3.5.2">
 <!ENTITY sawfish-version              "1.11">
@@ -712,7 +712,7 @@
 
 <!-- Part XII -->
 <!-- Chapter 42 -->
-<!ENTITY cups-version                 "2.0.1">
+<!ENTITY cups-version                 "2.0.2">
 <!ENTITY cups-filters-version         "1.0.62">
 <!ENTITY gs-version                   "9.15">
 <!ENTITY gutenprint-version           "5.2.10">
