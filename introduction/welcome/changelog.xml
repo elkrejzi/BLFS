@@ -50,6 +50,9 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Updated to xorg-server-1.17.1.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Updated to nfs-utils-1.3.2, poppler-0.31.0 and
           sudo-1.8.12.</para>
         </listitem>
