@@ -20,7 +20,6 @@ $Date: 2014-10-26 17:30:14 +0100 (Sun, 26 Oct 2014) $
   text and graphics, a program to interface with a palm-pilot, a program for entering
   PIN numbers and pass-phrases, and a hash generator.</para>
 
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="appdata-tools.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="bogofilter-systemd.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="compface.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="desktop-file-utils.xml"/>

@@ -6,10 +6,10 @@
 
   <!ENTITY mitkrb-download-http "http://web.mit.edu/kerberos/www/dist/krb5/&mitkrb-major-version;/krb5-&mitkrb-version;-signed.tar">
   <!ENTITY mitkrb-download-ftp  " ">
-  <!ENTITY mitkrb-md5sum        "fa5d4dcd7b79e2165d0ec4affa0956ea">
+  <!ENTITY mitkrb-md5sum        "567586cdf02aa8c842c2fab7a94f3c1f">
   <!ENTITY mitkrb-size          "12 MB">
-  <!ENTITY mitkrb-buildsize     "121 MB (Additional 22 MB if running the testsuite)">
-  <!ENTITY mitkrb-time          "1.0 SBU (additional 2.5 SBU if running the testsuite)">
+  <!ENTITY mitkrb-buildsize     "122 MB (additional 22 MB for the testsuite)">
+  <!ENTITY mitkrb-time          "1.0 SBU (additional 2.5 SBU for the testsuite)">
 ]>
 
 <sect1 id="mitkrb" xreflabel="MIT Kerberos V5-&mitkrb-version;">
@@ -78,11 +78,14 @@
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="bind-utils"/> (used during the testsuite),
       <xref linkend="dejagnu"/> (for full test coverage),
       <xref linkend="gnupg2"/> (to authenticate the package),
       <xref linkend="keyutils"/>,
       <xref linkend="openldap"/>,
-      <xref linkend="python2"/> (used during the testsuite) and
+      <xref linkend="openssl"/>,
+      <xref linkend="python2"/> (used during the testsuite),
+      <xref linkend="tcl"/> and
       <xref linkend="rpcbind"/> (used during the testsuite)
     </para>
 
@@ -114,7 +117,7 @@
     <para>
       After unpacking the distribution tarball and if you have
       <xref linkend="gnupg2"/> installed, you can
-      authenticate the package.  First, check the contents of the file
+      authenticate the package. First, check the contents of the file
       <filename>krb5-&mitkrb-version;.tar.gz.asc</filename>.
     </para>
 
@@ -122,7 +125,7 @@
 
     <para>You will probably see output similar to:</para>
 
-<screen><literal>gpg: Signature made Thu 16 Oct 2014 02:02:43 AM CEST using RSA key ID 749D7889
+<screen><literal>gpg: Signature made Thu 12 Feb 2015 04:24:23 AM CET using RSA key ID 749D788
 gpg: Can't check signature: No public key</literal></screen>
 
     <para>
@@ -132,9 +135,9 @@ gpg: Can't check signature: No public key</literal></screen>
 <screen><userinput>gpg2 --pgp2 --keyserver pgp.mit.edu --recv-keys 0x749D7889</userinput></screen>
 
     <para>
-      Now re-verify the package with the first command above.  You should  get a
+      Now re-verify the package with the first command above. You should get a
       indication of a good signature, but the key will still not be certified
-      with a trusted signature.  Trusting the downloaded key is a separate
+      with a trusted signature. Trusting the downloaded key is a separate
       operation but it is up to you to determine the level of trust.
     </para>
 

@@ -85,7 +85,7 @@
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="appdata-tools"/>,
+      <xref linkend="appstream-glib"/>,
       <xref linkend="desktop-file-utils"/>, and
       <xref linkend="libwnck"/>
     </para>

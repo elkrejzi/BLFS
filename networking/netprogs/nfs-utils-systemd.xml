@@ -302,8 +302,9 @@ mount -v --bind /home /srv/nfsv4/home</userinput></screen>
 
         <para>
           If you have disabled NFSv4 support, run the following
-          command to omit the NFSv4 specific systemd units as the
-          <systemitem class="username">root</systemitem> user:
+          command as the <systemitem
+          class="username">root</systemitem> user to omit the NFSv4
+          specific systemd units:
         </para>
 
 <screen role="root"><userinput>make install-nfs-server</userinput></screen>

@@ -8,8 +8,8 @@
   <!ENTITY rasqal-download-ftp  " ">
   <!ENTITY rasqal-md5sum        "1f5def51ca0026cd192958ef07228b52">
   <!ENTITY rasqal-size          "1.6 MB">
-  <!ENTITY rasqal-buildsize     "22 MB (additional 4 MB for the tests)">
-  <!ENTITY rasqal-time          "0.3 SBU (additional 0.7 SBU for the tests)">
+  <!ENTITY rasqal-buildsize     "22 MB">
+  <!ENTITY rasqal-time          "0.3 SBU">
 ]>
 
 <sect1 id="rasqal" xreflabel="Rasqal-&rasqal-version;">
@@ -82,8 +82,8 @@
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="pcre"/> and
-      <xref linkend="libgcrypt"/>
+      <xref linkend="libgcrypt"/> and
+      <xref linkend="pcre"/>
     </para>
 
     <para condition="html" role="usernotes">User Notes:
@@ -127,7 +127,7 @@ make</userinput></screen>
 
     <segmentedlist>
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 
       <seglistitem>

@@ -90,11 +90,6 @@
         </listitem>
         <listitem>
           <para>
-            <xref linkend="xorg-cirrus-driver"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
             <xref linkend="xorg-fbdev-driver"/>
           </para>
         </listitem>
@@ -138,9 +133,6 @@
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
     href="x7driver-ati.xml"/>
-
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-    href="x7driver-cirrus.xml"/>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
     href="x7driver-fbdev.xml"/>

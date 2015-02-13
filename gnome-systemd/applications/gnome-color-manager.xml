@@ -86,7 +86,7 @@
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="appdata-tools"/>,
+      <xref linkend="appstream-glib"/>,
       <xref linkend="exiv2"/>, and
       <xref linkend="vte"/>
     </para>

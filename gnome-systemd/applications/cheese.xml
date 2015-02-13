@@ -87,7 +87,7 @@
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="appdata-tools"/>,
+      <xref linkend="appstream-glib"/>,
       <xref linkend="gobject-introspection"/>, and
       <xref linkend="vala"/>
     </para>

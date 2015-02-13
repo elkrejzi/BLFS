@@ -9,7 +9,7 @@
   <!ENTITY raptor-md5sum        "a39f6c07ddb20d7dd2ff1f95fa21e2cd">
   <!ENTITY raptor-size          "1.9 MB">
   <!ENTITY raptor-buildsize     "28 MB">
-  <!ENTITY raptor-time          "0.2 SBU (additional 0.5 SBU for the tests)">
+  <!ENTITY raptor-time          "0.2 SBU">
 ]>
 
 <sect1 id="raptor" xreflabel="Raptor-&raptor-version;">
