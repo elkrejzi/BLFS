@@ -6,9 +6,9 @@
 
   <!ENTITY weston-download-http "http://wayland.freedesktop.org/releases/weston-&weston-version;.tar.xz">
   <!ENTITY weston-download-ftp  " ">
-  <!ENTITY weston-md5sum        "08e857668621c930cab239d11c12cf47">
-  <!ENTITY weston-size          "720 KB">
-  <!ENTITY weston-buildsize     "46 MB">
+  <!ENTITY weston-md5sum        "1fde8a44f48cd177438522850d6ba4be">
+  <!ENTITY weston-size          "1.3 MB">
+  <!ENTITY weston-buildsize     "50 MB">
   <!ENTITY weston-time          "0.5 SBU">
 ]>
 
@@ -75,42 +75,37 @@
       </listitem>
     </itemizedlist>
 
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Required patch:
-          <ulink url="&patch-root;/weston-&weston-version;-libinput_fixes-1.patch"/>
-        </para>
-      </listitem>
-    </itemizedlist>
-
     <bridgehead renderas="sect3">Weston Dependencies</bridgehead>
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="cairo"/> (with OpenGL surface enabled),
+      <xref linkend="libinput"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libxkbcommon"/>,
-      <xref linkend="glu"/>,
-      <xref linkend="mtdev"/>, and
+      <xref linkend="mesalib"/> (built with
+      <application>Wayland</application> support),
+      <xref linkend="mtdev"/> and
       <xref linkend="wayland"/>
     </para>
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libinput"/> (for the libinput backend),
-      <xref linkend="linux-pam"/> (for the <command>weston-launch</command> utility),
+      <xref linkend="glu"/> (to build the screensaver client),
+      <xref linkend="linux-pam"/> (to build the
+      <command>weston-launch</command> utility),
       <xref linkend="pango"/> (to build some demo clients),
       <xref linkend="systemd"/> (for Logind),
-      <xref linkend="xorg7-lib"/> (to build the X11 backend and X11 compatibility layer), and
-      <xref linkend="xorg-server"/> (with Xwayland, runtime - for X11 backwards compatibility)
+      <xref linkend="xorg7-lib"/> (to build the X11
+      backend and X11 compatibility layer) and
+      <xref linkend="xorg-server"/> (with Xwayland, runtime
+      - for X11 backwards compatibility)
     </para>
 
     <note>
       <para>
         The <command>weston-launch</command> utility is required if
-        you wish to run <application>Weston</application> as a
+        you want to run <application>Weston</application> as a
         non privileged user.
       </para>
     </note>
@@ -121,7 +116,7 @@
       <xref linkend="lcms2"/>,
       <xref linkend="libva"/> (for H.264 VAAPI video encoding),
       <xref linkend="libwebp"/>,
-      <ulink url="http://www.freerdp.com/">FreeRDP</ulink>, and
+      <ulink url="http://www.freerdp.com/">FreeRDP</ulink> and
       <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>
     </para>
 
@@ -138,17 +133,13 @@
       commands:
     </para>
 
-<screen><userinput>patch -Np1 -i ../weston-&weston-version;-libinput_fixes-1.patch &amp;&amp;
-sed -i "s:libinput &lt; 0.8.0::g" configure             &amp;&amp;
-./configure --prefix=/usr   \
+<screen><userinput>./configure --prefix=/usr   \
             --with-cairo=gl \
             --enable-demo-clients-install &amp;&amp;
 make</userinput></screen>
 
     <para>
-      To test the results, issue: <command>make -k check</command>.
-      <filename>xwayland-test.weston</filename> fails for unknown
-      reasons.
+      To test the results, issue: <command>make check</command>.
     </para>
 
     <para>
@@ -161,12 +152,6 @@ make</userinput></screen>
 
   <sect2 role="commands">
     <title>Command Explanations</title>
-
-    <para>
-      <command>sed -i "s:libinput &lt; 0.8.0::g" configure</command>:
-      Fixes building with <application>libinput</application> 0.8.0
-      and later.
-    </para>
 
     <para>
       <parameter>--with-cairo=gl</parameter>: This switch is used to
@@ -374,17 +359,18 @@ shell=desktop-shell.so</literal></screen>
           weston-cliptest, weston-dnd, weston-editor, weston-eventdemo,
           weston-flower, weston-fullscreen, weston-gears, weston-image,
           weston-info, weston-launch, weston-multi-resource,
-          weston-resizor, weston-scaler, weston-simple-damage,
-          weston-simple-egl, weston-simple-shm, weston-simple-touch,
-          weston-smoke, weston-stacking, weston-terminal, and
-          weston-transformed
+          weston-presentation-shm, weston-resizor, weston-scaler,
+          weston-simple-damage, weston-simple-egl, weston-simple-shm,
+          weston-simple-touch, weston-smoke, weston-stacking,
+          weston-terminal and weston-transformed
         </seg>
         <seg>
           None
         </seg>
         <seg>
           /usr/include/weston,
-          /usr/lib/weston, and
+          /usr/lib/weston,
+          /usr/share/wayland-sessions and
           /usr/share/weston
         </seg>
       </seglistitem>

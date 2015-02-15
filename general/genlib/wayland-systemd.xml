@@ -6,10 +6,10 @@
 
   <!ENTITY wayland-download-http "http://wayland.freedesktop.org/releases/wayland-&wayland-version;.tar.xz">
   <!ENTITY wayland-download-ftp  " ">
-  <!ENTITY wayland-md5sum        "feaa0754fe49931a3fe5aa98f7d1e0e9">
-  <!ENTITY wayland-size          "412 KB">
-  <!ENTITY wayland-buildsize     "12 MB">
-  <!ENTITY wayland-time          "0.1 SBU">
+  <!ENTITY wayland-md5sum        "6f46ac47c3a18c6503a40b5fa58a1066">
+  <!ENTITY wayland-size          "364 KB">
+  <!ENTITY wayland-buildsize     "15 MB">
+  <!ENTITY wayland-time          "0.2 SBU">
 ]>
 
 <sect1 id="wayland" xreflabel="Wayland-&wayland-version;">
@@ -80,9 +80,12 @@
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/>, (to build documentation)
-      <xref linkend="libxslt"/> and
-      <ulink url="https://fedorahosted.org/publican/">Publican</ulink>
+      <xref linkend="doxygen"/>,
+      <xref linkend="graphviz"/> and
+      <xref linkend="xmlto"/> (to build the API documentation) and
+      <xref linkend="DocBook"/>,
+      <xref linkend="docbook-xsl"/> and
+      <xref linkend="libxslt"/> (to build manual pages)
     </para>
 
     <para condition="html" role="usernotes">User Notes:
@@ -104,9 +107,7 @@
 make</userinput></screen>
 
     <para>
-      The testsuite needs to be run as the
-      <systemitem class="username">root</systemitem> user.
-      To test the results, issue: <command>make check</command>
+      To test the results, issue: <command>make check</command>.
     </para>
 
     <para>
@@ -126,7 +127,7 @@ make</userinput></screen>
     <para>
       <parameter>--disable-documentation</parameter>: This switch is used to
       disable building of the API documentation. Remove it if you have
-      installed <xref linkend="doxygen"/>.
+      installed optional dependencies.
     </para>
 
   </sect2>

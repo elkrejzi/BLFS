@@ -7,7 +7,7 @@
   <!ENTITY cups-filters-download-http
            "https://www.openprinting.org/download/cups-filters/cups-filters-&cups-filters-version;.tar.xz">
   <!ENTITY cups-filters-download-ftp  " ">
-  <!ENTITY cups-filters-md5sum        "1a48dbdf1fddcac4fcb89ff87f02ea35">
+  <!ENTITY cups-filters-md5sum        "20dea125408bfebd25a58a884a78a13c">
   <!ENTITY cups-filters-size          "1.3 MB">
   <!ENTITY cups-filters-buildsize     "57 MB">
   <!ENTITY cups-filters-time          "0.4 SBU">
