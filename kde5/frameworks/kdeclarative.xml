@@ -67,7 +67,8 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kio"/>
+      <xref linkend="kio"/> and
+      <xref linkend="libepoxy"/>
     </para>
 
     <para condition="html" role="usernotes">

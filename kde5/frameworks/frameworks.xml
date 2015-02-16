@@ -38,7 +38,6 @@ $Date: 2014-10-18 11:51:01 +0200 (Sat, 18 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kcoreaddons.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kdbusaddons.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kdnssd.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kglobalaccel.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kguiaddons.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ki18n.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kidletime.xml"/>
@@ -61,6 +60,7 @@ $Date: 2014-10-18 11:51:01 +0200 (Sat, 18 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kunitconversion.xml"/>
   <!-- -->
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kconfigwidgets.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kglobalaccel.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kpackage.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kservice.xml"/>
   <!-- -->

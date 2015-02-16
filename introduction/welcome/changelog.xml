@@ -50,6 +50,14 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Updated to kate-14.12.2, kmix-14.12.2 and konsole-14.12.2
+          - KDE Frameworks Based Applications Section.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to KDE Frameworks-5.7.0 and oxygen-icons-14.12.2
+          - KDE Plasma 5 Section.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Updated to wayland-1.7.0 and weston-1.7.0.</para>
         </listitem>
         <listitem>
