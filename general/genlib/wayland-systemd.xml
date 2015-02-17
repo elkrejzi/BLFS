@@ -85,7 +85,7 @@
       <xref linkend="xmlto"/> (to build the API documentation) and
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/> and
-      <xref linkend="libxslt"/> (to build manual pages)
+      <xref linkend="libxslt"/> (to build the manual pages)
     </para>
 
     <para condition="html" role="usernotes">User Notes:

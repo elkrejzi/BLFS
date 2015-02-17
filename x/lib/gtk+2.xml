@@ -6,10 +6,10 @@
 
   <!ENTITY gtk2-download-http "&gnome-download-http;/gtk+/2.24/gtk+-&gtk2-version;.tar.xz">
   <!ENTITY gtk2-download-ftp  "&gnome-download-ftp;/gtk+/2.24/gtk+-&gtk2-version;.tar.xz">
-  <!ENTITY gtk2-md5sum        "612350704dd3aacb95355a4981930c6f">
+  <!ENTITY gtk2-md5sum        "4610cc60ff96073b83dc7de254bdaf38">
   <!ENTITY gtk2-size          "13 MB">
-  <!ENTITY gtk2-buildsize     "351 MB (additional 1 MB for the tests)">
-  <!ENTITY gtk2-time          "2.5 SBU (additional 0.1 SBU for the tests)">
+  <!ENTITY gtk2-buildsize     "367 MB">
+  <!ENTITY gtk2-time          "2.3 SBU">
 ]>
 
 <sect1 id="gtk2" xreflabel="GTK+-&gtk2-version;">
@@ -89,6 +89,9 @@
     <para role="optional">
       <xref linkend="cups"/>,
       <xref linkend="docbook-utils"/>,
+      <xref linkend="DocBook"/>,
+      <xref linkend="docbook-xsl"/> and
+      <xref linkend="libxslt"/> (to build the manual pages),
       <xref linkend="gobject-introspection"/> and
       <xref linkend="gtk-doc"/>
     </para>
@@ -106,18 +109,14 @@
       commands:
     </para>
 
-<screen><userinput>sed -i 's#l \(gtk-.*\).sgml#&amp; -o \1#' docs/{faq,tutorial}/Makefile.in &amp;&amp;
-sed -i 's#.*@man_#man_#' docs/reference/gtk/Makefile.in               &amp;&amp;
-sed -i -e 's#pltcheck.sh#$(NULL)#g' gtk/Makefile.in                   &amp;&amp;
-./configure --prefix=/usr --sysconfdir=/etc                           &amp;&amp;
+<screen><userinput>sed -e "s#l \(gtk-.*\).sgml#&amp; -o \1#"       \
+    -i docs/{faq,tutorial}/Makefile.in      &amp;&amp;
+./configure --prefix=/usr --sysconfdir=/etc &amp;&amp;
 make</userinput></screen>
 
     <para>
-      To test the results, issue: <command>make check</command>. Note that you
-      must run the tests from a session with X Window Display capability (i.e.,
-      not a text-based terminal/console) as the tests attempt to open an X
-      window, and the tests can take an excessively long time. Using an X
-      Window, the tests should take less than 0.3 SBU.
+      To test the results, issue: <command>make check</command> from an
+      X terminal emulator.
     </para>
 
     <para>
@@ -143,8 +142,8 @@ make</userinput></screen>
     <title>Command Explanations</title>
 
     <para>
-      <command>sed -i 's#l \(gtk-.*\).sgml#&amp; -o \1#'
-      docs/{faq,tutorial}/Makefile.in</command>: If you have
+      <command>sed -e "s#l \(gtk-.*\).sgml#&amp; -o \1#"
+      -i docs/{faq,tutorial}/Makefile.in</command>: If you have
       <xref linkend="docbook-utils"/> installed (specifically, if configure
       finds <command>db2html</command>) then it will try to use it to rebuild
       some of its HTML documentation and fail due to bugs in some of the
@@ -152,22 +151,15 @@ make</userinput></screen>
       <filename>Makefile</filename>s.
     </para>
 
-    <para>
-      <command>sed -i 's#.*@man_#man_#' docs/reference/gtk/Makefile.in</command>:
-      This <command>sed</command> fixes one of the <filename>Makefile</filename>s
-      so it installs the man pages for <command>gtk-builder-convert</command>,
-      <command>gtk-query-immodules-2.0</command>, and
-      <command>gtk-update-icon-cache</command>.
-    </para>
-
-    <para>
-      <command>sed -i -e 's#pltcheck.sh#$(NULL)#g' gtk/Makefile.in</command>:
-      This <command>sed</command> disables one test known to fail. 
-      Not necessary, if not running the tests.
-    </para>
-
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/gtk-doc-rebuild.xml"/>
+
+    <para>
+      <option>--enable-man</option>: Use this switch if you have installed
+      <xref linkend="DocBook"/>, <xref linkend="docbook-xsl"/> and
+      <xref linkend="libxslt"/> and want to build and install manual pages
+      for the programs provided by this package.
+    </para>
 
   </sect2>
 
@@ -253,8 +245,7 @@ EOF</userinput></screen>
           gtk-update-icon-cache
         </seg>
         <seg>
-          libgailutil.so, libgdk-x11-2.0.so, libgtk-x11-2.0.so,
-          and several under /usr/lib/gtk-2.0 subdirectories
+          libgailutil.so, libgdk-x11-2.0.so, and libgtk-x11-2.0.so
         </seg>
         <seg>
           /etc/gtk-2.0,

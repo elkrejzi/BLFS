@@ -35,7 +35,7 @@
 <!ENTITY Jinja2-version               "2.7.3">
 <!ENTITY Mako-version                 "1.0.1">
 <!ENTITY MarkupSafe-version           "0.23">
-<!ENTITY setuptools-version           "12.0.5">
+<!ENTITY setuptools-version           "12.2">
 <!ENTITY PyYAML-version               "3.11">
 
 <!ENTITY % kde5-package-entities SYSTEM      "kde5/kde5.ent">

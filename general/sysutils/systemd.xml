@@ -145,11 +145,11 @@
       </para>
     </note>
 
-    <bridgehead renderas="sect4">Optional (for rebuilding manual pages)</bridgehead>
+    <bridgehead renderas="sect4">Optional (to rebuild the manual pages)</bridgehead>
     <para role="optional">
-      <xref linkend="libxslt"/>,
-      <xref linkend="DocBook"/>, and
-      <xref linkend="docbook-xsl"/>
+      <xref linkend="DocBook"/>,
+      <xref linkend="docbook-xsl"/> and
+      <xref linkend="libxslt"/>
     </para>
 
     <para condition="html" role="usernotes">User Notes:
