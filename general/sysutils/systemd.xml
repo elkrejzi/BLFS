@@ -108,21 +108,25 @@
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="cacerts"/>,
       <xref linkend="curl"/>,
       <xref linkend="elfutils"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="gtk-doc"/>,
+      <xref linkend="iptables"/>,
       <xref linkend="libgcrypt"/>,
       <xref linkend="libidn"/>,
       <xref linkend="libxkbcommon"/>,
       <xref linkend="python3"/>,
       <xref linkend="valgrind"/>,
       <ulink url="https://code.google.com/p/cryptsetup/">cryptsetup</ulink>,
+      <ulink url="https://www.kernel.org/pub/linux/utils/kernel/kexec/">kexec-tools</ulink>,
       <ulink url="https://www.gnu.org/software/libmicrohttpd/">libmicrohttpd</ulink>,
       <ulink url="http://fukuchi.org/works/qrencode/">libqrencode</ulink>,
       <ulink url="http://sourceforge.net/projects/libseccomp/">libseccomp</ulink>,
       <ulink url="http://lxml.de/">lxml</ulink> (Python Module),
-      <ulink url="https://code.google.com/p/lz4/">lz4</ulink>, and
+      <ulink url="https://code.google.com/p/lz4/">lz4</ulink>,
+      <ulink url="&sourceforge-repo;/linuxquota/">quota-tools</ulink> and
       <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
     </para>
 
