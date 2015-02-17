@@ -8,9 +8,9 @@
            "&gnome-download-http;/gnome-font-viewer/&gnome-minor14;/gnome-font-viewer-&gnome-font-viewer-version;.tar.xz">
   <!ENTITY gnome-font-viewer-download-ftp
            "&gnome-download-ftp;/gnome-font-viewer/&gnome-minor14;/gnome-font-viewer-&gnome-font-viewer-version;.tar.xz">
-  <!ENTITY gnome-font-viewer-md5sum        "0f1253fbe57027478f895eba819db38d">
+  <!ENTITY gnome-font-viewer-md5sum        "0e20f5e691b1556c9adf33604cb51163">
   <!ENTITY gnome-font-viewer-size          "296 KB">
-  <!ENTITY gnome-font-viewer-buildsize     "6.0 MB">
+  <!ENTITY gnome-font-viewer-buildsize     "6.1 MB">
   <!ENTITY gnome-font-viewer-time          "less than 0.1 SBU">
 ]>
 
