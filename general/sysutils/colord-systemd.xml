@@ -7,10 +7,10 @@
   <!ENTITY colord-download-http
            "http://www.freedesktop.org/software/colord/releases/colord-&colord-version;.tar.xz">
   <!ENTITY colord-download-ftp  " ">
-  <!ENTITY colord-md5sum        "f663cb211d1d338b246daf02ed670910">
+  <!ENTITY colord-md5sum        "57652634e4d13c45b7dacf658820d3fb">
   <!ENTITY colord-size          "1.2 MB">
   <!ENTITY colord-buildsize     "36 MB">
-  <!ENTITY colord-time          "0.5 SBU">
+  <!ENTITY colord-time          "0.4 SBU">
 ]>
 
 <sect1 id="colord" xreflabel="Colord-&colord-version;">
@@ -37,7 +37,7 @@
       and use when there are no users logged in.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -96,13 +96,13 @@
     <para role="optional">
       <xref linkend="colord-gtk"/> and
       <xref linkend="gnome-desktop"/>
-      (To build the example tools),
+      (required to build the example tools),
       <xref linkend="docbook-utils"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="libxslt"/>,
-      <xref linkend="sane"/>, and
-      <xref linkend="valgrind"/> (required for the tests)
-      <ulink url="http://www.argyllcms.com/">ArgyllCMS</ulink>
+      <xref linkend="sane"/>,
+      <xref linkend="valgrind"/> (required for the tests),
+      <ulink url="http://www.argyllcms.com/">ArgyllCMS</ulink> and
       <ulink url="http://bash-completion.alioth.debian.org/">Bash Completion</ulink>
     </para>
 

@@ -55,7 +55,7 @@
       required.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -124,7 +124,9 @@
       commands:
     </para>
 
-<screen><userinput>./configure --prefix=/usr --sysconfdir=/etc --disable-static &amp;&amp;
+<screen><userinput>./configure --prefix=/usr     \
+            --sysconfdir=/etc \
+            --disable-static  &amp;&amp;
 make</userinput></screen>
 
     <para>

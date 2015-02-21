@@ -38,7 +38,7 @@
     library used to enforce strong passwords by comparing user selected
     passwords to words in chosen word lists.</para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -167,8 +167,8 @@ create-cracklib-dict     /usr/share/dict/cracklib-words \
   <sect2 role="commands">
     <title>Command Explanations</title>
 
-    <para><command>sed -i '/skipping/d' util/packer.c</command>:
-    Remove a meaningless warning.</para>
+    <para><command>sed -i '/skipping/d' util/packer.c</command>: This sed
+    removes a meaningless warning.</para>
 
     <para><parameter>--with-default-dict=/lib/cracklib/pw_dict</parameter>:
     This parameter forces the installation of the

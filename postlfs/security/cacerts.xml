@@ -30,7 +30,7 @@
   can also be used by other applications either directly of indirectly through
   <application>openssl</application>.</para>
 
-  &lfs76_checked;
+  &lfs77_checked;
 
   <indexterm zone="cacerts">
     <primary sortas="a-cacerts">Certificate Authority Certificates</primary>
@@ -65,13 +65,17 @@
     <bridgehead renderas="sect3">Certificate Authority Certificates Dependencies</bridgehead>
 
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="openssl"/></para>
+    <para role="required">
+      <xref linkend="openssl"/>
+    </para>
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="wget"/></para>
+    <para role="recommended">
+      <xref linkend="wget"/>
+    </para>
 
     <para condition="html" role="usernotes">User Notes:
-    <ulink url='&blfs-wiki;/cacerts'/></para>
+    <ulink url="&blfs-wiki;/cacerts"/></para>
   </sect2>
 
   <sect2 role="installation">
@@ -328,7 +332,7 @@ unset SSLDIR</userinput></screen>
 
    <para>Finally, clean up the current directory:</para>
 
-<screen><userinput>rm -r certs BLFS-ca-bundle*</userinput></screen>
+<screen><userinput>rm -rfv certs BLFS-ca-bundle*</userinput></screen>
 
    <para>After installing or updating certificates, if OpenJDK is installed, 
    update the certificates for Java using the procedures at <xref linkend='ojdk-certs'/>.</para>

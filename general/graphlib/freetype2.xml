@@ -5,7 +5,8 @@
   %general-entities;
 
   <!ENTITY freetype2-download-http "&sourceforge-repo;/freetype/freetype-&freetype2-version;.tar.bz2">
-  <!ENTITY freetype2-download-ftp  "&gentoo-ftp-repo;/freetype-&freetype2-version;.tar.bz2">
+  <!-- <!ENTITY freetype2-download-ftp  "&gentoo-ftp-repo;/freetype-&freetype2-version;.tar.bz2"> -->
+  <!ENTITY freetype2-download-ftp  " ">
   <!ENTITY freetype2-md5sum        "2a7a314927011d5030903179cf183be0">
   <!ENTITY freetype2-size          "1.7 MB">
   <!ENTITY freetype2-buildsize     "27 MB (includes installing additional documentation)">
@@ -13,7 +14,8 @@
 
   <!ENTITY freetype2-doc-version   "2.5.5">
   <!ENTITY freetype2-doc-download-http "&sourceforge-repo;/freetype/freetype-doc-&freetype2-doc-version;.tar.bz2">
-  <!ENTITY freetype2-doc-download-ftp  "&gentoo-ftp-repo;/freetype-doc-&freetype2-doc-version;.tar.bz2">
+  <!-- <!ENTITY freetype2-doc-download-ftp  "&gentoo-ftp-repo;/freetype-doc-&freetype2-doc-version;.tar.bz2"> -->
+  <!ENTITY freetype2-doc-download-ftp  " ">
   <!ENTITY freetype2-doc-md5sum        "6ffe7865943b3dfd6d04546ab7776a8f">
   <!ENTITY freetype2-doc-size          "108 KB">
 ]>
@@ -41,7 +43,7 @@
       <application>TrueType</application> fonts.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -50,11 +52,11 @@
           Download (HTTP): <ulink url="&freetype2-download-http;"/>
         </para>
       </listitem>
-<!--      <listitem>
+      <listitem>
         <para>
           Download (FTP): <ulink url="&freetype2-download-ftp;"/>
         </para>
-      </listitem> -->
+      </listitem>
       <listitem>
         <para>
           Download MD5 sum: &freetype2-md5sum;
@@ -85,11 +87,11 @@
           Download (HTTP): <ulink url="&freetype2-doc-download-http;"/>
         </para>
       </listitem>
-<!--      <listitem>
+      <listitem>
         <para>
           Download (FTP): <ulink url="&freetype2-doc-download-ftp;"/>
         </para>
-      </listitem> -->
+      </listitem>
       <listitem>
         <para>
           Download MD5 sum: &freetype2-doc-md5sum;

@@ -39,7 +39,7 @@
       network.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -211,7 +211,7 @@
     </para>
 
 <screen><userinput>sed "s:&lt; 56:&lt; 57:g" -i configure &amp;&amp;
-./configure --prefix=/usr              &amp;&amp;
+./configure --prefix=/usr        &amp;&amp;
 make</userinput></screen>
 
     <para>

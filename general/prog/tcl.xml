@@ -161,7 +161,7 @@ unset SRCDIR</userinput></screen>
 
 <screen role="root"><userinput>make install &amp;&amp;
 make install-private-headers &amp;&amp;
-ln -v -sf tclsh&tcl-ver; /usr/bin/tclsh &amp;&amp;
+ln -sfv tclsh&tcl-ver; /usr/bin/tclsh &amp;&amp;
 chmod -v 755 /usr/lib/libtcl&tcl-ver;.so</userinput></screen>
 
     <para>

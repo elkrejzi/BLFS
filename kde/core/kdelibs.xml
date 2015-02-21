@@ -61,6 +61,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="attica"/>,
+      <xref linkend="automoc4"/>,
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
       <xref linkend="giflib"/>,

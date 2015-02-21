@@ -77,7 +77,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gnome-desktop"/>,
-      <xref linkend="geoclue"/>,
+      <xref linkend="geoclue2"/>,
       <xref linkend="geocode-glib"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="libgweather"/>, and

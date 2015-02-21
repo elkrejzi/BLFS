@@ -8,8 +8,8 @@
   <!ENTITY mariadb-download-ftp  "ftp://mirrors.fe.up.pt/pub/mariadb/mariadb-&mariadb-version;/source/mariadb-&mariadb-version;.tar.gz">
   <!ENTITY mariadb-md5sum        "7b1a197ea5d4027833a3a2ed26fc4cae">
   <!ENTITY mariadb-size          "54 MB">
-  <!ENTITY mariadb-buildsize     "1.4 GB (additional 3 MB for the tests)">
-  <!ENTITY mariadb-time          "3.6 SBU (using parallelism=4) (additional 0.4 SBU for the tests)">
+  <!ENTITY mariadb-buildsize     "1.4 GB">
+  <!ENTITY mariadb-time          "10.5 SBU">
 ]>
 
 <sect1 id="mariadb" xreflabel="MariaDB-&mariadb-version;">
@@ -35,7 +35,7 @@
       database management system.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -400,20 +400,18 @@ mysqld_safe --user=mysql 2&gt;&amp;1 &gt;/dev/null &amp;</userinput></screen>
           mysqlbug, mysqlcheck, mysqld, mysqld_multi, mysqld_safe, mysqldump,
           mysqldumpslow, mysqlhotcopy, mysqlimport, mysqlshow, mysqlslap,
           mysqltest, mysqltest_embedded, mytop, perror, replace,
-          resolve_stack_dump, and resolveip
+          resolve_stack_dump and resolveip
         </seg>
         <seg>
-          libmysqlclient.{so,a},
-          libmysqlclient_r.{so,a} (symbolic links to libmysqlclient.{so,a}),
-          libmysqld.{so,a}, libmysqlservices.a,
-          and several under /usr/lib/mysql/plugin/
+          libmysqlclient.{so,a}, libmysqlclient_r.{so,a},
+          libmysqld.{so,a} and libmysqlservices.a
         </seg>
         <seg>
           /etc/mysql,
           /srv/mysql,
           /usr/include/mysql,
           /usr/lib/mysql,
-          /usr/share/doc/mariadb-&mariadb-version;, and
+          /usr/share/doc/mariadb-&mariadb-version; and
           /usr/share/mysql
         </seg>
       </seglistitem>

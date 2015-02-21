@@ -39,7 +39,7 @@
       OpenPGP and S/MIME.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -140,7 +140,7 @@ makeinfo --plaintext       -o doc/gnupg.txt           doc/gnupg.texi</userinput>
       Now, as the <systemitem class="username">root</systemitem> user:
     </para>
 
-<screen role="root"><userinput>make install               &amp;&amp;
+<screen role="root"><userinput>make install &amp;&amp;
 
 for f in gpg gpgv ; do
 ln -sfv ${f}2   /usr/bin/${f} &amp;&amp;

@@ -124,7 +124,7 @@
     <para>The <application>Xorg</application> libraries provide library
     routines that are used within all X Window applications.</para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -221,7 +221,7 @@ md5sum -c ../lib-&xorg-version;.md5</userinput></screen>
     <title>Installation of Xorg Libraries</title>
 
 &as_root;
-
+<!--
     <para>Some libraries come with a test suite. If you wish to execute them,
     either comment out the <command>rm -rf ...</command> below, so that, after
     all libraries are installed, you can come back to the corresponding
@@ -236,7 +236,7 @@ md5sum -c ../lib-&xorg-version;.md5</userinput></screen>
     <application>libX11</application>, <application>libXt</application> and
     <application>libxshmfence</application> are distributed with working test
     suites.</para>
-
+-->
     <para>First, start a subshell that will exit on error:</para>
 
 <screen><userinput>bash -e</userinput></screen>

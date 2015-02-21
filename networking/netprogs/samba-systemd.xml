@@ -9,7 +9,7 @@
   <!ENTITY samba-md5sum        "9c3bc2fb98fd3bac9945b911c71fdc66">
   <!ENTITY samba-size          "19 MB">
   <!ENTITY samba-buildsize     "416 MB (additional 397 MB for the quicktest, reputedly up to 500 MB additional for all tests)">
-  <!ENTITY samba-time          "2.7 SBU, using parallelism=4 (additional 4.6 SBU for the quicktest, reputedly up to 110 SBU to run all tests)">
+  <!ENTITY samba-time          "10 SBU (additional 4.6 SBU for the quicktest, reputedly up to 110 SBU to run all tests)">
 ]>
 
 <sect1 id="samba" xreflabel="Samba-&samba-version;">
@@ -36,7 +36,7 @@
     Active Directory domain and a NetBIOS (rfc1001/1002) nameserver (which
     among other things provides LAN browsing support).</para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -151,27 +151,27 @@ make</userinput></screen>
 
 <screen role="root"><userinput>make install &amp;&amp;
 
-mv -v /usr/lib/libnss_win{s,bind}.so*   /lib                       &amp;&amp;
-ln -v -sf ../../lib/libnss_winbind.so.2 /usr/lib/libnss_winbind.so &amp;&amp;
-ln -v -sf ../../lib/libnss_wins.so.2    /usr/lib/libnss_wins.so    &amp;&amp;
+mv -v /usr/lib/libnss_win{s,bind}.so* /lib                       &amp;&amp;
+ln -sfv ../../lib/libnss_winbind.so.2 /usr/lib/libnss_winbind.so &amp;&amp;
+ln -sfv ../../lib/libnss_wins.so.2    /usr/lib/libnss_wins.so    &amp;&amp;
 
-install -v -m644    examples/smb.conf.default /etc/samba &amp;&amp;
+install -v -m644  examples/smb.conf.default /etc/samba &amp;&amp;
 
-mkdir -pv /etc/openldap/schema                        &amp;&amp;
+install -v -dm755 /etc/openldap/schema                 &amp;&amp;
 
-install -v -m644    examples/LDAP/README              \
-                    /etc/openldap/schema/README.LDAP  &amp;&amp;
+install -v -m644  examples/LDAP/README                 \
+                  /etc/openldap/schema/README.LDAP     &amp;&amp;
                     
-install -v -m644    examples/LDAP/samba*              \
-                    /etc/openldap/schema              &amp;&amp;
+install -v -m644  examples/LDAP/samba*                 \
+                  /etc/openldap/schema                 &amp;&amp;
                     
-install -v -m755    examples/LDAP/{get*,ol*} \
-                    /etc/openldap/schema              &amp;&amp;
+install -v -m755  examples/LDAP/{get*,ol*}             \
+                  /etc/openldap/schema                 &amp;&amp;
 
-install -v -m755 -d /usr/share/doc/samba-&samba-version; &amp;&amp;
+install -v -dm755 /usr/share/doc/samba-&samba-version;          &amp;&amp;
 
-install -v -m644    lib/ntdb/doc/design.pdf \
-                    /usr/share/doc/samba-&samba-version;</userinput></screen>
+install -v -m644  lib/ntdb/doc/design.pdf \
+                  /usr/share/doc/samba-&samba-version;</userinput></screen>
 
   </sect2>
 
@@ -235,7 +235,7 @@ install -v -m644    lib/ntdb/doc/design.pdf \
       following command as the <systemitem class="username">root</systemitem>
       user:</para>
 
-<screen role="root"><userinput>ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</userinput></screen>
+<screen role="root"><userinput>ln -sfv /usr/bin/smbspool /usr/lib/cups/backend/smb</userinput></screen>
 
     </sect3>
 

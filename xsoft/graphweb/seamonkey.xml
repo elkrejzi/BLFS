@@ -10,8 +10,8 @@
            "&mozilla-ftp;/seamonkey/releases/&seamonkey-version;/source/seamonkey-&seamonkey-version;.source.tar.bz2">
   <!ENTITY seamonkey-md5sum        "88a90d29af5f05e12a9c91e4c4d57c6e">
   <!ENTITY seamonkey-size          "180 MB">
-  <!ENTITY seamonkey-buildsize     "4.1 GB (77 MB installed)">
-  <!ENTITY seamonkey-time          "17 SBU (using parallelism=4)">
+  <!ENTITY seamonkey-buildsize     "5.7 GB (189 MB installed)">
+  <!ENTITY seamonkey-time          "37 SBU">
 ]>
 
 <sect1 id="seamonkey" xreflabel="SeaMonkey-&seamonkey-version;">
@@ -276,10 +276,9 @@ EOF</userinput></screen>
       commands as the <systemitem class="username">root</systemitem> user:
     </para>
 
-<screen role="root"><userinput>
-make -f client.mk install INSTALL_SDK=       &amp;&amp;
-chown -r root:root /usr/lib/seamonkey-&seamonkey-version; &amp;&amp;
-cp -v moz-build-dir/dist/man/man1/seamonkey.1 /usr/share/man/man1</userinput></screen>
+<screen role="root"><userinput>make -f client.mk install INSTALL_SDK=       &amp;&amp;
+chown -R root:root /usr/lib/seamonkey-&seamonkey-version; &amp;&amp;
+install -v -m644 moz-build-dir/dist/man/man1/seamonkey.1 /usr/share/man/man1</userinput></screen>
 
     <para>
       The above instruction just installs the parts you need to run
@@ -361,7 +360,7 @@ cp -v moz-build-dir/dist/man/man1/seamonkey.1 /usr/share/man/man1</userinput></s
       <systemitem class="username">root</systemitem> user:
     </para>
 
-<screen role="root"><userinput>mkdir -pv /usr/share/{applications,pixmaps}              &amp;&amp;
+<screen role="root"><userinput>mkdir -pv /usr/share/{applications,pixmaps} &amp;&amp;
 
 cat &gt; /usr/share/applications/seamonkey.desktop &lt;&lt; "EOF" &amp;&amp;
 [Desktop Entry]

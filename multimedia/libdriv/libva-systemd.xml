@@ -111,7 +111,9 @@
 
     <bridgehead renderas="sect4">Runtime Dependency</bridgehead>
     <para role="optional">
-      At least one of <xref linkend="libva-drivers"/>
+      At least one of <xref linkend="libva-drivers"/> or the
+      driver shipped within <xref linkend="mesalib"/> for the
+      Radeon hardware.
     </para>
 
     <para condition="html" role="usernotes">

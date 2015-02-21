@@ -143,7 +143,7 @@
     <para>The <application>Xorg</application> font packages provide
     needed fonts to the <application>Xorg</application> applications.</para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -261,17 +261,18 @@ done</userinput></screen>
 
 <screen><userinput>exit</userinput></screen>
 
-    <para>When all of the fonts have been installed, the system must be
+    <para>When all of the fonts have been installed in a prefix other than
+    <filename class="directory">/usr</filename>, the system must be
     configured so that <application>Fontconfig</application> can find the
     TrueType fonts since they are outside of the default search path of
-    <filename class="directory">/usr/share/fonts</filename>.  Make symlinks
+    <filename class="directory">/usr/share/fonts</filename>. Make symlinks
     to the <application>Xorg</application> TrueType font directories by
     running the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 
-<screen role="root"><userinput>install -v -d -m755 /usr/share/fonts                               &amp;&amp;
-ln -svfn $XORG_PREFIX/share/fonts/X11/OTF /usr/share/fonts/X11-OTF &amp;&amp;
-ln -svfn $XORG_PREFIX/share/fonts/X11/TTF /usr/share/fonts/X11-TTF</userinput></screen>
+<screen role="root"><userinput>install -v -dm755 /usr/share/fonts                                &amp;&amp;
+ln -sfv $XORG_PREFIX/share/fonts/X11/OTF /usr/share/fonts/X11-OTF &amp;&amp;
+ln -sfv $XORG_PREFIX/share/fonts/X11/TTF /usr/share/fonts/X11-TTF</userinput></screen>
 
   </sect2>
 

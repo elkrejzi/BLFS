@@ -1,12 +1,12 @@
 <!-- $LastChangedBy: krejzi $ $Date: 2014-11-01 12:26:04 +0100 (Sat, 01 Nov 2014) $ -->
 
-<!ENTITY day          "17">                   <!-- Always 2 digits -->
+<!ENTITY day          "21">                   <!-- Always 2 digits -->
 <!ENTITY month        "02">                   <!-- Always 2 digits -->
 <!ENTITY year         "2015">
 <!ENTITY copyrightdate "2001-&year;">
 <!ENTITY copyholder   "The BLFS systemd Development Team">
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "February 17th, &year;">
+<!ENTITY releasedate  "February 21st, &year;">
 <!ENTITY pubdate      "&year;-&month;-&day;"> <!-- metadata req. by TLDP -->
 <!ENTITY blfs-version "systemd">                  <!-- svn|[release #] -->
 <!ENTITY lfs-version  "systemd">          <!-- x.y|development] -->
@@ -82,6 +82,10 @@
                               properly using an LFS-7.6 systemd platform.</para>">
 <!ENTITY lfs76_built          "<para>This package is known to build using an LFS
                               7.6 systemd platform but has not been tested.</para>">
+<!ENTITY lfs77_checked        "<para>This package is known to build and work
+                              properly using an LFS-7.7 systemd platform.</para>">
+<!ENTITY lfs77_built          "<para>This package is known to build using an LFS
+                              7.7 systemd platform but has not been tested.</para>">
 
 <!-- usage: <para>&lfssvn_checked;ccyymmdd&lfssvn_checked2;</para> -->
 <!ENTITY lfssvn_checked       "This package is known to build and work properly

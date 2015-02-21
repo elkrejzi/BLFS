@@ -34,7 +34,7 @@
       source implementation of the Lightweight Directory Access Protocol.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -201,9 +201,9 @@ chown -v root:ldap /etc/openldap/{slapd.{conf,ldif},DB_CONFIG.example} &amp;&amp
 install -v -dm700 -o ldap -g ldap /etc/openldap/slapd.d                &amp;&amp;
 
 install -v -dm755  /usr/share/doc/openldap-&openldap-version; &amp;&amp;
-cp -vfr doc/drafts /usr/share/doc/openldap-&openldap-version; &amp;&amp;
-cp -vfr doc/rfc    /usr/share/doc/openldap-&openldap-version; &amp;&amp;
-cp -vfr doc/guide  /usr/share/doc/openldap-&openldap-version;</userinput></screen>
+cp -rfv doc/drafts /usr/share/doc/openldap-&openldap-version; &amp;&amp;
+cp -rfv doc/rfc    /usr/share/doc/openldap-&openldap-version; &amp;&amp;
+cp -rfv doc/guide  /usr/share/doc/openldap-&openldap-version;</userinput></screen>
 
     <para>
       Having slapd configuration files and ldap databases in /var/lib/openldap

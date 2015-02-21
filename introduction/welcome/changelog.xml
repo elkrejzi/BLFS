@@ -44,11 +44,21 @@
 
 -->
     <listitem>
-      <para>February 17th, 2015</para>
+      <para>February 21st, 2015</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+        <listitem>
+          <para>[krejzi] - Updated to colord-1.2.9, MesaLib-10.4.5 and
+          x264-20141218-2245.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>February 17th, 2015</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Rebranded the book into BLFS systemd once again.
           </para>

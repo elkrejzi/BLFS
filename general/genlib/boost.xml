@@ -36,7 +36,7 @@
       expressions and unit testing.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -94,11 +94,11 @@
       commands:
     </para>
 
-<screen><userinput>sed -e '1 i#ifndef Q_MOC_RUN' \
+<screen><userinput><!--sed -e '1 i#ifndef Q_MOC_RUN' \
     -e '$ a#endif'            \
     -i boost/type_traits/detail/has_binary_operator.hpp &amp;&amp;
 
-./bootstrap.sh --prefix=/usr &amp;&amp;
+-->./bootstrap.sh --prefix=/usr &amp;&amp;
 ./b2 stage threading=multi link=shared</userinput></screen>
 
     <para>
@@ -118,11 +118,13 @@
   <sect2 role="commands">
     <title>Command Explanations</title>
 
+<!--
     <para>
       <command>sed ... has_binary_operator.hpp</command>: This command
       fixes a header to overcome a problem with Qt's moc command.  It
       is necessary for building some KDE packages.
     </para>
+-->
 
     <para>
       <parameter>threading=multi</parameter>: This parameter ensures that
