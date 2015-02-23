@@ -45,7 +45,7 @@
     this system is that it can be used to bootstrap <xref linkend="openjdk"/>,
     without the need for downloading a Java binary.</para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <caution>
       <para>Using the instructions on this page will have the effect that
@@ -147,7 +147,6 @@ sed -i 's/\(install-data-am:\).*/\1/'             libffi/include/Makefile.in &am
 <!--
 patch -Np1 -i ../gcc-&gcc-version;-upstream_fixes-1.patch &amp;&amp;
 -->
-
 cp ../ecj-latest.jar ./ecj.jar &amp;&amp;
 
 mkdir ../gcc-build &amp;&amp;

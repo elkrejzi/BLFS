@@ -38,7 +38,7 @@
       standardized XML representation.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -154,7 +154,7 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          appstream-builder and appstream-util
+          appdata-validate, appstream-builder and appstream-util
         </seg>
         <seg>
           libappstream-builder.so and libappstream-glib.so.
@@ -173,6 +173,18 @@ make</userinput></screen>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
       <?dbfo list-presentation="list"?>
       <?dbhtml list-presentation="table"?>
+
+      <varlistentry id="appdata-validate">
+        <term><command>appdata-validate</command></term>
+        <listitem>
+          <para>
+            is used to validate AppData for formatting and style guidelines.
+          </para>
+          <indexterm zone="appstream-glib appdata-validate">
+            <primary sortas="b-appdata-validate">appdata-validate</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
 
       <varlistentry id="appstream-builder">
         <term><command>appstream-builder</command></term>

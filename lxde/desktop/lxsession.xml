@@ -34,7 +34,7 @@
       session manager for <application>LXDE</application>.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -77,17 +77,17 @@
       <xref linkend="dbus-glib"/>,
       <xref linkend="gtk2"/>,
       <xref linkend="libunique"/>,
-      <xref linkend="lsb-release"/> (runtime),
-      <xref linkend="polkit"/> and
-      <xref linkend="vala"/>
+      <xref linkend="lsb-release"/> (runtime) and
+      <xref linkend="polkit"/>
     </para>
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="libxslt"/> with
       <xref linkend="DocBook"/>,
-      <xref linkend="docbook-xsl"/> (to build man pages) and
-      <xref linkend="upower"/>
+      <xref linkend="docbook-xsl"/> (to build man pages),
+      <xref linkend="upower"/> and
+      <xref linkend="vala"/>
     </para>
 
     <para condition="html" role="usernotes">

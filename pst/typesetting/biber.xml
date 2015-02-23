@@ -5,7 +5,7 @@
   %general-entities;
 
   <!ENTITY biber-download-http   "http://sourceforge.net/projects/biblatex-biber/files/biblatex-biber/&biber-version;/biblatex-biber.tar.gz">
-  <!ENTITY biber-download-ftp    "">
+  <!ENTITY biber-download-ftp    " ">
   <!ENTITY biber-md5sum          "aa2857f3a4b0c2ab2dfe3c4f657cbb50">
   <!ENTITY biber-size            "2.0 MB">
   <!-- for 1.9/2.9a buildsize includes extra space used by biblatex -->
@@ -50,7 +50,7 @@
     version of <application>biblatex</application> than is in the
     <application>texlive</application> source.</para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -165,7 +165,7 @@ perl ./Build.PL &amp;&amp;
 
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 
-<screen role="root"><userinput>tar -xf biblatex-&biblatex-version;a.tds.tar.gz -C /opt/texlive/&texlive-year;/texmf-dist &amp;&amp;
+<screen role="root"><userinput>tar -xf ../biblatex-&biblatex-version;a.tds.tgz -C /opt/texlive/&texlive-year;/texmf-dist &amp;&amp;
 texhash &amp;&amp;
 ./Build install</userinput></screen>
 
@@ -180,7 +180,7 @@ texhash &amp;&amp;
     </para>
 
     <para>
-      <parameter>tar -xf biblatex-&biblatex-version;a.tds.tar.gz -C
+      <parameter>tar -xf ../biblatex-&biblatex-version;a.tds.tgz -C
       /opt/texlive/&texlive-year;/texmf-dist</parameter>:
       this installs the new <application>biblatex</application> files over the
       previous version.

@@ -30,12 +30,13 @@
     <title>Introduction to libfm-extra</title>
 
     <para>
-      The <application>libfm-extra</application> package contains a library and
-      other files required by <command>menu-cache-gen</command> libexec of
-      <xref linkend="menu-cache"/>.
+      The <application>libfm-extra</application> package contains a library
+      required by <xref linkend="menu-cache"/>. It is built from the same
+      source as <application>libfm</application> to satisfy a circular
+      dependency.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -106,7 +107,7 @@
 <screen><userinput>./configure --prefix=/usr     \
             --sysconfdir=/etc \
             --with-extra-only \
-            --with-gtk=no     \
+            --without-gtk     \
             --disable-static  &amp;&amp;
 make</userinput></screen>
 
@@ -126,13 +127,15 @@ make</userinput></screen>
     <title>Command Explanations</title>
 
     <para>
-      <parameter>--with-extra-only</parameter> Disable all components but
-      libfm-extra library.
+      <parameter>--with-extra-only</parameter>: This switch disables
+      all components but the libfm-extra library because of the
+      circular dependency.
     </para>
 
     <para>
-      <parameter>--with-gtk=no</parameter> <application>Gtk</application> is
-      not necessary for this package.
+      <parameter>--without-gtk</parameter>: This switch disables
+      building of the <application>GTK+</application> library which
+      is built and installed by another package later on.
     </para>
 
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"

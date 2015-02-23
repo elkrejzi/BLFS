@@ -33,7 +33,7 @@
     CD recording utilities. These are useful for burning a
     CD in disk-at-once mode.</para>
 
-  &lfs76_checked;
+  &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -115,7 +115,7 @@ make</userinput></screen>
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 
 <screen role="root"><userinput>make install &amp;&amp;
-install -v -m755 -d /usr/share/doc/cdrdao-&cdrdao-version; &amp;&amp;
+install -v -dm755 /usr/share/doc/cdrdao-&cdrdao-version; &amp;&amp;
 install -v -m644 README /usr/share/doc/cdrdao-&cdrdao-version;</userinput></screen>
 
   </sect2>

@@ -35,7 +35,7 @@
       technical drawing. Labels and equations can be typeset with LaTeX.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -85,7 +85,7 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gs"/>,
+      <xref linkend="gs"/> and
       <xref linkend="texlive"/>
     </para>
 
@@ -96,7 +96,7 @@
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://www.fftw.org/">FFTW</ulink>,
+      <ulink url="http://www.fftw.org/">FFTW</ulink> and
       <xref linkend="gsl"/>
     </para>
 
@@ -127,11 +127,12 @@
 
 <screen><userinput>export TEXARCH=$(uname -m | sed -e 's/i.86/i386/' -e 's/$/-linux/') &amp;&amp;
 patch -Np1 -i ../asymptote-&asymptote-version;-ghostscript_fix-1.patch &amp;&amp;
-./configure --prefix=/opt/texlive/&texlive-year; \
- --bindir=/opt/texlive/&texlive-year;/bin/$TEXARCH \
- --datarootdir=/opt/texlive/&texlive-year; \
- --libdir=/opt/texlive/&texlive-year;/texmf-dist \
- --mandir=/opt/texlive/&texlive-year;/texmf-dist/doc/man &amp;&amp;
+
+./configure --prefix=/opt/texlive/&texlive-year;              \
+            --bindir=/opt/texlive/&texlive-year;/bin/$TEXARCH \
+            --datarootdir=/opt/texlive/&texlive-year;         \
+            --libdir=/opt/texlive/&texlive-year;/texmf-dist   \
+            --mandir=/opt/texlive/&texlive-year;/texmf-dist/doc/man &amp;&amp;
 make</userinput></screen>
 
     <para>

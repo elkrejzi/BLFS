@@ -34,7 +34,7 @@
       to develop file managers providing some file management utilities.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -81,8 +81,8 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="libexif"/>,
-      <xref linkend="vala"/>, and
-      <xref linkend="lxmenu-data"/>
+      <xref linkend="lxmenu-data"/> and
+      <xref linkend="vala"/>
     </para>
 
     <bridgehead renderas="sect4">Optional</bridgehead>
@@ -106,7 +106,7 @@
       commands:
     </para>
 
-<screen><userinput>./configure --prefix=/usr \
+<screen><userinput>./configure --prefix=/usr     \
             --sysconfdir=/etc \
             --disable-static  &amp;&amp;
 make</userinput></screen>

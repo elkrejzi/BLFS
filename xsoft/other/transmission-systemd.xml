@@ -36,7 +36,7 @@
       bandwidth.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -161,8 +161,8 @@ popd</userinput></screen>
 
 <screen role="root"><userinput>make INSTALL_ROOT=/usr -C qt install &amp;&amp;
 
-install -m644 qt/transmission-qt.desktop /usr/share/applications/transmission-qt.desktop &amp;&amp;
-install -m644 qt/icons/transmission.png  /usr/share/pixmaps/transmission-qt.png</userinput></screen>
+install -v -m644 qt/transmission-qt.desktop /usr/share/applications/transmission-qt.desktop &amp;&amp;
+install -v -m644 qt/icons/transmission.png  /usr/share/pixmaps/transmission-qt.png</userinput></screen>
 
   </sect2>
 

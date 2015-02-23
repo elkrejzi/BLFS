@@ -39,7 +39,7 @@
     a target tree that executes various tasks. Each task is run by an object
     that implements a particular task interface.</para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -145,7 +145,7 @@ cp -v ../junit-&junit-version;.jar \
     <systemitem class="username">root</systemitem> user:</para>
 
 <screen role="root"><userinput>./build.sh -Ddist.dir=/opt/ant-&apache-ant-version; dist &amp;&amp;
-ln -v -sfn ant-&apache-ant-version; /opt/ant</userinput></screen>
+ln -sfv ant-&apache-ant-version; /opt/ant</userinput></screen>
 
   <note><para>Make sure the JAVA_HOME environment variable is set for the
   <systemitem class="username">root</systemitem> user.</para></note>
@@ -153,8 +153,8 @@ ln -v -sfn ant-&apache-ant-version; /opt/ant</userinput></screen>
     <para>Install the documentation as the
     <systemitem class="username">root</systemitem> user:</para>
 
-<screen role="root"><userinput>install -m755 -d /opt/ant-&apache-ant-version;/docs &amp;&amp;
-cp -Rv apache-ant-&apache-ant-version;/* /opt/ant-&apache-ant-version;/docs</userinput></screen>
+<screen role="root"><userinput>install -v -dm755 /opt/ant-&apache-ant-version;/docs &amp;&amp;
+cp -rv apache-ant-&apache-ant-version;/* /opt/ant-&apache-ant-version;/docs</userinput></screen>
 
   </sect2>
 
@@ -174,7 +174,7 @@ cp -Rv apache-ant-&apache-ant-version;/* /opt/ant-&apache-ant-version;/docs</use
     installs the package into
     <filename class='directory'>/opt/ant-&apache-ant-version;</filename>.</para>
 
-    <para><command>ln -v -sfn ant-&apache-ant-version; /opt/ant</command>: This
+    <para><command>ln -sfv ant-&apache-ant-version; /opt/ant</command>: This
     command is optional, and creates a convenience symlink.</para>
 
   </sect2>

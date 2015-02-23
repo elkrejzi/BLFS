@@ -57,7 +57,7 @@
        with a scripting language.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -146,8 +146,8 @@ make</userinput></screen>
     </para>
 
 <screen role="root"><userinput>make install &amp;&amp;
-install -v -m755 -d /usr/share/doc/swig-&swig-version; &amp;&amp;
-cp -v -R Doc/* /usr/share/doc/swig-&swig-version;</userinput></screen>
+install -v -dm755 /usr/share/doc/swig-&swig-version; &amp;&amp;
+cp -rv Doc/* /usr/share/doc/swig-&swig-version;</userinput></screen>
   </sect2>
 
   <!--Optional section-->

@@ -37,7 +37,7 @@
       test data, and test runners for running tests.
     </para>
 
-    &lfs76_checked; 
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -117,10 +117,10 @@ ant populate-dist</userinput></screen>
       <systemitem class="username">root</systemitem> user:
     </para>
     
-<screen role="root"><userinput>install -v -m755 -d /usr/share/{doc,java}/junit-&junit-version; &amp;&amp;
-chown -R root:root .                                 &amp;&amp;
+<screen role="root"><userinput>install -v -dm755 /usr/share/{doc,java}/junit-&junit-version; &amp;&amp;
+chown -R root:root .                               &amp;&amp;
 
-cp -v -R junit*/javadoc/*             /usr/share/doc/junit-&junit-version;  &amp;&amp;
+cp -rv junit*/javadoc/*               /usr/share/doc/junit-&junit-version;  &amp;&amp;
 cp -v junit*/junit*.jar               /usr/share/java/junit-&junit-version; &amp;&amp;
 cp -v hamcrest-&hamcrest-version;/hamcrest-core*.jar /usr/share/java/junit-&junit-version;</userinput></screen>
     

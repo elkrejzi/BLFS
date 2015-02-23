@@ -38,7 +38,7 @@
     C++ are installed in LFS, this page is either for upgrading C and C++,
     or for installing additional compilers.</para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <caution>
       <para>If you are upgrading <application>GCC</application> from any other
@@ -182,8 +182,8 @@ chown -v -R root:root \
     have been already created. If you do not have them on your system, issue
     as the <systemitem class="username">root</systemitem> user:</para>
 
-<screen role="root"><userinput>ln -v -sf ../usr/bin/cpp /lib &amp;&amp;
-ln -v -sf gcc /usr/bin/cc</userinput></screen>
+<screen role="root"><userinput>ln -sfv ../usr/bin/cpp /lib &amp;&amp;
+ln -sfv gcc /usr/bin/cc</userinput></screen>
 
   </sect2>
 

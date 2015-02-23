@@ -9,7 +9,7 @@
   <!ENTITY gst10-plugins-good-download-ftp  " ">
   <!ENTITY gst10-plugins-good-md5sum        "eaf1a6daf73749bc423feac301d60038">
   <!ENTITY gst10-plugins-good-size          "2.9 MB">
-  <!ENTITY gst10-plugins-good-buildsize     "0.1 GB (additional 10 MB to run the test suite)">
+  <!ENTITY gst10-plugins-good-buildsize     "118 MB (additional 10 MB to run the test suite)">
   <!ENTITY gst10-plugins-good-time          "1.1 SBU (additional 1 SBU to run the test suite)">
 ]>
 
@@ -38,7 +38,7 @@
       A wide range of video and audio decoders, encoders, and filters are included.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     &gst-compat;
 

@@ -4,7 +4,7 @@
   <!ENTITY % general-entities SYSTEM "../../general.ent">
   %general-entities;
 
-  <!ENTITY pciutils-download-http "https://ftp.kernel.org/pub/software/utils/pciutils/pciutils-&pciutils-version;.tar.xz">
+  <!ENTITY pciutils-download-http "https://www.kernel.org/pub/software/utils/pciutils/pciutils-&pciutils-version;.tar.xz">
   <!ENTITY pciutils-download-ftp  "ftp://ftp.kernel.org/pub/software/utils/pciutils/pciutils-&pciutils-version;.tar.xz">
   <!ENTITY pciutils-md5sum        "3c19adf32a8457983b71ff376ef7dafe">
   <!ENTITY pciutils-size          "300 KB">
@@ -35,7 +35,7 @@
       their status and setting their configuration registers.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">

@@ -39,7 +39,7 @@
       performance of some hardware (such as cooling fans).
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -113,8 +113,7 @@
       may be needed by Lm Sensors as a module:
     </para>
 
-<screen><literal>
-[*] Enable loadable module support  ---&gt;  [CONFIG_MODULES]
+<screen><literal>[*] Enable loadable module support  ---&gt;  [CONFIG_MODULES]
 
 Bus options (PCI etc.)  ---&gt;
   [*] PCI support                         [CONFIG_PCI]
@@ -166,9 +165,9 @@ make PREFIX=/usr        \
      BUILD_STATIC_LIB=0 \
      MANDIR=/usr/share/man install &amp;&amp;
 
-install -v -m755 -d /usr/share/doc/lm_sensors-&lm_sensors-version; &amp;&amp;
-cp -rv              README INSTALL doc/* \
-                    /usr/share/doc/lm_sensors-&lm_sensors-version;</userinput></screen>
+install -v -dm755 /usr/share/doc/lm_sensors-&lm_sensors-version; &amp;&amp;
+cp -rv            README INSTALL doc/* \
+                  /usr/share/doc/lm_sensors-&lm_sensors-version;</userinput></screen>
   </sect2>
 
   <sect2 role="commands">

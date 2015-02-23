@@ -34,7 +34,7 @@
       a set of default configuration for LXDE.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -78,14 +78,14 @@
       <xref linkend="lxpanel"/>,
       <xref linkend="lxsession"/>,
       <xref linkend="openbox"/>,
-      <xref linkend="pcmanfm"/>, and
+      <xref linkend="pcmanfm"/> and
       <xref linkend="systemd"/> (for Logind)
     </para>
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="desktop-file-utils"/>,
-      <xref linkend="hicolor-icon-theme"/>, and
+      <xref linkend="hicolor-icon-theme"/> and
       <xref linkend="shared-mime-info"/>
     </para>
 

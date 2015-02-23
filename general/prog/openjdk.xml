@@ -82,7 +82,7 @@ without changing the name of the tarball -->
       runtime environment to run <application>Java</application> programs.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <note>
       <para>
@@ -583,7 +583,7 @@ install -v -Dm644 javaws.png /usr/share/pixmaps/javaws.png</userinput></screen>
         user:
       </para>
 
-<screen role="root"><userinput>ln -v -nsf OpenJDK-&openjdk-version;-bin /opt/jdk</userinput></screen>
+<screen role="root"><userinput>ln -sfv OpenJDK-&openjdk-version;-bin /opt/jdk</userinput></screen>
 
       <para>The information below assumes your system is set up using the
       instructions found in <quote><xref

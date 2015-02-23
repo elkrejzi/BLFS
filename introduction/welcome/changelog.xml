@@ -44,11 +44,25 @@
 
 -->
     <listitem>
-      <para>February 21st, 2015</para>
+      <para>February 22nd, 2015</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+        <listitem>
+          <para>[krejzi] - Updated to ImageMagick-6.9.0-7,
+          php-5.6.6 and vino-3.14.2.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to caribou-0.4.17, grilo-0.2.12
+          and grilo-plugins-0.2.14.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>February 21st, 2015</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Updated to colord-1.2.9, MesaLib-10.4.5 and
           x264-20141218-2245.</para>

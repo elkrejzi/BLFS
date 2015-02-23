@@ -33,7 +33,7 @@
     <para>The <application>Fluxbox</application> package contains a window
     manager.</para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -65,7 +65,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="dbus"/> (runtime),
-      <xref linkend="fribidi"/>, and
+      <xref linkend="fribidi"/> and
       <xref linkend="imlib2"/> (if you wish to use other image formats in addition to XPM)
     </para>
 

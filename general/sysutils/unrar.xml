@@ -38,7 +38,7 @@
       Windows environment.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -87,7 +87,7 @@
       commands:
     </para>
 
-<screen><userinput>make -f makefile</userinput></screen>
+<screen><userinput>make</userinput></screen>
 
     <para>
       This package does not come with a test suite.

@@ -410,14 +410,15 @@ install -v -m644  lib/ntdb/doc/design.pdf \
         <option>guest account =</option> parameter in the
         <filename>/etc/samba/smb.conf</filename> file. If you utilize the
         <option>guest account =</option> parameter, ensure this user exists in
-        the <filename>/etc/passwd</filename> file. To use the default user,
+        the <filename>/etc/passwd</filename> file.<!-- To use the default user,
         issue the following commands as the
-        <systemitem class='username'>root</systemitem> user:</para>
+        <systemitem class='username'>root</systemitem> user:--></para>
 
+<!--
 <screen role="root"><userinput>groupadd -g 99 nogroup &amp;&amp;
 useradd -c "Unprivileged Nobody" -d /dev/null -g nogroup \
     -s /bin/false -u 99 nobody</userinput></screen>
-
+-->
         <para>
           To start the <application>Samba</application> daemons at boot,
           install the systemd units from the <xref linkend="bootscripts"/>
