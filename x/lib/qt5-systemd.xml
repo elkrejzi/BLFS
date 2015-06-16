@@ -11,8 +11,8 @@
   <!ENTITY qt5-download-ftp  " ">
   <!ENTITY qt5-md5sum        "21843b00ecde8956217faab391bc007b">
   <!ENTITY qt5-size          "279 MB">
-  <!ENTITY qt5-buildsize     "7.6 GB (270 MB installed)">
-  <!ENTITY qt5-time          "86 SBU (135 SBU with QtWebEngine)">
+  <!ENTITY qt5-buildsize     "6.7 GB (175 MB installed)">
+  <!ENTITY qt5-time          "84 SBU">
 ]>
 
 <sect1 id="qt5" xreflabel="Qt-&qt5-version;">
@@ -85,7 +85,7 @@
       <xref linkend="mesalib"/>,
       <xref linkend="xcb-util-image"/>,
       <xref linkend="xcb-util-keysyms"/>,
-      <xref linkend="xcb-util-renderutil"/>, and
+      <xref linkend="xcb-util-renderutil"/> and
       <xref linkend="xcb-util-wm"/>
     </para>
 
@@ -112,7 +112,7 @@
       <xref linkend="openssl"/>,
       <xref linkend="pcre"/>,
       <xref linkend="ruby"/> (required for QtWebKit),
-      <xref linkend="sqlite"/>, and
+      <xref linkend="sqlite"/> and
       <xref linkend="wayland"/> (<xref linkend="mesalib"/> must be built with
       <application>Wayland</application> support)
     </para>
@@ -128,7 +128,7 @@
       <xref linkend="pulseaudio"/>,
       <xref linkend="unixodbc"/>,
       <ulink url="http://www.directfb.org/">DirectFB</ulink>,
-      <ulink url="http://www.firebirdsql.org/">Firebird</ulink>, and
+      <ulink url="http://www.firebirdsql.org/">Firebird</ulink> and
       <ulink url="http://kcat.strangesoft.net/openal-releases/">OpenAL-Soft</ulink>
     </para>
 
@@ -203,7 +203,7 @@
       </para>
 
 <screen role="root"><userinput>mv /opt/qt{5,-&qt5-version;}
-ln -sfv qt-&qt5-version; /opt/qt5</userinput></screen>
+ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
 
       <para>
         Later on, you may want to install other versions of

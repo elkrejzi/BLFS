@@ -256,7 +256,7 @@
       get downloaded again:
     </para>
 
-<screen><userinput>install -dm755 external/tarballs &amp;&amp;
+<screen><userinput>install -v -dm755 external/tarballs &amp;&amp;
 
 ln -sfv ../../../libreoffice-dictionaries-&libreoffice-dlversion;.tar.xz external/tarballs/ &amp;&amp;
 ln -sfv ../../../libreoffice-help-&libreoffice-dlversion;.tar.xz external/tarballs/</userinput></screen>

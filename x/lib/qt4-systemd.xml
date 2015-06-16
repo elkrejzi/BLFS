@@ -192,7 +192,7 @@
       </para>
 
 <screen role="root"><userinput>mv /opt/qt{4,-&qt4-version;}
-ln -sfv qt-&qt4-version; /opt/qt4</userinput></screen>
+ln -sfnv qt-&qt4-version; /opt/qt4</userinput></screen>
 
       <para>
         Later on, you may want to install other versions of
@@ -293,6 +293,11 @@ ln -sfv qt-&qt4-version; /opt/qt4</userinput></screen>
 
 <screen><userinput>sed -e "/CONFIG -/ a\isEmpty(OUTPUT_DIR): OUTPUT_DIR = ../.." \
     -i src/3rdparty/webkit/Source/WebKit2/DerivedSources.pro  &amp;&amp;
+
+sed -e '/BOOST_TT/a pp.macros["BOOST_NEXT_PRIOR_HPP_INCLUDED"];' \
+    -i src/tools/moc/main.cpp &amp;&amp;
+sed -e '/BOOST_TT/a pp.macros["BOOST_LEXICAL_CAST_INCLUDED"];'   \
+    -i src/tools/moc/main.cpp &amp;&amp;
 
 ./configure -prefix         $QT4PREFIX                        \
             -sysconfdir     /etc/xdg                          \
@@ -475,9 +480,12 @@ unset file</userinput></screen>
     <title>Command Explanations</title>
 
     <para>
-      <command>sed -e ...</command>: This sed prevents the configure
-      script from writing to the root directory if building as
-      privileged user.
+      <command>sed -e ...</command>: The first sed prevents the
+      <command>configure</command> script from writing to the root
+      directory if building as privileged user. The second and
+      third sed fix the <command>moc</command> program to prevent
+      it from failing to parse files which include some of the
+      <application>Boost</application> headers.
     </para>
 
     <para>
