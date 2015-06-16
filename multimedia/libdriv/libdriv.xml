@@ -82,6 +82,7 @@ $Date: 2014-10-29 23:06:49 +0100 (Wed, 29 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="soundtouch.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="speex.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="taglib.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="v4l-utils.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="x264.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="xine-lib.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="xvid.xml"/>
