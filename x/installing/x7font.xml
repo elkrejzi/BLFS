@@ -271,8 +271,8 @@ done</userinput></screen>
     <systemitem class="username">root</systemitem> user:</para>
 
 <screen role="root"><userinput>install -v -dm755 /usr/share/fonts                                &amp;&amp;
-ln -sfv $XORG_PREFIX/share/fonts/X11/OTF /usr/share/fonts/X11-OTF &amp;&amp;
-ln -sfv $XORG_PREFIX/share/fonts/X11/TTF /usr/share/fonts/X11-TTF</userinput></screen>
+ln -sfnv $XORG_PREFIX/share/fonts/X11/OTF /usr/share/fonts/X11-OTF &amp;&amp;
+ln -sfnv $XORG_PREFIX/share/fonts/X11/TTF /usr/share/fonts/X11-TTF</userinput></screen>
 
   </sect2>
 
