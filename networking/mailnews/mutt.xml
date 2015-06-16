@@ -115,7 +115,7 @@
 
     <note>
       <para>This version of <application>Mutt</application> is a development
-      release.  The BLFS staff has determined that it provides a stable
+      release.  The BLFS editors have determined that it provides a stable
       program and fixes two issues in the current stable version of
       <application>Mutt</application>: a segmentation fault that occurs under
       certain conditions and a compilation problem when building with recent

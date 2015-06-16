@@ -119,10 +119,13 @@
     </para>
 
 <screen><userinput>patch -Np1 -i ../geoclue-&geoclue-version;-gpsd_fix-1.patch &amp;&amp;
+
 sed -i "s@ -Werror@@" configure &amp;&amp;
 sed -i "s@libnm_glib@libnm-glib@g" configure &amp;&amp;
+
 sed -i "s@geoclue/libgeoclue.la@&amp; -lgthread-2.0@g" \
        providers/skyhook/Makefile.in &amp;&amp;
+
 ./configure --prefix=/usr --disable-static &amp;&amp;
 make</userinput></screen>
 

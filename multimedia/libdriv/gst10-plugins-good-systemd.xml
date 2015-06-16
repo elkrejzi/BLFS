@@ -111,14 +111,14 @@
       <xref linkend="speex"/>,
       <xref linkend="taglib"/>,
       <xref linkend="systemd"/> (for GUdev),
+      <xref linkend="v4l-utils"/>,
       <xref linkend="valgrind"/>,
       <ulink url="http://jackaudio.org/">JACK</ulink>,
       <ulink url="http://caca.zoy.org/wiki/libcaca">libcaca</ulink>,
       <ulink url="http://sourceforge.net/projects/libraw1394/">libiec61883</ulink>,
       <ulink url="http://sourceforge.net/projects/libraw1394/">libraw1394</ulink>,
       <ulink url="http://www.icecast.org/download.php">libshout</ulink>,
-      <ulink url="http://code.entropywave.com/orc/">ORC</ulink>,
-      <ulink url="http://linuxtv.org/downloads/v4l-utils/">Video4Linux</ulink>, and
+      <ulink url="http://code.entropywave.com/orc/">ORC</ulink>, and
       <ulink url="http://wavpack.com/">WavPack</ulink>
     </para>
 

@@ -115,6 +115,7 @@
       <xref linkend="samba"/>,
       <xref linkend="speex"/>,
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>) for PDF and PS documentation,
+      <xref linkend="v4l-utils"/>,
       <xref linkend="xvid"/>,
       <ulink url="http://www.speech.cs.cmu.edu/flite/">Flite</ulink>,
       <ulink url="https://files.dyne.org/frei0r/snapshots/">frei0r</ulink>,
@@ -139,7 +140,6 @@
       <ulink url="http://diracvideo.org/">Schroedinger</ulink>,
       <ulink url="http://www.nongnu.org/texi2html">texi2html</ulink> (to build HTML documentation),
       <ulink url="http://www.twolame.org/">TwoLAME</ulink>,
-      <ulink url="http://linuxtv.org/downloads/v4l-utils/">Video4Linux</ulink>,
       <ulink url="http://sourceforge.net/projects/opencore-amr/files/vo-aacenc/">vo-aaenc</ulink>,
       <ulink url="http://sourceforge.net/projects/opencore-amr/files/vo-amrwbenc/">vo-amrwbenc</ulink> and
       <ulink url="https://bitbucket.org/multicoreware/x265/">x265</ulink>

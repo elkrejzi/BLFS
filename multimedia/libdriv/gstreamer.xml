@@ -156,7 +156,7 @@ install -v -m644 docs/design/*.txt \
                     /usr/share/doc/gstreamer-0.10/design &amp;&amp;
 
 if [ -d /usr/share/doc/gstreamer-0.10/faq/html ]; then
-    chown -rv root:root \
+    chown -Rv root:root \
         /usr/share/doc/gstreamer-0.10/*/html
 fi</userinput></screen>
 
