@@ -294,6 +294,18 @@ EOF</screen>
         </listitem>
       </varlistentry>
 
+      <varlistentry id="bluetoothctl">
+        <term><command>bluetoothctl</command></term>
+        <listitem>
+          <para>
+            is the interactive Bluetooth control program.
+          </para>
+          <indexterm zone="bluez bluetoothctl">
+            <primary sortas="b-bluetoothctl">bluetoothctl</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
       <varlistentry id="bluetoothd">
         <term><command>bluetoothd</command></term>
         <listitem>

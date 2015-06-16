@@ -100,7 +100,7 @@
     </para>
 
 <screen><userinput>mkdir build &amp;&amp;
-cd build    &amp;&amp;
+cd    build &amp;&amp;
 
 cmake -DCMAKE_INSTALL_PREFIX=/usr \
       -DCMAKE_BUILD_TYPE=Release  \
@@ -116,6 +116,7 @@ make</userinput></screen>
 
 <screen role="root"><userinput>make install &amp;&amp;
 cd ../doc &amp;&amp;
+
 for man in man/man?/*
 do
   install -v -Dm644 $man /usr/share/$man
