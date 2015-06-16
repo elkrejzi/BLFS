@@ -139,7 +139,7 @@ make</userinput></screen>
           mpg123, mpg123-id3dump, mpg123-strip, and out123
         </seg>
         <seg>
-          libmpg123.so and several under /usr/lib/mpg123/
+          libmpg123.so
         </seg>
         <seg>
           /usr/lib/mpg123

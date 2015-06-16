@@ -111,6 +111,7 @@
     -e '/LIBZ/s@ -Wl[^ ]*@@g'            \
     -e '/LIBBZ2/{s@^#@@;s@ -Wl[^ ]*@@g}' \
     -e '/BZLIB/s@0@1@'                   &amp;&amp;
+
 make makefiles                           &amp;&amp;
 make -C libcommon                        &amp;&amp;
 make -C libuxre                          &amp;&amp;
