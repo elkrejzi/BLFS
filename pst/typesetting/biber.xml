@@ -96,37 +96,38 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="perl-autovivification"/>
-      <xref linkend="perl-business-isbn"/>
-      <xref linkend="perl-business-ismn"/>
-      <xref linkend="perl-business-issn"/>
-      <xref linkend="perl-data-compare"/>
-      <xref linkend="perl-date-simple"/>
-      <xref linkend="perl-encode-eucjpascii"/>
-      <xref linkend="perl-encode-hanextra"/>
-      <xref linkend="perl-encode-jis2k"/>
-      <xref linkend="perl-file-slurp"/>
-      <xref linkend="perl-ipc-run3"/>
-      <xref linkend="perl-log-log4perl"/>
-      <xref linkend="perl-lwp"/>
-      <xref linkend="perl-list-allutils"/>
-      <xref linkend="perl-regexp-common"/>
-      <xref linkend="perl-text-bibtex"/>
+      <xref linkend="perl-autovivification"/>,
+      <xref linkend="perl-business-isbn"/>,
+      <xref linkend="perl-business-ismn"/>,
+      <xref linkend="perl-business-issn"/>,
+      <xref linkend="perl-data-compare"/>,
+      <xref linkend="perl-data-dump"/>,
+      <xref linkend="perl-date-simple"/>,
+      <xref linkend="perl-encode-eucjpascii"/>,
+      <xref linkend="perl-encode-hanextra"/>,
+      <xref linkend="perl-encode-jis2k"/>,
+      <xref linkend="perl-file-slurp"/>,
+      <xref linkend="perl-ipc-run3"/>,
+      <xref linkend="perl-log-log4perl"/>,
+      <xref linkend="perl-lwp"/>,
+      <xref linkend="perl-list-allutils"/>,
+      <xref linkend="perl-regexp-common"/>,
+      <xref linkend="perl-text-bibtex"/>,
       <!-- Collate.pm ships in perl, but is sometimes too old, and we like current
       versions.  Make the latest version required so that everyone is using the
       same version -->
-      <xref linkend="perl-unicode-collate"/>
-      <xref linkend="perl-unicode-linebreak"/>
-      <xref linkend="perl-xml-libxml-simple"/>
-      <xref linkend="perl-xml-libxslt"/>
+      <xref linkend="perl-unicode-collate"/>,
+      <xref linkend="perl-unicode-linebreak"/>,
+      <xref linkend="perl-xml-libxml-simple"/>,
+      <xref linkend="perl-xml-libxslt"/>,
       <xref linkend="perl-xml-writer"/> and
       <!-- biblatex requires that the texmf directories already exist -->
       <xref linkend="texlive"/>
     </para>
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="required">
-      <xref linkend="perl-readonly-xs"/>, and
+    <para role="recommended">
+      <xref linkend="perl-readonly-xs"/> and
       <xref linkend="perl-file-which"/> (to run the testsuite)
     </para>
 

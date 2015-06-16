@@ -89,8 +89,15 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="libwnck2"/>,
-      <xref linkend="libxfce4ui"/>, and
-      <xref linkend="which"/>
+      <xref linkend="libxfce4ui"/>,
+      <xref linkend="which"/>, and
+      <xref linkend="xorg7-app"/>
+    </para>
+
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="desktop-file-utils"/> and
+      <xref linkend="shared-mime-info"/>
     </para>
 
     <para condition="html" role="usernotes">
@@ -153,6 +160,20 @@ make</userinput></screen>
       <command>startxfce4</command>.
     </para>
 
+    <para>
+      When building an <application>Xfce4</application> packages, some
+      configuration files are installed in <filename class="directory">
+      /usr/share/applications</filename>, <filename class="directory">
+      /usr/share/icons</filename>, and <filename class="directory">
+      /usr/share/mime</filename>. In order to use those files in your
+      <application>Xfce4</application> session, you need to update
+      various databases. Run the following commands as the
+      <systemitem class="username">root</systemitem> user to update
+      them (you need to have the recommended dependencies installed):
+   </para>
+
+<screen role="root"><userinput>update-desktop-database &amp;&amp;
+update-mime-database</userinput></screen>
   </sect2>
 
   <sect2 role="content">
