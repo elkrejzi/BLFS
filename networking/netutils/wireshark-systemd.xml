@@ -163,12 +163,6 @@ EOF</userinput></screen>
 
 <screen role="root"><userinput>groupadd -g 62 wireshark</userinput></screen>
 
-    <para>If you want an unpriviledged user to execute
-    <application>wireshark</application>, run the following command as the
-    <systemitem class="username">root</systemitem> user:</para>
-
-<screen role="root"><userinput>usermod -a -G wireshark <replaceable>&lt;username&gt;</replaceable></userinput></screen>
-
     <para>
       If you have both <application>GTK+2</application> and
       <application>GTK+3</application>, and both <application>Qt4</application>

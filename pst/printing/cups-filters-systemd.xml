@@ -7,7 +7,7 @@
   <!ENTITY cups-filters-download-http
            "https://www.openprinting.org/download/cups-filters/cups-filters-&cups-filters-version;.tar.xz">
   <!ENTITY cups-filters-download-ftp  " ">
-  <!ENTITY cups-filters-md5sum        "20dea125408bfebd25a58a884a78a13c">
+  <!ENTITY cups-filters-md5sum        "ad594ac06dfbfb02af34deb0805cab00">
   <!ENTITY cups-filters-size          "1.3 MB">
   <!ENTITY cups-filters-buildsize     "57 MB">
   <!ENTITY cups-filters-time          "0.4 SBU">
@@ -94,9 +94,8 @@
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="avahi"/>,
-      <xref linkend="php"/> (use of this might be broken) and
-      <ulink url="http://www.adobe.com/products/reader">acroread</ulink>
+      <xref linkend="avahi"/> and
+      <xref linkend="php"/> (use of this might be broken)
     </para>
 
     <bridgehead renderas="sect4">Required (Runtime)</bridgehead>
@@ -120,14 +119,6 @@
     </para>
 
 <screen><userinput>sed -i "s:cups.service:org.cups.cupsd.service:g" utils/cups-browsed.service</userinput></screen>
-
-    <para>
-      Fix a build failure when using <application>Poppler</application> 0.31.0 and later:
-    </para>
-
-<screen><userinput>sed -i "s:globalParams->getAntialias():gFalse:g" filter/pdftoopvp/OPVPOutputDev.cxx     &amp;&amp;
-sed -i "/paperColor,g/s:gTrue,gFalse:gTrue:" filter/pdftoijs.cxx filter/pdftoraster.cxx &amp;&amp;
-sed -i "/setAntialias/d" filter/pdftoopvp/pdftoopvp.cxx</userinput></screen>
 
     <para>
       Install <application>CUPS Filters</application> by running the following
