@@ -83,10 +83,10 @@
 <!ENTITY enchant-version              "1.6.0">
 <!ENTITY exempi-version               "2.2.2">
 <!ENTITY expat-version                "2.1.0">
-<!ENTITY glib2-version                "2.42.1">
-<!ENTITY glibmm-version               "2.42.0">
+<!ENTITY glib2-version                "2.44.1">
+<!ENTITY glibmm-version               "2.44.0">
 <!ENTITY gmime-version                "2.6.20">
-<!ENTITY gobject-introspection-version "1.42.0">
+<!ENTITY gobject-introspection-version "1.44.0">
 <!ENTITY gsl-version                  "1.16">
 
 <!ENTITY icu-major                    "55">
@@ -119,7 +119,7 @@
 <!ENTITY libgusb-version              "0.2.5">
 <!ENTITY libical-version              "1.0.1">
 <!ENTITY libidn-version               "1.30">
-<!ENTITY libiodbc-version             "3.52.9">
+<!ENTITY libiodbc-version             "3.52.10">
 <!ENTITY libksba-version              "1.3.3">
 <!ENTITY liblinear-version            "1.96">
 <!ENTITY libpaper-version             "1.1.24+nmu4">
@@ -152,34 +152,34 @@
 <!ENTITY aalib-version                "1.4rc5">
 <!ENTITY babl-version                 "0.1.12">
 <!ENTITY exiv2-version                "0.24">
-<!ENTITY freetype2-version            "2.5.5">
+<!ENTITY freetype2-version            "2.6">
 <!ENTITY fontconfig-version           "2.11.1">  <!-- stable lt .90 micro version -->
 <!ENTITY fribidi-version              "0.19.6">
 <!ENTITY gegl-version                 "0.2.0">
 <!ENTITY giflib-version               "5.1.1">
 <!ENTITY graphite2-version            "1.2.4">
-<!ENTITY harfbuzz-version             "0.9.38">
+<!ENTITY harfbuzz-version             "0.9.40">
 <!ENTITY ijs-version                  "0.35">
 <!ENTITY jasper-version               "1.900.1">
 <!ENTITY lcms-version                 "1.19">
-<!ENTITY lcms2-version                "2.6">
+<!ENTITY lcms2-version                "2.7">
 <!ENTITY libexif-version              "0.6.21">
 <!ENTITY libjpeg-version              "8d">
-<!ENTITY libjpeg-turbo-version        "1.4.0">
-<!ENTITY libmng-version               "2.0.2">
-<!ENTITY libpng-version               "1.6.16">
-<!ENTITY librsvg-version              "2.40.7">   <!-- Normally even minors
+<!ENTITY libjpeg-turbo-version        "1.4.1">
+<!ENTITY libmng-version               "2.0.3">
+<!ENTITY libpng-version               "1.6.17">
+<!ENTITY librsvg-version              "2.40.9">   <!-- Normally even minors
                                                        Required version in order to use
                                                        svg pixbuf loader. -->
-<!ENTITY libraw-version               "0.16.0">
+<!ENTITY libraw-version               "0.16.2">
 <!ENTITY libtiff-version              "4.0.3">
-<!ENTITY libwebp-version              "0.4.2">
+<!ENTITY libwebp-version              "0.4.3">
 <!ENTITY newt-version                 "0.52.18">
 <!ENTITY openjpeg-version             "1.5.2">
 <!ENTITY openjpeg2-version            "2.1.0">
 <!ENTITY pixman-version               "0.32.6">   <!-- Even minors only -->
-<!ENTITY poppler-version              "0.31.0">   
-<!ENTITY qpdf-version                 "5.1.2">
+<!ENTITY poppler-version              "0.33.0">
+<!ENTITY qpdf-version                 "5.1.3">
 
 <!-- Chapter 11 -->
 <!ENTITY appdata-tools-version        "0.1.8">

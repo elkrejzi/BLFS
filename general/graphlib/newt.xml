@@ -130,7 +130,7 @@ make</userinput></screen>
 
     <para>
       <command>sed -e ... -i Makefile.in</command>: This command prevents a
-      static library fro being installed.
+      static library from being installed.
     </para>
 
   </sect2>

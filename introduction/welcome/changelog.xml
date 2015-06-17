@@ -50,6 +50,26 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Updated to poppler-0.33.0 and qpdf-5.1.3.
+          </para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to librsvg-2.40.9, libraw-0.16.2
+          and libwebp-0.4.3.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libjpeg-turbo-1.4.1,
+          libmng-2.0.3 and libpng-1.6.17.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to gobject-introspection-1.44.0,
+          harfbuzz-0.9.40 and lcms2-2.7.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to freetype-2.6, glib-2.44.1
+          and glibmm-2.44.0.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Added npth-1.2.</para>
         </listitem>
         <listitem>
@@ -84,8 +104,8 @@
           icu-55.1.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - Separated shared PAM configuration files from
-          the Shadow instructions.</para>
+          <para>[krejzi] - Separated shared PAM configuration files
+          from the Shadow instructions.</para>
         </listitem>
         <listitem>
           <para>[krejzi] - Updated to sudo-1.8.13, xfsprogs-3.2.3 and

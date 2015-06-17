@@ -152,7 +152,7 @@ install -v -m644 docs/graphics/*.{html,png,svg} /usr/share/gtk-doc/html/babl/gra
       <?dbhtml list-presentation="table"?>
 
       <varlistentry id="libbabl">
-        <term><filename class='libraryfile'>libbabl.so</filename></term>
+        <term><filename class="libraryfile">libbabl.so</filename></term>
         <listitem>
           <para>
             contains functions to access BablFishes to convert between formats.

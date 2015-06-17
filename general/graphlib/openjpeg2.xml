@@ -108,29 +108,19 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr \
 make</userinput></screen>
 
     <para>
-      If you have built the test suite and wish to run it, issue:
-      <command>make test</command>.
+      This package does not have a working testsuite.
     </para>
 
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 
 <screen role="root"><userinput>make install &amp;&amp;
-cd ../doc &amp;&amp;
 
+pushd ../doc &amp;&amp;
 for man in man/man?/*
 do
   install -v -Dm644 $man /usr/share/$man
-done</userinput></screen>
-
-  </sect2>
-
-  <sect2 role="commands">
-    <title>Command Explanations</title>
-
-    <para>
-      <option>-DBUILD_TESTING=ON</option>: This switch enables
-      building the test suite.
-    </para>
+done         &amp;&amp;
+popd</userinput></screen>
 
   </sect2>
 
