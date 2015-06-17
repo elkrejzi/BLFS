@@ -38,7 +38,7 @@
       editing dynamic and interactive websites.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -87,8 +87,8 @@
     <para role="optional">
       <xref linkend="enchant"/> (for spell checking),
       <xref linkend="gucharmap"/>,
-      <ulink url="http://code.google.com/p/jing-trang/">Jing</ulink> and
-      <xref linkend="pcre"/>
+      <xref linkend="pcre"/> and
+      <ulink url="http://code.google.com/p/jing-trang/">Jing</ulink>
     </para>
 
     <para condition="html" role="usernotes">User Notes:

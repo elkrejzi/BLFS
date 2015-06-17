@@ -6,10 +6,10 @@
 
   <!ENTITY mitkrb-download-http "http://web.mit.edu/kerberos/www/dist/krb5/&mitkrb-major-version;/krb5-&mitkrb-version;-signed.tar">
   <!ENTITY mitkrb-download-ftp  " ">
-  <!ENTITY mitkrb-md5sum        "567586cdf02aa8c842c2fab7a94f3c1f">
+  <!ENTITY mitkrb-md5sum        "f7ebfa6c99c10b16979ebf9a98343189">
   <!ENTITY mitkrb-size          "12 MB">
-  <!ENTITY mitkrb-buildsize     "122 MB (additional 22 MB for the testsuite)">
-  <!ENTITY mitkrb-time          "1.0 SBU (additional 2.5 SBU for the testsuite)">
+  <!ENTITY mitkrb-buildsize     "142 MB (Additional 28 MB for the testsuite)">
+  <!ENTITY mitkrb-time          "0.9 SBU (additional 5.0 SBU for the testsuite)">
 ]>
 
 <sect1 id="mitkrb" xreflabel="MIT Kerberos V5-&mitkrb-version;">
@@ -125,14 +125,14 @@
 
     <para>You will probably see output similar to:</para>
 
-<screen><literal>gpg: Signature made Thu 12 Feb 2015 04:24:23 AM CET using RSA key ID 749D788
+<screen><literal>gpg: Signature made Fri May  8 23:40:13 2015 utc using RSA key ID 0055C305
 gpg: Can't check signature: No public key</literal></screen>
 
     <para>
       You can import the public key with:
     </para>
 
-<screen><userinput>gpg2 --pgp2 --keyserver pgp.mit.edu --recv-keys 0x749D7889</userinput></screen>
+<screen><userinput>gpg2 --keyserver pgp.mit.edu --recv-keys 0055C305</userinput></screen>
 
     <para>
       Now re-verify the package with the first command above. You should get a
@@ -203,10 +203,8 @@ cp -rfv ../doc/*  /usr/share/doc/krb5-&mitkrb-version;</userinput></screen>
     <title>Command Explanations</title>
 
     <para>
-      <command>sed -e ...</command>: The first <command>sed</command> fixes
-      <application>Python</application> detection.<!-- The second one increases
-      the width of the virtual terminal used for some tests, to prevent
-      some spurious characters to be echoed, which is taken as a failure. -->
+      <command>sed -e ...</command>: This <command>sed</command> fixes
+      <application>Python</application> detection.
     </para>
 
     <para>
@@ -496,9 +494,9 @@ EOF</userinput></screen>
           sserver, uuclient and uuserver
         </seg>
         <seg>
-          libgssapi_krb5.so, libgssrpc.so, libk5crypto.so,
-          libkadm5clnt.so, libkadm5srv.so, libkdb5.so, libkdb_ldap.so
-          (optional), libkrad.so, libkrb5.so, libkrb5support.so, and
+          libgssapi_krb5.so, libgssrpc.so, libk5crypto.so, libkadm5clnt_mit.so,
+          libkadm5clnt.so, libkadm5srv_mit.so, libkadm5srv.so, libkdb_ldap.so
+          (optional), libkdb5.so, libkrad.so, libkrb5.so, libkrb5support.so, and
           libverto.so
         </seg>
         <seg>

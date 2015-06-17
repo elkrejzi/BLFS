@@ -6,10 +6,10 @@
 
   <!ENTITY qemu-download-http "http://wiki.qemu.org/download/qemu-&qemu-version;.tar.bz2">
   <!ENTITY qemu-download-ftp  " ">
-  <!ENTITY qemu-md5sum        "f7a5e2da22d057eb838a91da7aff43c8">
-  <!ENTITY qemu-size          "23 MB">
-  <!ENTITY qemu-buildsize     "300 MB">
-  <!ENTITY qemu-time          "1.9 SBU">
+  <!ENTITY qemu-md5sum        "2fab3ea4460de9b57192e5b8b311f221">
+  <!ENTITY qemu-size          "24 MB">
+  <!ENTITY qemu-buildsize     "291 MB">
+  <!ENTITY qemu-time          "1.4 SBU">
 ]>
 
 <sect1 id="qemu" xreflabel="qemu-&qemu-version;">
@@ -33,7 +33,7 @@
     for Linux on x86 hardware containing virtualization extensions (Intel VT or
     AMD-V).</para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -74,10 +74,17 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="alsa"/>,
+      <xref linkend="bluez"/>,
       <xref linkend="check"/>,
       <xref linkend="curl"/>,
+      <xref linkend="cyrus-sasl"/>,
+      <xref linkend="gtk2"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="libusb"/>,
+      <xref linkend="lzo"/>,
+      <xref linkend="nss"/> (for libcacard.so),
       <xref linkend="mesalib"/>, and
-      <xref linkend="cyrus-sasl"/>
+      <xref linkend="vte"/>
     </para>
 
     <note>
@@ -143,9 +150,7 @@ Device Drivers  ---&gt;
     <para>Install <application>qemu</application> by running the following
     commands:</para>
 
-<screen><userinput>sed -i '/resource/ i#include &lt;sys/xattr.h&gt;' fsdev/virtfs-proxy-helper.c &amp;&amp;
-
-./configure --prefix=/usr \
+<screen><userinput>./configure --prefix=/usr \
             --sysconfdir=/etc \
             --docdir=/usr/share/doc/qemu-&qemu-version; \
             --target-list=x86_64-softmmu &amp;&amp;
@@ -196,12 +201,6 @@ EOF</userinput></screen>
 
   <sect2 role="commands">
     <title>Command Explanations</title>
-
-    <!-- Developer note: it is not needed for glibc-2.20 -->
-
-    <para><command>sed ... virtfs-proxy-helper.c</command>: Fix a build
-    problem due to changes in some versions of the glibc include file 
-    sys/xattr.h.</para>
 
     <para><parameter>--target-list=x86_64-softmmu</parameter>: This switch
     limits the build target to the x86_64 architecture.  For other 

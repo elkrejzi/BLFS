@@ -33,7 +33,7 @@
     LFS, but if PAM support is desired, it needs to be reinstalled after 
     PAM is built so the shipped PAM module can be installed.</para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">

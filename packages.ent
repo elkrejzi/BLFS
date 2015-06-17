@@ -10,61 +10,61 @@
 <!ENTITY acl-version                  "2.2.52">
 <!ENTITY attr-version                 "2.4.47">
 <!ENTITY consolekit-version           "0.4.6">
-<!ENTITY cracklib-version             "2.9.2">
+<!ENTITY cracklib-version             "2.9.4">
 <!ENTITY cyrus-sasl-version           "2.1.26">
-<!ENTITY gnupg2-version               "2.0.26">
-<!ENTITY gnutls-version               "3.3.12">
-<!ENTITY gpgme-version                "1.5.3">
+<!ENTITY gnupg2-version               "2.0.28">
+<!ENTITY gnutls-version               "3.4.2">
+<!ENTITY gpgme-version                "1.5.5">
 <!ENTITY haveged-version              "1.9.1">
 <!ENTITY iptables-version             "1.4.21">
 <!ENTITY libcap-version               "2.24">
-<!ENTITY linux-pam-version            "1.1.8">
+<!ENTITY linux-pam-version            "1.2.0">
 <!ENTITY mitkrb-major-version         "1.13">
-<!ENTITY mitkrb-version               "&mitkrb-major-version;.1">
-<!ENTITY nettle-version               "2.7.1">
-<!ENTITY nss-minor-version            "17">
-<!ENTITY nss-micro-version            "4">
+<!ENTITY mitkrb-version               "&mitkrb-major-version;.2">
+<!ENTITY nettle-version               "3.1.1">
+<!ENTITY nss-minor-version            "19">
+<!ENTITY nss-micro-version            "1">
 <!-- normal-->
 <!ENTITY nss-version                  "3.&nss-minor-version;.&nss-micro-version;">
-<!-- major and minor only -->
-<!--<!ENTITY nss-version                  "3.&nss-minor-version;">-->
-<!ENTITY openssh-version              "6.7p1">
-<!ENTITY openssl-version              "1.0.2">
-<!ENTITY p11-kit-version              "0.22.1">    <!-- Even minors only -->
+<!-- major and minor only
+<!ENTITY nss-version                  "3.&nss-minor-version;"> -->
+<!ENTITY openssh-version              "6.8p1">
+<!ENTITY openssl-version              "1.0.2c">
+<!ENTITY p11-kit-version              "0.23.1">    <!-- Even minors only -->
 <!ENTITY polkit-version               "0.112">
 <!ENTITY shadow-version               "4.2.1">
 <!ENTITY ssh-askpass-version          "&openssh-version;">
-<!ENTITY stunnel-version              "5.10">
-<!ENTITY sudo-version                 "1.8.12">
+<!ENTITY stunnel-version              "5.19">
+<!ENTITY sudo-version                 "1.8.13">
 <!ENTITY tripwire-version             "2.4.2.2">
 
 <!-- Chapter 5 -->
-<!ENTITY fuse-version                 "2.9.3">
+<!ENTITY fuse-version                 "2.9.4">
 <!ENTITY jfsutils-version             "1.1.15">
-<!ENTITY lvm2-version                 "2.02.116">
+<!ENTITY lvm2-version                 "2.02.121">
 <!ENTITY mdadm-version                "3.3.2">
-<!ENTITY ntfs-3g-version              "2014.2.15">
-<!ENTITY gptfdisk-version             "0.8.10">
+<!ENTITY ntfs-3g-version              "2015.3.14">
+<!ENTITY gptfdisk-version             "1.0.0">
 <!ENTITY parted-version               "3.2">
 <!ENTITY reiser-version               "3.6.24">
 <!ENTITY sshfs-fuse-version           "2.5">
-<!ENTITY xfsprogs-version             "3.2.2">
+<!ENTITY xfsprogs-version             "3.2.3">
 
 <!-- Chapter 6 -->
 <!ENTITY bluefish-version             "2.2.7">
-<!ENTITY ed-version                   "1.10">
-<!ENTITY emacs-version                "24.4">
-<!ENTITY joe-version                  "3.7">
-<!ENTITY nano-version                 "2.3.6">
+<!ENTITY ed-version                   "1.11">
+<!ENTITY emacs-version                "24.5">
+<!ENTITY joe-version                  "4.0">
+<!ENTITY nano-version                 "2.4.1">
 <!ENTITY vim-version                  "7.4">
 
 <!-- Chapter 7 -->
 <!ENTITY dash-version                 "0.5.8">
 <!ENTITY tcsh-version                 "6.18.01">
-<!ENTITY zsh-version                  "5.0.7">
+<!ENTITY zsh-version                  "5.0.8">
 
 <!-- Chapter 8 Virtualization -->
-<!ENTITY qemu-version                 "2.2.0">
+<!ENTITY qemu-version                 "2.3.0">
 
 <!-- Part III -->
 <!-- Chapter 9 -->

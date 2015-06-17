@@ -6,10 +6,10 @@
 
   <!ENTITY lvm2-download-http " ">
   <!ENTITY lvm2-download-ftp  "ftp://sources.redhat.com/pub/lvm2/LVM2.&lvm2-version;.tgz">
-  <!ENTITY lvm2-md5sum        "3a1104e3d1dc4d5e92a40228161cd660">
-  <!ENTITY lvm2-size          "1.5 MB">
-  <!ENTITY lvm2-buildsize     "27 MB (additional 10 MB to run the test suite)">
-  <!ENTITY lvm2-time          "0.4 SBU (additional 35 SBU to run the test suite)">
+  <!ENTITY lvm2-md5sum        "702c61bf07a8fc6dc0db6e9d323d9f6d">
+  <!ENTITY lvm2-size          "1.6 MB">
+  <!ENTITY lvm2-buildsize     "29 MB (additional 14 MB to run the test suite)">
+  <!ENTITY lvm2-time          "0.3 SBU (additional 24 SBU to run the test suite)">
 ]>
 
 <sect1 id="lvm2" xreflabel="LVM2-&lvm2-version;">
@@ -190,7 +190,7 @@ make</userinput></screen>
       <seglistitem>
         <seg>
           blkdeactivate, dmeventd (optional), dmsetup, fsadm, lvm, lvmconf,
-          lvmdump, vgimportclone. There are also numerous symbolic links to
+          lvmdump, and vgimportclone. There are also numerous symbolic links to
           lvm that implement specific functionalities
         </seg>
         <seg>
