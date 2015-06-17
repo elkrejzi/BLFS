@@ -8,8 +8,8 @@
   <!ENTITY libunistring-download-ftp  "ftp://ftp.gnu.org/gnu/libunistring/libunistring-&libunistring-version;.tar.xz">
   <!ENTITY libunistring-md5sum        "6f8766d0b0497380d725639e19c04310">
   <!ENTITY libunistring-size          "1.8 MB">
-  <!ENTITY libunistring-buildsize     "47 MB (additional 40 MB for the test suite)">
-  <!ENTITY libunistring-time          "0.5 SBU (additional 1.2 SBU for the test suite)">
+  <!ENTITY libunistring-buildsize     "45 MB">
+  <!ENTITY libunistring-time          "0.9 SBU">
 ]>
 
 <sect1 id="libunistring" xreflabel="libunistring-&libunistring-version;">

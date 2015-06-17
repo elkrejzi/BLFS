@@ -35,7 +35,7 @@
       binary file transfers between devices.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -174,6 +174,18 @@ mv -v /usr/share/doc/openobex{,-&openobex-version;}</userinput></screen>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
       <?dbfo list-presentation="list"?>
       <?dbhtml list-presentation="table"?>
+
+      <varlistentry id="obex-check-device">
+        <term><command>obex-check-device</command></term>
+        <listitem>
+          <para>
+            is a tool that help <application>udev</application> to find connectable OBEX USB devices.
+          </para>
+          <indexterm zone="openobex obex-check-device">
+            <primary sortas="b-obex-check-device">obex-check-device</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
 
       <varlistentry id="libopenobex">
         <term><filename class="libraryfile">libopenobex.so</filename></term>

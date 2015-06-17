@@ -50,6 +50,40 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Added npth-1.2.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to xapian-core-1.2.21.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to pcre-8.37, talloc-2.1.2 and
+          wayland-1.8.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libqmi-1.12.6, libsigc++-2.4.1
+          and libtasn1-4.5.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libinput-0.17.0, libksba-1.3.3
+          and libpciaccess-0.13.4.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libgsf-1.4.33, libgusb-0.2.5
+          and libidn-1.30.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libevdev-1.4.2, libgcrypt-1.6.3
+          and libgpg-error-1.19.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to json-glib-1.0.4, libassuan-2.2.1
+          and libdrm-2.6.61.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to apr-1.5.2, boost-1.58.0 and
+          icu-55.1.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Separated shared PAM configuration files from
           the Shadow instructions.</para>
         </listitem>

@@ -91,6 +91,7 @@
 
 mkdir build &amp;&amp;
 cd    build &amp;&amp;
+
 cmake -DCMAKE_INSTALL_PREFIX=/usr \
       -DBUILD_CONTRIBS_LIB=ON .. &amp;&amp;
 make</userinput></screen>

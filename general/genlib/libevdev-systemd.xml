@@ -6,10 +6,10 @@
 
   <!ENTITY libevdev-download-http "http://www.freedesktop.org/software/libevdev/libevdev-&libevdev-version;.tar.xz">
   <!ENTITY libevdev-download-ftp  " ">
-  <!ENTITY libevdev-md5sum        "80c7b490bf3e7ec8e8b60d4fb307b664">
-  <!ENTITY libevdev-size          "388 KB">
-  <!ENTITY libevdev-buildsize     "8.5 MB">
-  <!ENTITY libevdev-time          "0.1 SBU (0.3 SBU with all tests)">
+  <!ENTITY libevdev-md5sum        "debfcd5153558eba25a8e71eb2534ae8">
+  <!ENTITY libevdev-size          "400 KB">
+  <!ENTITY libevdev-buildsize     "8.8 MB">
+  <!ENTITY libevdev-time          "0.2 SBU">
 ]>
 
 <sect1 id="libevdev" xreflabel="libevdev-&libevdev-version;">
@@ -83,7 +83,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="check"/>,
-      <xref linkend="doxygen"/>, and
+      <xref linkend="doxygen"/> and
       <xref linkend="valgrind"/>
     </para>
 
@@ -156,7 +156,8 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          mouse-dpi-tool and touchpad-edge-detector
+          libevdev-tweak-device, mouse-dpi-tool and
+          touchpad-edge-detector
         </seg>
         <seg>
           libevdev.so

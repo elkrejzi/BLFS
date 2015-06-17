@@ -6,8 +6,8 @@
 
   <!ENTITY libgsf-download-http "&gnome-download-http;/libgsf/1.14/libgsf-&libgsf-version;.tar.xz">
   <!ENTITY libgsf-download-ftp  "&gnome-download-ftp;/libgsf/1.14/libgsf-&libgsf-version;.tar.xz">
-  <!ENTITY libgsf-md5sum        "95a99c9e010d21a78b1f100b18fa74fc">
-  <!ENTITY libgsf-size          "592 KB">
+  <!ENTITY libgsf-md5sum        "b15d54dcb266cae1927c633204a11bda">
+  <!ENTITY libgsf-size          "596 KB">
   <!ENTITY libgsf-buildsize     "16 MB">
   <!ENTITY libgsf-time          "0.2 SBU">
 ]>

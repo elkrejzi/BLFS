@@ -101,6 +101,7 @@ $Date: 2014-10-26 17:07:07 +0100 (Sun, 26 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libzeitgeist.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="lzo.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="mtdev.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="npth.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="nspr.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="openobex.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="pcre.xml"/>

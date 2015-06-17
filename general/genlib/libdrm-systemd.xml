@@ -6,10 +6,10 @@
 
   <!ENTITY libdrm-download-http "http://dri.freedesktop.org/libdrm/libdrm-&libdrm-version;.tar.bz2">
   <!ENTITY libdrm-download-ftp  " ">
-  <!ENTITY libdrm-md5sum        "d32a1d37c2546ee11fc5924abeedb23e">
-  <!ENTITY libdrm-size          "579 KB">
-  <!ENTITY libdrm-buildsize     "10 MB (additional 1 MB for the tests)">
-  <!ENTITY libdrm-time          "0.1 SBU (additional less than 0.1 SBU for the tests)">
+  <!ENTITY libdrm-md5sum        "c3d31138d63e0edde3f5b93cd88fb93a">
+  <!ENTITY libdrm-size          "588 KB">
+  <!ENTITY libdrm-buildsize     "13 MB">
+  <!ENTITY libdrm-time          "0.2 SBU">
 ]>
 
 <sect1 id="libdrm" xreflabel="libdrm-&libdrm-version;">
@@ -77,7 +77,7 @@
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libpciaccess"/> (for Intel KMS API support required by Mesa) <!-- libpciaccess -->
+      <xref linkend="libpciaccess"/> (for Intel KMS API support required by Mesa)
     </para>
 
     <bridgehead renderas="sect4">Optional</bridgehead>
@@ -103,7 +103,7 @@
     </para>
 
 <screen><userinput>sed -e "/pthread-stubs/d" -i configure.ac &amp;&amp;
-autoreconf -fiv &amp;&amp;
+autoreconf -fi &amp;&amp;
 ./configure --prefix=/usr --enable-udev &amp;&amp;
 make</userinput></screen>
 

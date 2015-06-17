@@ -68,12 +68,12 @@
 
 <!-- Part III -->
 <!-- Chapter 9 -->
-<!ENTITY apr-version                  "1.5.1">
+<!ENTITY apr-version                  "1.5.2">
 <!ENTITY apr-util-version             "1.5.4">
 <!ENTITY aspell-version               "0.60.6.1">
 
 <!ENTITY boost-major                  "1">
-<!ENTITY boost-minor                  "57">
+<!ENTITY boost-minor                  "58">
 <!ENTITY boost-patch                  "0">
 <!ENTITY boost-version                "&boost-major;.&boost-minor;.&boost-patch;">
 <!ENTITY boost-dl-version             "&boost-major;_&boost-minor;_&boost-patch;">
@@ -89,7 +89,7 @@
 <!ENTITY gobject-introspection-version "1.42.0">
 <!ENTITY gsl-version                  "1.16">
 
-<!ENTITY icu-major                    "54">
+<!ENTITY icu-major                    "55">
 <!ENTITY icu-minor                    "1">
 <!ENTITY icu-patch                    "0">
 <!ENTITY icu-version                  "&icu-major;.&icu-minor;"><!-- .&icu-patch;-->
@@ -99,33 +99,33 @@
 <!ENTITY JS-version                   "17.0.0">
 <!ENTITY JS2-version                  "24.2.0">
 <!ENTITY json-c-version               "0.12">
-<!ENTITY json-glib-version            "1.0.2">
+<!ENTITY json-glib-version            "1.0.4">
 <!ENTITY keyutils-version             "1.5.9">
 <!ENTITY libarchive-version           "3.1.2">
-<!ENTITY libassuan-version            "2.2.0">
+<!ENTITY libassuan-version            "2.2.1">
 <!ENTITY libatasmart-version          "0.19">
 <!ENTITY libatomic_ops-version        "7.4.2">
 <!ENTITY libcroco-version             "0.6.8">
 <!ENTITY libdaemon-version            "0.14">
 <!ENTITY libdbusmenu-qt-version       "0.9.2">
-<!ENTITY libdrm-version               "2.4.59">
+<!ENTITY libdrm-version               "2.4.61">
 <!ENTITY libepoxy-version             "1.2">
 <!ENTITY libesmtp-version             "1.0.6">
 <!ENTITY libffi-version               "3.2.1">
-<!ENTITY libgcrypt-version            "1.6.2">
+<!ENTITY libgcrypt-version            "1.6.3">
 <!ENTITY libglade-version             "2.6.4">
-<!ENTITY libgpg-error-version         "1.18">
-<!ENTITY libgsf-version               "1.14.31">
-<!ENTITY libgusb-version              "0.2.4">
+<!ENTITY libgpg-error-version         "1.19">
+<!ENTITY libgsf-version               "1.14.33">
+<!ENTITY libgusb-version              "0.2.5">
 <!ENTITY libical-version              "1.0.1">
-<!ENTITY libidn-version               "1.29">
+<!ENTITY libidn-version               "1.30">
 <!ENTITY libiodbc-version             "3.52.9">
-<!ENTITY libksba-version              "1.3.2">
+<!ENTITY libksba-version              "1.3.3">
 <!ENTITY liblinear-version            "1.96">
 <!ENTITY libpaper-version             "1.1.24+nmu4">
-<!ENTITY libsigc-version              "2.4.0">
+<!ENTITY libsigc-version              "2.4.1">
 <!ENTITY libsigsegv-version           "2.10">
-<!ENTITY libtasn1-version             "4.2">
+<!ENTITY libtasn1-version             "4.5">
 <!ENTITY libunistring-version         "0.9.5">
 <!ENTITY libusb-version               "1.0.19">
 <!ENTITY libusb-compat-version        "0.1.5">
@@ -134,18 +134,19 @@
 <!ENTITY libzeitgeist-version         "0.3.18">
 <!ENTITY lzo-version                  "2.09">
 <!ENTITY mtdev-version                "1.1.5">
+<!ENTITY npth-version                 "1.2">
 <!ENTITY nspr-version                 "4.10.8">
 <!ENTITY openobex-version             "1.7.1">
-<!ENTITY pcre-version                 "8.36">
+<!ENTITY pcre-version                 "8.37">
 <!ENTITY popt-version                 "1.16">
 <!ENTITY pth-version                  "2.0.7">
 <!ENTITY ptlib-version                "2.10.10">
 <!ENTITY qca-version                  "2.1.0">
 <!ENTITY qjson-version                "0.8.1">
 <!ENTITY sbc-version                  "1.3">
-<!ENTITY talloc-version               "2.1.1">
+<!ENTITY talloc-version               "2.1.2">
 <!ENTITY wv-version                   "1.2.9">
-<!ENTITY xapian-version               "1.2.19">
+<!ENTITY xapian-version               "1.2.21">
 
 <!-- Chapter 10 -->
 <!ENTITY aalib-version                "1.4rc5">

@@ -8,7 +8,7 @@
   <!ENTITY dbus-glib-download-ftp  " ">
   <!ENTITY dbus-glib-md5sum        "5497d2070709cf796f1878c75a72a039">
   <!ENTITY dbus-glib-size          "776 KB">
-  <!ENTITY dbus-glib-buildsize     "12 MB">
+  <!ENTITY dbus-glib-buildsize     "9.4 MB">
   <!ENTITY dbus-glib-time          "0.1 SBU">
 ]>
 
