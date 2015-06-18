@@ -50,6 +50,21 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Updated to sharutils-4.15.2.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to iso-codes-3.58, pinentry-0.9.4
+          and screen-4.3.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to highlight-3.22, ibus-1.5.10 and
+          ImageMagick-6.9.1-0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to appstream-glib-0.4.0, gtk-doc-1.24
+          and hicolor-icon-theme-0.15.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Added gcab-0.6.</para>
         </listitem>
         <listitem>

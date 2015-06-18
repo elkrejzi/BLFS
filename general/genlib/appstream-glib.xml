@@ -7,10 +7,10 @@
   <!ENTITY appstream-glib-download-http 
            "http://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-&appstream-glib-version;.tar.xz">
   <!ENTITY appstream-glib-download-ftp  " ">
-  <!ENTITY appstream-glib-md5sum        "b3652e289d5fade9efbc07b9eabff488">
+  <!ENTITY appstream-glib-md5sum        "f3bf922874fe106b55dbb4c7dec0bc9c">
   <!ENTITY appstream-glib-size          "1.8 MB">
-  <!ENTITY appstream-glib-buildsize     "17 MB">
-  <!ENTITY appstream-glib-time          "0.3 SBU ">
+  <!ENTITY appstream-glib-buildsize     "21 MB">
+  <!ENTITY appstream-glib-time          "0.2 SBU ">
 ]>
 
 <sect1 id="appstream-glib" xreflabel="Appstream-GLib-&appstream-glib-version;">
@@ -78,7 +78,7 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>,
+      <xref linkend="gdk-pixbuf"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libsoup"/> and
       <xref linkend="pango"/>
@@ -86,7 +86,9 @@
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gcab"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk3"/> and
       <xref linkend="yaml"/>
     </para>
 
@@ -111,13 +113,11 @@
       commands:
     </para>
 
-
 <screen><userinput>./configure --prefix=/usr --disable-static &amp;&amp;
 make</userinput></screen>
 
     <para>
-      To test the results, issue: <command>make -k check</command>. One test
-      fails if <xref linkend="yaml"/> is not installed.
+      To test the results, issue: <command>make check</command>.
     </para>
 
     <para>
@@ -138,7 +138,13 @@ make</userinput></screen>
       href="../../xincludes/gtk-doc-rebuild.xml"/>
 
     <para>
-      <parameter>--disable-dep11</parameter>: Use this switch if you
+      <option>--disable-builder</option>: Use this switch if
+      you have not installed <xref linkend="gcab"/> and
+      <xref linkend="gtk3"/>.
+    </para>
+
+    <para>
+      <option>--disable-dep11</option>: Use this switch if you
       have not installed <xref linkend="yaml"/>.
     </para>
 
@@ -157,14 +163,14 @@ make</userinput></screen>
           appdata-validate, appstream-builder and appstream-util
         </seg>
         <seg>
-          libappstream-builder.so and libappstream-glib.so.
+          libappstream-builder.so and libappstream-glib.so
         </seg>
         <seg>
           /usr/include/libappstream-builder,
           /usr/include/libappstream-glib,
-          /usr/lib/asb-plugins,
+          /usr/lib/asb-plugins-2,
           /usr/share/gtk-doc/html/appstream-glib, and
-          /usr/share/installed-tests/appstream-glib.
+          /usr/share/installed-tests/appstream-glib
         </seg>
       </seglistitem>
     </segmentedlist>
@@ -214,8 +220,8 @@ make</userinput></screen>
         <term><filename class="libraryfile">libappstream-glib.so</filename></term>
         <listitem>
           <para>
-            contains objects and helper methods to help reading and writing AppStream
-            metadata.
+            contains objects and helper methods to help reading and writing
+            AppStream metadata.
           </para>
           <indexterm zone="appstream-glib libappstream-glib">
             <primary sortas="c-libappstream-glib">libappstream-glib.so</primary>

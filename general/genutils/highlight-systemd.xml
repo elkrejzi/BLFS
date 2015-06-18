@@ -6,10 +6,10 @@
 
   <!ENTITY highlight-download-http "http://www.andre-simon.de/zip/highlight-&highlight-version;.tar.bz2">
   <!ENTITY highlight-download-ftp  " ">
-  <!ENTITY highlight-md5sum        "122cd432e84f0b29aed172435af31aed">
+  <!ENTITY highlight-md5sum        "6e6e12b7ee966fe6b1a31eeda3f0761a">
   <!ENTITY highlight-size          "612 KB">
-  <!ENTITY highlight-buildsize     "24 MB">
-  <!ENTITY highlight-time          "1.0 SBU">
+  <!ENTITY highlight-buildsize     "23 MB">
+  <!ENTITY highlight-time          "0.8 SBU">
 ]>
 
 <sect1 id="highlight" xreflabel="Highlight-&highlight-version;">

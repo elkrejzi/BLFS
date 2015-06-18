@@ -6,8 +6,8 @@
 <!ENTITY farstream-version            "0.2.7">
 <!ENTITY geoclue2-version             "2.1.10">
 <!ENTITY gtk-vnc-version              "0.5.4">
-<!ENTITY highlight-version            "3.21">
-<!ENTITY ibus-version                 "1.5.9">
+<!ENTITY highlight-version            "3.22">
+<!ENTITY ibus-version                 "1.5.10">
 <!ENTITY libevdev-version             "1.4.2">
 <!ENTITY libinput-version             "0.17.0">
 <!ENTITY libmbim-version              "1.12.2">

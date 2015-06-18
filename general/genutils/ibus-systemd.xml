@@ -6,10 +6,10 @@
 
   <!ENTITY ibus-download-http "https://github.com/ibus/ibus/releases/download/&ibus-version;/ibus-&ibus-version;.tar.gz">
   <!ENTITY ibus-download-ftp  " ">
-  <!ENTITY ibus-md5sum        "a6e820db4fe3d82c825398f1ed19c77e">
+  <!ENTITY ibus-md5sum        "e2f1d34083602ef6865880147a409eaa">
   <!ENTITY ibus-size          "2.1 MB">
-  <!ENTITY ibus-buildsize     "51 MB">
-  <!ENTITY ibus-time          "1.1 SBU">
+  <!ENTITY ibus-buildsize     "53 MB">
+  <!ENTITY ibus-time          "0.4 SBU">
 ]>
 
 <sect1 id="ibus" xreflabel="IBus-&ibus-version;">
