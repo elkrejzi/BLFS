@@ -44,11 +44,37 @@
 
 -->
     <listitem>
-      <para>>June 17th, 2015</para>
+      <para>>June 19th, 2015</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+        <listitem>
+          <para>[krejzi] - upower-0.99.3, weston-1.8.0 and
+          which-2.21.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - sysstat-11.1.5, udisks-2.1.5 and
+          unrar-5.2.7.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - ModemManager-1.4.8, p7zip-9.38.1
+          and pciutils-3.3.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - hdparm-9.48, logrotate-3.9.1
+          and mc-4.8.14.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - autofs-5.1.1, bluez-5.31 and
+          colord-1.2.11.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>>June 17th, 2015</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Updated to sharutils-4.15.2.</para>
         </listitem>
