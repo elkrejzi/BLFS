@@ -4,12 +4,12 @@
   <!ENTITY % general-entities SYSTEM "../../general.ent">
   %general-entities;
 
-  <!ENTITY gdb-download-http "http://ftp.gnu.org/gnu/gdb/gdb-&gdb-version;.tar.xz">
+  <!ENTITY gdb-download-http "https://ftp.gnu.org/gnu/gdb/gdb-&gdb-version;.tar.xz">
   <!ENTITY gdb-download-ftp  "ftp://ftp.gnu.org/gnu/gdb/gdb-&gdb-version;.tar.xz">
-  <!ENTITY gdb-md5sum        "a80cf252ed2e775d4e4533341bbf2459">
-  <!ENTITY gdb-size          "17 MB">
-  <!ENTITY gdb-buildsize     "388 MB (534 MB with checks)">
-  <!ENTITY gdb-time          "2.2 SBU (add up to 10 SBU for checks)">
+  <!ENTITY gdb-md5sum        "35374c77a70884eb430c97061053a36e">
+  <!ENTITY gdb-size          "18 MB">
+  <!ENTITY gdb-buildsize     "406 MB (additional 105 MB for checks)">
+  <!ENTITY gdb-time          "2.2 SBU (add up to 6.0 SBU for checks)">
 ]>
 
 <sect1 id="gdb" xreflabel="GDB-&gdb-version;">

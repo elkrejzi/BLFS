@@ -7,10 +7,10 @@
   <!ENTITY elfutils-download-http
           "https://fedorahosted.org/releases/e/l/elfutils/&elfutils-version;/elfutils-&elfutils-version;.tar.bz2">
   <!ENTITY elfutils-download-ftp  " ">
-  <!ENTITY elfutils-md5sum        "e1b9847c9a6a1ad340de8d47a863ec52">
-  <!ENTITY elfutils-size          "5.3 MB">
-  <!ENTITY elfutils-buildsize     "94 MB (additional 3 MB for the tests)">
-  <!ENTITY elfutils-time          "0.8 SBU (additional 0.2 SBU for the tests)">
+  <!ENTITY elfutils-md5sum        "77ce87f259987d2e54e4d87b86cbee41">
+  <!ENTITY elfutils-size          "5.8 MB">
+  <!ENTITY elfutils-buildsize     "103 MB">
+  <!ENTITY elfutils-time          "0.9 SBU">
 ]>
 
 <sect1 id="elfutils" xreflabel="elfutils-&elfutils-version;">
@@ -85,11 +85,7 @@
     </para>
 
 <!-- don't disable static libs, disable-static switch doesn't work anyways -->
-<screen><userinput>sed -e '/*runp =/,+2d'                           \
-    -e '/runp +=/s/r.*;/*runp++ = '\0';/'        \
-    -i libelf/elf_begin.c                        &amp;&amp;
-
-./configure --prefix=/usr --program-prefix="eu-" &amp;&amp;
+<screen><userinput>./configure --prefix=/usr --program-prefix="eu-" &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -108,14 +104,9 @@ make</userinput></screen>
     <title>Command Explanations</title>
 
     <para>
-      <command>sed ... libelf/elf_begin.c</command>: This command fixes a
-      potiential vulnerability identified upstream.
-    </para>
-
-    <para>
-      <parameter>--program-prefix="eu-"</parameter>: This switch renames installed
-      programs to avoid conflict with <application>Binutils</application> programs
-      installed in LFS.
+      <parameter>--program-prefix="eu-"</parameter>: This switch renames
+      installed programs to avoid conflict with
+      <application>Binutils</application> programs installed in LFS.
     </para>
 
   </sect2>

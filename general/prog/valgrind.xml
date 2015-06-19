@@ -100,8 +100,11 @@
     <para>Install <application>Valgrind</application> by running the following
     commands:</para>
 
-<screen><userinput>sed -i "s:-mt::g" configure                  &amp;&amp;
-sed -i "s:2.20:2.21:g" configure             &amp;&amp;
+<screen><userinput>sed -e 's#|3.\*#&amp;|4.\*#' \
+    -e 's/-mt//g'        \
+    -e 's:2.20:2.21:g'   \
+    -i configure         &amp;&amp;
+
 sed -i "s:/doc/valgrind::g" docs/Makefile.in &amp;&amp;
 
 ./configure --prefix=/usr --datadir=/usr/share/doc/valgrind-&valgrind-version; &amp;&amp;
@@ -115,9 +118,7 @@ make</userinput></screen>
       If you wish to regenerate the documentation, run:
     </para>
 
-<screen><userinput>pushd docs         &amp;&amp;
-make download-docs &amp;&amp;
-popd</userinput></screen>
+<screen><userinput>make -C docs download-docs</userinput></screen>
 -->
     <para>
       Now, as the <systemitem class="username">root</systemitem> user:
@@ -131,13 +132,10 @@ popd</userinput></screen>
     <title>Command Explanations</title>
 
     <para>
-      <command>sed -i "s:-mt::g" configure</command>: Fixes configure script to
-      find newer versions of Boost.
-    </para>
-
-    <para>
-      <command>sed -i "s:2.20:2.21:g" configure</command>: Fixes building with
-      <application>Glibc</application> 2.21.
+      <command>sed -e ... configure</command>: The first expression fixes an
+      issue that prevents Valgrind from compiling on systems running Linux-4.x,
+      the second expression fixes building with Glibc 2.21, and the third
+      expression fixes the configure script to find recent versions of Boost.
     </para>
 
     <para>

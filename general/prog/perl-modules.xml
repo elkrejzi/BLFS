@@ -6,8 +6,15 @@
 
   <!ENTITY perl_modules_md5sums_download_http "&sources-anduin-http;/perl-modules/">
   <!ENTITY perl_modules_md5sums_download_ftp  "&sources-anduin-ftp;/perl-modules/">
+  <!ENTITY perl_authors  "http://cpan.metacpan.org/authors">
 ]>
 
+<!-- FIXME (I only used that so that this gets highlighted by vim ;-)
+ If you have the misfortune to have to add a new module which puts a program
+ into /usr/bin/, please document it at the end of the page.  'perldoc' is
+ sometimes a good place to start, then for scripts look at any comments in the
+ script, and if you get a package like Text::BibTeX with compiled progs and
+ library, loook at the comments in the code -->
 <sect1 id="perl-modules" xreflabel="Perl modules">
   <?dbhtml filename="perl-modules.html" ?>
 
@@ -67,7 +74,7 @@
       </listitem>
       <listitem>
 <literallayout>http://cpan.metacpan.org/authors/id/P/PH/PHRED/Archive-Zip-&Archive-Zip-version;.tar.gz
-MD5 sum: 07805e1c2c6b2b6561ac29489a6dd7dd</literallayout>
+MD5 sum: 39d3ee62aefd452b8b86094de46a9214</literallayout>
       </listitem>
     </itemizedlist>
 
@@ -94,7 +101,7 @@ MD5 sum: 07805e1c2c6b2b6561ac29489a6dd7dd</literallayout>
       </listitem>
       <listitem>
 <literallayout>http://www.cpan.org/authors/id/V/VP/VPIT/autovivification-&autovivification-version;.tar.gz
-MD5 sum: bf0f5133a32685218e8d7ad1aba02deb</literallayout>
+MD5 sum: 5f2120f1591f5b0600b1a927bfc51e55</literallayout>
       </listitem>
     </itemizedlist>
 
@@ -251,7 +258,7 @@ MD5 sum: 6a397ab5833237f3ca05ed7277b19a7a</literallayout>
       </listitem>
       <listitem>
 <literallayout>http://www.cpan.org/authors/id/G/GA/GAAS/Data-Dump-&Data-Dump-version;.tar.gz
-MD5 sum: db211fe64a5cab15b1e86e5b0dc379a4</literallayout>
+MD5 sum: 762c111e525c82ff23d62c90821b26e9</literallayout>
       </listitem>
     </itemizedlist>
 
@@ -287,7 +294,7 @@ MD5 sum: 436049dc2c7dfd8423d8bcc807248b31</literallayout>
     Encode::EUCJPASCII-&Encode-EUCJPASCII-version;</bridgehead>
 
     <indexterm zone="perl-modules perl-encode-eucjpascii">
-      <primary sortas="a-Encode-EUCJPASCII">Encode-EUCJPASCII</primary>
+      <primary sortas="a-Encode-EUCJPASCII">Encode::EUCJPASCII</primary>
     </indexterm>
 
     <para>Encode::EUCJPASCII provides an eucJP-open mapping. This module uses the
@@ -356,7 +363,7 @@ MD5 sum: e1d3bc32c1c8ee304235a06fbcd5d5a4</literallayout>
       </listitem>
       <listitem>
 <literallayout>http://www.cpan.org/authors/id/D/DA/DANKOGAI/Encode-JIS2K-&Encode-JIS2K-version;.tar.gz 
-MD5 sum: 00e73ee943fb2f882b00b7b61e4c9db1</literallayout>
+MD5 sum: 60539471aa408a2b793cd45a6ce651db</literallayout>
       </listitem>
     </itemizedlist>
 
@@ -405,34 +412,13 @@ MD5 sum: 7d584cd15c4f8b9547765eff8c4ef078</literallayout>
     <itemizedlist>
       <listitem>
         <para>
-          <ulink url="http://www.cpan.org/authors/id/A/AD/ADAMK/File-Which-&File-Which-version;.tar.gz">File::Which-&File-Which-version;</ulink>
+          <ulink url="&perl_authors;/id/P/PL/PLICEASE/File-Which-&File-Which-version;.tar.gz">
+          File::Which-&File-Which-version;</ulink>
         </para>
       </listitem>
       <listitem>
-<literallayout>http://www.cpan.org/authors/id/A/AD/ADAMK/File-Which-&File-Which-version;.tar.gz
-MD5 sum: b9429edaad7f45caafa4d458afcfd8af</literallayout>
-        <itemizedlist>
-          <listitem><literallayout><ulink url="http://search.cpan.org/dist/Test-Script/">Test::Script</ulink>
-(http://search.cpan.org/dist/Test-Script/)</literallayout>
-            <itemizedlist>
-              <listitem>
-                <para>
-                  <xref linkend="perl-ipc-run3"/>
-                </para>
-              </listitem>
-              <listitem><literallayout><ulink url="http://search.cpan.org/dist/Probe-Perl/">Probe-Perl</ulink>
-(http://search.cpan.org/dist/Probe-Perl/)</literallayout>
-       <!--     <itemizedlist>
-                  <listitem> <literallayout><ulink url="http://search.cpan.org/dist/Encode-ISO2022/">Encode-ISO2022</ulink>
-(http://search.cpan.org/dist/Encode-ISO2022/>)
-
-</literallayout>
-                  </listitem>
-                </itemizedlist> -->
-              </listitem>
-            </itemizedlist>
-          </listitem>
-        </itemizedlist>
+<literallayout>&perl_authors;/id/P/PL/PLICEASE/File-Which-&File-Which-version;.tar.gz
+MD5 sum: 554bfb36568d828fbeee64f4b9a9faa8</literallayout>
       </listitem>
     </itemizedlist>
 
@@ -584,7 +570,7 @@ MD5 sum: 9128a45893097dfa3bf03301b19c5efe</literallayout>
     IPC::Run3-&IPC-Run3-version;</bridgehead>
 
     <indexterm zone="perl-modules perl-ipc-run3">
-      <primary sortas="a-IPC-Run3">IPC-Run3</primary>
+      <primary sortas="a-IPC-Run3">IPC::Run3</primary>
     </indexterm>
 
     <para>The IPC::Run3 module is used to run a subprocess with input/ouput
@@ -608,13 +594,13 @@ MD5 sum: 85b36bcd2fd2450718ee14f894f0d3d1</literallayout>
     <!-- LWP (but listed as libwww-perl) -->
     <bridgehead renderas="sect3" id="perl-lwp"
     xreflabel="libwww-perl-&LWP-version;">
-    libwww-perl-&LWP-version; (a.k.a. LWP)</bridgehead>
+    libwww-perl-&LWP-version; (a.k.a. Bundle::LWP)</bridgehead>
 
     <indexterm zone="perl-modules perl-lwp">
       <primary sortas="a-libwww-perl">libwww-perl</primary>
     </indexterm>
 
-    <para>The libwww-perl (LWP) collection is a set of
+    <para>The libwww-perl (Bundle::LWP) collection is a set of
     <application>Perl</application> modules which provide a simple and
     consistent application programming interface to the World-Wide Web. The
     main focus of the library is to provide classes and functions that allow
@@ -770,7 +756,7 @@ MD5 sum: 3e2dfeeef80c4e1952443c6b7d48583c</literallayout>
     Log-Log4perl-&Log-Log4perl-version; (a.k.a. Log::Log4perl)</bridgehead>
 
     <indexterm zone="perl-modules perl-log-log4perl">
-      <primary sortas="a-Log-Log4perl">Log-Log4perl</primary>
+      <primary sortas="a-Log-Log4perl">Log::Log4perl</primary>
     </indexterm>
 
     <para>Log-Log4perl provides a Log4j implementation for
@@ -912,7 +898,7 @@ MD5 sum: d247d2327d7f32dca09cbeb51a953fc5</literallayout>
       </listitem>
       <listitem>
 <literallayout>http://www.cpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-&Net-DNS-version;.tar.gz
-MD5 sum: 95660d1f81ddd087639a6ea13ffff2b8</literallayout>
+MD5 sum: f1d48107ff6b366479ad035783486d7a</literallayout>
         <itemizedlist>
           <listitem><literallayout><ulink url="http://search.cpan.org/~gaas/Digest-HMAC/">Digest::HMAC</ulink>
 (http://search.cpan.org/~gaas/Digest-HMAC/) (required by the testsuite)</literallayout>
@@ -933,7 +919,7 @@ MD5 sum: 95660d1f81ddd087639a6ea13ffff2b8</literallayout>
     </itemizedlist>
 
     <!-- Readonly::XS -->
-    <bridgehead renderas="sect3" id="perl-readonly-xs"
+<!--    <bridgehead renderas="sect3" id="perl-readonly-xs"
     xreflabel="Readonly::XS-&Readonly-XS-version;">
     Readonly::XS-&Readonly-XS-version;</bridgehead>
 
@@ -963,7 +949,7 @@ this uses the <xref linkend="perl-build-install"/></literallayout>
           </listitem>
         </itemizedlist>
       </listitem>
-    </itemizedlist>
+    </itemizedlist> -->
 
     <!-- Regexp::Common -->
     <bridgehead renderas="sect3" id="perl-regexp-common"
@@ -971,7 +957,7 @@ this uses the <xref linkend="perl-build-install"/></literallayout>
     Regexp::Common-&Regexp-Common-version;</bridgehead>
 
     <indexterm zone="perl-modules perl-regexp-common">
-      <primary sortas="a-Regexp-Common">Regexp-Common</primary>
+      <primary sortas="a-Regexp-Common">Regexp::Common</primary>
     </indexterm>
 
     <para>Regexp::Common provides commonly requested regular expressions. This
@@ -1035,10 +1021,10 @@ MD5 sum: 746c74ae969992cedb1a2879b4168090</literallayout>
     <!-- Test-Command -->
     <bridgehead renderas="sect3" id="perl-test-command"
     xreflabel="Test::Command-&Test-Command-version;">
-    Test-Command-&Test-Command-version;</bridgehead>
+    Test-Command-&Test-Command-version; (Test::Command)</bridgehead>
 
     <indexterm zone="perl-modules perl-test-command">
-      <primary sortas="a-Test::Command">Test::Command</primary>
+      <primary sortas="a-Test-Command">Test::Command</primary>
     </indexterm>
 
     <para>
@@ -1061,6 +1047,108 @@ MD5 sum: 9ab83c4695961dbe92cd86efe08f0634</literallayout>
       </listitem>
     </itemizedlist>
 
+    <!-- Test::Differences -->
+    <bridgehead renderas="sect3" id="perl-test-differences"
+    xreflabel="Test::Differences-&Test-Differences-version;">
+    Test::Differences-&Test-Differences-version;</bridgehead>
+
+    <indexterm zone="perl-modules perl-test-differences">
+      <primary sortas="a-Test-Differences">Test::Differences</primary>
+    </indexterm>
+
+    <para>Test::Differences - Test strings and data structures and show
+    differences if not ok. This module and its dependency modules use the
+    standard <xref linkend="perl-standard-install"/>.</para>
+
+    &lfs77_checked;
+
+    <itemizedlist>
+      <listitem>
+        <para>
+          <ulink url="http://www.cpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-&Test-Differences-version;.tar.gz">Test::Differences-&Test-Differences-version;</ulink>
+        </para>
+      </listitem>
+      <listitem>
+<literallayout>http://www.cpan.org/authors/id/D/DC/DCANTRELL/Test-Differences-&Test-Differences-version;.tar.gz
+MD5 sum: 473cce4879642e29d41bdfafd89c821d</literallayout>
+        <itemizedlist>
+          <listitem><literallayout><ulink url="http://search.cpan.org/~ovid/Text-Diff/">Text::Diff (for the testsuite)</ulink>
+(http://search.cpan.org/~ovid/Text-Diff/)</literallayout>
+            <itemizedlist>
+              <listitem><literallayout><ulink url="http://search.cpan.org/~tyemq/Algorithm-Diff/">Algorithm::Diff (for the testsuite)</ulink>
+(http://search.cpan.org/~tyemq/Algorithm-Diff/)</literallayout>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </itemizedlist>
+
+    <!-- Test::Pod -->
+    <bridgehead renderas="sect3" id="perl-test-pod"
+    xreflabel="Test::Pod-&Test-Pod-version;">
+    Test::Pod-&Test-Pod-version;</bridgehead>
+
+    <indexterm zone="perl-modules perl-test-pod">
+      <primary sortas="a-Test-Pod">Test::Pod</primary>
+    </indexterm>
+
+    <para>
+      Test::Pod checks for POD errors in files. It uses the standard
+      <xref linkend="perl-standard-install"/>.
+    </para>
+
+    &lfs77_checked;
+
+    <itemizedlist>
+      <listitem>
+        <para>
+          <ulink url="http://www.cpan.org/authors/id/D/DW/DWHEELER/Test-Pod-&Test-Pod-version;.tar.gz">Test-Pod-&Test-Pod-version;</ulink>
+        </para>
+      </listitem>
+      <listitem>
+<literallayout>http://www.cpan.org/authors/id/D/DW/DWHEELER/Test-Pod-&Test-Pod-version;.tar.gz
+MD5 sum: 6d94843add61471fa0b1ed49296000ef</literallayout>
+      </listitem>
+    </itemizedlist>
+
+    <!-- Test::Pod::Coverage -->
+    <bridgehead renderas="sect3" id="perl-test-pod-coverage"
+    xreflabel="Test::Pod::Coverage-&Test-Pod-Coverage-version;">
+    Test::Pod::Coverage-&Test-Pod-Coverage-version;</bridgehead>
+
+    <indexterm zone="perl-modules perl-test-pod-coverage">
+      <primary sortas="a-Test-Pod-Coverage">Test::Pod::Coverage</primary>
+    </indexterm>
+
+    <para>Test::Pod::Coverage check for pod coverage. This module and its
+    dependency modules use the standard
+    <xref linkend="perl-standard-install"/>.</para>
+
+    &lfs77_checked;
+
+    <itemizedlist>
+      <listitem>
+        <para>
+          <ulink url="http://www.cpan.org/authors/id/N/NE/NEILB/Test-Pod-Coverage-&Test-Pod-Coverage-version;.tar.gz">Test::Pod::Coverage-&Test-Pod-Coverage-version;</ulink>
+        </para>
+      </listitem>
+      <listitem>
+<literallayout>http://www.cpan.org/authors/id/N/NE/NEILB/Test-Pod-Coverage-&Test-Pod-Coverage-version;.tar.gz
+MD5 sum: c9ea5f4182415b13d2db18484a38c01b</literallayout>
+        <itemizedlist>
+          <listitem><literallayout><ulink url="http://search.cpan.org/~rclamp/Pod-Coverage/">Pod::Coverage (for the testsuite)</ulink>
+(http://search.cpan.org/~rclamp/Pod-Coverage/)</literallayout>
+            <itemizedlist>
+              <listitem><literallayout><ulink url="http://search.cpan.org/~andk/Devel-Symdump/">Devel::Symdump (for the testsuite)</ulink>
+(http://search.cpan.org/~andk/Devel-Symdump/)</literallayout>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </itemizedlist>
+
     <!-- Text::BibTeX -->
     <bridgehead renderas="sect3" id="perl-text-bibtex"
     xreflabel="Text::BibTeX-&Text-BibTeX-version;">
@@ -1076,17 +1164,29 @@ MD5 sum: 9ab83c4695961dbe92cd86efe08f0634</literallayout>
     its dependencies are installed using the standard
     <xref linkend="perl-standard-install"/>.</para>
 
+    <para>This package asks for what it calls `Scalar::Util` version 1.42 or
+    later if the core module List::Util is older than this, as happens with
+    releases up to perl-5.20.2. To test the version, you can run the
+    following command</para>
+    <!-- use para to avoid line break in the long path -->
+    <para><command>strings /usr/lib/perl5/5.*/*/auto/List/Util/Util.so |
+    grep v5 -A 1 | tail -n 1</command></para>
+    <para>and if necessary install
+    <ulink url="http://search.cpan.org/dist/Scalar-List-Utils/">Scalar::List::Utils</ulink>
+    (http://search.cpan.org/dist/Scalar-List-Utils/) to get a newer version of
+    that module without updating all of <application>perl</application>.</para>
+
     &lfs77_checked;
 
     <itemizedlist>
       <listitem>
         <para>
-          <ulink url="http://www.cpan.org/authors/id/A/AM/AMBS/Text-BibTeX-&Text-BibTeX-version;.tar.gz">Text::BibTeX-&Text-BibTeX-version;</ulink>
+          <ulink url="http://www.cpan.org/authors/id/A/AM/AMBS/Text-BibTeX-&Text-BibTeX-version;.tar.gz">Text-BibTeX-&Text-BibTeX-version;</ulink>
         </para>
       </listitem>
       <listitem>
 <literallayout>http://www.cpan.org/authors/id/A/AM/AMBS/Text-BibTeX-&Text-BibTeX-version;.tar.gz
-MD5 sum: 2dfdccab7c747d1805df432f4935ce66</literallayout>
+MD5 sum: a616d5df23dc0552a85608bd15bf03d1</literallayout>
         <itemizedlist>
           <listitem><literallayout><ulink url="http://search.cpan.org/dist/Config-AutoConf/">Config::AutoConf</ulink>
 (http://search.cpan.org/dist/Config-AutoConf/)</literallayout>
@@ -1103,6 +1203,7 @@ this uses the <xref linkend="perl-build-install"/></literallayout>
         </itemizedlist>
       </listitem>
     </itemizedlist>
+
 
     <!-- Text::Diff
     <bridgehead renderas="sect3" id="perl-text-diff"
@@ -1139,6 +1240,35 @@ this uses the <xref linkend="perl-build-install"/></literallayout>
       </listitem>
     </itemizedlist>
     -->
+
+    <!-- Text::Roman -->
+    <bridgehead renderas="sect3" id="perl-text-roman"
+    xreflabel="Text::Roman-&Text-Roman-version;">
+    Text::Roman-&Text-Roman-version;</bridgehead>
+
+    <indexterm zone="perl-modules perl-text-roman">
+      <primary sortas="a-Text-Roman">Text::Roman</primary>
+    </indexterm>
+
+    <para>
+      Text::Roman allows conversion between Roman and Arabic algorisms (number
+      systems, e.g. MCMXLV and 1945). This module uses the standard
+      <xref linkend="perl-standard-install"/>.
+    </para>
+
+    &lfs77_checked;
+
+    <itemizedlist>
+      <listitem>
+        <para>
+          <ulink url="http://www.cpan.org/authors/id/S/SY/SYP/Text-Roman-&Text-Roman-version;.tar.gz">Text-Roman-&Text-Roman-version;</ulink>
+        </para>
+      </listitem>
+      <listitem>
+<literallayout>http://www.cpan.org/authors/id/S/SY/SYP/Text-Roman-&Text-Roman-version;.tar.gz
+MD5 sum: 1f6b09c0cc1f4425b565ff787a39fd83</literallayout>
+      </listitem>
+    </itemizedlist>
 
     <!-- Tk
     <bridgehead renderas="sect3" id="tk-perl"
@@ -1181,7 +1311,7 @@ this uses the <xref linkend="perl-build-install"/></literallayout>
     Unicode::Collate-&Unicode-Collate-version;</bridgehead>
 
     <indexterm zone="perl-modules perl-unicode-collate">
-      <primary sortas="a-Unicode-Collate">Unicode-Collate</primary>
+      <primary sortas="a-Unicode-Collate">Unicode::Collate</primary>
     </indexterm>
 
     <para>Unicode::Collate  provides a Unicode collation algorithm. This module
@@ -1197,7 +1327,7 @@ this uses the <xref linkend="perl-build-install"/></literallayout>
       </listitem>
       <listitem>
 <literallayout>http://search.cpan.org/CPAN/authors/id/S/SA/SADAHIRO/Unicode-Collate-&Unicode-Collate-version;.tar.gz
-MD5 sum: 982f6d811b522656de0ae9eea0df47a1</literallayout>
+MD5 sum: 9eb22e6d7745d4d29b6753c79cbe5014</literallayout>
       </listitem>
     </itemizedlist>
 
@@ -1275,7 +1405,7 @@ MD5 sum: c908890e6a00f4203da5d4a5d6060586</literallayout>
       </listitem>
       <listitem>
 <literallayout>http://www.cpan.org/authors/id/E/ET/ETHER/URI-&URI-version;.tar.gz
-MD5 sum: 12c5d612a20ddd42041a5aa426f66269</literallayout>
+MD5 sum: d0ef53b6c63bcc02ba55f405c30741e3</literallayout>
       </listitem>
     </itemizedlist>
 
@@ -1654,6 +1784,168 @@ make test</userinput></screen>
     parameters you can pass to <command>cpan</command> on the command
     line.</para>
 
+  </sect2>
+
+  <sect2 role="content">
+    <title>Contents</title>
+
+    <para>
+      Most of these modules only install into the perl directories, but a
+      few will also install programs (mostly, perl scripts), or even a library,
+      into <filename class="directory">/usr</filename>
+    </para>
+
+    <segmentedlist>
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+
+      <seglistitem>
+        <seg> <!-- Use emphasis to highlihght the relevant module name.
+                   Our setup actually uses italic to do this this. -->
+          <emphasis>Archive::Zip:</emphasis> crc32
+          <emphasis>File::Find::Rule:</emphasis> findrule
+          <emphasis>libwww-perl:</emphasis> lwp-download, lwp-dump, lwp-mirror, lwp-request
+          <emphasis>Log::Log4perl:</emphasis> l4p-tmpl
+          <emphasis>Pod::Coverage:</emphasis> pod_cover
+          <emphasis>Text::BibTeX:</emphasis> biblex, bibparse, dumpnames
+        </seg>
+        <seg>
+          <emphasis>Text::BibTeX:</emphasis> libbtparse.so
+        </seg>
+      </seglistitem>
+    </segmentedlist>
+
+    <variablelist>
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <?dbfo list-presentation="list"?>
+      <?dbhtml list-presentation="table"?>
+
+      <varlistentry id="crc32">
+        <term><command>crc32</command></term>
+        <listitem>
+          <para>computes and prints to stdout the CRC-32 values of the
+          given files.</para>
+          <indexterm zone="perl-modules crc32">
+            <primary sortas="b-crc32">crc32</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="findrule">
+        <term><command>findrule</command></term>
+        <listitem>
+          <para>is a command line wrapper to File:Find:Rule.</para>
+          <indexterm zone="perl-modules findrule">
+            <primary sortas="b-findrule">findrule</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="lwp-download">
+        <term><command>lwp-download</command></term>
+        <listitem>
+          <para>is a script to fetch a large file from the web.</para>
+          <indexterm zone="perl-modules lwp-download">
+            <primary sortas="b-lwp-download">lwp-download</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="lwp-dump">
+        <term><command>lwp-dump</command></term>
+        <listitem>
+          <para>is used to see what headers and content is returned for a URL.</para>
+          <indexterm zone="perl-modules lwp-dump">
+            <primary sortas="b-lwp-dump">lwp-dump</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="lwp-mirror">
+        <term><command>lwp-mirror</command></term>
+        <listitem>
+          <para>is a simple mirror utility.</para>
+          <indexterm zone="perl-modules lwp-mirror">
+            <primary sortas="b-lwp-mirror">lwp-mirror</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="lwp-request">
+        <term><command>lwp-request</command></term>
+        <listitem>
+          <para>is a simple command line user agent.</para>
+          <indexterm zone="perl-modules lwp-request">
+            <primary sortas="b-lwp-request">lwp-request</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="l4p-templ">
+        <term><command>l4p-templ</command></term>
+        <listitem>
+          <para>prints out the text of a template Log4perl configuration for
+          starting a new Log4perl configuration file.</para>
+          <indexterm zone="perl-modules l4p-templ">
+            <primary sortas="b-l4p-templ">l4p-templ</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="pod_cover">
+        <term><command>pod_cover</command></term>
+        <listitem>
+          <para>is used to get a coverage analysis of the embedded documentation
+          in a perl module.</para>
+          <indexterm zone="perl-modules pod_cover">
+            <primary sortas="b-pod_cover">pod_cover</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="biblex">
+        <term><command>biblex</command></term>
+        <listitem>
+          <para>performs lexical analysis on a BibTeX file.</para>
+          <indexterm zone="perl-modules biblex">
+            <primary sortas="b-biblex">biblex</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="bibparse">
+        <term><command>bibparse</command></term>
+        <listitem>
+          <para>parses a series of BibTeX files with command line options to
+          control the string post-processing behaviour.</para>
+          <indexterm zone="perl-modules bibparse">
+            <primary sortas="b-bibparse">bibparse</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="dumpnames">
+        <term><command>dumpnames</command></term>
+        <listitem>
+          <para>parses a BibTeX file, splitting 'author' and 'editor' fields
+          into lists of names, and then dumps everything to stdout.</para>
+          <indexterm zone="perl-modules dumpnames">
+            <primary sortas="b-dumpnames">dumpnames</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="libbtparse">
+        <term><filename class='libraryfile'>libbtparse.so</filename></term>
+        <listitem>
+          <para>is a library for parsing and processing BibTeX data files.</para>
+          <indexterm zone="perl-modules libbtparse">
+            <primary sortas="c-libbtparse">libbtparse.so</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+    </variablelist>
   </sect2>
 
 </sect1>

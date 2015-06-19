@@ -6,10 +6,13 @@
 
   <!ENTITY ruby-download-http "http://cache.ruby-lang.org/pub/ruby/2.2/ruby-&ruby-version;.tar.xz">
   <!ENTITY ruby-download-ftp  " ">
-  <!ENTITY ruby-md5sum        "54b43c6c6c9dd4c4b08ceb03ad0ded7a">
-  <!ENTITY ruby-size          "9.9 MB">
-  <!ENTITY ruby-buildsize     "342 MB (additional 183 MB for docs)">
-  <!ENTITY ruby-time          "1.9 SBU (additional 1.1 SBU for docs)">
+<!--
+  <!ENTITY ruby-download-ftp  "ftp://ftp.ruby-lang.org/pub/ruby/2.2/ruby-&ruby-version;.tar.xz">
+-->
+  <!ENTITY ruby-md5sum        "dbce9b9d79d90f213ba8d448b0b6ed86">
+  <!ENTITY ruby-size          "10 MB">
+  <!ENTITY ruby-buildsize     "585 MB (additional 467 MB for C API docs)">
+  <!ENTITY ruby-time          "2.3 SBU (additional 0.4 SBU for C API docs and 0.1 SBU for tests)">
 ]>
 
 <sect1 id="ruby" xreflabel="Ruby-&ruby-version;">
@@ -92,28 +95,21 @@
     <title>Installation of Ruby</title>
 
     <para>
-      Configure <application>Ruby</application> by running the following
+      Install <application>Ruby</application> by running the following
       command:
     </para>
 
 <screen><userinput>./configure --prefix=/usr   \
             --enable-shared \
-            --docdir=/usr/share/doc/ruby-&ruby-version;</userinput></screen>
+            --docdir=/usr/share/doc/ruby-&ruby-version; &amp;&amp;
+make</userinput></screen>
 
     <para>
-      Optionally, build the CAPI documentation by running the following
+      Optionally, build the CAPI documents by running the following
       commands:
     </para>
 
-<screen><userinput>cp -v template/Doxyfile.tmpl Doxyfile &amp;&amp;
-doxygen</userinput></screen>
-
-    <para>
-      Compile <application>Ruby</application> by running the following
-      command:
-    </para>
-
-<screen><userinput>make</userinput></screen>
+<screen><userinput>make capi</userinput></screen>
 
     <para>
       To test the results, issue: <command>make test</command>.
@@ -137,7 +133,7 @@ doxygen</userinput></screen>
 
     <para>
       <option>--disable-install-doc</option>: This switch disables building and
-      installing rdoc indexes and CAPI documentation.
+      installing rdoc indexes and C API documentation.
     </para>
 
     <para>
@@ -147,7 +143,7 @@ doxygen</userinput></screen>
 
     <para>
       <option>--disable-install-capi</option>: This switch disables building
-      and installing CAPI documentation.
+      and installing C API documentation.
     </para>
 
   </sect2>
@@ -168,7 +164,7 @@ doxygen</userinput></screen>
           libruby.so and libruby-static.a
         </seg>
         <seg>
-          /usr/include/ruby-&ruby-version;
+          /usr/include/ruby-2.2.0,
           /usr/lib/ruby,
           /usr/share/doc/ruby-&ruby-version; and
           /usr/share/ri

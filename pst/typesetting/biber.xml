@@ -127,7 +127,7 @@
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="perl-readonly-xs"/> and
+<!--      <xref linkend="perl-readonly-xs"/> and -->
       <xref linkend="perl-file-which"/> (to run the testsuite)
     </para>
 

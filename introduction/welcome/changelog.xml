@@ -44,36 +44,95 @@
 
 -->
     <listitem>
-      <para>>June 19th, 2015</para>
+      <para>June 19th, 2015</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
-          <para>[krejzi] - upower-0.99.3, weston-1.8.0 and
+          <para>[krejzi] - Updated to tcl-8.6.4, tk-8.6.4 and
+          vala-0.28.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to python-3.4.3, ruby-2.2.2 and
+          subversion-1.8.13.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to OpenJDK-1.8.0.45, php-5.6.10
+          and python-2.7.10.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to lua-5.2.4, mercurial-3.4.1
+          and nasm-2.11.08.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to git-2.4.4, librep-0.92.5 and
+          llvm-3.6.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to elfutils-0.163, gcc-5.1.0 and
+          gdb-7.9.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to apache-ant-1.9.5, cmake-3.2.3
+          and dejagnu-1.5.3.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to Text-BibTeX-0.71, Unicode-Collate-1.12
+          and URI-1.67 (Perl Modules).</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to Encode-JIS2K-0.03, File-Which-1.18
+          and Net-DNS-0.83 (Perl Modules).</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to Archive-Zip-1.48, autovivification-0.15
+          and Data-Dump-1.23 (Perl Modules).</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to pygobject-3.16.2 and
+          setuptools-17.1.1 (Python Modules).</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to Beaker-1.7.0 and pyatspi-2.16.0
+          (Python Modules).</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Added Test-Differences-0.63 and Test-Pod-1.50
+          (Perl Modules).</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Added Test-Pod-Coverage-1.10 and Text-Roman-3.5
+          (Perl Modules).</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Removed Readonly-XS (Perl Module).</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to upower-0.99.3, weston-1.8.0 and
           which-2.21.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - sysstat-11.1.5, udisks-2.1.5 and
+          <para>[krejzi] - Updated to sysstat-11.1.5, udisks-2.1.5 and
           unrar-5.2.7.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - ModemManager-1.4.8, p7zip-9.38.1
+          <para>[krejzi] - Updated to ModemManager-1.4.8, p7zip-9.38.1
           and pciutils-3.3.1.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - hdparm-9.48, logrotate-3.9.1
+          <para>[krejzi] - Updated to hdparm-9.48, logrotate-3.9.1
           and mc-4.8.14.</para>
         </listitem>
         <listitem>
-          <para>[krejzi] - autofs-5.1.1, bluez-5.31 and
+          <para>[krejzi] - Updated to autofs-5.1.1, bluez-5.31 and
           colord-1.2.11.</para>
         </listitem>
       </itemizedlist>
     </listitem>
 
     <listitem>
-      <para>>June 17th, 2015</para>
+      <para>June 17th, 2015</para>
       <itemizedlist>
         <listitem>
           <para>[krejzi] - Updated to sharutils-4.15.2.</para>

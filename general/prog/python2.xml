@@ -7,14 +7,14 @@
   <!ENTITY python2-download-http
      "https://www.python.org/ftp/python/&python2-version;/Python-&python2-version;.tar.xz">
   <!ENTITY python2-download-ftp  " ">
-  <!ENTITY python2-md5sum        "38d530f7efc373d64a8fb1637e3baaa7">
+  <!ENTITY python2-md5sum        "c685ef0b8e9f27b5e3db5db12b268ac6">
   <!ENTITY python2-size          "12 MB">
-  <!ENTITY python2-buildsize     "228 MB (additional 18 MB for the tests)">
-  <!ENTITY python2-time          "1.0 SBU (additional 4.6 SBU for tests)">
+  <!ENTITY python2-buildsize     "227 MB (additional 18 MB for the tests)">
+  <!ENTITY python2-time          "0.8 SBU (additional 5.5 SBU for tests)">
 
   <!ENTITY python2htmldoc-download-http
-     "https://docs.python.org/ftp/python/doc/&python2-version;/python-&python2-version;-docs-html.tar.bz2">
-  <!ENTITY python2htmldoc-md5sum        "8804bc888f6b7a1cc217be1acbb59ad6">
+     "https://docs.python.org/2.7/archives/python-&python2-version;-docs-html.tar.bz2">
+  <!ENTITY python2htmldoc-md5sum        "5f07d5079327be83f450ecc459ffe249">
   <!ENTITY python2htmldoc-size          "4.4 MB">
 ]>
 
@@ -79,17 +79,6 @@
       </listitem>
     </itemizedlist>
 
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-           Optional (required if you want to run the testsuite):
-           <ulink url="&patch-root;/Python-&python2-version;-skip_test_gdb-1.patch"/>
-        </para>
-      </listitem>
-    </itemizedlist>
-
     <itemizedlist spacing="compact">
       <title>Optional HTML Documentation</title>
       <listitem>
@@ -148,12 +137,6 @@
 
   <sect2 role="installation">
     <title>Installation of Python 2</title>
-
-    <para>
-      If you are going to run the test suite, disable a test that fails:
-    </para>
-
-<screen><userinput>patch -Np1 -i ../Python-&python2-version;-skip_test_gdb-1.patch</userinput></screen>
 
     <para>
       Install <application>Python 2</application> by running the following
@@ -260,7 +243,6 @@ find /usr/share/doc/python-&python2-version; -type f -exec chmod 0644 {} \;</use
         </seg>
         <seg>
           libpython&python2-majorver;.so
-          and several under /usr/lib/python&python2-majorver;/{config,lib-dynload}
         </seg>
         <seg>
           /usr/include/python&python2-majorver;,

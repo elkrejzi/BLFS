@@ -4,56 +4,54 @@
   <!ENTITY % general-entities SYSTEM "../../general.ent">
   %general-entities;
 
-  <!ENTITY ojdk-upd                  "31">
-  <!ENTITY ojdk-bd                   "b13">
+  <!ENTITY ojdk-upd                  "45">
+  <!ENTITY ojdk-bd                   "b14">
   <!ENTITY ojdk-tarball              "jdk8u&ojdk-upd;-&ojdk-bd;.tar.bz2">
   <!ENTITY ojdk-repo                 "http://hg.openjdk.java.net/jdk8u/jdk8u">
   <!ENTITY ojdk-download             "&ojdk-repo;/archive/&ojdk-tarball;">
 
   <!ENTITY anduin-download           "http://anduin.linuxfromscratch.org/files/BLFS/OpenJDK-&openjdk-version;">
 
-  <!ENTITY ojdk-md5sum               "1e9071c62fd02a5b0c2874d9967b38e7">
-  <!ENTITY ojdk-size                 "384 KB">
+  <!ENTITY ojdk-md5sum               "4809dd6f1cae5c87e855a21506d43012">
+  <!ENTITY ojdk-size                 "388 KB">
 
   <!ENTITY corba-download            "&anduin-download;/corba.tar.xz">
-  <!ENTITY corba-md5sum              "35763069a8a69b1510d70d7e77a95fea">
-  <!ENTITY corba-size                "915 KB">
+  <!ENTITY corba-md5sum              "af5baa04d025fb96a39a0ea0a5b187f4">
+  <!ENTITY corba-size                "917 KB">
 
   <!ENTITY hotspot-download          "&anduin-download;/hotspot.tar.xz">
-  <!ENTITY hotspot-md5sum            "76deba8b0c7ee042df4cc441d29b1da0">
-  <!ENTITY hotspot-size              "6.2 MB">
+  <!ENTITY hotspot-md5sum            "16b2feeedf3b3d097f51a25af09bb8e1">
+  <!ENTITY hotspot-size              "6.3 MB">
 
   <!ENTITY jaxp-download             "&anduin-download;/jaxp.tar.xz">
-  <!ENTITY jaxp-md5sum               "baf2f923fe29a7ceff6d0f7cb5331b9d">
+  <!ENTITY jaxp-md5sum               "3a23fa9cc06fc130c83597c10da9ac29">
   <!ENTITY jaxp-size                 "2.2 MB">
 
   <!ENTITY jaxws-download            "&anduin-download;/jaxws.tar.xz">
-  <!ENTITY jaxws-md5sum              "5d99e16e146e920b5fa3360b26bb13a8">
+  <!ENTITY jaxws-md5sum              "9769cc527f8c73ea624afa27e86acde9">
   <!ENTITY jaxws-size                "2.2 MB">
 
   <!ENTITY jdk-download              "&anduin-download;/jdk.tar.xz">
-  <!ENTITY jdk-md5sum                "79f0b2cd008497a8011bfbc2bd7f2b01">
-  <!ENTITY jdk-size                  "36.2 MB">
+  <!ENTITY jdk-md5sum                "813df5653cc634095e88db5243f5351a">
+  <!ENTITY jdk-size                  "36.4 MB">
 
   <!ENTITY langtools-download        "&anduin-download;/langtools.tar.xz">
-  <!ENTITY langtools-md5sum          "19d9a21aa51e8afb80d0a35681c2467f">
+  <!ENTITY langtools-md5sum          "ebb9bc974506248642a983ca16986425">
   <!ENTITY langtools-size            "2.0 MB">
 
   <!ENTITY nashorn-download          "&anduin-download;/nashorn.tar.xz">
-  <!ENTITY nashorn-md5sum            "7ed0b17f2d925d3263a344b7fc746d24">
-  <!ENTITY nashorn-size              "1.9 MB">
+  <!ENTITY nashorn-md5sum            "e9b1252034e47023ddaf44b4c8fd9a75">
+  <!ENTITY nashorn-size              "2.1 MB">
 
-  <!ENTITY jtreg-version             "4.1-b10">
-  <!ENTITY jtreg-download            "https://adopt-openjdk.ci.cloudbees.com/job/jtreg/lastStableBuild/artifact/jtreg&jtreg-version;.tar.gz">
-  <!ENTITY jtreg-md5sum              "2e112b5863c777426fbbbadeeb9972e1">
-<!-- The md5sum varies, because people at adopt-openjdk rebuild the package
-without changing the name of the tarball -->
-  <!ENTITY jtreg-size                "2.6 MB">
+  <!ENTITY jtreg-version             "4.1-b11-273">
+  <!ENTITY jtreg-download            "&anduin-download;/jtreg&jtreg-version;.tar.xz">
+  <!ENTITY jtreg-md5sum              "2f84934b6e9efcbc9060109729e569d1">
+  <!ENTITY jtreg-size                "7.2 MB">
 
   <!ENTITY icedtea-web-download      "http://icedtea.classpath.org/download/source/icedtea-web-&icedtea-web-version;.tar.gz">
 
-  <!ENTITY ojdk-buildsize           "3.1 GB (additional 350 MB for tests)">
-  <!ENTITY ojdk-time                "15 SBU (additional 126 SBU for tests)">
+  <!ENTITY ojdk-buildsize           "3.9 GB (additional 361 MB for tests)">
+  <!ENTITY ojdk-time                "10 SBU (additional 110 SBU for tests)">
 ]>
 
 <sect1 id="openjdk"
@@ -249,7 +247,7 @@ without changing the name of the tarball -->
       </listitem>
       <listitem>
         <para>
-          Optional test harness: <ulink url="&jtreg-download;"/>
+          Recommended test harness: <ulink url="&jtreg-download;"/>
         </para>
       </listitem>
     </itemizedlist>
@@ -278,7 +276,7 @@ without changing the name of the tarball -->
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="mercurial"/> and
-      <xref linkend="twm"/> (for the tests)
+      an X Window manager such as <xref linkend="twm"/> (for the tests)
     </para>
 
     <para condition="html" role="usernotes">User Notes:
@@ -306,10 +304,10 @@ tar -xf ../langtools.tar.xz  &amp;&amp;
 tar -xf ../nashorn.tar.xz</userinput></screen>
 
     <para>
-      If you have downloaded the test harness, unpack it too:
+      If you have downloaded the recommended test harness, unpack it too:
     </para>
 
-<screen><userinput>tar -xf ../jtreg&jtreg-version;.tar.gz</userinput></screen>
+<screen><userinput>tar -xf ../jtreg&jtreg-version;.tar.xz</userinput></screen>
 
 <!--TODO: it might be better to add instructions for the cacerts file at
 this place and to use the switch "with-cacerts-file" -->
@@ -323,12 +321,14 @@ this place and to use the switch "with-cacerts-file" -->
     -i jdk/src/share/native/sun/awt/splashscreen/splashscreen_gif.c</userinput></screen>
 
     <para>
-      Fix a bug in a shell script used to set the flags for
-      <command>make</command>:
+      One file in hotspot needs a change, since it relies on a non-normative
+      compiler behavior, which has changed with GCC version 5. Note that the change
+      works also with previous versions.
     </para>
 
-<screen><userinput>sed 's/\([ \t]\)\]\([^\]\)/\1I]\2/g' \
-    -i hotspot/make/linux/makefiles/adjust-mflags.sh</userinput></screen>
+<screen><userinput>sed -e 's/(hi - lo)/ hi - lo /' \
+    -e 's/(lo - hi)/ lo - hi /' \
+    -i hotspot/src/share/vm/opto/type.cpp</userinput></screen>
 
     <note>
       <para>
@@ -358,11 +358,24 @@ sh ./configure                \
    --enable-unlimited-crypto  \
    --with-zlib=system         \
    --with-giflib=system       &amp;&amp;
-make DEBUG_BINARIES=true all</userinput></screen>
+make DEBUG_BINARIES=true                 \
+     DISABLE_HOTSPOT_OS_VERSION_CHECK=ok \
+     all  &amp;&amp;
+find build/*/images/j2sdk-image -iname \*.diz -delete
+</userinput></screen>
+
+    <note>
+      <para>
+        Testing will involve the interplay of pairs of JVMs using the
+        networking interface, so networking must be started.  If it
+        isn't, not only will these tests fail, but the test cleanup
+        will leave orphaned JVMs running.  There will be many of
+        them.  Rebooting may be the easiest recovery.
+      </para>
+    </note>
 
     <para>
-      It seems that the test infrastructure of OpenJDK is a work in
-      progress, so that testing the newly built JVM involves several steps.
+      Testing the newly built JVM involves several steps.
       First, it is better to run the test suite in a frame buffer on a
       different display, using Xvfb:
     </para>
@@ -387,7 +400,8 @@ echo Waiting for twm to initialize; sleep 1
 xhost +</userinput></screen>
 
     <para>
-      Then, it is necessary to modify some files:
+      Then, it is necessary to modify some files<!-- (replace &lt;N&gt; with the
+      number of JAVA VM allowed to run concurrently)-->:
     </para>
 
 <screen role='nodump'><userinput>echo -e "
@@ -402,8 +416,13 @@ jdk_all = :jdk_core           \\
           javax/print         \\
           sun/pisces          \\
           com/sun/java/swing" >> jdk/test/TEST.groups &amp;&amp;
-sed -e 's/all:.*jck.*/all: jtreg/' \
-    -i langtools/test/Makefile</userinput></screen>
+sed -e 's/all:.*jck.*/all: jtreg/'      \
+    -e '/^JTREG /s@\$(JT_PLATFORM)/@@'  \
+    -i langtools/test/Makefile<!--          &amp;&amp;
+sed -i 's@/win32@@' jdk/test/Makefile   &amp;&amp;
+sed -e 's@JTREG_HOME@JT_PLATFORM="" &amp;@' \
+    -e 's@TEST="@CONCURRENCY=&lt;N&gt; &amp;@'    \
+    -i test/Makefile--></userinput></screen>
 
     <para>
       Some variables have to be set:
@@ -422,17 +441,26 @@ PRODUCT_HOME=$(echo $(pwd)/build/*/images/j2sdk-image)</userinput></screen>
             JT_HOME=${JT_HOME}              \
             JT_JAVA=${JT_JAVA}              \
             PRODUCT_HOME=${PRODUCT_HOME} all
-LANG=C ${JT_HOME}/linux/bin/jtreg -a -v:fail,error \
-                -dir:$(pwd)/hotspot/test    \
-                -k:\!ignore                 \
-                -jdk:${PRODUCT_HOME}        \
-                :jdk</userinput></screen>
+LANG=C ${JT_HOME}/bin/jtreg -a -v:fail,error \
+                -dir:$(pwd)/hotspot/test     \
+                -k:\!ignore                  \
+                -jdk:${PRODUCT_HOME}         \
+<!--                -agentvm -conc:&lt;N&gt;           \
+-->                :jdk</userinput></screen>
 
     <para>
       The test results can be compared to
       <ulink url="http://download.java.net/openjdk/testresults/8/">these
-      results</ulink>.
-      Finally, stop the virtual frame buffer and clean up:
+      results</ulink>, although they usually are run on a newer version.
+      Some failures can be expected, the number of which depends on various
+      conditions, like whether the computer is connected to network. Also, some
+      tests may timeout if the machine is under load.
+    </para>
+
+    <para>
+      Next some cleanup has to be done. The instructions below only stop the
+      frame buffer, but it has been reported that some java VM may be left running
+      after the tests, so it is necessary to check orphaned processes:
     </para>
 
 <screen role='nodump'><userinput>kill -9 `cat twm.pid`  &amp;&amp;
@@ -446,11 +474,7 @@ fi</userinput></screen>
     <para>Install the package with the following commands as the
     <systemitem class="username">root</systemitem> user:</para>
 
-<screen role="root"><userinput>find build/*/images/j2sdk-image -iname \*.jar -exec chmod a+r {} \; &amp;&amp;
-chmod a+r build/*/images/j2sdk-image/lib/ct.sym &amp;&amp;
-find build/*/images/j2sdk-image -iname \*.diz -delete &amp;&amp;
-find build/*/images/j2sdk-image -iname \*.debuginfo -delete &amp;&amp;
-cp -R build/*/images/j2sdk-image /opt/OpenJDK-&openjdk-version; &amp;&amp;
+<screen role="root"><userinput>cp -RT build/*/images/j2sdk-image /opt/OpenJDK-&openjdk-version; &amp;&amp;
 chown -R root:root /opt/OpenJDK-&openjdk-version;</userinput></screen>
 
     <para>
@@ -462,7 +486,7 @@ chown -R root:root /opt/OpenJDK-&openjdk-version;</userinput></screen>
       user:
     </para>
 
-<screen role="root"><userinput>ln -sfnv OpenJDK-&openjdk-version; /opt/jdk</userinput></screen>
+<screen role="root"><userinput>ln -sfvn OpenJDK-&openjdk-version; /opt/jdk</userinput></screen>
 
     <para>If desired, you may install a .desktop file corresponding to an entry
     in a desktop menu for <command>policytool</command>. First, you need to
@@ -521,7 +545,7 @@ install -v -Dm644 javaws.png /usr/share/pixmaps/javaws.png</userinput></screen>
 
     <para>
       <parameter>--with-build-number</parameter>: Again, the build
-      system does not include the build	 number in the version string. It has
+      system does not include the build number in the version string. It has
       to be specified here too.
     </para>
 
@@ -545,7 +569,7 @@ install -v -Dm644 javaws.png /usr/share/pixmaps/javaws.png</userinput></screen>
     </para>
 
     <para>
-      <option>--with-jobs=N</option>: Allows to set the number
+      <option>--with-jobs=N</option>: Allows setting the number
       of jobs for <command>make</command> equal to N. The default is the
       result of a calculation involving the available memory and the number
       of processors. Note that even if you specify N=1, some parallelization
@@ -555,24 +579,23 @@ install -v -Dm644 javaws.png /usr/share/pixmaps/javaws.png</userinput></screen>
 
     <para>
       <option>--with-cacerts-file=...</option>: Specifies where to find a
-      <filename>cacerts</filename> file. Otherwise, an empty one is created.
-      You can get it from an earlier version of the package, or using the
+      <filename>cacerts</filename> file, typically <filename>
+      /opt/jdk/jre/lib/security</filename>. Otherwise, an empty one is created.
+      You can get it from an earlier version of the package, or use the
       script below to generate one.
     </para>
+
     <para>
-      <command>make DEBUG_BINARIES=true all</command>: The build fails
-      if DEBUG_BINARIES is not set to true.
+      <command>make DEBUG_BINARIES=true
+      DISABLE_HOTSPOT_OS_VERSION_CHECK=ok all</command>: The build fails if
+      DEBUG_BINARIES is not set to true. Furthermore, OS version checking in
+      hotspot's Makefile does not account for Linux version 4.x. Disabling the
+      test is harmless and allows building.
     </para>
 
     <para>
-      <command>find ... -iname '*.jar' -exec chmod a+r {} \;</command>
-      and following line: Fix permission in some library files, in order to
-      allow all users to access them.
-    </para>
-
-    <para>
-      <command>find ... -iname '*.diz' -delete</command>: This command and the
-      the next one remove redundant files.
+      <command>find ... -iname '*.diz' -delete</command>: This command
+      removes redundant files.
     </para>
 
   </sect2>
@@ -601,10 +624,12 @@ install -v -Dm644 javaws.png /usr/share/pixmaps/javaws.png</userinput></screen>
       (cacerts) file</title>
 
       <para>
-        Use the following procedure to install the
-        <filename>cacerts</filename> or to generate a new one if
-        <xref linkend="cacerts"/> have been updated. First, if it is not
-        already present, generate the <command>mkcacerts</command> script
+        <application>OpenJDK</application> uses its own format for the
+        CA certificates. Those certificates are located in a file named <filename>
+        /opt/jdk/jre/lib/security/cacerts</filename>. That file may be generated
+        from the one installed using the instructions on the <xref
+        linkend="cacerts"/> page, using the following procedure.
+        First, generate the <command>mkcacerts</command> script
         as the <systemitem class="username">root</systemitem> user:
       </para>
 
@@ -834,16 +859,19 @@ chmod -v 755 /opt/jdk/bin/mkcacerts</userinput></screen>
     </para>
   </note>
 
-    <para>If you need to generate a <filename>cacerts</filename> file,
-    and there is already one in
-    <filename class="directory">/opt/jdk/jre/lib/security</filename>, it
-    is better to make a backup. Then, you can create a new one, as the
-    <systemitem class="username">root</systemitem> user:</para>
+    <para>
+      Generate the <application>OpenJDK</application> <filename>cacerts</filename>
+      file as the <systemitem class="username">root</systemitem> user:
+    </para>
 
-<screen role="root"><userinput>/opt/jdk/bin/mkcacerts            \
-        -d "/etc/ssl/certs/"      \
-        -k "/opt/jdk/bin/keytool" \
-        -s "/usr/bin/openssl"     \
+<screen role="root"><userinput>if [ -f /opt/jdk/jre/lib/security/cacerts ]; then
+  mv /opt/jdk/jre/lib/security/cacerts \
+     /opt/jdk/jre/lib/security/cacerts.bak
+fi &amp;&amp;
+/opt/jdk/bin/mkcacerts                 \
+        -d "/etc/ssl/certs/"           \
+        -k "/opt/jdk/bin/keytool"      \
+        -s "/usr/bin/openssl"          \
         -o "/opt/jdk/jre/lib/security/cacerts"</userinput></screen>
 
     <para>Use the following commands to check if the
