@@ -7,10 +7,10 @@
   <!ENTITY ntp-download-http "https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-&ntp-version;.tar.gz">
 <!--  <!ENTITY ntp-download-ftp  "&gentoo-ftp-repo;/ntp-&ntp-version;.tar.gz">-->
   <!ENTITY ntp-download-ftp  " ">
-  <!ENTITY ntp-md5sum        "65d8cdfae4722226fbe29863477641ed">
-  <!ENTITY ntp-size          "6.5 MB">
-  <!ENTITY ntp-buildsize     "59 MB">
-  <!ENTITY ntp-time          "0.7 SBU">
+  <!ENTITY ntp-md5sum        "fa37049383316322d060ec9061ac23a9">
+  <!ENTITY ntp-size          "6.6 MB">
+  <!ENTITY ntp-buildsize     "70 MB">
+  <!ENTITY ntp-time          "0.5 SBU">
 ]>
 
 <sect1 id="ntp" xreflabel="ntp-&ntp-version;">
@@ -61,11 +61,20 @@
 
     <bridgehead renderas="sect3">ntp Dependencies</bridgehead>
 
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="wget"/> (runtime, for <command>update-leap</command>) and
+      <xref linkend="which"/>
+    </para>
+
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="openssl"/> and
-      <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
+      <xref linkend="libevent"/>,
+      <xref linkend="openssl"/>,
+      <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>, and
+      <ulink url="https://www.gnu.org/software/autogen/">AutoGen</ulink>
     </para>
+
 
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/ntp"/></para>
@@ -89,15 +98,17 @@ useradd -c "Network Time Protocol" -d /var/lib/ntp -u 87 \
     <para>Install <application>ntp</application> by running
     the following commands:</para>
 
-<screen><userinput>./configure --prefix=/usr      \
-            --bindir=/usr/sbin \
-            --sysconfdir=/etc  \
-            --enable-linuxcaps \
+<screen><userinput>./configure --prefix=/usr         \
+            --bindir=/usr/sbin    \
+            --sysconfdir=/etc     \
+            --enable-linuxcaps    \
             --with-lineeditlibs=readline \
             --docdir=/usr/share/doc/ntp-&ntp-version; &amp;&amp;
 make</userinput></screen>
 
-    <para>To test the results, issue: <command>make check</command>.</para>
+<!--    <para>To test the results, issue: <command>make check</command>.</para>
+-->
+    <para>This package does not have a working testsuite.</para>
 
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 
@@ -141,12 +152,19 @@ install -v -dm755 -o ntp -g ntp /var/lib/ntp</userinput></screen>
     <sect3>
       <title>Configuration Information</title>
 
-      <para>The following configuration file defines various ntp servers
-      with open access from different continents. It also creates a
-      drift file where <command>ntpd</command> stores the frequency
-      offset and a pid file to store the <command>ntpd</command> process
-      ID. Since the documentation included with the package is sparse,
-      visit the ntp website at <ulink url="http://www.ntp.org/"/> and
+      <para>The following configuration file first defines various ntp
+      servers with open access from different continents. Second, it
+      creates a drift file where <command>ntpd</command> stores the
+      frequency offset and a pid file to store the
+      <command>ntpd</command> process ID. Third, it defines the location
+      for the leap-second definition file
+      <filename>/etc/ntp.leapseconds</filename>, that the
+      <command>update-leap</command> script checks and updates when
+      necessary. This script can be run as a cron job and the
+      <application>ntp</application> developers recommend a frequency of
+      about three weeks for the updates. Since the documentation included
+      with the package is sparse, visit the ntp website at
+      <ulink url="http://www.ntp.org/"/> and
       <ulink url="http://www.pool.ntp.org/"/> for more information.</para>
 
 <screen role="root"><userinput>cat &gt; /etc/ntp.conf &lt;&lt; "EOF"
@@ -166,7 +184,9 @@ server 0.north-america.pool.ntp.org
 server 2.south-america.pool.ntp.org
 
 driftfile /var/lib/ntp/ntp.drift
-pidfile   /var/run/ntpd.pid</literal>
+pidfile   /var/run/ntpd.pid
+
+leapfile  /etc/ntp.leapseconds</literal>
 EOF</userinput></screen>
 
       <para>
@@ -177,7 +197,7 @@ EOF</userinput></screen>
 
 <screen role="root"><userinput>cat &gt;&gt; /etc/ntp.conf &lt;&lt; "EOF"
 <literal># Security session
-restrict default limited kod nomodify notrap nopeer noquery
+restrict    default limited kod nomodify notrap nopeer noquery
 restrict -6 default limited kod nomodify notrap nopeer noquery
 
 restrict 127.0.0.1
@@ -227,7 +247,7 @@ EOF</userinput></screen>
 
       <seglistitem>
         <seg>calc_tickadj, ntp-keygen, ntp-wait, ntpd, ntpdate, ntpdc, ntpq,
-        ntptime, ntptrace, sntp and tickadj</seg>
+        ntptime, ntptrace, sntp, tickadj and update-leap</seg>
         <seg>None</seg>
         <seg>/usr/share/ntp,
         /usr/share/doc/ntp-4.2.8 and
@@ -355,6 +375,17 @@ EOF</userinput></screen>
           timekeeping.</para>
           <indexterm zone="ntp tickadj">
             <primary sortas="b-tickadj">tickadj</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="update-leap">
+        <term><command>update-leap</command></term>
+        <listitem>
+          <para>is a script to verify and, if necessary, update the leap-second
+          definition file.</para>
+          <indexterm zone="ntp update-leap">
+            <primary sortas="b-update-leap">update-leap</primary>
           </indexterm>
         </listitem>
       </varlistentry>

@@ -6,7 +6,7 @@
 
   <!ENTITY mariadb-download-http "https://downloads.mariadb.org/interstitial/mariadb-&mariadb-version;/source/mariadb-&mariadb-version;.tar.gz">
   <!ENTITY mariadb-download-ftp  "ftp://mirrors.fe.up.pt/pub/mariadb/mariadb-&mariadb-version;/source/mariadb-&mariadb-version;.tar.gz">
-  <!ENTITY mariadb-md5sum        "7b1a197ea5d4027833a3a2ed26fc4cae">
+  <!ENTITY mariadb-md5sum        "59d6c00827ad56f2ac76340fece32fc0">
   <!ENTITY mariadb-size          "54 MB">
   <!ENTITY mariadb-buildsize     "1.4 GB">
   <!ENTITY mariadb-time          "10.5 SBU">
@@ -93,14 +93,15 @@
       <xref linkend="boost"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="linux-pam"/>,
-      <xref linkend="lzo"/>,
       <xref linkend="pcre"/>,
+      <xref linkend="ruby"/>,
       <xref linkend="unixodbc"/>,
       <xref linkend="valgrind"/>,
       <ulink url="http://groonga.org/">Groonga</ulink>,
       <ulink url="http://www.phontron.com/kytea/">KyTea</ulink>,
       <ulink url="http://sourceforge.net/projects/judy/">Judy</ulink>,
       <ulink url="http://packages.debian.org/source/sid/libaio">libaio</ulink>,
+      <ulink url="https://github.com/Cyan4973/lz4">lz4</ulink>,
       <ulink url="https://code.google.com/p/mecab/downloads/list">MeCab</ulink>,
       <ulink url="https://github.com/msgpack/">MessagePack</ulink>,
       <ulink url="http://www.mruby.org/">mruby</ulink>,
@@ -140,8 +141,7 @@ useradd -c "MySQL Server" -d /srv/mysql -g mysql -s /bin/false -u 40 mysql</user
       following commands:
     </para>
 
-<screen><userinput>sed -i "s@data/test@\${INSTALL_MYSQLTESTDIR}@g"        sql/CMakeLists.txt       &amp;&amp;
-sed -i "s/srv_buf_size/srv_sort_buf_size/"      storage/innobase/row/row0log.cc &amp;&amp;
+<screen><userinput>sed -i "s@data/test@\${INSTALL_MYSQLTESTDIR}@g" sql/CMakeLists.txt &amp;&amp;
 
 mkdir build &amp;&amp;
 cd build    &amp;&amp;
@@ -182,8 +182,8 @@ make</userinput></screen>
     <title>Command Explanations</title>
 
     <para>
-      <command>sed -i ...</command>: First sed sets correct installation
-      directory for some components. Second sed fixes a bug in the code.
+      <command>sed -i ...</command>: This command sets correct installation
+      directory for some components.
     </para>
 
     <para>

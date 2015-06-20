@@ -7,10 +7,10 @@
   <!ENTITY dovecot-download-http
   "http://www.dovecot.org/releases/&dovecot-major;.&dovecot-minor;/dovecot-&dovecot-version;.tar.gz">
   <!ENTITY dovecot-download-ftp  " ">
-  <!ENTITY dovecot-md5sum        "c6c176943bd832c780fbb5d2f8850952">
-  <!ENTITY dovecot-size          "4.6 MB">
-  <!ENTITY dovecot-buildsize     "164 MB">
-  <!ENTITY dovecot-time          "1.4 SBU (additional 0.5 SBU for the tests)">
+  <!ENTITY dovecot-md5sum        "1e42eb3b69544c447ad882d7858f3630">
+  <!ENTITY dovecot-size          "4.9 MB">
+  <!ENTITY dovecot-buildsize     "257 MB (additional 14 MB for the tests)">
+  <!ENTITY dovecot-time          "1.3 SBU (additional 0.4 SBU for the tests)">
 ]>
 
 <sect1 id="dovecot" xreflabel="Dovecot-&dovecot-version;">
@@ -38,7 +38,7 @@
       easily extensible with plugins.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -79,13 +79,17 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="clucene"/>,
+      <xref linkend="icu"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mariadb"/>,
       <xref linkend="openldap"/>,
       <xref linkend="openssl"/>,
       <xref linkend="postgresql"/>,
-      <xref linkend="sqlite"/>, and
-      <xref linkend="valgrind"/>
+      <xref linkend="sqlite"/>,
+      <xref linkend="valgrind"/>,
+      <ulink url="https://cassandra.apache.org/">Cassandra</ulink>,
+      <ulink url="https://github.com/Cyan4973/lz4">lz4</ulink>, and
+      <ulink url="https://github.com/shibukawa/snowball_py">stemmer</ulink>
     </para>
 
     <para condition="html" role="usernotes">User Notes:

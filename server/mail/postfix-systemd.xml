@@ -7,9 +7,9 @@
   <!ENTITY postfix-download-http " ">
   <!ENTITY postfix-download-ftp
            "ftp://ftp.porcupine.org/mirrors/postfix-release/official/postfix-&postfix-version;.tar.gz">
-  <!ENTITY postfix-md5sum        "a4a83f8d729f31c803bf9c2277701d56">
+  <!ENTITY postfix-md5sum        "3ec1416e7d4fba9566297c8fcf7a348c">
   <!ENTITY postfix-size          "4.1 MB">
-  <!ENTITY postfix-buildsize     "205 MB">
+  <!ENTITY postfix-buildsize     "197 MB">
   <!ENTITY postfix-time          "0.4 SBU">
 ]>
 
@@ -38,7 +38,7 @@
       Internet Service Provider.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -137,6 +137,13 @@ chown -v postfix:postfix /var/mail</userinput></screen>
       </para>
 
 <screen><userinput>sed -i 's/.\x08//g' README_FILES/*</userinput></screen>
+
+      <para>
+        If you are running a Linux-4.x kernel, apply the following sed to
+        allow the <command>makedefs</command> script to recognize it:
+      </para>
+
+<screen><userinput>sed -i 's/Linux.3\*/Linux.[34]\*/' makedefs</userinput></screen>
 
       <para>
         The <application>Postfix</application> source tree does not contain a

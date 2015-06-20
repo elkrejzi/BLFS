@@ -348,24 +348,24 @@
 <!ENTITY ncftp-version                "3.2.5">
 <!ENTITY net-tools-version            "CVS_20101030">
 <!ENTITY nfs-utils-version            "1.3.2">
-<!ENTITY ntp-version                  "4.2.8p1">
-<!ENTITY rpcbind-version              "0.2.2">
+<!ENTITY ntp-version                  "4.2.8p2">
+<!ENTITY rpcbind-version              "0.2.3">
 <!ENTITY rsync-version                "3.1.1">
-<!ENTITY samba-version                "4.1.16">
-<!ENTITY wget-version                 "1.16.1">
+<!ENTITY samba-version                "4.2.2">
+<!ENTITY wget-version                 "1.16.3">
 <!ENTITY wireless-tools-version       "29">
-<!ENTITY wpa_supplicant-version       "2.3">
+<!ENTITY wpa_supplicant-version       "2.4">
 
 <!-- Chapter 16 -->
 <!ENTITY avahi-version                "0.6.31">
-<!ENTITY bind-version                 "9.10.1-P1">
+<!ENTITY bind-version                 "9.10.2-P1">
 <!ENTITY mod_dnssd-version            "0.6">
-<!ENTITY NetworkManager-version       "1.0.0">
+<!ENTITY NetworkManager-version       "1.0.2">
 <!ENTITY nmap-version                 "6.47">
 <!ENTITY traceroute-version           "2.0.21">
-<!ENTITY whois-version                "5.2.4">
+<!ENTITY whois-version                "5.2.9">
 <!ENTITY wicd-version                 "1.7.3">
-<!ENTITY wireshark-version            "1.12.3">  <!-- even minors only -->
+<!ENTITY wireshark-version            "1.12.6">  <!-- even minors only -->
 
 <!ENTITY wicd-major-version           "1.7">
 
@@ -399,29 +399,29 @@
 <!-- Part V -->
 <!-- Chapter 20 -->
 <!ENTITY apache-version               "2.4.12">
-<!ENTITY proftpd-version              "1.3.5">
+<!ENTITY proftpd-version              "1.3.5a">
 <!ENTITY vsftpd-version               "3.0.2">
 
 <!-- Chapter 21 -->
 <!ENTITY dovecot-major                "2">
 <!ENTITY dovecot-minor                "2">
-<!ENTITY dovecot-micro                "15">
+<!ENTITY dovecot-micro                "18">
 <!ENTITY dovecot-version              "&dovecot-major;.&dovecot-minor;.&dovecot-micro;">
 
 <!ENTITY exim-version                 "4.85">
-<!ENTITY postfix-version              "3.0.0">
+<!ENTITY postfix-version              "3.0.1">
 <!ENTITY sendmail-version             "8.15.1">
 
 <!-- Chapter 22 -->
-<!ENTITY db-version                   "6.1.19">
-<!ENTITY mariadb-version              "10.0.16">
-<!ENTITY postgresql-version           "9.4.1">
-<!ENTITY sqlite-version               "3.8.8.2">
+<!ENTITY db-version                   "6.1.23">
+<!ENTITY mariadb-version              "10.0.20">
+<!ENTITY postgresql-version           "9.4.4">
+<!ENTITY sqlite-version               "3.8.10.2">
 
 <!-- Chapter 23 -->
 <!ENTITY openldap-version             "2.4.40">
 <!ENTITY soprano-version              "2.9.4">
-<!ENTITY unbound-version              "1.5.1">
+<!ENTITY unbound-version              "1.5.3">
 <!ENTITY virtuoso-version             "6.1.8">
 <!ENTITY xinetd-version               "2.3.15">
 
