@@ -4,7 +4,7 @@
 <!ENTITY colord-gtk-version           "0.1.26">
 <!ENTITY cups-pk-helper-version       "0.2.5">
 <!ENTITY farstream-version            "0.2.7">
-<!ENTITY geoclue2-version             "2.1.10">
+<!ENTITY geoclue2-version             "2.2.0">
 <!ENTITY gtk-vnc-version              "0.5.4">
 <!ENTITY highlight-version            "3.22">
 <!ENTITY ibus-version                 "1.5.10">
@@ -12,7 +12,7 @@
 <!ENTITY libinput-version             "0.17.0">
 <!ENTITY libmbim-version              "1.12.2">
 <!ENTITY libmediaart-version          "0.7.0">
-<!ENTITY libnice-version              "0.1.10">
+<!ENTITY libnice-version              "0.1.13">
 <!ENTITY libnfsidmap-version          "0.26">
 <!ENTITY liboauth-version             "1.0.3">
 <!ENTITY libpciaccess-version         "0.13.4">
@@ -24,7 +24,7 @@
 <!ENTITY pyatspi2-version             "2.16.0">
 <!ENTITY qtchooser-version            "39">
 <!ENTITY sound-theme-freedesktop-version "0.8">
-<!ENTITY uhttpmock-version            "0.3.3">
+<!ENTITY uhttpmock-version            "0.4.0">
 <!ENTITY upower1-version              "0.99.3">
 <!ENTITY wayland-version              "1.8.1">
 <!ENTITY webkit2gtk-version           "2.6.5">

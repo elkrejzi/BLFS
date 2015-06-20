@@ -5,10 +5,10 @@
   %general-entities;
 
   <!ENTITY geoclue2-download-http
-           "http://www.freedesktop.org/software/geoclue/releases/2.1/geoclue-&geoclue2-version;.tar.xz">
+           "http://www.freedesktop.org/software/geoclue/releases/2.2/geoclue-&geoclue2-version;.tar.xz">
   <!ENTITY geoclue2-download-ftp  " ">
-  <!ENTITY geoclue2-md5sum        "aaa6c7a2a48a8fa74838345722d80e9f">
-  <!ENTITY geoclue2-size          "328 KB">
+  <!ENTITY geoclue2-md5sum        "c1970e4ec6f2af6591a75294fc6fb4fa">
+  <!ENTITY geoclue2-size          "332 KB">
   <!ENTITY geoclue2-buildsize     "12 MB">
   <!ENTITY geoclue2-time          "0.1 SBU">
 ]>

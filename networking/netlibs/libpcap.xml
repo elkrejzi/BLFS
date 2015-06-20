@@ -6,10 +6,10 @@
 
   <!ENTITY libpcap-download-http "http://www.tcpdump.org/release/libpcap-&libpcap-version;.tar.gz">
   <!ENTITY libpcap-download-ftp  " ">
-  <!ENTITY libpcap-md5sum        "5f14191c1a684a75532c739c2c4059fa">
-  <!ENTITY libpcap-size          "636 KB">
-  <!ENTITY libpcap-buildsize     "7.1 MB">
-  <!ENTITY libpcap-time          " less than 0.1 SBU">
+  <!ENTITY libpcap-md5sum        "9ce284eacc02cb5491e123b875f3f63c">
+  <!ENTITY libpcap-size          "648 KB">
+  <!ENTITY libpcap-buildsize     "8.8 MB">
+  <!ENTITY libpcap-time          "less than 0.1 SBU">
 ]>
 
 <sect1 id="libpcap" xreflabel="libpcap-&libpcap-version;">
@@ -153,7 +153,7 @@ make</userinput></screen>
           pcap-config
         </seg>
         <seg>
-          libpcap.so
+          libpcap.so, libpcap.a (optional)
         </seg>
         <seg>
           /usr/include/pcap

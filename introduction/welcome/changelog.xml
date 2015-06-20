@@ -50,6 +50,22 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Updated to libsoup-2.50.0, libtirpc-0.3.1
+          and uhttpmock-0.4.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libndp-1.5, libnice-0.1.13
+          and libpcap-1.7.3.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to geoclue-2.2.0 and
+          glib-networking-2.44.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to curl-7.43.0, dhcpcd-6.9.0
+          and dhcp-4.3.2.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Updated to tcl-8.6.4, tk-8.6.4 and
           vala-0.28.0.</para>
         </listitem>

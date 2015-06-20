@@ -8,8 +8,8 @@
   <!ENTITY cmake-download-ftp  " ">
   <!ENTITY cmake-md5sum        "d51c92bf66b1e9d4fe2b7aaedd51377c">
   <!ENTITY cmake-size          "6.2 MB">
-  <!ENTITY cmake-buildsize     "638 MB">
-  <!ENTITY cmake-time          "3.4 SBU (using parallelism=4)">
+  <!ENTITY cmake-buildsize     "336 MB (additional 290 MB for the testsuite)">
+  <!ENTITY cmake-time          "3.8 SBU (additional 8.6 SBU for the testsuite)">
 ]>
 
 <sect1 id="cmake" xreflabel="CMake-&cmake-version;">
