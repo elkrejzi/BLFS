@@ -32,6 +32,14 @@
       for Xorg Server to start.
     </para>
 
+    <para>
+      On machines using KMS, the modesetting driver is provided by
+      <application>Xorg Server</application> and can be used instead of the
+      video driver for the specific hardware, but with reduced performance.
+      It can also be used (without hardware acceleration) in virtual
+      machines running under <application>Qemu</application>.
+    </para>
+
     <note>
       <para>
         If you are unsure which video hardware you have, you can use

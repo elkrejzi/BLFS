@@ -50,6 +50,58 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Updated to xorg-server-1.17.2, xvinfo-1.1.3
+          and xterm-318.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to xkeyboard-config-2.15,
+          xlsatoms-1.1.2 and xmodmap-1.0.9.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to xgamma-1.0.6, xhost-1.0.7 and
+          xkbevd-1.1.4.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to xf86-input-wacom-0.30.0 and
+          xf86-video-vesa-2.3.4.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to xf86-input-evdev-2.9.2 and
+          xf86-input-synaptics-1.8.2.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to xdpyinfo-1.3.2, xdriinfo-1.0.5
+          and xev-1.2.2.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to twm-1.0.9, x11perf-1.6.0 and
+          xcmsdb-1.0.5.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to randrproto-1.5.0, setxkbmap-1.3.1
+          and smproxy-1.0.6.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libXvMC-1.0.9, libXxf86vm-1.1.4
+          and mesa-10.6.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libXrandr-1.5.0, libXrender-0.9.9
+          and libXt-1.1.5.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libXdmcp-1.1.2, libXfont-1.5.1
+          and libxkbfile-1.0.9.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libFS-1.0.7, libX11-1.6.3 and
+          libXaw-1.0.13.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to font-util-1.3.1, kbproto-1.0.7
+          and libfontenc-1.1.3.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Archived Gnash-0.8.10 and Agg-2.5.</para>
         </listitem>
         <listitem>

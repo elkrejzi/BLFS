@@ -10,8 +10,10 @@
   <!ENTITY xorg-intel-driver-download-ftp  "&xorg-download-ftp;/driver/xf86-video-intel-&xorg-intel-driver-version;.tar.bz2">
   <!ENTITY xorg-intel-driver-md5sum        "fa196a66e52c0c624fe5d350af7a5e7b">
   <!ENTITY xorg-intel-driver-size          "2.2 MB">
-  <!ENTITY xorg-intel-driver-buildsize     "77 MB">
-  <!ENTITY xorg-intel-driver-time          "0.5 SBU">
+<!-- commented, remeasured for re-enabling uxa as well as sna
+  <!ENTITY xorg-intel-driver-buildsize     "70 MB"> -->
+  <!ENTITY xorg-intel-driver-buildsize     "78 MB">
+  <!ENTITY xorg-intel-driver-time          "0.6 SBU">
 ]>
 
   <!-- Begin Xorg Intel Driver -->
@@ -128,6 +130,36 @@ make</userinput></screen>
       </para>
 
 <screen role="root"><userinput>make install</userinput></screen>
+
+    </sect3>
+
+    <sect3>
+      <title>Working around problems with the Intel driver</title>
+
+      <para>
+        The SandyBridge New Acceleration (SNA) code is intended to replace the
+        old UXA (UMA Acceleration Architecture), but it is a large body of code
+        and sometimes causes problems. In particular, when a system is built
+        with gcc-5 and kernel headers from linux-4.0, trying to run this driver
+        using SNA will cause a segfault on some, or perhaps all, of the
+        supported chips if a 4.0 or newer kernel is used (a 3.19.0 kernel, also
+        built with gcc-5, worked ok). To work around this, as well as enabling
+        support for UXA, it is necessary to force UXA to be used by creating a
+        configuration file.
+       </para>
+
+      <para>
+        If this problem applies to you, create the following file as
+        the <systemitem class="username">root</systemitem> user:
+      </para>
+
+<screen role="root"><userinput>cat &gt;&gt; /etc/X11/xorg.conf.d/20-intel.conf &lt;&lt; "EOF"
+<literal>Section "Device"
+        Identifier "Intel Graphics"
+        Driver "intel"
+        Option "AccelMethod" "uxa"
+EndSection</literal>
+EOF</userinput></screen>
 
     </sect3>
 

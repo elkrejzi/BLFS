@@ -6,9 +6,9 @@
 
   <!ENTITY xorg-server-download-http "&xorg-download-http;/xserver/xorg-server-&xorg-server-version;.tar.bz2">
   <!ENTITY xorg-server-download-ftp  "&xorg-download-ftp;/xserver/xorg-server-&xorg-server-version;.tar.bz2">
-  <!ENTITY xorg-server-md5sum        "5986510d59e394a50126a8e2833e79d3">
+  <!ENTITY xorg-server-md5sum        "397e405566651150490ff493e463f1ad">
   <!ENTITY xorg-server-size          "5.6 MB">
-  <!ENTITY xorg-server-buildsize     "635 MB">
+  <!ENTITY xorg-server-buildsize     "535 MB">
   <!ENTITY xorg-server-time          "1.6 SBU">
 ]>
 
@@ -78,12 +78,6 @@
           <ulink url="&patch-root;/xorg-server-&xorg-server-version;-add_prime_support-1.patch"/>
         </para>
       </listitem>
-      <listitem>
-        <para>
-          Optional patch:
-          <ulink url="&patch-root;/xorg-server-&xorg-server-version;-fix_modesetting-1.patch"/>
-        </para>
-      </listitem>
     </itemizedlist>
 
     <bridgehead renderas="sect3">Xorg Server Dependencies</bridgehead>
@@ -108,7 +102,7 @@
     </para>
 
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para>
+    <para role="optional">
       <xref linkend="acpid"/> (runtime),
       <xref linkend="doxygen"/> (to build API documentation),
       <xref linkend="fop"/>, (to build documentation),
@@ -129,30 +123,20 @@
     <title>Installation of Xorg Server</title>
 
     <para>
-      If you have downloaded the first optional patch, apply it by running
-      the following command:
+      If you have downloaded the optional patch, apply it by running the
+      following command:
     </para>
 
 <screen><userinput>patch -Np1 -i ../xorg-server-&xorg-server-version;-add_prime_support-1.patch</userinput></screen>
 
     <para>
-      The <application>modesetting</application> video driver is now included
-      in the tarball (since version 1.17). It needs to be fixed for 32-bit
-      machines and for cards which do not support  an hardware mouse pointer.
-      If you plan to use the modesetting video driver, run the
-      following command:
-    </para>
-
-<screen><userinput>patch -Np1 -i ../xorg-server-&xorg-server-version;-fix_modesetting-1.patch</userinput></screen>
-
-    <para>
       Install the server by running the following commands:
     </para>
 
-<screen><userinput>./configure $XORG_CONFIG                  \
-           --with-xkb-output=/var/lib/xkb \
-           --enable-glamor                \
-           --enable-suid-wrapper          &amp;&amp;
+<screen><userinput>./configure $XORG_CONFIG         \
+           --enable-glamor       \
+           --enable-suid-wrapper \
+           --with-xkb-output=/var/lib/xkb &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -319,24 +303,12 @@ mkdir -pv /etc/X11/xorg.conf.d</userinput></screen>
         </listitem>
       </varlistentry>
 
-      <varlistentry id="xdmxconfig-x7">
-        <term><command>xdmxconfig</command></term>
-        <listitem>
-          <para>
-            is a graphical configuration utility for the dmx server.
-          </para>
-          <indexterm zone="xorg-server xdmxconfig-x7">
-            <primary sortas="b-xdmxconfig">xdmxconfig</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-
       <varlistentry id="Xephyr-x7">
         <term><command>Xephyr</command></term>
         <listitem>
           <para>
-            is an X server outputting to a window on a pre-existing
-            X display.
+            is a nested X server that supports modern
+            X extensions.
           </para>
           <indexterm zone="xorg-server Xephyr-x7">
             <primary sortas="b-Xephyr">Xephyr</primary>
@@ -376,6 +348,18 @@ mkdir -pv /etc/X11/xorg.conf.d</userinput></screen>
           </para>
           <indexterm zone="xorg-server Xvfb-x7">
             <primary sortas="b-Xvfb">Xvfb</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="xdmxconfig-x7">
+        <term><command>xdmxconfig</command></term>
+        <listitem>
+          <para>
+            is a graphical configuration utility for the dmx server.
+          </para>
+          <indexterm zone="xorg-server xdmxconfig-x7">
+            <primary sortas="b-xdmxconfig">xdmxconfig</primary>
           </indexterm>
         </listitem>
       </varlistentry>
