@@ -8,10 +8,10 @@
 
   <!ENTITY libva-download-http "&libva-http;/libva/libva-&libva-version;.tar.bz2">
   <!ENTITY libva-download-ftp  " ">
-  <!ENTITY libva-md5sum        "16752f1584398265072129553b7907ce">
-  <!ENTITY libva-size          "760 KB">
+  <!ENTITY libva-md5sum        "d6d34cd725a0100a5e476e711838e1b1">
+  <!ENTITY libva-size          "744 KB">
   <!ENTITY libva-buildsize     "20 MB">
-  <!ENTITY libva-time          "0.3 SBU">
+  <!ENTITY libva-time          "0.2 SBU">
 ]>
 
 <sect1 id="libva" xreflabel="libva-&libva-version;">

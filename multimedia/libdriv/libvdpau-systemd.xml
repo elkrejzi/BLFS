@@ -6,9 +6,9 @@
 
   <!ENTITY libvdpau-download-http "http://people.freedesktop.org/~aplattner/vdpau/libvdpau-&libvdpau-version;.tar.gz">
   <!ENTITY libvdpau-download-ftp  " ">
-  <!ENTITY libvdpau-md5sum        "6750404478b10b54687c03e19a772649">
+  <!ENTITY libvdpau-md5sum        "11a842df9fbaad0f5f10cf553b8d5690">
   <!ENTITY libvdpau-size          "416 KB">
-  <!ENTITY libvdpau-buildsize     "8.2 MB">
+  <!ENTITY libvdpau-buildsize     "9.2 MB">
   <!ENTITY libvdpau-time          "0.1 SBU">
 ]>
 

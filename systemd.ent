@@ -5,6 +5,8 @@
 <!ENTITY cups-pk-helper-version       "0.2.5">
 <!ENTITY farstream-version            "0.2.7">
 <!ENTITY geoclue2-version             "2.2.0">
+<!ENTITY grilo-version                "0.2.12">
+<!ENTITY grilo-plugins-version        "0.2.14">
 <!ENTITY gtk-vnc-version              "0.5.4">
 <!ENTITY highlight-version            "3.22">
 <!ENTITY ibus-version                 "1.5.10">

@@ -34,7 +34,7 @@ $Date: 2014-10-29 23:06:49 +0100 (Wed, 29 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="farstream-systemd.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="fdk-aac.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="flac.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="grilo.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="grilo-systemd.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="grilo-plugins-systemd.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gstreamer.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gst-plugins-base-systemd.xml"/>
@@ -53,6 +53,7 @@ $Date: 2014-10-29 23:06:49 +0100 (Wed, 29 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libao.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libass.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libcanberra-systemd.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libcdio.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libdiscid.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libdvdcss.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libdvdread.xml"/>

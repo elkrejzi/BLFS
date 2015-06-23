@@ -8,7 +8,7 @@
   <!ENTITY libdvdnav-download-ftp  " ">
   <!ENTITY libdvdnav-md5sum        "e9ea4de3bd8f204e61301d407d09f033">
   <!ENTITY libdvdnav-size          "364 KB">
-  <!ENTITY libdvdnav-buildsize     "4.3 MB">
+  <!ENTITY libdvdnav-buildsize     "3.9 MB">
   <!ENTITY libdvdnav-time          "less than 0.1 SBU">
 ]>
 
@@ -127,7 +127,7 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          dvdnav-config
+          None
         </seg>
         <seg>
           libdvdnav.so
