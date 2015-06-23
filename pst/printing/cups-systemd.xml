@@ -6,10 +6,10 @@
 
   <!ENTITY cups-download-http "http://www.cups.org/software/&cups-version;/cups-&cups-version;-source.tar.bz2">
   <!ENTITY cups-download-ftp  " ">
-  <!ENTITY cups-md5sum        "6e0ea72dbafcf5baaa1cf4178e71096d">
+  <!ENTITY cups-md5sum        "8d98b85edbdab7ab03739c9622f570e8">
   <!ENTITY cups-size          "8.4 MB">
-  <!ENTITY cups-buildsize     "65 MB (additional 23 MB for the tests)">
-  <!ENTITY cups-time          "0.4 SBU (additional 0.5 SBU for the tests)">
+  <!ENTITY cups-buildsize     "99 MB">
+  <!ENTITY cups-time          "0.8 SBU">
 ]>
 
 <sect1 id="cups" xreflabel="Cups-&cups-version;">
@@ -241,7 +241,7 @@ make</userinput></screen>
 
 <screen role="root"><userinput>make install &amp;&amp;
 rm -rf /tmp/cupsinit &amp;&amp;
-ln -sfv ../cups/doc-&cups-version; /usr/share/doc/cups-&cups-version;</userinput></screen>
+ln -sfnv ../cups/doc-&cups-version; /usr/share/doc/cups-&cups-version;</userinput></screen>
 
     <para>
       Create a basic <application>Cups</application> client configuration file

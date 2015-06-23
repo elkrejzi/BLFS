@@ -50,7 +50,11 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
-          <para>[krejzi] - Updated to mplayer-2015-02-20 and
+          <para>[krejzi] - Updated to cups-2.0.3, cups-filters-1.0.69
+          and ghostscript-9.16.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to mplayer-2015-02-20, mupdf-1.7 and
           vlc-2.2.1.</para>
         </listitem>
         <listitem>
