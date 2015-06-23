@@ -65,7 +65,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="dbus"/> (runtime),
-      <xref linkend="fribidi"/> and
+      <xref linkend="fribidi"/>, and
       <xref linkend="imlib2"/> (if you wish to use other image formats in addition to XPM)
     </para>
 
@@ -233,10 +233,14 @@ echo "background.pixmap: &lt;/path/to/nice/image.ext&gt;" >> ~/.fluxbox/theme/th
       <varlistentry id="fbsetbg">
         <term><command>fbsetbg</command></term>
         <listitem>
-          <para>is a utility that sets the background image. It requires one of:
-          <command>display</command>, <command>Esetroot</command>, <command>wmsetbg</command>,
-          <command>xv</command>, <command>qiv</command> or <command>xsri</command>.
-          It also requires <command>which</command> if <command>Esetroot</command> is
+          <para>is a utility that sets the background image. It requires one
+          of the following at runtime:
+          <command>Esetroot</command>, <command>wmsetbg</command>,
+          <xref linkend="feh-prog"/>, <command>hsetroot</command>,
+          <command>chbg</command>, <xref linkend="display"/>,
+          <command>qiv</command>, <command>xv</command>,
+          <command>xsri</command>, <command>xli</command>, or <command>xsetbg</command>.
+          It also requires <xref linkend="which-prog"/> if <command>Esetroot</command> is
           found.</para>
           <indexterm zone="fluxbox fbsetbg">
             <primary sortas="b-fbsetbg">fbsetbg</primary>

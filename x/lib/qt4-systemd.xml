@@ -5,11 +5,11 @@
   %general-entities;
 
   <!ENTITY qt4-download-http
-           "http://download.qt-project.org/official_releases/qt/4.8/&qt4-version;/qt-everywhere-opensource-src-&qt4-version;.tar.gz">
+           "http://download.qt.io/official_releases/qt/4.8/&qt4-version;/qt-everywhere-opensource-src-&qt4-version;.tar.gz">
   <!ENTITY qt4-download-ftp  " ">
-  <!ENTITY qt4-md5sum        "2edbe4d6c2eff33ef91732602f3518eb">
-  <!ENTITY qt4-size          "231 MB">
-  <!ENTITY qt4-buildsize     "2.0 GB">
+  <!ENTITY qt4-md5sum        "d990ee66bf7ab0c785589776f35ba6ad">
+  <!ENTITY qt4-size          "230 MB">
+  <!ENTITY qt4-buildsize     "2.3 GB">
   <!ENTITY qt4-time          "39 SBU">
 ]>
 
@@ -192,14 +192,14 @@
       </para>
 
 <screen role="root"><userinput>mv /opt/qt{4,-&qt4-version;}
-ln -sfnv qt-&qt4-version; /opt/qt4</userinput></screen>
+ln -sfvn qt-&qt4-version; /opt/qt4</userinput></screen>
 
       <para>
         Later on, you may want to install other versions of
         <application>Qt4</application>. To do that, just remove the symlink
         and use <filename class="directory">/opt/qt4</filename> as the
         prefix again. Which version of <application>Qt4</application> you
-        use depends only on where the symlink points to.
+        use depends only on where the symlink points.
       </para>
     </tip>
 
@@ -280,23 +280,12 @@ ln -sfnv qt-&qt4-version; /opt/qt4</userinput></screen>
 <screen><userinput>patch -Np1 -i ../qt-&qt4-version;-fedora_fixes-1.patch</userinput></screen>
 
     <para>
-      Fix DoS vulnerability in the GIF image handler:
-    </para>
-
-<screen><userinput>sed -e "631a if (image->isNull()) { state = Error; return -1; }" \
-    -i src/gui/image/qgifhandler.cpp</userinput></screen>
-
-    <para>
       Install <application>Qt4</application> by running the
       following commands:
     </para>
 
-<screen><userinput>sed -e "/CONFIG -/ a\isEmpty(OUTPUT_DIR): OUTPUT_DIR = ../.." \
-    -i src/3rdparty/webkit/Source/WebKit2/DerivedSources.pro  &amp;&amp;
-
-sed -e '/BOOST_TT/a pp.macros["BOOST_NEXT_PRIOR_HPP_INCLUDED"];' \
-    -i src/tools/moc/main.cpp &amp;&amp;
-sed -e '/BOOST_TT/a pp.macros["BOOST_LEXICAL_CAST_INCLUDED"];'   \
+<screen><userinput>sed -e '/BOOST_TT/a pp.macros["BOOST_NEXT_PRIOR_HPP_INCLUDED"];' \
+    -e '/BOOST_TT/a pp.macros["BOOST_LEXICAL_CAST_INCLUDED"];'   \
     -i src/tools/moc/main.cpp &amp;&amp;
 
 ./configure -prefix         $QT4PREFIX                        \
@@ -480,11 +469,9 @@ unset file</userinput></screen>
     <title>Command Explanations</title>
 
     <para>
-      <command>sed -e ...</command>: The first sed prevents the
-      <command>configure</command> script from writing to the root
-      directory if building as privileged user. The second and
-      third sed fix the <command>moc</command> program to prevent
-      it from failing to parse files which include some of the
+      <command>sed -e ...</command>: This sed fixes the
+      <command>moc</command> program to prevent it from
+      failing to parse files which include some of the
       <application>Boost</application> headers.
     </para>
 

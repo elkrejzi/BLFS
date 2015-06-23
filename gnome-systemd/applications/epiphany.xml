@@ -82,7 +82,7 @@
       <xref linkend="gnome-desktop"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="libwnck"/>, and
-      <xref linkend="webkit2gtk"/>
+      <xref linkend="webkitgtk"/>
     </para>
 
     <bridgehead renderas="sect4">Recommended</bridgehead>

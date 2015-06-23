@@ -6,10 +6,10 @@
 
   <!ENTITY gtk2-download-http "&gnome-download-http;/gtk+/2.24/gtk+-&gtk2-version;.tar.xz">
   <!ENTITY gtk2-download-ftp  "&gnome-download-ftp;/gtk+/2.24/gtk+-&gtk2-version;.tar.xz">
-  <!ENTITY gtk2-md5sum        "4610cc60ff96073b83dc7de254bdaf38">
+  <!ENTITY gtk2-md5sum        "bfacf87b2ea67e4e5c7866a9003e6526">
   <!ENTITY gtk2-size          "13 MB">
-  <!ENTITY gtk2-buildsize     "367 MB">
-  <!ENTITY gtk2-time          "2.3 SBU">
+  <!ENTITY gtk2-buildsize     "376 MB">
+  <!ENTITY gtk2-time          "2.8 SBU">
 ]>
 
 <sect1 id="gtk2" xreflabel="GTK+-&gtk2-version;">
@@ -250,8 +250,8 @@ EOF</userinput></screen>
           /etc/gtk-2.0,
           /usr/include/{gail-1.0,gtk-2.0,gtk-unix-print-2.0},
           /usr/lib/gtk-2.0,
-          /usr/share/gtk-2.0,
           /usr/share/doc/gtk+-&gtk2-version;,
+          /usr/share/gtk-2.0,
           /usr/share/gtk-doc/html/{gail-libgail-util,gdk2,gtk2}, and
           /usr/share/themes/{Default,Emacs,Raleigh}
         </seg>

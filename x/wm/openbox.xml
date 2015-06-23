@@ -7,9 +7,9 @@
   <!ENTITY openbox-download-http
   "http://openbox.org/dist/openbox/openbox-&openbox-version;.tar.gz">
   <!ENTITY openbox-download-ftp  " ">
-  <!ENTITY openbox-md5sum        "93df606606053b7e8578a5c116afb8ec">
-  <!ENTITY openbox-size          "956 KB">
-  <!ENTITY openbox-buildsize     "19 MB">
+  <!ENTITY openbox-md5sum        "a995a15361b18f24e45f9be752e89f4e">
+  <!ENTITY openbox-size          "944 KB">
+  <!ENTITY openbox-buildsize     "21 MB">
   <!ENTITY openbox-time          "0.3 SBU">
 ]>
 
@@ -91,6 +91,12 @@
   <sect2 role="installation">
     <title>Installation of Openbox</title>
 
+    <para>If you installed only Python 3 PyXDG module convert one of the
+    scripts to Python 3:</para>
+
+<screen><userinput>2to3 -w data/autostart/openbox-xdg-autostart &amp;&amp;
+sed 's/python/python3/' -i data/autostart/openbox-xdg-autostart</userinput></screen>
+
     <para>
       Install <application>Openbox</application> by running the following
       commands:
@@ -101,12 +107,6 @@
             --disable-static  \
             --docdir=/usr/share/doc/openbox-&openbox-version; &amp;&amp;
 make</userinput></screen>
-
-    <para>If you installed only Python 3 PyXDG module convert one of the
-    scripts to Python 3:</para>
-
-<screen><userinput>2to3 -w data/autostart/openbox-xdg-autostart &amp;&amp;
-sed 's/python/python3/' -i data/autostart/openbox-xdg-autostart</userinput></screen>
 
     <para>
       This package does not come with a test suite. 
@@ -291,9 +291,8 @@ EOF</userinput></screen>
 
       <seglistitem>
         <seg>
-          gdm-control, gnome-panel-control, obxprop, openbox, openbox-autostart,
-          openbox-gnome-session, openbox-kde-session, openbox-session and
-          openbox-xdg-autostart
+          gdm-control, gnome-panel-control, obxprop, openbox,
+          openbox-gnome-session, openbox-kde-session and openbox-session
         </seg>
         <seg>
           libobrender.so and libobt.so
@@ -359,30 +358,6 @@ EOF</userinput></screen>
           </para>
           <indexterm zone="openbox openbox">
             <primary sortas="b-openbox">openbox</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-
-      <varlistentry id="openbox-autostart">
-        <term><command>openbox-autostart</command></term>
-        <listitem>
-          <para>
-            is a script that runs commands and applications at Openbox startup.
-          </para>
-          <indexterm zone="openbox openbox-autostart">
-            <primary sortas="b-openbox-autostart">openbox-autostart</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-
-      <varlistentry id="openbox-xdg-autostart">
-        <term><command>openbox-xdg-autostart</command></term>
-        <listitem>
-          <para>
-            is a script that runs xdg autostart .desktop files.
-          </para>
-          <indexterm zone="openbox openbox-xdg-autostart">
-            <primary sortas="b-openbox-xdg-autostart">openbox-xdg-autostart</primary>
           </indexterm>
         </listitem>
       </varlistentry>

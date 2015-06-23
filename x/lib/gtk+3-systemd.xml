@@ -4,12 +4,12 @@
   <!ENTITY % general-entities SYSTEM "../../general.ent">
   %general-entities;
 
-  <!ENTITY gtk3-download-http "&gnome-download-http;/gtk+/3.14/gtk+-&gtk3-version;.tar.xz">
-  <!ENTITY gtk3-download-ftp  "&gnome-download-ftp;/gtk+/3.14/gtk+-&gtk3-version;.tar.xz">
-  <!ENTITY gtk3-md5sum        "e46a12448b348d384b8bb29f0c22718f">
-  <!ENTITY gtk3-size          "15 MB">
-  <!ENTITY gtk3-buildsize     "465 MB">
-  <!ENTITY gtk3-time          "3.2 SBU">
+  <!ENTITY gtk3-download-http "&gnome-download-http;/gtk+/3.16/gtk+-&gtk3-version;.tar.xz">
+  <!ENTITY gtk3-download-ftp  "&gnome-download-ftp;/gtk+/3.16/gtk+-&gtk3-version;.tar.xz">
+  <!ENTITY gtk3-md5sum        "c7497aaf6730524a127597b768a73bd7">
+  <!ENTITY gtk3-size          "18 MB">
+  <!ENTITY gtk3-buildsize     "501 MB">
+  <!ENTITY gtk3-time          "4.8 SBU">
 ]>
 
 <sect1 id="gtk3" xreflabel="GTK+-&gtk3-version;">
@@ -82,6 +82,7 @@
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="hicolor-icon-theme"/>,
       <xref linkend="libxkbcommon"/> and
       <xref linkend="wayland"/>
     </para>
@@ -93,6 +94,7 @@
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="adwaita-icon-theme"/> (needed to run some tests),
       <xref linkend="colord"/>,
       <xref linkend="cups"/>,
       <xref linkend="docbook-utils"/>,
@@ -108,18 +110,6 @@
 
   <sect2 role="installation">
     <title>Installation of GTK+ 3</title>
-
-    <note>
-      <para>
-        <application>GTK+ 3</application> will overwrite
-        <command>gtk-update-icon-cache</command> from <xref linkend="gtk2"/> if
-        it is installed.  There is nothing wrong about that assuming that both
-        programs provide same functionality.  If you wish to keep one from
-        <application>GTK+ 2</application> you can add
-        <option>--enable-gtk2-dependency</option> to the
-        <command>configure</command> command.
-      </para>
-    </note>
 
     <para>
       Install <application>GTK+ 3</application> by running the following

@@ -6,10 +6,10 @@
 
   <!ENTITY cairo-download-http "http://cairographics.org/releases/cairo-&cairo-version;.tar.xz">
   <!ENTITY cairo-download-ftp  " ">
-  <!ENTITY cairo-md5sum        "fc3a5edeba703f906f2241b394f0cced">
-  <!ENTITY cairo-size          "35 MB">
-  <!ENTITY cairo-buildsize     "145 MB">
-  <!ENTITY cairo-time          "0.9 SBU">
+  <!ENTITY cairo-md5sum        "e1cdfaf1c6c995c4d4c54e07215b0118">
+  <!ENTITY cairo-size          "34 MB">
+  <!ENTITY cairo-buildsize     "0.1 GB">
+  <!ENTITY cairo-time          "0.8 SBU">
 ]>
 
 <sect1 id="cairo" xreflabel="Cairo-&cairo-version;">
@@ -83,29 +83,18 @@
       </listitem>
     </itemizedlist>
 
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Required patch:
-          <ulink url="&patch-root;/cairo-&cairo-version;-upstream_fixes-2.patch"/>
-        </para>
-      </listitem>
-    </itemizedlist>
-
     <bridgehead renderas="sect3">Cairo Dependencies</bridgehead>
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libpng"/>,
-      <xref linkend="glib2"/> and
+      <xref linkend="libpng"/> and
       <xref linkend="pixman"/>
     </para>
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="fontconfig"/>,
-      <xref linkend="mesalib"/> and
+      <xref linkend="glib2"/>, and
       <xref linkend="xorg7-lib"/>
     </para>
 
@@ -115,6 +104,7 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="libdrm"/>,
       <xref linkend="lzo"/>,
+      <xref linkend="mesalib"/>,
       <xref linkend="qt4"/>,
       <xref linkend="valgrind"/>,
       <ulink url="http://www.directfb.org/">DirectFB</ulink>,
@@ -135,11 +125,9 @@
       commands:
     </para>
 
-<screen><userinput>patch -Np1 -i ../cairo-&cairo-version;-upstream_fixes-2.patch &amp;&amp;
-./configure --prefix=/usr    \
-            --enable-gl      \
-            --enable-tee     \
-            --disable-static &amp;&amp;
+<screen><userinput>./configure --prefix=/usr    \
+            --disable-static \
+            --enable-tee &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -157,13 +145,6 @@ make</userinput></screen>
     <title>Command Explanations</title>
 
     <para>
-      <parameter>--enable-gl</parameter>: This switch enables experimental
-      OpenGL surface backend which is required for
-      <application>Weston</application>. Remove it if you have not installed
-      <xref linkend="mesalib"/>.
-    </para>
-
-    <para>
       <parameter>--enable-tee</parameter>: This switch enables experimental tee
       surface backend which is required if using system-installed
       <application>Cairo</application> with Mozilla applications.
@@ -175,6 +156,15 @@ make</userinput></screen>
     <para>
       <option>--enable-xlib-xcb</option>: This switch enables experimental
       Xlib/XCB functions used by some window managers.
+    </para>
+
+    <para>
+      <option>--enable-gl</option>: This switch enables
+      <application>Cairo</application>'s experimental
+      <application>OpenGL</application> surface which
+      is required for <application>Wayland</application>
+      compositor and some other packages that are not
+      part of BLFS.
     </para>
 
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"

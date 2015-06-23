@@ -6,7 +6,7 @@
 
   <!ENTITY webkitgtk2-download-http "http://webkitgtk.org/releases/webkitgtk-&webkitgtk2-version;.tar.xz">
   <!ENTITY webkitgtk2-download-ftp  " ">
-  <!ENTITY webkitgtk2-md5sum        "bcdcef8e1ba28dbd5bb05f86c79f76b8">
+  <!ENTITY webkitgtk2-md5sum        "312fd29eb7f5970660c6a64b8bf8420e">
   <!ENTITY webkitgtk2-size          "9.4 MB">
   <!ENTITY webkitgtk2-buildsize     "972 MB (GTK+ 3 Build), 688 MB (GTK+ 2 Build)">
   <!ENTITY webkitgtk2-time          "95 SBU (GTK+ 3 Build), 75 SBU (GTK+ 2 Build)">
@@ -142,8 +142,7 @@
       commands:
     </para>
 
-<screen><userinput>sed -i "/TARGET_WAYLAND_TRUE/d" GNUmakefile.in &amp;&amp;
-mkdir build3 &amp;&amp;
+<screen><userinput>mkdir build3 &amp;&amp;
 pushd build3 &amp;&amp;
 ../configure --prefix=/usr --enable-introspection &amp;&amp;
 make &amp;&amp;
@@ -203,12 +202,6 @@ fi</userinput></screen>
 
   <sect2 role="commands">
     <title>Command Explanations</title>
-
-    <para>
-      <command>sed -i "/TARGET_WAYLAND_TRUE/d" GNUmakefile.in</command>:
-      This sed fixes building when <application>GTK+3</application> is
-      built with <application>Wayland</application> backend.
-    </para>
 
     <para>
       <parameter>--enable-introspection</parameter>: This switch enables

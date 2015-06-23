@@ -8,10 +8,10 @@
            "&gnome-download-http;/gdk-pixbuf/2.31/gdk-pixbuf-&gdk-pixbuf-version;.tar.xz">
   <!ENTITY gdk-pixbuf-download-ftp
            "&gnome-download-ftp;/gdk-pixbuf/2.31/gdk-pixbuf-&gdk-pixbuf-version;.tar.xz">
-  <!ENTITY gdk-pixbuf-md5sum        "74cde211f5b7ac1015d1a7c9feee037c">
-  <!ENTITY gdk-pixbuf-size          "1.3 MB">
-  <!ENTITY gdk-pixbuf-buildsize     "22 MB (including the tests and API documentation)">
-  <!ENTITY gdk-pixbuf-time          "0.7 SBU (including the tests and rebuilding the API documentation)">
+  <!ENTITY gdk-pixbuf-md5sum        "b4ce8f0d7548cb8cbdcb833e1c4d095e">
+  <!ENTITY gdk-pixbuf-size          "2.3 MB">
+  <!ENTITY gdk-pixbuf-buildsize     "28 MB 29 MB (additional 3 MB for the tests)">
+  <!ENTITY gdk-pixbuf-time          "0.2 SBU (additional 7.5 SBU to run the test suite)">
 ]>
 
 <sect1 id="gdk-pixbuf" xreflabel="gdk-pixbuf-&gdk-pixbuf-version;">
@@ -146,7 +146,7 @@ make</userinput></screen>
     <title>Command Explanations</title>
 
     <para>
-      <option>--with-x11</option>: This switch enables building of the
+      <parameter>--with-x11</parameter>: This switch enables building of the
       <application>Gdk Pixbuf</application> <application>X11</application>
       library which is needed for <emphasis>many</emphasis> packages.
     </para>

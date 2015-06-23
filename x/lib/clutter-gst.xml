@@ -8,8 +8,8 @@
            "&gnome-download-http;/clutter-gst/2.0/clutter-gst-&clutter-gst2-version;.tar.xz">
   <!ENTITY clutter-gst2-download-ftp
            "&gnome-download-ftp;/clutter-gst/2.0/clutter-gst-&clutter-gst2-version;.tar.xz">
-  <!ENTITY clutter-gst2-md5sum        "5c2847f29d7c4868d00b99fe478b65eb">
-  <!ENTITY clutter-gst2-size          "353 KB">
+  <!ENTITY clutter-gst2-md5sum        "52c43827cdde234852b55e2b8b097902">
+  <!ENTITY clutter-gst2-size          "352 KB">
   <!ENTITY clutter-gst2-buildsize     "7.0 MB">
   <!ENTITY clutter-gst2-time          "0.2 SBU">
 ]>

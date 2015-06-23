@@ -4,25 +4,25 @@
   <!ENTITY % general-entities SYSTEM "../../general.ent">
   %general-entities;
 
-  <!ENTITY webkit2gtk-download-http "http://webkitgtk.org/releases/webkitgtk-&webkit2gtk-version;.tar.xz">
-  <!ENTITY webkit2gtk-download-ftp  " ">
-  <!ENTITY webkit2gtk-md5sum        "44addb5ccdace97642cb7656382293bb">
-  <!ENTITY webkit2gtk-size          "9.6 MB">
-  <!ENTITY webkit2gtk-buildsize     "910 MB">
-  <!ENTITY webkit2gtk-time          "95 SBU">
+  <!ENTITY webkitgtk-download-http "http://webkitgtk.org/releases/webkitgtk-&webkitgtk-version;.tar.xz">
+  <!ENTITY webkitgtk-download-ftp  " ">
+  <!ENTITY webkitgtk-md5sum        "29b92a0aacc819d0e5e5df03895fb98e">
+  <!ENTITY webkitgtk-size          "10 MB">
+  <!ENTITY webkitgtk-buildsize     "963 MB (100 MB installed)">
+  <!ENTITY webkitgtk-time          "95 SBU">
 ]>
 
-<sect1 id="webkit2gtk" xreflabel="WebKitGTK+-&webkit2gtk-version;">
-  <?dbhtml filename="webkit2gtk.html"?>
+<sect1 id="webkitgtk" xreflabel="WebKitGTK+-&webkitgtk-version;">
+  <?dbhtml filename="webkitgtk.html"?>
 
   <sect1info>
     <othername>$LastChangedBy: krejzi $</othername>
     <date>$Date: 2014-10-28 18:37:22 +0100 (Tue, 28 Oct 2014) $</date>
   </sect1info>
 
-  <title>WebKitGTK+-&webkit2gtk-version;</title>
+  <title>WebKitGTK+-&webkitgtk-version;</title>
 
-  <indexterm zone="webkit2gtk">
+  <indexterm zone="webkitgtk">
     <primary sortas="a-WebKitGTK+">WebKitGTK+</primary>
   </indexterm>
 
@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&webkit2gtk-download-http;"/>
+          Download (HTTP): <ulink url="&webkitgtk-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&webkit2gtk-download-ftp;"/>
+          Download (FTP): <ulink url="&webkitgtk-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &webkit2gtk-md5sum;
+          Download MD5 sum: &webkitgtk-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &webkit2gtk-size;
+          Download size: &webkitgtk-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &webkit2gtk-buildsize;
+          Estimated disk space required: &webkitgtk-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &webkit2gtk-time;
+          Estimated build time: &webkitgtk-time;
         </para>
       </listitem>
     </itemizedlist>
@@ -133,7 +133,7 @@ cmake -DCMAKE_BUILD_TYPE=Release  \
       -DCMAKE_SKIP_RPATH=ON       \
       -DPORT=GTK                  \
       -DLIB_INSTALL_DIR=/usr/lib  \
-      -Wno-dev ..
+      -Wno-dev .. &amp;&amp;
 make</userinput></screen>
 
 
@@ -228,7 +228,7 @@ make</userinput></screen>
             is a command-line utility that allows you to run JavaScript programs
             outside of the context of a web browser.
           </para>
-          <indexterm zone="webkit2gtk jsc">
+          <indexterm zone="webkitgtk jsc">
             <primary sortas="b-jsc">jsc</primary>
           </indexterm>
         </listitem>
@@ -242,7 +242,7 @@ make</userinput></screen>
             contains core JavaScript API functions used by <command>jsc</command>
             and <filename class="libraryfile">libwebkit2gtk-4.0.so</filename>.
           </para>
-          <indexterm zone="webkit2gtk libjavascriptcoregtk-4.0">
+          <indexterm zone="webkitgtk libjavascriptcoregtk-4.0">
             <primary sortas="c-libjavascriptcoregtk-4.0">libjavascriptcoregtk-4.0.so</primary>
           </indexterm>
         </listitem>
@@ -254,7 +254,7 @@ make</userinput></screen>
           <para>
             contains the <application>WebKit2</application> API functions.
           </para>
-          <indexterm zone="webkit2gtk libwebkit2gtk-4.0">
+          <indexterm zone="webkitgtk libwebkit2gtk-4.0">
             <primary sortas="c-libwebkit2gtk-4.0">libwebkit2gtk-4.0.so</primary>
           </indexterm>
         </listitem>
