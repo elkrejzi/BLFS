@@ -50,6 +50,18 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Updated to mplayer-2015-02-20 and
+          vlc-2.2.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libisoburn-1.4.0, libisofs-1.4.0
+          and mpg123-1.22.2.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to audacious-3.5.2, ffmpeg-2.7.1 and
+          libburn-1.4.0.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Updated to KDE Applications-15.04.2.</para>
         </listitem>
         <listitem>

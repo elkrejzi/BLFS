@@ -53,7 +53,7 @@
       <ulink url="http://www.mcmurchy.com/rmlcopydvd/">RMLCopyDVD</ulink> package.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -121,6 +121,7 @@
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="audiocd-kio"/>,
       <xref linkend="ffmpeg"/>,
       <xref linkend="libdvdread"/>,
       <xref linkend="libjpeg"/>, and
