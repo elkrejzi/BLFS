@@ -4,15 +4,15 @@
   <!ENTITY % general-entities SYSTEM "../../general.ent">
   %general-entities;
 
-  <!ENTITY kdelibs-download-http "&kde-download-http;&kde-version;/src/kdelibs-&kde-version;.tar.xz">
+  <!ENTITY kdelibs-download-http "&kde-download-http;applications/&kde-apps-version;/src/kdelibs-&kde-libs-version;.tar.xz">
   <!ENTITY kdelibs-download-ftp  " ">
-  <!ENTITY kdelibs-md5sum        "ac0e44b2a6a138df56a501581e537615">
+  <!ENTITY kdelibs-md5sum        "e528a57861308f1389a9efd61ec8492d">
   <!ENTITY kdelibs-size          "11.1 MB">
-  <!ENTITY kdelibs-buildsize     "463 MB">
-  <!ENTITY kdelibs-time          "17 SBU">
+  <!ENTITY kdelibs-buildsize     "450 MB">
+  <!ENTITY kdelibs-time          "17.5 SBU">
 ]>
 
-<sect1 id="kdelibs" xreflabel="KDELibs-&kde-version;">
+<sect1 id="kdelibs" xreflabel="KDELibs-&kde-libs-version;">
   <?dbhtml filename="kdelibs.html"?>
 
   <sect1info>
@@ -20,7 +20,7 @@
     <date>$Date: 2014-10-28 21:29:21 +0100 (Tue, 28 Oct 2014) $</date>
   </sect1info>
 
-  <title>KDELibs-&kde-version;</title>
+  <title>KDELibs-&kde-libs-version;</title>
 
   <indexterm zone="kdelibs">
     <primary sortas="a-KDELibs">KDELibs</primary>
@@ -109,15 +109,6 @@
 
   <sect2 role="installation">
     <title>Installation of KDELibs</title>
-
-    <para>
-      First, silence a lot of warnings caused by using the latest toolchain
-      by running the following command:
-    </para>
-
-<screen><userinput>sed -i "s:BSD_SOURCE:DEFAULT_SOURCE:g"      \
-       cmake/modules/FindKDE4Internal.cmake \
-       kjsembed/qtonly/FindQJSInternal.cmake</userinput></screen>
 
     <para>Fix file conflicts with <application>GNOME Menus</application> by running
     the following commands:</para>

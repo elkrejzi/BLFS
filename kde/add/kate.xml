@@ -4,7 +4,7 @@
   <!ENTITY % general-entities SYSTEM "../../general.ent">
   %general-entities;
 
-  <!ENTITY kate-download-http "&kde-download-http;&kde-version;/src/kate-&kde-version;.tar.xz">
+  <!ENTITY kate-download-http "&kde-download-http;&kde-old-version;/src/kate-&kde-old-version;.tar.xz">
   <!ENTITY kate-download-ftp  " ">
   <!ENTITY kate-md5sum        "14da162cc650075cfb364fd39e64924d">
   <!ENTITY kate-size          "2.6 MB">
@@ -12,7 +12,7 @@
   <!ENTITY kate-time          "2.9 SBU">
 ]>
 
-<sect1 id="kate" xreflabel="Kate-&kde-version;">
+<sect1 id="kate" xreflabel="Kate-&kde-old-version;">
   <?dbhtml filename="kate.html"?>
 
   <sect1info>
@@ -20,7 +20,7 @@
     <date>$Date: 2014-10-28 21:37:41 +0100 (Tue, 28 Oct 2014) $</date>
   </sect1info>
 
-  <title>Kate-&kde-version;</title>
+  <title>Kate-&kde-old-version;</title>
 
   <indexterm zone="kate">
     <primary sortas="a-Kate">Kate</primary>
@@ -72,7 +72,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="qjson"/> and
-      <ulink url="&kde-download-http;&kde-version;/src/">PyKDE4</ulink>
+      <ulink url="&kde-download-http;&kde-old-version;/src/">PyKDE4</ulink>
     </para>
 
     <para condition="html" role="usernotes">User Notes:

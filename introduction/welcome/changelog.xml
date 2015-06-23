@@ -50,6 +50,13 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Updated to KDE Applications-15.04.2.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to kdelibs-4.14.9, kdepim-4.14.9 and
+          kde-workspace-4.11.20.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Updated to libvpx-1.4.0, soundtouch-1.9.0 and
           v4l-utils-1.6.3.</para>
         </listitem>

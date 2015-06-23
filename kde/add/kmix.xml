@@ -4,11 +4,11 @@
   <!ENTITY % general-entities SYSTEM "../../general.ent">
   %general-entities;
 
-  <!ENTITY kmix-download-http "&kde-download-http;&kde-version;/src/kmix-&kde-version;.tar.xz">
+  <!ENTITY kmix-download-http "&kde-download-http;applications/&kde-apps-version;/src/kmix-&kde-apps-version;.tar.xz">
   <!ENTITY kmix-download-ftp  " ">
-  <!ENTITY kmix-md5sum        "0291dc7fb9fae98a56e875ea883397cd">
-  <!ENTITY kmix-size          "372 KB">
-  <!ENTITY kmix-buildsize     "14 MB">
+  <!ENTITY kmix-md5sum        "8224111b0188518460187f2245a17528">
+  <!ENTITY kmix-size          "380 KB">
+  <!ENTITY kmix-buildsize     "11.5 MB">
   <!ENTITY kmix-time          "0.9 SBU">
 ]>
 

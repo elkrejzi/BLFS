@@ -4,12 +4,12 @@
   <!ENTITY % general-entities SYSTEM "../../general.ent">
   %general-entities;
 
-  <!ENTITY kde-runtime-download-http "&kde-download-http;&kde-version;/src/kde-runtime-&kde-version;.tar.xz">
+  <!ENTITY kde-runtime-download-http "&kde-download-http;applications/&kde-apps-version;/src/kde-runtime-&kde-apps-version;.tar.xz">
   <!ENTITY kde-runtime-download-ftp  " ">
-  <!ENTITY kde-runtime-md5sum        "fbba547e4446b51702e5de8bcae078d5">
+  <!ENTITY kde-runtime-md5sum        "75bedb5ed5783b3a9231ee365df80f3d">
   <!ENTITY kde-runtime-size          "7.5 MB">
-  <!ENTITY kde-runtime-buildsize     "146 MB">
-  <!ENTITY kde-runtime-time          "4.3 SBU">
+  <!ENTITY kde-runtime-buildsize     "139 MB">
+  <!ENTITY kde-runtime-time          "4.4 SBU">
 ]>
 
 <sect1 id="kde-runtime" xreflabel="KDE-Runtime-&kde-version;">
@@ -60,7 +60,8 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kdelibs"/>
+      <xref linkend="kdelibs"/> and
+      <xref linkend="libgcrypt"/>
     </para>
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
