@@ -27,7 +27,7 @@
       that provides a plugin framework for handling desktop services.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -137,7 +137,7 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          desktoptojson and kbuildsycoca5
+          kbuildsycoca5
         </seg>
         <seg>
           libKF5Service.so

@@ -27,7 +27,7 @@
       that implements collaborative data sharing for applications.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -67,6 +67,7 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="attica5"/> and
       <xref linkend="kio"/>
     </para>
 
@@ -141,7 +142,7 @@ make</userinput></screen>
         <seg>
           $KF5_PREFIX/include/KF5/KNewStuff3,
           $KF5_PREFIX/lib/cmake/KF5NewStuff and
-          $KF5_PREFIX/share/kf5/knewstuff
+          $KF5_PREFIX/share/kf5/{kmoretools,knewstuff}
         </seg>
       </seglistitem>
     </segmentedlist>

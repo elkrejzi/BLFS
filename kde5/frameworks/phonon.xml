@@ -27,7 +27,7 @@
       multimedia framework for Qt5.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -106,10 +106,11 @@
 <screen><userinput>mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
-cmake -DCMAKE_INSTALL_PREFIX=/usr  \
-      -DCMAKE_BUILD_TYPE=Release   \
-      -DCMAKE_INSTALL_LIBDIR=lib   \
-      -DPHONON_BUILD_PHONON4QT5=ON \
+cmake -DCMAKE_INSTALL_PREFIX=/usr    \
+      -DCMAKE_BUILD_TYPE=Release     \
+      -DCMAKE_INSTALL_LIBDIR=lib     \
+      -DPHONON_BUILD_PHONON4QT5=ON   \
+      -D__KDE_HAVE_GCC_VISIBILITY=NO \
       -Wno-dev .. &amp;&amp;
 make</userinput></screen>
 
@@ -142,6 +143,13 @@ make</userinput></screen>
       <parameter>-DPHONON_BUILD_PHONON4QT5=ON</parameter>: This switch is used
       to ensure that <application>Qt5</application> version of the library is
       built even if <application>Qt4</application> is present.
+    </para>
+
+    <para>
+      <parameter>-D__KDE_HAVE_GCC_VISIBILITY=NO</parameter>: This switch is
+      used to disable a compiler check that would cause
+      <command>cmake</command> to fail when using
+      <application>Qt-5.4.2</application>.
     </para>
 
   </sect2>

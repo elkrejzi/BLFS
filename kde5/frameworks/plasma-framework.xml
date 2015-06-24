@@ -28,7 +28,7 @@
       interface.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -68,8 +68,7 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kactivities5"/> and
-      <xref linkend="kpackage"/>
+      <xref linkend="kactivities5"/>
     </para>
 
     <para condition="html" role="usernotes">
@@ -139,7 +138,7 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          dpitest and plasmapkg2
+          plasmapkg2
         </seg>
         <seg>
           libKF5PlasmaQuick.so and libKF5Plasma.so
@@ -147,7 +146,9 @@ make</userinput></screen>
         <seg>
           $KF5_PREFIX/include/KF5/{plasma,Plasma},
           $KF5_PREFIX/lib/cmake/{KF5Plasma,KF5PlasmaQuick},
-          $KF5_PREFIX/&qt5-qml-dir;/org/kde/plasma and
+          $KF5_PREFIX/&qt5-plugins-dir;/plasma/scriptengines,
+          $KF5_PREFIX/&qt5-qml-dir;/org/kde/plasma,
+          $KF5_PREFIX/&qt5-qml-dir;/QtQuick/Controls/Styles/Plasma and
           $KF5_PREFIX/share/plasma
         </seg>
       </seglistitem>

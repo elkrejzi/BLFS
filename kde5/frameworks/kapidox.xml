@@ -28,7 +28,7 @@
       format and style.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -121,7 +121,7 @@ make</userinput></screen>
       <seglistitem>
         <seg>
           depdiagram-generate, depdiagram-generate-all, depdiagram-prepare,
-          kgenapidox kgenframeworksapidox
+          kgenapidox and kgenframeworksapidox
         </seg>
         <seg>
           None

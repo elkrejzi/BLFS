@@ -27,7 +27,7 @@
       that provides a Qt5 implementation of the DBusMenu protocol.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -96,7 +96,6 @@ cd    build &amp;&amp;
 cmake -DCMAKE_INSTALL_PREFIX=/usr \
       -DCMAKE_BUILD_TYPE=Release  \
       -DCMAKE_INSTALL_LIBDIR=lib  \
-      -DUSE_QT5=TRUE              \
       -DWITH_DOC=OFF              \
       .. &amp;&amp;
 make</userinput></screen>
@@ -124,12 +123,6 @@ make</userinput></screen>
       to get libraries to install to <filename
       class="directory">/usr/lib</filename> instead of <filename
       class="directory">/usr/lib64</filename> on a 64 bit system.
-    </para>
-
-    <para>
-      <parameter>-DUSE_QT5=TRUE</parameter>: This switch is used to ensure
-      that <application>Qt5</application> version of the library is
-      built even if <application>Qt4</application> is present.
     </para>
 
     <para>

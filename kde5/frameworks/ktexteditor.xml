@@ -28,7 +28,7 @@
       application.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -145,8 +145,9 @@ make</userinput></screen>
         </seg>
         <seg>
           $KF5_PREFIX/include/KF5/KTextEditor,
-          $KF5_PREFIX/lib/cmake/KF5TextEditor and
-          $KF5_PREFIX/share/{katepart,katepart5}
+          $KF5_PREFIX/lib/cmake/KF5TextEditor,
+          $KF5_PREFIX/share/katepart5 and
+          $KF5_PREFIX/share/kxmlgui5/katepart
         </seg>
       </seglistitem>
     </segmentedlist>

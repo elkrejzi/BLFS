@@ -27,7 +27,7 @@
       manager for <application>KDE Plasma</application> workspace.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -67,8 +67,7 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="boost"/>,
-      <xref linkend="kcmutils"/> and
+      <xref linkend="boost"/> and
       <xref linkend="kdeclarative"/>
     </para>
 
@@ -151,8 +150,9 @@ make</userinput></screen>
         <seg>
           $KF5_PREFIX/include/KF5/KActivities,
           $KF5_PREFIX/lib/cmake/KF5Activities,
-          $KF5_PREFIX/&qt5-plugins-dir;/kactivitymanagerd and
-          $KF5_PREFIX/&qt5-qml-dir;/org/kde/activities
+          $KF5_PREFIX/&qt5-plugins-dir;/kactivitymanagerd,
+          $KF5_PREFIX/&qt5-qml-dir;/org/kde/activities and
+          $KF5_PREFIX/share/kf5/kactivitymanagerd
         </seg>
       </seglistitem>
     </segmentedlist>

@@ -28,7 +28,7 @@
       the focused window.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -69,9 +69,8 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="kconfig"/>,
-      <xref linkend="kcrash"/>,
-      <xref linkend="kdbusaddons"/> and
-      <xref linkend="ki18n"/>
+      <xref linkend="kcrash"/> and
+      <xref linkend="kdbusaddons"/>
     </para>
 
     <para condition="html" role="usernotes">
@@ -94,6 +93,7 @@ cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
       -DCMAKE_BUILD_TYPE=Release         \
       -DLIB_INSTALL_DIR=lib              \
       -DBUILD_TESTING=OFF                \
+      -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
       -DECM_MKSPECS_INSTALL_DIR=&qt5-mkspecs-dir; \
       .. &amp;&amp;
 make</userinput></screen>
@@ -123,6 +123,9 @@ make</userinput></screen>
       href="../../xincludes/kf5-tests.xml"/>
 
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+      href="../../xincludes/qt5-plugins-dir.xml"/>
+
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/qt5-mkspecs-dir.xml"/>
 
   </sect2>
@@ -140,11 +143,12 @@ make</userinput></screen>
           kglobalaccel5
         </seg>
         <seg>
-          libKF5GlobalAccel.so
+          libKF5GlobalAccelPrivate.so and libKF5GlobalAccel.so
         </seg>
         <seg>
-          $KF5_PREFIX/include/KF5/KGlobalAccel and
-          $KF5_PREFIX/lib/cmake/KF5GlobalAccel
+          $KF5_PREFIX/include/KF5/KGlobalAccel,
+          $KF5_PREFIX/lib/cmake/KF5GlobalAccel and
+          $KF5_PREFIX/&qt5-plugins-dir;/org.kde.kglobalaccel5.platforms
         </seg>
       </seglistitem>
     </segmentedlist>

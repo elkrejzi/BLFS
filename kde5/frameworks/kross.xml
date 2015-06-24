@@ -28,7 +28,7 @@
       into an application.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -144,8 +144,9 @@ make</userinput></screen>
           libKF5KrossCore.so and libKF5KrossUi.so
         </seg>
         <seg>
-          $KF5_PREFIX/include/KF5/{KrossCore,KrossUi} and
-          $KF5_PREFIX/lib/cmake/KF5Kross
+          $KF5_PREFIX/include/KF5/{KrossCore,KrossUi},
+          $KF5_PREFIX/lib/cmake/KF5Kross and
+          $KF5_PREFIX/&qt5-plugins-dir;/script
         </seg>
       </seglistitem>
     </segmentedlist>

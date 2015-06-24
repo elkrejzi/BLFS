@@ -5,7 +5,7 @@
   %general-entities;
 ]>
 
-<sect1 id="extra-cmake-modules" xreflabel="extra-cmake-modules-&extra-cmake-modules-version;">
+<sect1 id="extra-cmake-modules" xreflabel="extra-cmake-modules-&kf5-version;">
   <?dbhtml filename="extra-cmake-modules.html"?>
 
   <sect1info>
@@ -13,7 +13,7 @@
     <date>$Date: 2014-10-09 22:03:42 +0200 (Thu, 09 Oct 2014) $</date>
   </sect1info>
 
-  <title>extra-cmake-modules-&extra-cmake-modules-version;</title>
+  <title>extra-cmake-modules-&kf5-version;</title>
 
   <indexterm zone="extra-cmake-modules">
     <primary sortas="a-extra-cmake-modules">extra-cmake-modules</primary>
@@ -28,7 +28,7 @@
       <application>KDE Frameworks 5</application> packages.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">

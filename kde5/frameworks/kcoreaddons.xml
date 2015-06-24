@@ -28,7 +28,7 @@
       the operating system.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -136,7 +136,7 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          None
+          desktoptojson
         </seg>
         <seg>
           libKF5CoreAddons.so

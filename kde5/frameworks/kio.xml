@@ -27,7 +27,7 @@
       that provides network transparent access to files and data.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -146,7 +146,8 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          kcookiejar5, kmailservice5 and ktelnetservice5
+          kcookiejar5, kmailservice5, ktelnetservice5 and
+          ktrash5
         </seg>
         <seg>
           libKF5KIOCore.so, libKF5KIOFileWidgets.so, libKF5KIONTLM.so
@@ -156,6 +157,8 @@ make</userinput></screen>
           $KF5_PREFIX/include/KF5/{kio,KIOCore},
           $KF5_PREFIX/include/KF5/{KIOFileWidgets,KIOWidgets},
           $KF5_PREFIX/lib/cmake/KF5KIO,
+          $KF5_PREFIX/&qt5-plugins-dir;/kf5/{kded,kio},
+          $KF5_PREFIX/&qt5-plugins-dir;/kf5/{kiod,urifilters},
           $KF5_PREFIX/share/doc/HTML/*/kioslave5 and
           $KF5_PREFIX/share/kf5/kcookiejar
         </seg>

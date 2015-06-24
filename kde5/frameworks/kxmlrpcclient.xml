@@ -5,26 +5,26 @@
   %general-entities;
 ]>
 
-<sect1 id="threadweaver" xreflabel="ThreadWeaver-&kf5-version;">
-  <?dbhtml filename="threadweaver.html"?>
+<sect1 id="kxmlrpcclient" xreflabel="KXmlRpcClient-&kf5-version;">
+  <?dbhtml filename="kxmlrpcclient.html"?>
 
   <sect1info>
     <othername>$LastChangedBy: krejzi $</othername>
     <date>$Date: 2014-10-09 22:03:42 +0200 (Thu, 09 Oct 2014) $</date>
   </sect1info>
 
-  <title>ThreadWeaver-&kf5-version;</title>
+  <title>KXmlRpcClient-&kf5-version;</title>
 
-  <indexterm zone="threadweaver">
-    <primary sortas="a-ThreadWeaver">ThreadWeaver</primary>
+  <indexterm zone="kxmlrpcclient">
+    <primary sortas="a-KXmlRpcClient">KXmlRpcClient</primary>
   </indexterm>
 
   <sect2 role="package">
-    <title>Introduction to ThreadWeaver</title>
+    <title>Introduction to KXmlRpcClient</title>
 
     <para>
-      The <application>ThreadWeaver</application> package contains a library
-      that provides a helper for multithreaded programming.
+      The <application>KXmlRpcClient</application> package contains a library
+      that provides a simple XML-RPC Client support.
     </para>
 
     &lfs77_checked;
@@ -33,54 +33,53 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&threadweaver-download-http;"/>
+          Download (HTTP): <ulink url="&kxmlrpcclient-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&threadweaver-download-ftp;"/>
+          Download (FTP): <ulink url="&kxmlrpcclient-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &threadweaver-md5sum;
+          Download MD5 sum: &kxmlrpcclient-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &threadweaver-size;
+          Download size: &kxmlrpcclient-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &threadweaver-buildsize;
+          Estimated disk space required: &kxmlrpcclient-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &threadweaver-time;
+          Estimated build time: &kxmlrpcclient-time;
         </para>
       </listitem>
     </itemizedlist>
 
-    <bridgehead renderas="sect3">ThreadWeaver Dependencies</bridgehead>
+    <bridgehead renderas="sect3">KXmlRpcClient Dependencies</bridgehead>
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="extra-cmake-modules"/> and
-      <xref linkend="qt5"/>
+      <xref linkend="kio"/>
     </para>
 
     <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/threadweaver"/>
+      User Notes: <ulink url="&blfs-wiki;/kxmlrpcclient"/>
     </para>
   </sect2>
 
   <sect2 role="installation">
-    <title>Installation of ThreadWeaver</title>
+    <title>Installation of KXmlRpcClient</title>
 
     <para>
-      Install <application>ThreadWeaver</application> by running the following
+      Install <application>KXmlRpcClient</application> by running the following
       commands:
     </para>
 
@@ -137,11 +136,11 @@ make</userinput></screen>
           None
         </seg>
         <seg>
-          libKF5ThreadWeaver.so
+          libKF5XmlRpcClient.so
         </seg>
         <seg>
-          $KF5_PREFIX/include/KF5/ThreadWeaver and
-          $KF5_PREFIX/lib/cmake/KF5ThreadWeaver
+          $KF5_PREFIX/include/KF5/KXmlRpcClient and
+          $KF5_PREFIX/lib/cmake/KF5XmlRpcClient
         </seg>
       </seglistitem>
     </segmentedlist>

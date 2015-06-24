@@ -28,7 +28,7 @@
       frameworks.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -169,8 +169,8 @@ make</userinput></screen>
         </seg>
         <seg>
           $KF5_PREFIX/lib/cmake/KF5DesignerPlugin,
-          $KF5_PREFIX/share/kf5/widgets and
-          $KF5_PREFIX/&qt5-plugins-dir;/designer
+          $KF5_PREFIX/&qt5-plugins-dir;/designer and
+          $KF5_PREFIX/share/kf5/widgets
         </seg>
       </seglistitem>
     </segmentedlist>

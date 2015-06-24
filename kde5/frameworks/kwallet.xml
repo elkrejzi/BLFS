@@ -27,7 +27,7 @@
       and a daemon that provide safe desktop-wide storage for passwords.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">

@@ -18,7 +18,7 @@ $Date: 2014-10-18 11:51:01 +0200 (Sat, 18 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="intro.xml"/>
   <!-- -->
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="extra-cmake-modules.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="grantlee.xml"/>
+  <!-- <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="grantlee.xml"/> -->
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libdbusmenu-qt.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="phonon.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="phonon-backend-gstreamer.xml"/>
@@ -31,6 +31,7 @@ $Date: 2014-10-18 11:51:01 +0200 (Sat, 18 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="individual-frameworks.xml"/>
   <!-- -->
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="attica.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="bluez-qt.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kapidox.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="karchive.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kcodecs.xml"/>
@@ -47,6 +48,7 @@ $Date: 2014-10-18 11:51:01 +0200 (Sat, 18 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kplotting.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kwidgetsaddons.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kwindowsystem.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="modemmanager-qt.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="networkmanager-qt.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="solid.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="sonnet.xml"/>
@@ -68,6 +70,7 @@ $Date: 2014-10-18 11:51:01 +0200 (Sat, 18 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kemoticons.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kiconthemes.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kjobwidgets.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kpeople.xml"/>
   <!-- -->
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="knotifications.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ktextwidgets.xml"/>
@@ -76,7 +79,6 @@ $Date: 2014-10-18 11:51:01 +0200 (Sat, 18 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kxmlgui.xml"/>
   <!-- -->
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kbookmarks.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kcmutils.xml"/>
   <!-- -->
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kio.xml"/>
   <!-- -->
@@ -86,13 +88,16 @@ $Date: 2014-10-18 11:51:01 +0200 (Sat, 18 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="knewstuff.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="knotifyconfig.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kparts.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kxmlrpcclient.xml"/>
   <!-- -->
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kactivities.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kcmutils.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kded.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kdewebkit.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ktexteditor.xml"/>
   <!-- -->
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kactivities.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="kdesignerplugin.xml"/>
+  <!-- -->
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="plasma-framework.xml"/>
   <!-- -->
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="porting-aids.xml"/>
