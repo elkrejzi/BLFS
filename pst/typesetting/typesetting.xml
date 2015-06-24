@@ -24,8 +24,10 @@ $Date: 2014-10-22 01:24:32 +0200 (Wed, 22 Oct 2014) $
   complexity of installing all of <application>texlive</application> from
   source, or because they only want a part of the package, or perhaps because
   they wish to get updates as soon as those are available (the source is only
-  updated annually). These people should follow the <xref
-  linkend="tl-installer"/> instructions,. After installing, they can run
+  updated annually, but the binaries and associated TeX files are updated for
+  approximately 10 months). These people should begin at <xref
+  linkend="tex-path"/> and then follow the <xref linkend="tl-installer"/>
+  instructions,. After installing, they can run
   <command>tlmgr</command> to update their system.</para>
 
   <para>Most people reading BLFS will wish to build from source. BLFS used to
@@ -33,11 +35,12 @@ $Date: 2014-10-22 01:24:32 +0200 (Wed, 22 Oct 2014) $
   to bootstrap the build.  Nowadays, we build almost the whole of
   <application>texlive</application> <emphasis>without</emphasis> a binary install,
   by adding the separately-packaged texmf files into this build.  For this, begin
-  at <xref linkend="texlive"/> which will install most of
+  at <xref linkend="tex-path"/> then go to <xref linkend="texlive"/> which will
+  install most of
   <application>texlive</application>, together with <emphasis>all</emphasis> of the
   supporting files. This almost-complete install can then be used to build the
-  remaining parts of <application>texlive</application>, <xref
-  linkend="asymptote"/>, <xref linkend="xindy"/> and <xref linkend="biber"/>.
+  remaining parts of <application>texlive</application>: <xref
+  linkend="asymptote"/>, <xref linkend="biber"/> and <xref linkend="xindy"/>.
   </para>
 
   <para>Because the texmf files (including documentation, fonts, scripts and
@@ -50,9 +53,18 @@ $Date: 2014-10-22 01:24:32 +0200 (Wed, 22 Oct 2014) $
   exception of two libraries from the source install which are installed into
   <filename class="directory">/usr/lib</filename> for convenience.</para>
 
+  <para>Also, please note that texlive is released annually, and updating from the
+  previous year to the current year is no longer supported. If for some reason
+  you wish to keep versions for multiple years, for most things you can mount the
+  old or new system at /opt/texlive and fix up your PATH as necessary. However
+  doing that will not preserve any changes in <filename
+  class="directory">texmf-local</filename> and if you build from source and try to
+  run a newer version of <application>biber</application> with an older version of
+  <application>biblatex</application> it is unlikely to work.</para>
+
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="tex-path.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="tl-installer.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="texlive.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="tex-path.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="asymptote.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="biber.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="xindy.xml"/>

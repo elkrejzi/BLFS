@@ -44,11 +44,21 @@
 
 -->
     <listitem>
-      <para>June 23rd, 2015</para>
+      <para>June 24th, 2015</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+        <listitem>
+          <para>[krejzi] - Updated to asymptote-2.35, biber-2.1a and
+          lxpanel-0.8.1.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+   <listitem>
+      <para>June 23rd, 2015</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Updated to cups-2.0.3, cups-filters-1.0.69
           and ghostscript-9.16.</para>
