@@ -4,12 +4,13 @@
   <!ENTITY % general-entities SYSTEM "../../general.ent">
   %general-entities;
 
-  <!ENTITY fontforge-download-http "https://github.com/fontforge/fontforge/releases/download/&fontforge-version;/fontforge-&fontforge-date;-Unix-Source.tar.gz">
+<!--  <!ENTITY fontforge-download-http "&sources-anduin-other-http;/fontforge-&fontforge-version;.tar.xz">-->
+  <!ENTITY fontforge-download-http "https://github.com/fontforge/fontforge/releases/download/&fontforge-version;/fontforge-&fontforge-version;.tar.gz">
   <!ENTITY fontforge-download-ftp  " ">
-  <!ENTITY fontforge-md5sum        "2193a30700a56aa7c466407ac37ce0e3">
+  <!ENTITY fontforge-md5sum        "a68cd6797e2e5fb0aa88a33bbe15315b">
   <!ENTITY fontforge-size          "120 MB">
-  <!ENTITY fontforge-buildsize     "355 MB">
-  <!ENTITY fontforge-time          "2.1 SBU">
+  <!ENTITY fontforge-buildsize     "406 MB">
+  <!ENTITY fontforge-time          "2.4 SBU">
 ]>
 
 <sect1 id="fontforge" xreflabel="FontForge-&fontforge-version;">
@@ -74,13 +75,20 @@
 
     <bridgehead renderas="sect3">FontForge Dependencies</bridgehead>
 
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="freetype2"/>,
+      <xref linkend="git"/>,
+      <xref linkend="glib2"/> and
+      <xref linkend="libxml2"/>
+    </para>
+
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="cairo"/>,
-      <xref linkend="freetype2"/>,
-      <xref linkend="harfbuzz"/>,
       <xref linkend="gtk2"/>,
-      <xref linkend="libxml2"/> and
+      <xref linkend="harfbuzz"/>,
+      <xref linkend="pango"/> and
       <xref linkend="xorg7-lib"/>
     </para>
 
@@ -90,8 +98,8 @@
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="libtiff"/>,
-      <xref linkend="pango"/>,
       <xref linkend="python2"/>,
+      <ulink url="http://ipython.org/">IPython</ulink>,
       <ulink url="https://github.com/fontforge/libspiro">libspiro</ulink>,
       <ulink url="https://bitbucket.org/sortsmill/libunicodenames">
       libunicodenames</ulink>,
@@ -113,8 +121,9 @@
       commands:
     </para>
 
-<screen><userinput>rm -fv m4/argz.m4   &amp;&amp;
-./bootstrap --force &amp;&amp;
+<screen><userinput>rm -rf libltdl &amp;&amp;
+rm m4/argz.m4  &amp;&amp;
+./bootstrap    &amp;&amp;
 ./configure --prefix=/usr     \
             --enable-gtk2-use \
             --disable-static  \
@@ -137,9 +146,10 @@ make</userinput></screen>
     <title>Command Explanations</title>
 
     <para>
-      <command>./bootstrap --force</command>: The --force switch prevents the
-      <command>bootstrap</command> command from failing if a recent version
-      of <application>Libtool</application> has been installed.
+      <command>rm -rf libltdl ... ./bootstrap</command>:
+      These commands work around the old version of libtool in the source,
+      and the idiosyncracies of the bootstrap command, to allow it to build with
+      current libtool where some files have been renamed.
     </para>
 
     <para>

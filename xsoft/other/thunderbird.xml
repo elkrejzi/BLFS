@@ -8,9 +8,9 @@
            "&mozilla-http;/thunderbird/releases/&thunderbird-version;/source/thunderbird-&thunderbird-version;.source.tar.bz2">
   <!ENTITY thunderbird-download-ftp
            "&mozilla-ftp;/thunderbird/releases/&thunderbird-version;/source/thunderbird-&thunderbird-version;.source.tar.bz2">
-  <!ENTITY thunderbird-md5sum            "da9c86271bb498c5feb02ce9c360669f">
-  <!ENTITY thunderbird-size              "164 MB">
-  <!ENTITY thunderbird-buildsize         "4.7 GB (62 MB installed)">
+  <!ENTITY thunderbird-md5sum            "0a740cdeee86d3ab49c635c6070c4b06">
+  <!ENTITY thunderbird-size              "194 MB">
+  <!ENTITY thunderbird-buildsize         "3.9 GB (73 MB installed)">
   <!ENTITY thunderbird-time              "50 SBU">
 ]>
 
@@ -156,7 +156,13 @@
     </para>
 
 <screen><userinput>cat &gt; mozconfig &lt;&lt; "EOF"
-<literal># If you have installed DBus-Glib comment out this line:
+<literal># If you have a multicore machine, the build may be faster if using parallel
+# jobs. The build system automatically adds -jN to the "make" flags, where N
+# is the number of CPU cores. The option below is therefore useless, unless
+# you want to use a smaller number of jobs:
+#mk_add_options MOZ_MAKE_FLAGS="-j1"
+
+# If you have installed DBus-Glib comment out this line:
 ac_add_options --disable-dbus
 
 # If you have installed wireless-tools comment out this line:
@@ -195,6 +201,7 @@ ac_add_options --with-system-icu
 
 # The BLFS editors recommend not changing anything below this line:
 ac_add_options --prefix=/usr
+ac_add_options --enable-application=mail
 
 ac_add_options --disable-crashreporter
 ac_add_options --disable-installer
@@ -202,6 +209,7 @@ ac_add_options --disable-updater
 ac_add_options --disable-debug
 ac_add_options --disable-tests
 
+ac_add_options --enable-optimize
 ac_add_options --enable-strip
 ac_add_options --enable-install-strip
 
@@ -219,28 +227,14 @@ ac_add_options --with-pthreads
 ac_add_options --with-system-bz2
 ac_add_options --with-system-jpeg
 ac_add_options --with-system-png
-ac_add_options --with-system-zlib<!--
-
-mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/thunderbuild--></literal>
+ac_add_options --with-system-zlib</literal>
 EOF</userinput></screen>
 
-    <!-- <para>
-      First, a bug needs to be fixed. Note that thunderbuild matches
-      the value used in mozconfig above for the object directory
-      (MOZ_OBJDIR):
+    <para>
+      First, fix building with system freetype-2.6 or later:
     </para>
 
-<screen><userinput>mkdir -v mozilla/thunderbuild</userinput></screen> -->
-
-    <note>
-      <para>
-        If you have a multicore machine, <application>Thunderbird</application>
-        will use all the cores by default. Exceptionally, you can reduce
-        the number of cores, e.g. to 1, by prepending the
-        <envar>MOZ_MAKE_FLAGS="-j1"</envar> environment variable to all
-        of the <command>make</command> commands below.
-      </para>
-    </note>
+<screen><userinput>sed -i '/^ftglyph.h/ i ftfntfmt.h' mozilla/config/system-headers</userinput></screen>
 
     <para>
       Compile <application>Thunderbird</application> by issuing the following
@@ -260,18 +254,6 @@ EOF</userinput></screen>
 
 <screen role="root"><userinput>make -f client.mk install INSTALL_SDK= &amp;&amp;
 chown -R root:root /usr/lib/thunderbird-&thunderbird-version;</userinput></screen>
-
-    <note>
-      <para>
-        The above instruction just installs the parts you need to run
-        <application>Thunderbird</application>. Alternatively, if you want to
-        install the full <application>Thunderbird</application> development
-        environment, run the following command as the
-        <systemitem class="username">root</systemitem> user:
-      </para>
-
-<screen role="root"><userinput>make -f client.mk install</userinput></screen>
-    </note>
 
     <para>
       While still as the <systemitem class="username">root</systemitem> user,

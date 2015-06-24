@@ -8,9 +8,9 @@
            "&mozilla-http;/firefox/releases/&firefox-version;/source/firefox-&firefox-version;.source.tar.bz2">
   <!ENTITY firefox-download-ftp
            "&mozilla-ftp;/firefox/releases/&firefox-version;/source/firefox-&firefox-version;.source.tar.bz2">
-  <!ENTITY firefox-md5sum        "82eda528e4570b181aadcee602afda2d">
+  <!ENTITY firefox-md5sum        "60466afbc7105d29dcd18f996c9c67e0">
   <!ENTITY firefox-size          "172 MB">
-  <!ENTITY firefox-buildsize     "3.3 GB (75 MB installed)">
+  <!ENTITY firefox-buildsize     "3.6 GB (73 MB installed)">
   <!ENTITY firefox-time          "28 SBU">
 ]>
 
@@ -157,7 +157,12 @@
     </para>
 
 <screen><userinput>cat &gt; mozconfig &lt;&lt; "EOF"
-<literal># If you have installed DBus-Glib comment out this line:
+<literal># If you have a multicore machine, all cores will be used by default.
+# If desired, you can reduce the number of cores used, e.g. to 1, by
+# uncommenting the next line and setting a valid number of CPU cores.
+#mk_add_options MOZ_MAKE_FLAGS="-j1"
+
+# If you have installed DBus-Glib comment out this line:
 ac_add_options --disable-dbus
 
 # If you have installed dbus-glib, and you have installed (or will install)
@@ -201,6 +206,7 @@ ac_add_options --disable-crashreporter
 ac_add_options --disable-updater
 ac_add_options --disable-tests
 
+ac_add_options --enable-optimize
 ac_add_options --enable-strip
 ac_add_options --enable-install-strip
 
@@ -223,15 +229,11 @@ ac_add_options --with-system-zlib
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-build-dir</literal>
 EOF</userinput></screen>
 
-    <note>
-      <para>
-        If you have a multicore machine, <application>Firefox</application>
-        will use all the cores by default. Exceptionally, you can reduce
-        the number of cores, e.g. to 1, by prepending the
-        <envar>MOZ_MAKE_FLAGS="-j1"</envar> environment variable to all
-        of the <command>make</command> commands below.
-      </para>
-    </note>
+    <para>
+      First, fix building with system freetype-2.6 or later:
+    </para>
+
+<screen><userinput>sed -i '/^ftglyph.h/ i ftfntfmt.h' config/system-headers</userinput></screen>
 
     <para>
       Compile <application>Firefox</application> by issuing the following
@@ -255,18 +257,6 @@ chown -R root:root /usr/lib/firefox-&firefox-version; &amp;&amp;
 
 mkdir -pv /usr/lib/mozilla/plugins &amp;&amp;
 ln -sfv ../../mozilla/plugins /usr/lib/firefox-&firefox-version;/browser</userinput></screen>
-
-    <note>
-      <para>
-        The above instruction just installs the parts you need to run
-        <application>Firefox</application>. Alternatively, if you want to
-        install the full <application>Firefox</application> development
-        environment, run the following command as the
-        <systemitem class="username">root</systemitem> user:
-      </para>
-
-<screen role="root"><userinput>make -f client.mk install</userinput></screen>
-    </note>
 
     <para>
       While still as the <systemitem class="username">root</systemitem> user,

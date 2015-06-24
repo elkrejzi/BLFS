@@ -6,11 +6,11 @@
 
   <!ENTITY tigervnc-download-http "http://anduin.linuxfromscratch.org/sources/BLFS/conglomeration/tigervnc/tigervnc-&tigervnc-version;.tar.gz">
   <!ENTITY tigervnc-download-ftp  " ">
-  <!ENTITY tigervnc-md5sum        "93b935487d0ec33341f079bc402df6b1">
+  <!ENTITY tigervnc-md5sum        "2177ee42fa1a3902b6feeaa7747f1c2a">
   <!ENTITY tigervnc-size          "1.3 MB">
-  <!ENTITY tigervnc-buildsize     "155 MB">
-  <!ENTITY tigervnc-time          "1.7 SBU">
-  <!ENTITY tigervnc-xorg-version  "1.16.2.901">
+  <!ENTITY tigervnc-buildsize     "160 MB">
+  <!ENTITY tigervnc-time          "1.6 SBU">
+  <!ENTITY tigervnc-xorg-version  "1.17.1">
 ]>
 
 <sect1 id="tigervnc" xreflabel="Tigervnc-&tigervnc-version;">
@@ -96,7 +96,7 @@
       <listitem>
         <para>
           Required patch:
-          <ulink url="&patch-root;/tigervnc-&tigervnc-version;-xorg116-1.patch"/>
+          <ulink url="&patch-root;/tigervnc-&tigervnc-version;-xorg117-1.patch"/>
         </para>
       </listitem>
     </itemizedlist>
@@ -145,13 +145,15 @@
 
 patch -Np1 -i ../tigervnc-&tigervnc-version;-gethomedir-1.patch &amp;&amp;
 patch -Np1 -i ../tigervnc-&tigervnc-version;-getmaster-1.patch  &amp;&amp;
+patch -Np1 -i ../tigervnc-&tigervnc-version;-xorg117-1.patch    &amp;&amp;
+sed -i 's/iconic/nowin/' unix/vncserver            &amp;&amp;
 
 cmake -DCMAKE_INSTALL_PREFIX=/usr &amp;&amp;
 make &amp;&amp;
 
-pushd unix/xserver                                      &amp;&amp;
-  patch -Np1 -i ../../../tigervnc-&tigervnc-version;-xorg116-1.patch &amp;&amp;
-  autoreconf -fi                                        &amp;&amp;
+pushd unix/xserver                  &amp;&amp;
+  patch -Np1 -i ../xserver116.patch &amp;&amp;
+  autoreconf -fi                    &amp;&amp;
 
   ./configure $XORG_CONFIG \
       --disable-xwayland    --enable-dri3        --disable-dmx         \
@@ -177,12 +179,12 @@ popd</userinput></screen>
 
 cd unix/xserver/hw/vnc &amp;&amp;
 make install           &amp;&amp;
-sed -i 's/iconic/nowin/' /usr/bin/vncserver &amp;&amp;
+
 [ -e /usr/bin/Xvnc ] || ln -svf $XORG_PREFIX/bin/Xvnc /usr/bin/Xvnc</userinput></screen>
 
     <para>
       Finally, create a desktop menu entry by runing the following
-      command as the  <systemitem class="username">root</systemitem>
+      command as the <systemitem class="username">root</systemitem>
       user:
     </para>
 

@@ -7,19 +7,19 @@
   <!ENTITY libreoffice-dl "http://download.documentfoundation.org/libreoffice/src/&libreoffice-version;">
 
   <!ENTITY libreoffice-core-download-http "&libreoffice-dl;/libreoffice-&libreoffice-dlversion;.tar.xz">
-  <!ENTITY libreoffice-core-md5sum        "34cf1a7fbac5b496c141c32c8464a73a">
+  <!ENTITY libreoffice-core-md5sum        "427075aba3e1d32197954b7d6a2d0566">
   <!ENTITY libreoffice-core-size          "157 MB">
 
   <!ENTITY libreoffice-dict-download-http "&libreoffice-dl;/libreoffice-dictionaries-&libreoffice-dlversion;.tar.xz">
-  <!ENTITY libreoffice-dict-md5sum        "f61c11b64e4f15620b9d96bd58af4041">
+  <!ENTITY libreoffice-dict-md5sum        "106c6826526289c679162b04166a8937">
   <!ENTITY libreoffice-dict-size          "36 MB">
 
   <!ENTITY libreoffice-help-download-http "&libreoffice-dl;/libreoffice-help-&libreoffice-dlversion;.tar.xz">
-  <!ENTITY libreoffice-help-md5sum        "46e893fdbc435917b5cf70565e38d6f0">
+  <!ENTITY libreoffice-help-md5sum        "9019bcc3d1bc4bb882c3366a2dfc302d">
   <!ENTITY libreoffice-help-size          "1.8 MB">
 
   <!ENTITY libreoffice-translations-download-http "&libreoffice-dl;/libreoffice-translations-&libreoffice-dlversion;.tar.xz">
-  <!ENTITY libreoffice-translations-md5sum        "064605fe0695dcf0b461036c07e75c7a">
+  <!ENTITY libreoffice-translations-md5sum        "8a7d1a0976f37334cb15cd93e01f5914">
   <!ENTITY libreoffice-translations-size          "122 MB">
 
   <!ENTITY libreoffice-buildsize          "8.5 GB (615 MB installed)">
@@ -127,13 +127,6 @@
           Translations size: &libreoffice-translations-size;
         </para>
       </listitem>
-      <listitem>
-        <para>
-          Required patch for i686 systems, in order to fix a problem introduced
-          by <application>&gcc-490;</application>:
-          <ulink url="&patch-root;/libreoffice-&libreoffice-dlversion;-gcc_4_9_0-2.patch"/>
-        </para>
-      </listitem>
     </itemizedlist>
 
     <bridgehead renderas="sect3">LibreOffice Dependencies</bridgehead>
@@ -220,7 +213,7 @@
       <ulink url="http://www.freedesktop.org/wiki/Software/libexttextcat/">libexttextcat</ulink>,
       <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libfreehand">libfreehand</ulink>,
       <ulink url="http://tagoh.bitbucket.org/liblangtag/">liblangtag</ulink>,
-      <ulink url="http://www.freedesktop.org/wiki/Software/libexttextcat/">libmspub</ulink>,
+      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libmspub">libmspub</ulink>,
       <ulink url="http://sourceforge.net/projects/libmwaw/">libmwaw</ulink>,
       <ulink url="http://sourceforge.net/projects/libwpd/files/libodfgen/">libodfgen</ulink>,
       <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libpagemaker">libpagemaker</ulink>,
@@ -277,17 +270,10 @@ ln -sfv ../../../libreoffice-help-&libreoffice-dlversion;.tar.xz external/tarbal
     </note>
 
     <para>
-      In the rest of the page, locales "en-US" and "pt-BR" are examples. Change
+      In the rest of the page, locales "fr" and "en-GB" are examples. Change
       them to suit your needs. You might want to read the "Command Explanations"
       further below before proceeding.
     </para>
-
-    <para>
-     For i686 systems, fix a problem introduced by
-     <application>&gcc-490;</application>:
-    </para>
-
-<screen><userinput>patch -Np1 -i ../libreoffice-&libreoffice-dlversion;-gcc_4_9_0-2.patch &amp;&amp;</userinput></screen>
 
     <para>
       Prepare <application>LibreOffice</application> for compilation by running
@@ -309,7 +295,7 @@ chmod -v +x bin/unpack-sources                &amp;&amp;
 ./autogen.sh --prefix=/usr               \
              --sysconfdir=/etc           \
              --with-vendor="BLFS"        \
-             --with-lang="en-US pt-BR"   \
+             --with-lang="fr en-GB"      \
              --with-help                 \
              --with-myspell-dicts        \
              --with-alloc=system         \
@@ -393,7 +379,7 @@ install -v -m644  sysui/desktop/appstream-appdata/*.xml \
     </para>
 
     <para>
-      <parameter>--with-lang="en-US pt-BR"</parameter>: This switch sets
+      <parameter>--with-lang="fr en-GB"</parameter>: This switch sets
       what languages to support. To list several languages, separate them
       with a space. For all languages, use
       <parameter>--with-lang=ALL</parameter>.
@@ -401,13 +387,8 @@ install -v -m644  sysui/desktop/appstream-appdata/*.xml \
 
     <note>
       <para>
-        For a list of the available languages, you can uncompress the
-        translations tarball by running the following command:
-        <command>tar -xf
-        ../libreoffice-translations-&libreoffice-dlversion;.tar.xz
-        --no-overwrite-dir -C /tmp</command> and proceed to examine
-        the contents of <filename
-        class="directory">/tmp/libreoffice-&libreoffice-dlversion;/translations/source</filename>.
+        For a list of the available languages, look in
+        <filename>solenv/inc/langlist.mk</filename>.
       </para>
     </note>
 

@@ -6,9 +6,9 @@
 
   <!ENTITY balsa-download-http "http://pawsa.fedorapeople.org/balsa/balsa-&balsa-version;.tar.bz2">
   <!ENTITY balsa-download-ftp  " ">
-  <!ENTITY balsa-md5sum        "afd175b4de2c6cc685ace50dc3ad61ff">
-  <!ENTITY balsa-size          "3.7 MB">
-  <!ENTITY balsa-buildsize     "72 MB">
+  <!ENTITY balsa-md5sum        "da3b500b5c939f85071fb1fe3e3efc01">
+  <!ENTITY balsa-size          "3.9 MB">
+  <!ENTITY balsa-buildsize     "78 MB">
   <!ENTITY balsa-time          "0.5 SBU">
 ]>
 

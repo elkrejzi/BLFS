@@ -8,9 +8,9 @@
            "&mozilla-http;/seamonkey/releases/&seamonkey-version;/source/seamonkey-&seamonkey-version;.source.tar.bz2">
   <!ENTITY seamonkey-download-ftp
            "&mozilla-ftp;/seamonkey/releases/&seamonkey-version;/source/seamonkey-&seamonkey-version;.source.tar.bz2">
-  <!ENTITY seamonkey-md5sum        "88a90d29af5f05e12a9c91e4c4d57c6e">
-  <!ENTITY seamonkey-size          "191 MB">
-  <!ENTITY seamonkey-buildsize     "5.6 GB (71 MB installed)">
+  <!ENTITY seamonkey-md5sum        "d9b1f863cb8808ca92a2d9ac004ae5ee">
+  <!ENTITY seamonkey-size          "194 MB">
+  <!ENTITY seamonkey-buildsize     "3.6 GB (72 MB installed)">
   <!ENTITY seamonkey-time          "61 SBU">
 ]>
 
@@ -141,6 +141,7 @@
       <xref linkend="openjdk"/>,
       <xref linkend="pulseaudio"/>,
       <xref linkend="startup-notification"/>,
+      <xref linkend="valgrind"/>,
       <xref linkend="wget"/>,
       <xref linkend="wireless_tools"/> and
       <ulink url="http://hunspell.sourceforge.net/">Hunspell</ulink>
@@ -166,7 +167,12 @@
     </para>
 
 <screen><?dbfo keep-together="auto"?><userinput>cat &gt; mozconfig &lt;&lt; "EOF"
-<literal># If you have installed DBus-Glib comment out this line:
+<literal># If you have a multicore machine, all cores will be used by default.
+# If desired, you can reduce the number of cores used, e.g. to 1, by
+# uncommenting the next line and setting a valid number of CPU cores.
+#mk_add_options MOZ_MAKE_FLAGS="-j1"
+
+# If you have installed DBus-Glib comment out this line:
 ac_add_options --disable-dbus
 
 # If you have installed dbus-glib, and you have installed (or will install)
@@ -210,6 +216,7 @@ ac_add_options --disable-crashreporter
 ac_add_options --disable-updater
 ac_add_options --disable-tests
 
+ac_add_options --enable-optimize
 ac_add_options --enable-strip
 ac_add_options --enable-install-strip
 
@@ -231,6 +238,12 @@ ac_add_options --with-system-zlib
 
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/moz-build-dir</literal>
 EOF</userinput></screen>
+
+    <para>
+      First, fix building with system freetype-2.6 or later:
+    </para>
+
+<screen><userinput>sed -i '/^ftglyph.h/ i ftfntfmt.h' mozilla/config/system-headers</userinput></screen>
 
     <para>
       The moz-build-dir directory needs to exist and match the value used in
