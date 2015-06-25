@@ -44,11 +44,25 @@
 
 -->
     <listitem>
-      <para>June 24th, 2015</para>
+      <para>June 25th, 2015</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+        <listitem>
+          <para>[krejzi] - Updated to db-6.1.26, libtirpc-0.3.2
+          and texlive-20150521.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Added Module-Build-0.4214 (Perl
+          Module.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>June 24th, 2015</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Updated to KDE Frameworks-5.11.0.</para>
         </listitem>
@@ -125,7 +139,6 @@
           <para>[krejzi] - Updated to alsa-firmware-1.0.29, alsa-lib-1.0.29
           and alsa-plugins-1.0.29.</para>
         </listitem>
-
         <listitem>
           <para>[krejzi] - Added libcdio-0.93.</para>
         </listitem>
