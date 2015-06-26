@@ -50,6 +50,11 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Added a patch for polkit which
+          addresses several security issues and memory
+          leaks.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Updated to db-6.1.26, libtirpc-0.3.2
           and texlive-20150521.</para>
         </listitem>
