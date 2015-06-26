@@ -89,6 +89,7 @@
       <xref linkend="libxslt"/>,
       <xref linkend="ModemManager"/>,
       <xref linkend="NetworkManager"/>,
+      <xref linkend="perl-uri"/>,
       <xref linkend="phonon5"/>,
       <xref linkend="shared-mime-info"/> and
       <xref linkend="wget"/> (required to download the packages)

@@ -72,8 +72,9 @@
       <xref linkend="kdesignerplugin"/>,
       <xref linkend="kinit5"/>,
       <xref linkend="kitemmodels"/>,
-      <xref linkend="kparts"/> and
-      <xref linkend="kunitconversion"/>
+      <xref linkend="kparts"/>,
+      <xref linkend="kunitconversion"/> and
+      <xref linkend="perl-uri"/>
     </para>
 
     <para condition="html" role="usernotes">
