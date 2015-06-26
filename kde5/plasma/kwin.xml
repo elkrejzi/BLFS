@@ -26,7 +26,7 @@
       The <application>KWin</application> package contains the KDE Window Manager.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -68,8 +68,7 @@
     <para role="required">
       <xref linkend="kdecoration"/>,
       <xref linkend="kinit5"/>,
-      <xref linkend="knewstuff"/>,
-      <xref linkend="libepoxy"/> and
+      <xref linkend="knewstuff"/> and
       <xref linkend="plasma-framework"/>
     </para>
 
@@ -93,10 +92,7 @@
       commands:
     </para>
 
-<screen><userinput>sed -e "s:Libinput_FOUND AND UDEV_FOUND:&amp; AND Libinput_VERSION VERSION_LESS 0.8:g" \
-    -i CMakeLists.txt &amp;&amp;
-
-mkdir build &amp;&amp;
+<screen><userinput>mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
 cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
@@ -122,11 +118,6 @@ make</userinput></screen>
 
   <sect2 role="commands">
     <title>Command Explanations</title>
-
-    <para>
-      <command>sed -e ...</command>: This sed fixes building with
-      libinput-0.8.0 and later.
-    </para>
 
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/cmake-release.xml"/>

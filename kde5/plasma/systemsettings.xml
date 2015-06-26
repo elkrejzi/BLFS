@@ -27,7 +27,7 @@
       application used to change KDE system settings.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -73,8 +73,7 @@
 
     <bridgehead renderas="sect4">Optional Runtime Dependencies</bridgehead>
     <para role="optional">
-      <xref linkend="bluedevil5"/> (Bluetooth Configuration Module><!--,
-      <xref linkend="kcm-touchpad5"/> (Touchpad Configuration Module)--> and
+      <xref linkend="bluedevil5"/> (Bluetooth Configuration Module> and
       <xref linkend="kscreen5"/> (Screen Configuration Module)
     </para>
 

@@ -27,7 +27,7 @@
       stack for the <application>KDE Plasma</application> Desktop.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -63,13 +63,23 @@
       </listitem>
     </itemizedlist>
 
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+    <itemizedlist spacing="compact">
+      <listitem>
+        <para>
+          Required patch:
+          <ulink url="&patch-root;/bluedevil-&plasma-version;-bluezqt_api_changes-1.patch"/>
+        </para>
+      </listitem>
+    </itemizedlist>
+
     <bridgehead renderas="sect3">Bluedevil Dependencies</bridgehead>
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="bluez"/>,
-      <xref linkend="kio"/> and
-      <xref linkend="libbluedevil5"/>
+      <xref linkend="bluez-qt"/>,
+      <xref linkend="kded"/> and
+      <xref linkend="plasma-framework"/>
     </para>
 
     <para condition="html" role="usernotes">
@@ -85,15 +95,18 @@
       commands:
     </para>
 
-<screen><userinput>mkdir build &amp;&amp;
+<screen><userinput>patch -Np1 -i ../bluedevil-&plasma-version;-bluezqt_api_changes-1.patch &amp;&amp;
+
+mkdir build &amp;&amp;
 cd    build &amp;&amp;
 
 cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX \
       -DCMAKE_BUILD_TYPE=Release         \
       -DLIB_INSTALL_DIR=lib              \
       -DBUILD_TESTING=OFF                \
+      -DQML_INSTALL_DIR=&qt5-qml-dir;           \
       -DQT_PLUGIN_INSTALL_DIR=&qt5-plugins-dir; \
-      -Wno-dev .. &amp;&amp;
+      .. &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -121,6 +134,9 @@ make</userinput></screen>
       href="../../xincludes/kf5-tests.xml"/>
 
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+      href="../../xincludes/qt5-qml-dir.xml"/>
+
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/qt5-plugins-dir.xml"/>
 
   </sect2>
@@ -135,13 +151,15 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          bluedevil-monolithic, bluedevil-sendfile and bluedevil-wizard
+          bluedevil-sendfile and bluedevil-wizard
         </seg>
         <seg>
           None
         </seg>
         <seg>
-          $KF5_PREFIX/share/bluedevilwizard
+          $KF5_PREFIX/&qt5-qml-dir;/org/kde/plasma/private/bluetooth,
+          $KF5_PREFIX/share/bluedevilwizard and
+          $KF5_PREFIX/share/plasma/plasmoids/org.kde.plasma.bluetooth
         </seg>
       </seglistitem>
     </segmentedlist>

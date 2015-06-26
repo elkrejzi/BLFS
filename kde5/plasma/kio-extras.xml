@@ -27,7 +27,7 @@
       components to increase the functionality of KIO.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -152,6 +152,7 @@ make</userinput></screen>
           libmolletnetwork.so
         </seg>
         <seg>
+          $KF5_PREFIX/&qt5-plugins-dir;/kf5/kio,
           $KF5_PREFIX/share/doc/HTML/*/kcontrol/{kcmcgi,trash},
           $KF5_PREFIX/share/doc/HTML/*/kioslave5/{bookmarks,bzip2,cgi,finger,fish},
           $KF5_PREFIX/share/doc/HTML/*/kioslave5/{floppy,gzip,info,man,network,nfs},

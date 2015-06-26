@@ -27,7 +27,7 @@
       KDE Plasma Workspace.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -75,8 +75,10 @@
       <xref linkend="krunner"/>,
       <xref linkend="kwayland"/>,
       <xref linkend="kwin5"/>,
-      <xref linkend="libkscreen"/> and
-      <xref linkend="libksysguard"/>
+      <xref linkend="kxmlrpcclient"/>,
+      <xref linkend="libkscreen"/>,
+      <xref linkend="libksysguard"/> and
+      <xref linkend="networkmanager-qt"/>
     </para>
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
@@ -194,14 +196,14 @@ make</userinput></screen>
     </para>
 
 <screen role="root"><userinput>cat &gt; /etc/pam.d/kde &lt;&lt; "EOF"
-# Begin /etc/pam.d/kde
+<literal># Begin /etc/pam.d/kde
 
 auth     include        system-auth
 account  include        system-account
 password include        system-password
 session  include        system-session
 
-# End /etc/pam.d/kde
+# End /etc/pam.d/kde</literal>
 EOF</userinput></screen>
 
     <note>
@@ -222,7 +224,6 @@ EOF</userinput></screen>
 <screen role="root"><userinput>cat &gt; $KF5_PREFIX/bin/startkde-wrapper &lt;&lt; "EOF"
 <literal>#!/bin/sh -e
 
-. /etc/profile.d/qt5.sh
 . /etc/profile.d/kf5.sh
 
 exec $KF5_PREFIX/bin/startkde "$@"</literal>
@@ -254,15 +255,14 @@ ln -sfv $KF5_PREFIX/share/xsessions/plasma.desktop /usr/share/xsessions/kf5-plas
       <seglistitem>
         <seg>
           kcheckrunning, kcminit, kcminit_startup, kdostartupconfig5,
-          kglobalaccel5, klipper, krunner, ksmserver, ksplashqml,
-          kstartupconfig5, kuiserver5, plasmashell, plasmawindowed,
-          startkde and systemmonitor
+          klipper, krunner, ksmserver, ksplashqml, kstartupconfig5,
+          kuiserver5, plasmashell, plasmawindowed, startkde and
+          systemmonitor
         </seg>
         <seg>
           libkdeinit5_kcminit.so, libkdeinit5_kcminit_startup.so,
-          libkdeinit5_kglobalaccel5.so, libkdeinit5_klipper.so,
-          libkdeinit5_ksmserver.so, libkdeinit5_kuiserver5.so,
-          libKF5XmlRpcClientPrivate.so, libkworkspace5.so,
+          libkdeinit5_klipper.so, libkdeinit5_ksmserver.so,
+          libkdeinit5_kuiserver5.so, libkworkspace5.so,
           libplasma-geolocation-interface.so, libtaskmanager.so and
           libweather_ion.so
         </seg>
@@ -270,12 +270,17 @@ ln -sfv $KF5_PREFIX/share/xsessions/plasma.desktop /usr/share/xsessions/kf5-plas
           $KF5_PREFIX/include/{KDE,kworkspace5,plasma,taskmanager},
           $KF5_PREFIX/lib/cmake/{KRunnerAppDBusInterface,KSMServerDBusInterface},
           $KF5_PREFIX/lib/cmake/{LibKWorkspace,LibTaskManager,ScreenSaverDBusInterface},
+          $KF5_PREFIX/&qt5-plugins-dir;/kpackage/packagestructure,
+          $KF5_PREFIX/&qt5-plugins-dir;/phonon_platform,
           $KF5_PREFIX/&qt5-plugins-dir;/plasma/{dataengine,packagestructure},
-          $KF5_PREFIX/&qt5-qml-dir;/org/kde/plasma/{private,wallpapers,workspace},
+          $KF5_PREFIX/&qt5-qml-dir;/org/kde/plasma/private/{battery,digitalclock,icon},
+          $KF5_PREFIX/&qt5-qml-dir;/org/kde/plasma/private/{notifications,shell},
+          $KF5_PREFIX/&qt5-qml-dir;/org/kde/plasma/{wallpapers,workspace},
           $KF5_PREFIX/&qt5-qml-dir;/org/kde/private/systemtray,
           $KF5_PREFIX/share/doc/HTML/*/klipper,
           $KF5_PREFIX/share/{drkonqi,ksmserver,ksplash,kstyle},
-          $KF5_PREFIX/share/plasma/{kcms,look-and-feel,plasmoids,services},
+          $KF5_PREFIX/share/plasma/kcms/screenlocker_kcm,
+          $KF5_PREFIX/share/plasma/{look-and-feel,plasmoids,services},
           $KF5_PREFIX/share/plasma/{shareprovider,wallpapers} and
           $KF5_PREFIX/share/{sddm,solid,xsessions}
         </seg>

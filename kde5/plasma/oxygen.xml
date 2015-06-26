@@ -27,7 +27,7 @@
       KDE Oxygen style.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -67,7 +67,8 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="frameworkintegration"/>
+      <xref linkend="frameworkintegration"/> and
+      <xref linkend="kdecoration"/>
     </para>
 
     <para condition="html" role="usernotes">
@@ -133,12 +134,13 @@ make</userinput></screen>
 
       <seglistitem>
         <seg>
-          oxygen-demo5 and oxygen-settings5
+          oxygen-settings5
         </seg>
         <seg>
           liboxygenstyle5.so and liboxygenstyleconfig5.so
         </seg>
         <seg>
+          $KF5_PREFIX/&qt5-plugins-dir;/{org.kde.kdecoration2,styles},
           $KF5_PREFIX/share/icons/{KDE_Classic,Oxygen_Black,Oxygen_Blue},
           $KF5_PREFIX/share/icons/{Oxygen_White,Oxygen_Yellow,Oxygen_Zion},
           $KF5_PREFIX/share/kstyle,

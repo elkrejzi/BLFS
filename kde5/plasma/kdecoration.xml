@@ -27,7 +27,7 @@
       library to create window decorations.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -136,7 +136,7 @@ make</userinput></screen>
           libkdecorations2private.so and libkdecorations2.so
         </seg>
         <seg>
-          $KF5_PREFIX/include/KF5/KDecoration2 and
+          $KF5_PREFIX/include/KDecoration2 and
           $KF5_PREFIX/lib/cmake/KDecoration2
         </seg>
       </seglistitem>

@@ -27,7 +27,7 @@
       wallpapers for <application>KDE Plasma 5</application>.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -116,7 +116,11 @@ cmake -DCMAKE_INSTALL_PREFIX=$KF5_PREFIX ..</userinput></screen>
           None
         </seg>
         <seg>
-          $KF5_PREFIX/share/wallpapers/{Dance_of_the_Spirits,Green_Leaves,Whisker_Grass}
+          $KF5_PREFIX/share/wallpapers/{Alps,BlueFlower,Dance_of_the_Spirits},
+          $KF5_PREFIX/share/wallpapers/{Fog,ForestFog,ForestHouse,GereatHeron},
+          $KF5_PREFIX/share/wallpapers/{Green_Leaves,Grey,IndianSummer},
+          $KF5_PREFIX/share/wallpapers/{Landmannalaugar,Poppy,Spray,Sunset} and
+          $KF5_PREFIX/share/wallpapers/{Tauplitz,WalmendingerHorn,Water,Whisker_Grass}
         </seg>
       </seglistitem>
     </segmentedlist>

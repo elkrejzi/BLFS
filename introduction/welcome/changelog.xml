@@ -44,11 +44,25 @@
 
 -->
     <listitem>
-      <para>June 25th, 2015</para>
+      <para>June 26th, 2015</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+        <listitem>
+          <para>[krejzi] - Updated to kate-15.04.2, kmix-15.04.2
+          and konsole-15.04.2 (KF5 Apps).</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to KDE Plasma-5.3.1 and
+          oxygen-icons-15.04.2 (Plasma Chapter).</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>June 25th, 2015</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Added a patch for polkit which
           addresses several security issues and memory

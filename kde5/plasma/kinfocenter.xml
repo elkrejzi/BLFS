@@ -27,7 +27,7 @@
       application that provides information about a computer system.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -150,7 +150,8 @@ make</userinput></screen>
         <seg>
           $KF5_PREFIX/share/doc/HTML/*/kinfocenter,
           $KF5_PREFIX/share/kcmusb,
-          $KF5_PREFIX/share/kcmview1394 and
+          $KF5_PREFIX/share/kcmview1394,
+          $KF5_PREFIX/share/kpackage/kcms/kcm_energyinfo and
           $KF5_PREFIX/share/kxmlgui5/kinfocenter
         </seg>
       </seglistitem>

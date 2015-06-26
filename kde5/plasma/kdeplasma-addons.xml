@@ -27,7 +27,7 @@
       additional plasmoids for KDE Plasma.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -67,7 +67,9 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kdelibs4support"/> and
+      <xref linkend="kdelibs4support"/>,
+      <xref linkend="knewstuff"/>,
+      <xref linkend="kross5"/> and
       <xref linkend="krunner"/>
     </para>
 
@@ -147,17 +149,19 @@ make</userinput></screen>
           None
         </seg>
         <seg>
-          None
+          libplasmacomicprovidercore.so
         </seg>
         <seg>
+          $KF5_PREFIX/&qt5-plugins-dir;/kpackage,
           $KF5_PREFIX/&qt5-plugins-dir;/plasma/dataengine,
           $KF5_PREFIX/&qt5-qml-dir;/org/kde/plasma/private/{kimpanel,fifteenpuzzle},
-          $KF5_PREFIX/&qt5-qml-dir;/org/kde/plasma/private/{showdesktop,notes},
+          $KF5_PREFIX/&qt5-qml-dir;/org/kde/plasma/private/{showdesktop,notes,timer},
           $KF5_PREFIX/share/kwin/{desktoptabbox,tabbox},
           $KF5_PREFIX/share/plasma/desktoptheme/default,
-          $KF5_PREFIX/share/plasma/plasmoids/org.kde.plasma.{calculator,fifteenpuzzle,fuzzyclock},
-          $KF5_PREFIX/share/plasma/plasmoids/org.kde.plasma.{kimpanel,notes,showdesktop},
-          $KF5_PREFIX/share/plasma/plasmoids/org.kde.plasma.{systemloadviewer,timer,webbrowser} and
+          $KF5_PREFIX/share/plasma/plasmoids/org.kde.plasma.{calculator,comic,fifteenpuzzle},
+          $KF5_PREFIX/share/plasma/plasmoids/org.kde.plasma.{fuzzyclock,kimpanel,notes},
+          $KF5_PREFIX/share/plasma/plasmoids/org.kde.plasma.{showdesktop,systemloadviewer},
+          $KF5_PREFIX/share/plasma/plasmoids/org.kde.plasma.{timer,webbrowser} and
           $KF5_PREFIX/share/plasma/wallpapers/org.kde.{haenau,hunyango}
         </seg>
       </seglistitem>

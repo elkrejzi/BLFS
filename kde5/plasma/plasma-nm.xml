@@ -27,7 +27,7 @@
       applet written in QML for managing network connections.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -74,7 +74,7 @@
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libmm-qt"/>,
+      <xref linkend="modemmanager-qt"/>,
       <ulink url="&gnome-download-http;/mobile-broadband-provider-info">
       mobile-broadband-provider-info</ulink> and
       <ulink url="http://www.infradead.org/openconnect">OpenConnect</ulink>

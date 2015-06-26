@@ -60,6 +60,8 @@
 <screen role="root"><userinput>cat &gt; /etc/profile.d/kf5.sh &lt;&lt; "EOF"
 <literal># Begin /etc/profile.d/kf5.sh
 
+. /etc/profile.d/qt5.sh
+
 export KF5_PREFIX=/usr
 
 pathappend /usr/lib/qt5/plugins    QT_PLUGIN_PATH
@@ -105,6 +107,8 @@ EOF</userinput></screen>
 
 <screen role="root"><userinput>cat &gt; /etc/profile.d/kf5.sh &lt;&lt; "EOF"
 <literal># Begin /etc/profile.d/kf5.sh
+
+. /etc/profile.d/qt5.sh
 
 export KF5_PREFIX=/opt/kf5
 
