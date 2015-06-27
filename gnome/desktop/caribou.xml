@@ -76,7 +76,7 @@
     <para role="required">
       <xref linkend="clutter"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="libgee08"/>,
+      <xref linkend="libgee"/>,
       <xref linkend="libxklavier"/>, and
       <xref linkend="pygobject3"/>
     </para>

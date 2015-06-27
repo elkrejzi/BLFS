@@ -75,9 +75,8 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="evolution-data-server"/>,
-      <xref linkend="gnome-icon-theme"/> or
       <xref linkend="adwaita-icon-theme"/>,
+      <xref linkend="evolution-data-server"/>,
       <xref linkend="gtkhtml"/>,
       <xref linkend="itstool"/>,
       <xref linkend="libgdata"/>,

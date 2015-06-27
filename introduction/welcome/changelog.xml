@@ -44,11 +44,59 @@
 
 -->
     <listitem>
-      <para>June 26th, 2015</para>
+      <para>June 27th, 2015</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+        <listitem>
+          <para>[krejzi] - Removed telepathy-salut, totem and
+          tracker.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Removed telepathy-gabble, telepathy-haze
+           and telepathy-idle.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Removed sound-juicer, sushi and
+          telepathy-farstream.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Removed nautilus-sendto, opal and
+          ptlib.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Removed libmediaart, libnice and
+          libzapojit.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Removed gnome-screenshot, gnome-user-share
+          and grilo-plugins.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Removed gnome-icon-theme-symbolic,
+          gnome-online-miners and gnome-photos.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Removed gnome-font-viewer, gnome-icon-theme
+          and gnome-icon-theme-extras.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Removed gnome-contacts, gnome-dictionary
+          and gnome-documents.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Removed folks, gfbgraph and gnome-clocks.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Removed ekiga, empathy and farstream.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>June 26th, 2015</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Updated to kate-15.04.2, kmix-15.04.2
           and konsole-15.04.2 (KF5 Apps).</para>

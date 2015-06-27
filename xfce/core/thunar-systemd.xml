@@ -97,8 +97,7 @@
 
     <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
     <para role="optional">
-      An icon theme such as <xref linkend="adwaita-icon-theme"/>,
-      <xref linkend="gnome-icon-theme"/> or
+      An icon theme such as <xref linkend="adwaita-icon-theme"/> or
       <xref linkend="lxde-icon-theme"/>
     </para>
 

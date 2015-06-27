@@ -78,7 +78,7 @@
     <para role="required">
       <xref linkend="gcr"/>,
       <xref linkend="json-glib"/>, 
-      <xref linkend="librest"/>,
+      <xref linkend="rest"/>,
       <xref linkend="telepathy-glib"/>, and
       <xref linkend="webkitgtk2"/>
     </para>

@@ -31,11 +31,8 @@ $Date: 2014-10-29 23:06:49 +0100 (Wed, 29 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="audiofile.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="faac.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="faad2.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="farstream-systemd.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="fdk-aac.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="flac.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="grilo-systemd.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="grilo-plugins-systemd.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gstreamer.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gst-plugins-base-systemd.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gst-plugins-good.xml"/>
@@ -74,7 +71,6 @@ $Date: 2014-10-29 23:06:49 +0100 (Wed, 29 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libvdpau-va-gl-systemd.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libvorbis.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libvpx.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="opal.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="opus.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="pulseaudio.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="sbc.xml"/>

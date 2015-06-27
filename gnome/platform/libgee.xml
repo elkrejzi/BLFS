@@ -4,15 +4,15 @@
   <!ENTITY % general-entities SYSTEM "../../general.ent">
   %general-entities;
 
-  <!ENTITY libgee08-download-http "&gnome-download-http;/libgee/0.16/libgee-&libgee08-version;.tar.xz">
-  <!ENTITY libgee08-download-ftp  "&gnome-download-ftp;/libgee/0.16/libgee-&libgee08-version;.tar.xz">
-  <!ENTITY libgee08-md5sum        "d30cf203784431b0fdc3216b1acd999c">
-  <!ENTITY libgee08-size          "652 KB">
-  <!ENTITY libgee08-buildsize     "42 MB">
-  <!ENTITY libgee08-time          "0.4 SBU">
+  <!ENTITY libgee-download-http "&gnome-download-http;/libgee/0.16/libgee-&libgee-version;.tar.xz">
+  <!ENTITY libgee-download-ftp  "&gnome-download-ftp;/libgee/0.16/libgee-&libgee-version;.tar.xz">
+  <!ENTITY libgee-md5sum        "d30cf203784431b0fdc3216b1acd999c">
+  <!ENTITY libgee-size          "652 KB">
+  <!ENTITY libgee-buildsize     "42 MB">
+  <!ENTITY libgee-time          "0.4 SBU">
 ]>
 
-<sect1 id="libgee08" xreflabel="libgee-&libgee08-version;">
+<sect1 id="libgee" xreflabel="libgee-&libgee-version;">
   <?dbhtml filename="libgee.html"?>
 
   <sect1info>
@@ -20,9 +20,9 @@
     <date>$Date: 2014-10-30 02:31:32 +0100 (Thu, 30 Oct 2014) $</date>
   </sect1info>
 
-  <title>libgee-&libgee08-version;</title>
+  <title>libgee-&libgee-version;</title>
 
-  <indexterm zone="libgee08">
+  <indexterm zone="libgee">
     <primary sortas="a-libgee">libgee</primary>
   </indexterm>
 
@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libgee08-download-http;"/>
+          Download (HTTP): <ulink url="&libgee-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libgee08-download-ftp;"/>
+          Download (FTP): <ulink url="&libgee-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libgee08-md5sum;
+          Download MD5 sum: &libgee-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libgee08-size;
+          Download size: &libgee-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libgee08-buildsize;
+          Estimated disk space required: &libgee-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libgee08-time;
+          Estimated build time: &libgee-time;
         </para>
       </listitem>
     </itemizedlist>
@@ -91,7 +91,7 @@
     </para>
 
     <para condition="html" role="usernotes">User Notes:
-      <ulink url="&blfs-wiki;/libgee08"/>
+      <ulink url="&blfs-wiki;/libgee"/>
     </para>
   </sect2>
 
@@ -144,13 +144,13 @@ make</userinput></screen>
       <?dbfo list-presentation="list"?>
       <?dbhtml list-presentation="table"?>
 
-      <varlistentry id="libgee08-lib">
+      <varlistentry id="libgee-lib">
         <term><filename class="libraryfile">libgee-0.8.so</filename></term>
         <listitem>
           <para>
             contains the <application>libgee</application> API functions.
           </para>
-          <indexterm zone="libgee08 libgee08-lib">
+          <indexterm zone="libgee libgee-lib">
             <primary sortas="c-libgee-0.8">libgee-0.8.so</primary>
           </indexterm>
         </listitem>

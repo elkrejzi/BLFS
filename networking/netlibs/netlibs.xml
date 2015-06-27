@@ -27,7 +27,6 @@ $Date: 2014-10-26 19:36:54 +0100 (Sun, 26 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="glib-networking.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="ldns.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libevent.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libnice-systemd.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libnl.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libpcap.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="libndp.xml"/>

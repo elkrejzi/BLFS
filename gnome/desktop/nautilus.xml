@@ -91,7 +91,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/> and
-      <xref linkend="tracker"/>
+      <ulink url="&gnome-download-http;/tracker">Tracker</ulink>
     </para>
 
     <bridgehead renderas="sect4">Recommended (Runtime)</bridgehead>
@@ -142,7 +142,7 @@ make</userinput></screen>
     <para>
       <parameter>--disable-tracker</parameter>: This switch disables
       use of <application>Tracker</application>. Remove it if you have
-      installed <xref linkend="tracker"/>.
+      installed <application>Tracker</application>.
     </para>
 
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
