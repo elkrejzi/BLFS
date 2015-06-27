@@ -122,12 +122,15 @@ pathappend $KF5_PREFIX/etc/xdg       XDG_CONFIG_DIRS
 pathappend /usr/share                XDG_DATA_DIRS
 pathappend $KF5_PREFIX/share         XDG_DATA_DIRS
 
+pathappend /usr/lib/qt5/plugins        QT_PLUGIN_PATH
 pathappend $QT5DIR/lib/qt5/plugins     QT_PLUGIN_PATH
 pathappend $KF5_PREFIX/lib/qt5/plugins QT_PLUGIN_PATH
 
+pathappend /usr/lib/qt5/qml            QML_IMPORT_PATH
 pathappend $QT5DIR/lib/qt5/qml         QML_IMPORT_PATH
 pathappend $KF5_PREFIX/lib/qt5/qml     QML_IMPORT_PATH
 
+pathappend /usr/lib/qt5/qml            QML2_IMPORT_PATH
 pathappend $QT5DIR/lib/qt5/qml         QML2_IMPORT_PATH
 pathappend $KF5_PREFIX/lib/qt5/qml     QML2_IMPORT_PATH
 
