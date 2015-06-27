@@ -50,6 +50,39 @@
           <para>[krejzi] - .</para>
         </listitem> -->
         <listitem>
+          <para>[krejzi] - Updated to xfconf-4.12.0, xfdesktop-4.12.2
+          and xfwm4-4.12.3.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to xfce4-session-4.12.1,
+          xfce4-settings-4.12.0 and
+          xfce4-xkb-plugin-0.7.1.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to xfce4-panel-4.12.0 and
+          xfce4-power-manager-1.4.4.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to xfburn-0.5.4 and
+          xfce4-appfinder-4.12.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to Thunar-1.6.10, thunar-volman-0.8.1
+          and tumbler-0.1.31.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to mousepad-0.4.0, parole-0.8.0
+          and ristretto-0.8.0.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to libxfce4ui-4.12.1, libxfce4util-4.12.1
+          and midori-0.5.10.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Updated to exo-0.10.6, garco-0.5.0
+          and gtk-xfce-engine-3.2.0.</para>
+        </listitem>
+        <listitem>
           <para>[krejzi] - Removed telepathy-salut, totem and
           tracker.</para>
         </listitem>

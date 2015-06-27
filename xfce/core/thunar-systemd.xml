@@ -7,10 +7,10 @@
   <!ENTITY thunar-download-http
            "http://archive.xfce.org/src/xfce/thunar/1.6/Thunar-&thunar-version;.tar.bz2">
   <!ENTITY thunar-download-ftp  " ">
-  <!ENTITY thunar-md5sum        "08ad45f2bcafbdc5b8c02fd5b7f69dc3">
-  <!ENTITY thunar-size          "2 MB">
-  <!ENTITY thunar-buildsize     "52 MB">
-  <!ENTITY thunar-time          "0.5 SBU">
+  <!ENTITY thunar-md5sum        "3089e1dca6e408641b07cd9c759dea5e">
+  <!ENTITY thunar-size          "1.9 MB">
+  <!ENTITY thunar-buildsize     "59 MB">
+  <!ENTITY thunar-time          "0.6 SBU">
 ]>
 
 <sect1 id="thunar" xreflabel="Thunar-&thunar-version;">
@@ -36,7 +36,7 @@
       on your computer.
     </para>
 
-    &lfs76_checked;
+    &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
@@ -131,20 +131,12 @@ make</userinput></screen>
 
   </sect2>
 
-  <sect2 role="commands">
-    <title>Command Explanations</title>
-
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/gtk-doc-rebuild.xml"/>
-
-  </sect2>
-
   <sect2 role="content">
     <title>Contents</title>
 
     <segmentedlist>
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 
       <seglistitem>
@@ -160,7 +152,6 @@ make</userinput></screen>
           /usr/lib/Thunar,
           /usr/lib/thunarx-2,
           /usr/share/doc/Thunar-&thunar-version;,
-          /usr/share/gtk-doc/html/thunarx,
           /usr/share/pixmaps/Thunar and
           /usr/share/Thunar
         </seg>
@@ -176,7 +167,7 @@ make</userinput></screen>
         <term><command>Thunar</command></term>
         <listitem>
           <para>
-            is the <application>Xfce</application> file manager.
+            is a symbolic link to <command>thunar</command>.
           </para>
           <indexterm zone="thunar Thunar">
             <primary sortas="b-Thunar">Thunar</primary>
@@ -188,7 +179,7 @@ make</userinput></screen>
         <term><command>thunar</command></term>
         <listitem>
           <para>
-            is a symbolic link to <application>Thunar</application>.
+            is the <application>Xfce</application> file manager.
           </para>
           <indexterm zone="thunar thunar-prog">
             <primary sortas="b-thunar">thunar</primary>

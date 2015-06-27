@@ -79,7 +79,7 @@
       <xref linkend="pulseaudio"/>,
       <xref linkend="samba"/>,
       <xref linkend="xine-lib"/>,
-      <ulink url="http://www.libssh.org/">LibSSH</ulink>,
+      <ulink url="http://www.libssh.org/">libssh</ulink>,
       <ulink url="&kde-download-http;&kde-version;/src/">Nepomuk-Core</ulink>,
       <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
       <ulink url="http://www.openslp.org/">OpenSLP</ulink>, and
