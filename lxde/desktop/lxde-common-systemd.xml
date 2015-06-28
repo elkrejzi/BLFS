@@ -79,7 +79,7 @@
       <xref linkend="lxsession"/>,
       <xref linkend="openbox"/>,
       <xref linkend="pcmanfm"/> and
-      <xref linkend="systemd"/> (for Logind)
+      <xref linkend="systemd"/>
     </para>
 
     <bridgehead renderas="sect4">Recommended</bridgehead>

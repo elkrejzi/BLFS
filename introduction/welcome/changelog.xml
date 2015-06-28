@@ -44,11 +44,24 @@
 
 -->
     <listitem>
-      <para>June 27th, 2015</para>
+      <para>June 28th, 2015</para>
       <itemizedlist>
         <!-- <listitem>
           <para>[krejzi] - .</para>
         </listitem> -->
+        <listitem>
+          <para>[krejzi] - Updated systemd instructions to reflect
+          libgudev removal.</para>
+        </listitem>
+        <listitem>
+          <para>[krejzi] - Added libgudev-230.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>June 27th, 2015</para>
+      <itemizedlist>
         <listitem>
           <para>[krejzi] - Updated to xfconf-4.12.0, xfdesktop-4.12.2
           and xfwm4-4.12.3.</para>

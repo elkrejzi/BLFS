@@ -34,14 +34,14 @@ $Date: 2014-10-29 23:06:49 +0100 (Wed, 29 Oct 2014) $
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="fdk-aac.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="flac.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gstreamer.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gst-plugins-base-systemd.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gst-plugins-base.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gst-plugins-good.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gst-plugins-bad.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gst-plugins-ugly.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gst-ffmpeg.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gstreamer10.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gst10-plugins-base.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gst10-plugins-good-systemd.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gst10-plugins-good.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gst10-plugins-bad.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gst10-plugins-ugly.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gst10-libav.xml"/>

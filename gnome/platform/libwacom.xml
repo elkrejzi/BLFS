@@ -74,7 +74,7 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="systemd"/> (for GUdev)
+      <xref linkend="libgudev"/>
     </para>
 
     <bridgehead renderas="sect4">Recommended</bridgehead>

@@ -84,7 +84,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/> and
-      <xref linkend="systemd"/> (for Logind)
+      <xref linkend="systemd"/>
     </para>
 
     <bridgehead renderas="sect4">Optional</bridgehead>

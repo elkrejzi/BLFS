@@ -82,9 +82,10 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gtk3"/>,
+      <xref linkend="libgudev"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="libsoup"/>,
-      <xref linkend="systemd"/> (for GUdev and Logind), and
+      <xref linkend="systemd"/>, and
       <xref linkend="udisks2"/>
     </para>
 

@@ -141,7 +141,7 @@ make</userinput></screen>
       <xref linkend="gnupg2"/>,
       <xref linkend="hicolor-icon-theme"/>,
       <xref linkend="openssh"/> and
-      <xref linkend="systemd"/> (for Logind)
+      <xref linkend="systemd"/>
     </para>
 
     <para>

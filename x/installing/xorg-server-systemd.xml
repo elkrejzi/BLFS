@@ -97,7 +97,7 @@
     <para role="recommended">
       <xref linkend="libepoxy"/> (required to build Glamor),
       <xref linkend="wayland"/> (both for <command>Xwayland</command>),
-      <xref linkend="systemd"/> (for Logind) and
+      <xref linkend="systemd"/> and
       <xref linkend="xcb-util-keysyms"/> (used by <command>Xnest</command>)
     </para>
 

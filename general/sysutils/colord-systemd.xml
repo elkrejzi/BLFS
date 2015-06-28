@@ -85,10 +85,11 @@
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="libgudev"/>,
       <xref linkend="libgusb"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="polkit"/>,
-      <xref linkend="systemd"/> (for GUdev and Logind) and
+      <xref linkend="systemd"/> and
       <xref linkend="vala"/>
     </para>
 

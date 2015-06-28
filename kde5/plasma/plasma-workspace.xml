@@ -115,7 +115,7 @@
       <xref linkend="plasma-workspace-wallpapers"/> (Additional Wallpapers, optional),
       <xref linkend="polkit-kde-agent5"/> (Polkit Authentication Agent, recommended),
       <xref linkend="powerdevil"/>,
-      <xref linkend="systemd"/> (for Logind) and
+      <xref linkend="systemd"/> and
       <xref linkend="systemsettings"/>
     </para>
 

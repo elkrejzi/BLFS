@@ -133,8 +133,8 @@ make</userinput></screen>
 <!-- dev note: make INSTALL_PREFIX=<DESTDIR> MANDIR=/usr/share/man MANSUFFIX=ssl install -->
 
 <screen role="root"><userinput>make MANDIR=/usr/share/man MANSUFFIX=ssl install &amp;&amp;
-install -dv -m755 /usr/share/doc/openssl-&openssl-version;  &amp;&amp;
-cp -vfr doc/*     /usr/share/doc/openssl-&openssl-version;</userinput></screen>
+install -v -dm755 /usr/share/doc/openssl-&openssl-version;  &amp;&amp;
+cp -rfv doc/*     /usr/share/doc/openssl-&openssl-version;</userinput></screen>
 
   </sect2>
 

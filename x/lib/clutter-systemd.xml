@@ -93,9 +93,9 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="libgudev"/>,
       <xref linkend="libinput"/>,
-      <xref linkend="libxkbcommon"/>,
-      <xref linkend="systemd"/> (for GUdev), and
+      <xref linkend="libxkbcommon"/>, and
       <xref linkend="wayland"/>
     </para>
 

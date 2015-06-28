@@ -83,7 +83,7 @@
       <xref linkend="v4l-utils"/> support),
       <xref linkend="itstool"/>,
       <xref linkend="libcanberra"/>, and
-      <xref linkend="systemd"/> (for GUdev)
+      <xref linkend="libgudev"/>
     </para>
 
     <bridgehead renderas="sect4">Recommended</bridgehead>

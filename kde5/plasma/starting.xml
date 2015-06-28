@@ -20,7 +20,7 @@
   <bridgehead renderas="sect4">Required</bridgehead>
   <para role="required">
     <xref linkend="dbus"/>,
-    <xref linkend="systemd"/> (for Logind) and
+    <xref linkend="systemd"/> and
     <xref linkend="xinit"/>
   </para>
 

@@ -88,10 +88,10 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
+      <xref linkend="libgudev"/>,
       <xref linkend="libndp"/>,
-      <xref linkend="libnl"/>,
-      <xref linkend="nss"/>, and
-      <xref linkend="systemd"/> (for GUdev and Logind)
+      <xref linkend="libnl"/> and
+      <xref linkend="nss"/>
     </para>
 
     <bridgehead renderas="sect4">Recommended</bridgehead>
@@ -102,7 +102,8 @@
       <xref linkend="iptables"/>,
       <xref linkend="libsoup"/>,
       <xref linkend="newt"/> (for <command>nmtui</command>),
-      <xref linkend="polkit"/>, and
+      <xref linkend="polkit"/>,
+      <xref linkend="systemd"/> and
       <xref linkend="vala"/>
     </para>
 
@@ -116,7 +117,7 @@
       <xref linkend="valgrind"/>,
       <xref linkend="wpa_supplicant"/> (built with D-Bus support),
       <ulink url="http://libteam.org/">libteam</ulink>,
-      <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>, and
+      <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink> and
       <ulink url="https://www.roaringpenguin.com/products/pppoe">RP-PPPoE</ulink>
     </para>
 

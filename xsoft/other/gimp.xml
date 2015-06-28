@@ -143,13 +143,13 @@
       <xref linkend="jasper"/>,
       <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
       <xref linkend="libexif"/>,
+      <xref linkend="libgudev"/>,
       <xref linkend="libmng"/>,
       <xref linkend="librsvg"/>,
       <ulink url="http://wvware.sourceforge.net/libwmf.html">libwmf</ulink>,
       <xref linkend="poppler"/>,
       an <xref linkend="server-mail"/> (that provides a
-      <command>sendmail</command> program),
-      <xref linkend="systemd"/> (for GUdev), and
+      <command>sendmail</command> program), and
       <xref linkend="webkitgtk2"/> (Compiled against GTK+ 2, required for the help-plugin)
     </para>
 

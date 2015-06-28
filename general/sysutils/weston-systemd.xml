@@ -95,7 +95,7 @@
       <xref linkend="linux-pam"/> (to build the
       <command>weston-launch</command> utility),
       <xref linkend="pango"/> (to build some demo clients),
-      <xref linkend="systemd"/> (for Logind),
+      <xref linkend="systemd"/>,
       <xref linkend="xorg7-lib"/> (to build the X11
       backend and X11 compatibility layer) and
       <xref linkend="xorg-server"/> (with Xwayland, runtime
