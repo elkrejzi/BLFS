@@ -156,7 +156,7 @@ make</userinput></screen>
           <para>
             is a GObject-based wrapper library for libudev.
           </para>
-          <indexterm zone="systemd libgudev-1.0">
+          <indexterm zone="libgudev libgudev-1.0">
             <primary sortas="c-libgudev-1.0">libgudev-1.0.so</primary>
           </indexterm>
         </listitem>
