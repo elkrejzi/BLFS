@@ -149,7 +149,7 @@ make</userinput></screen>
           /usr/include/gnome-desktop-3.0,
           /usr/share/gnome,
           /usr/share/gtk-doc/html/gnome-desktop3,
-          /usr/share/help/*/{gpl,lgpl,fdl}, and
+          /usr/share/help/*/{gpl,lgpl,fdl} and
           /usr/share/libgnome-desktop-3.0
         </seg>
       </seglistitem>

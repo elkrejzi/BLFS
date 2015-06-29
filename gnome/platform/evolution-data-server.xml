@@ -84,7 +84,7 @@ xreflabel="evolution-data-server-&evolution-data-server-version;">
       <xref linkend="gcr"/>,
       <xref linkend="libical"/>,
       <xref linkend="libsecret"/>,
-      <xref linkend="libsoup"/>, and
+      <xref linkend="libsoup"/> and
       <xref linkend="nss"/>
     </para>
 
@@ -95,7 +95,7 @@ xreflabel="evolution-data-server-&evolution-data-server-version;">
       <xref linkend="gtk3"/>,
       <xref linkend="icu"/>,
       <xref linkend="libgdata"/>,
-      <xref linkend="libgweather"/>, and
+      <xref linkend="libgweather"/> and
       <xref linkend="vala"/>
     </para>
 
@@ -103,9 +103,9 @@ xreflabel="evolution-data-server-&evolution-data-server-version;">
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <xref linkend="mitkrb"/>,
-      a <xref linkend="server-mail"/> (that provides a <command>sendmail</command> command),
-      <xref linkend="openldap"/>
-      <ulink url="https://code.google.com/p/accounts-sso/">Accounts-SSO</ulink>, and
+      an <xref linkend="server-mail"/> (that provides a <command>sendmail</command> command),
+      <xref linkend="openldap"/>,
+      <ulink url="https://code.google.com/p/accounts-sso/">Accounts-SSO</ulink> and
       <ulink url="https://code.google.com/p/libphonenumber/">libphonenumber</ulink>
     </para>
 
@@ -128,7 +128,7 @@ xreflabel="evolution-data-server-&evolution-data-server-version;">
 make</userinput></screen>
 
     <para>
-      This package does not have a working testsuite.
+      To test the results, issue: <command>make check</command>.
     </para>
 
     <para>
@@ -194,16 +194,15 @@ make</userinput></screen>
         </seg>
         <seg>
           libcamel-1.2.so, libebackend-1.2.so, libebook-1.2.so,
-          libecal-1.2.so, libedata-book-1.2.so, libedata-cal-1.2.so,
-          libedataserver-1.2.so and libedataserverui-3.0.so
+          libebook-contacts-1.2.so, libecal-1.2.so, libedata-book-1.2.so,
+          libedata-cal-1.2.so, libedataserver-1.2.so and
+          libedataserverui-3.0.so
         </seg>
         <seg>
-          /usr/include/evolution-data-server-3.6,
+          /usr/include/evolution-data-server,
           /usr/lib/evolution-data-server,
-          /usr/share/evolution-data-server-3.6,
-          /usr/share/gtk-doc/html/{camel,libebackend,libebook},
-          /usr/share/gtk-doc/html/{libecal,libedata-book,libedata-cal},
-          /usr/share/gtk-doc/html/{libedataserver,libedataserverui} and
+          /usr/share/evolution-data-server,
+          /usr/share/gtk-doc/html/{camel,eds} and
           /usr/share/pixmaps/evolution-data-server
         </seg>
       </seglistitem>

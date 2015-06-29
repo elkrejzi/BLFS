@@ -76,10 +76,9 @@
 
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gcr"/>,
       <xref linkend="json-glib"/>, 
       <xref linkend="rest"/>,
-      <xref linkend="telepathy-glib"/>, and
+      <xref linkend="telepathy-glib"/> and
       <xref linkend="webkitgtk"/>
     </para>
 
@@ -90,7 +89,8 @@
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>, and
+      <xref linkend="gcr"/>,
+      <xref linkend="gtk-doc"/> and
       <xref linkend="mitkrb"/>
     </para>
 
@@ -157,7 +157,7 @@ make</userinput></screen>
         <seg>
           /usr/include/goa-1.0,
           /usr/lib/goa-1.0,
-          /usr/share/gnome-online-accounts, and
+          /usr/share/gnome-online-accounts and
           /usr/share/gtk-doc/html/goa
         </seg>
       </seglistitem>
@@ -180,15 +180,15 @@ make</userinput></screen>
         </listitem>
       </varlistentry>
 
-      <varlistentry id="libgoa-1">
+      <varlistentry id="libgoa-1.0">
         <term><filename class="libraryfile">libgoa-1.0.so</filename></term>
         <listitem>
           <para>
             contains the <application>GNOME Online Accounts</application>
             API functions.
           </para>
-          <indexterm zone="gnome-online-accounts libgoa-1">
-            <primary sortas="c-libgoa-1">libgoa-1.0.so</primary>
+          <indexterm zone="gnome-online-accounts libgoa-1.0">
+            <primary sortas="c-libgoa-1.0">libgoa-1.0.so</primary>
           </indexterm>
         </listitem>
       </varlistentry>

@@ -29,31 +29,45 @@
   <sect2 role="package">
     <title>Introduction to Grilo</title>
 
-    <para><application>Grilo</application> is a framework focused on making
-    media discovery and browsing easy for applications and application
-    developers.</para>
+    <para>
+      <application>Grilo</application> is a framework focused on making
+      media discovery and browsing easy for applications and application
+      developers.
+    </para>
 
     &lfs77_checked;
 
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
       <listitem>
-        <para>Download (HTTP): <ulink url="&grilo-download-http;"/></para>
+        <para>
+          Download (HTTP): <ulink url="&grilo-download-http;"/>
+        </para>
       </listitem>
       <listitem>
-        <para>Download (FTP): <ulink url="&grilo-download-ftp;"/></para>
+        <para>
+          Download (FTP): <ulink url="&grilo-download-ftp;"/>
+        </para>
       </listitem>
       <listitem>
-        <para>Download MD5 sum: &grilo-md5sum;</para>
+        <para>
+          Download MD5 sum: &grilo-md5sum;
+        </para>
       </listitem>
       <listitem>
-        <para>Download size: &grilo-size;</para>
+        <para>
+          Download size: &grilo-size;
+        </para>
       </listitem>
       <listitem>
-        <para>Estimated disk space required: &grilo-buildsize;</para>
+        <para>
+          Estimated disk space required: &grilo-buildsize;
+        </para>
       </listitem>
       <listitem>
-        <para>Estimated build time: &grilo-time;</para>
+        <para>
+          Estimated build time: &grilo-time;
+        </para>
       </listitem>
     </itemizedlist>
 
@@ -70,37 +84,42 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libsoup"/>,
-      <xref linkend="totem-pl-parser"/>, and
+      <xref linkend="totem-pl-parser"/> and
       <xref linkend="vala"/>
     </para>
 
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="avahi"/>,
-      <xref linkend="docbook-utils"/>, and
+      <xref linkend="docbook-utils"/> and
       <xref linkend="liboauth"/>
     </para>
 
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/grilo"/></para>
-
+      <ulink url="&blfs-wiki;/grilo"/>
+    </para>
   </sect2>
 
   <sect2 role="installation">
     <title>Installation of Grilo</title>
 
-    <para>Install <application>Grilo</application> by running the
-    following commands:</para>
+    <para>
+      Install <application>Grilo</application> by running the
+      following commands:
+    </para>
 
 <screen><userinput>./configure --prefix=/usr     \
             --libdir=/usr/lib \
             --disable-static &amp;&amp;
 make</userinput></screen>
 
-    <!-- testsuite exists, but does nothing -->
-    <para>This package does not come with a testsuite.</para>
+    <para>
+      This package does not come with a testsuite.
+    </para>
 
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>
+      Now, as the <systemitem class="username">root</systemitem> user:
+    </para>
 
 <screen role="root"><userinput>make install</userinput></screen>
 
@@ -126,9 +145,15 @@ make</userinput></screen>
       <segtitle>Installed Directories</segtitle>
 
       <seglistitem>
-        <seg>grilo-test-ui-0.2, grl-inspect-0.2 and grl-launch-0.2</seg>
-        <seg>libgrilo-0.2.so, libgrlnet-0.2.so and libgrlpls-0.2.so</seg>
-        <seg>/usr/include/grilo-0.2</seg>
+        <seg>
+          grilo-test-ui-0.2, grl-inspect-0.2 and grl-launch-0.2
+        </seg>
+        <seg>
+          libgrilo-0.2.so, libgrlnet-0.2.so and libgrlpls-0.2.so
+        </seg>
+        <seg>
+          /usr/include/grilo-0.2
+        </seg>
       </seglistitem>
     </segmentedlist>
 
@@ -137,65 +162,78 @@ make</userinput></screen>
       <?dbfo list-presentation="list"?>
       <?dbhtml list-presentation="table"?>
 
-      <varlistentry id="grilo-test-ui">
+      <varlistentry id="grilo-test-ui-0.2">
         <term><command>grilo-test-ui-0.2</command></term>
         <listitem>
-          <para>is a simple playground application that you can use to test the
-          framework and its plugins.</para>
-          <indexterm zone="grilo grilo-test-ui">
-            <primary sortas="b-grilo-test-ui">grilo-test-ui</primary>
+          <para>
+            is a simple playground application that you can use to
+            test the framework and its plugins.
+          </para>
+          <indexterm zone="grilo grilo-test-ui-0.2">
+            <primary sortas="b-grilo-test-ui-0.2">grilo-test-ui-0.2</primary>
           </indexterm>
         </listitem>
       </varlistentry>
 
-      <varlistentry id="grl-inspect">
+      <varlistentry id="grl-inspect-0.2">
         <term><command>grl-inspect-0.2</command></term>
         <listitem>
-          <para>is a tool that prints out information on available Grilo
-          sources.</para>
-          <indexterm zone="grilo grl-inspect">
-            <primary sortas="b-grl-inspect">grl-inspect</primary>
+          <para>
+            is a tool that prints out information on available
+            <application>Grilo</application> sources.
+          </para>
+          <indexterm zone="grilo grl-inspect-0.2">
+            <primary sortas="b-grl-inspect-0.2">grl-inspect-0.2</primary>
           </indexterm>
         </listitem>
       </varlistentry>
 
-      <varlistentry id="grl-launch">
+      <varlistentry id="grl-launch-0.2">
         <term><command>grl-launch-0.2</command></term>
         <listitem>
-          <para>is a tool to run <application>Grilo</application> operations
-          from command line.</para>
-          <indexterm zone="grilo grl-launch">
-            <primary sortas="b-grl-launch">grl-launch</primary>
+          <para>
+            is a tool to run <application>Grilo</application>
+            operations from command line.
+          </para>
+          <indexterm zone="grilo grl-launch-0.2">
+            <primary sortas="b-grl-launch-0.2">grl-launch-0.2</primary>
           </indexterm>
         </listitem>
       </varlistentry>
 
-      <varlistentry id="libgrilo">
-        <term><filename class='libraryfile'>libgrilo.so</filename></term>
+      <varlistentry id="libgrilo-0.2">
+        <term><filename class="libraryfile">libgrilo-0.2.so</filename></term>
         <listitem>
-          <para>provides the Grilo framework.</para>
-          <indexterm zone="grilo libgrilo">
-            <primary sortas="c-libgrilo">libgrilo.so</primary>
+          <para>
+            provides the <application>Grilo</application> framework.
+          </para>
+          <indexterm zone="grilo libgrilo-0.2">
+            <primary sortas="c-libgrilo-0.2">libgrilo-0.2.so</primary>
           </indexterm>
         </listitem>
       </varlistentry>
 
-      <varlistentry id="libgrlnet">
-        <term><filename class='libraryfile'>libgrlnet.so</filename></term>
+      <varlistentry id="libgrlnet-0.2">
+        <term><filename class="libraryfile">libgrlnet-0.2.so</filename></term>
         <listitem>
-          <para>provides Grilo networking helpers for plug-ins.</para>
-          <indexterm zone="grilo libgrilo">
-            <primary sortas="c-libgrlnet">libgrlnet.so</primary>
+          <para>
+            provides <application>Grilo</application> networking
+            helpers for plugins.
+          </para>
+          <indexterm zone="grilo libgrlnet-0.2">
+            <primary sortas="c-libgrlnet-0.2">libgrlnet-0.2.so</primary>
           </indexterm>
         </listitem>
       </varlistentry>
 
-      <varlistentry id="libgrlpls">
-        <term><filename class='libraryfile'>libgrlpls.so</filename></term>
+      <varlistentry id="libgrlpls-0.2">
+        <term><filename class="libraryfile">libgrlpls-0.2.so</filename></term>
         <listitem>
-          <para>provides playlist handling functions.</para>
-          <indexterm zone="grilo libgrilo">
-            <primary sortas="c-libgrlpls">libgrlpls.so</primary>
+          <para>
+            provides playlist handling functions.
+          </para>
+          <indexterm zone="grilo libgrlpls-0.2">
+            <primary sortas="c-libgrlpls-0.2">libgrlpls-0.2.so</primary>
           </indexterm>
         </listitem>
       </varlistentry>

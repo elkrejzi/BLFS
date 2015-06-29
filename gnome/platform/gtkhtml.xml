@@ -76,7 +76,7 @@
     <para role="required">
       <xref linkend="enchant"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="gtk3"/>, and
+      <xref linkend="gtk3"/> and
       <xref linkend="iso-codes"/>
     </para>
 
@@ -157,14 +157,14 @@ make</userinput></screen>
         </listitem>
       </varlistentry>
 
-      <varlistentry id="libgtkhtml-4">
+      <varlistentry id="libgtkhtml-4.0">
         <term><filename class="libraryfile">libgtkhtml-4.0.so</filename></term>
         <listitem>
           <para>
             provides the functions used to render HTML within applications.
           </para>
-          <indexterm zone="gtkhtml libgtkhtml-4">
-            <primary sortas="c-libgtkhtml-4">libgtkhtml-4.0.so</primary>
+          <indexterm zone="gtkhtml libgtkhtml-4.0">
+            <primary sortas="c-libgtkhtml-4.0">libgtkhtml-4.0.so</primary>
           </indexterm>
         </listitem>
       </varlistentry>

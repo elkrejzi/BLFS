@@ -144,7 +144,7 @@ make</userinput></screen>
         </seg>
         <seg>
           /etc/xdg/menus,
-          /usr/include/gnome-menus-3.0, and
+          /usr/include/gnome-menus-3.0 and
           /usr/share/desktop-directories
         </seg>
       </seglistitem>

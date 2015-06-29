@@ -154,15 +154,15 @@ make</userinput></screen>
       <?dbfo list-presentation="list"?>
       <?dbhtml list-presentation="table"?>
 
-      <varlistentry id="libgtop-2">
+      <varlistentry id="libgtop-2.0">
         <term><filename class="libraryfile">libgtop-2.0.so</filename></term>
         <listitem>
           <para>
             contains the functions that allow access to system
             performance data.
           </para>
-          <indexterm zone="libgtop libgtop-2">
-            <primary sortas="c-libgtop-2">libgtop-2.0.so</primary>
+          <indexterm zone="libgtop libgtop-2.0">
+            <primary sortas="c-libgtop-2.0">libgtop-2.0.so</primary>
           </indexterm>
         </listitem>
       </varlistentry>

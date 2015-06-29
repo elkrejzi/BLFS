@@ -123,8 +123,8 @@ make</userinput></screen>
 
     <segmentedlist>
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 
       <seglistitem>
         <seg>
@@ -144,13 +144,13 @@ make</userinput></screen>
       <?dbfo list-presentation="list"?>
       <?dbhtml list-presentation="table"?>
 
-      <varlistentry id="libgee-lib">
+      <varlistentry id="libgee-0.8">
         <term><filename class="libraryfile">libgee-0.8.so</filename></term>
         <listitem>
           <para>
             contains the <application>libgee</application> API functions.
           </para>
-          <indexterm zone="libgee libgee-lib">
+          <indexterm zone="libgee libgee-0.8">
             <primary sortas="c-libgee-0.8">libgee-0.8.so</primary>
           </indexterm>
         </listitem>
