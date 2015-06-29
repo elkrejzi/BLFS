@@ -5,12 +5,12 @@
   %general-entities;
 
   <!ENTITY gtksourceview-download-http
-           "&gnome-download-http;/gtksourceview/&gnome-minor14;/gtksourceview-&gtksourceview-version;.tar.xz">
+           "&gnome-download-http;/gtksourceview/&gnome-minor16;/gtksourceview-&gtksourceview-version;.tar.xz">
   <!ENTITY gtksourceview-download-ftp
-           "&gnome-download-ftp;/gtksourceview/&gnome-minor14;/gtksourceview-&gtksourceview-version;.tar.xz">
-  <!ENTITY gtksourceview-md5sum        "ede804aed4cb19aed6ec9f08aa877052">
-  <!ENTITY gtksourceview-size          "1.2 MB">
-  <!ENTITY gtksourceview-buildsize     "65 MB">
+           "&gnome-download-ftp;/gtksourceview/&gnome-minor16;/gtksourceview-&gtksourceview-version;.tar.xz">
+  <!ENTITY gtksourceview-md5sum        "e727db8202d23a54b54b69ebc66f5331">
+  <!ENTITY gtksourceview-size          "1.3 MB">
+  <!ENTITY gtksourceview-buildsize     "66 MB">
   <!ENTITY gtksourceview-time          "0.4 SBU">
 ]>
 

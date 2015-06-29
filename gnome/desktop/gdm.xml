@@ -4,12 +4,12 @@
   <!ENTITY % general-entities SYSTEM "../../general.ent">
   %general-entities;
 
-  <!ENTITY gdm-download-http "&gnome-download-http;/gdm/&gnome-minor14;/gdm-&gdm-version;.tar.xz">
-  <!ENTITY gdm-download-ftp  "&gnome-download-ftp;/gdm/&gnome-minor14;/gdm-&gdm-version;.tar.xz">
-  <!ENTITY gdm-md5sum        "6ebb3c1a694c58651f3e1116ff3f542d">
+  <!ENTITY gdm-download-http "&gnome-download-http;/gdm/&gnome-minor16;/gdm-&gdm-version;.tar.xz">
+  <!ENTITY gdm-download-ftp  "&gnome-download-ftp;/gdm/&gnome-minor16;/gdm-&gdm-version;.tar.xz">
+  <!ENTITY gdm-md5sum        "0b315af5fe0ee66055edb6f301510820">
   <!ENTITY gdm-size          "1.5 MB">
-  <!ENTITY gdm-buildsize     "44 MB">
-  <!ENTITY gdm-time          "0.4 SBU">
+  <!ENTITY gdm-buildsize     "46 MB">
+  <!ENTITY gdm-time          "0.3 SBU">
 ]>
 
 <sect1 id="gdm" xreflabel="GDM-&gdm-version;">
@@ -122,7 +122,8 @@ useradd -c "GDM Daemon Owner" -d /var/lib/gdm -u 21 \
 <screen><userinput>./configure --prefix=/usr        \
             --sysconfdir=/etc    \
             --localstatedir=/var \
-            --disable-static     &amp;&amp;
+            --disable-static     \
+            --without-plymouth   &amp;&amp;
 make</userinput></screen>
 
     <para>
@@ -150,6 +151,14 @@ make</userinput></screen>
 
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="../../xincludes/static-libraries.xml"/>
+
+    <para>
+      <parameter>--without-plymouth</parameter>: This switch
+      is used to disable
+      <application>Plymouth</application> support because
+      <application>Plymouth</application> is not part of
+      BLFS.
+    </para>
 
     <para>
       <option>--with-initial-vt=7</option>: Use this switch

@@ -5,12 +5,12 @@
   %general-entities;
 
   <!ENTITY evolution-data-server-download-http
-           "&gnome-download-http;/evolution-data-server/&gnome-minor12;/evolution-data-server-&evolution-data-server-version;.tar.xz">
+           "&gnome-download-http;/evolution-data-server/&gnome-minor16;/evolution-data-server-&evolution-data-server-version;.tar.xz">
   <!ENTITY evolution-data-server-download-ftp
-           "&gnome-download-ftp;/evolution-data-server/&gnome-minor12;/evolution-data-server-&evolution-data-server-version;.tar.xz">
-  <!ENTITY evolution-data-server-md5sum        "a05df58de484bb6ff6fe23e3eee71db3">
-  <!ENTITY evolution-data-server-size          "5.1 MB">
-  <!ENTITY evolution-data-server-buildsize     "245 MB">
+           "&gnome-download-ftp;/evolution-data-server/&gnome-minor16;/evolution-data-server-&evolution-data-server-version;.tar.xz">
+  <!ENTITY evolution-data-server-md5sum        "27709d84a755eeabe122e6b7f746b5af">
+  <!ENTITY evolution-data-server-size          "5.2 MB">
+  <!ENTITY evolution-data-server-buildsize     "220 MB">
   <!ENTITY evolution-data-server-time          "2.1 SBU">
 ]>
 
